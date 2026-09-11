@@ -1,4 +1,3 @@
-```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,106 +5,128 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Afinora Privacy Policy</title>
   <style>
+    :root {
+      --field: #04231b;
+      --letter: #34d399;
+      --zero: #6ee7b7;
+      --bone: #f2efe6;
+      --body: #c7cdc9;
+      --muted: #8a9691;
+      --rule: #14342a;
+    }
     body {
       margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
-      background: #050505;
-      color: #f5f5f5;
-      line-height: 1.6;
+      font-family: system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
+      background: var(--field);
+      color: var(--body);
+      line-height: 1.65;
     }
-
-    main {
-      max-width: 820px;
-      margin: 0 auto;
-      padding: 56px 24px;
-    }
-
-    h1 {
-      font-size: 44px;
-      margin-bottom: 8px;
-    }
-
-    h2 {
-      margin-top: 40px;
-      color: #35d3c3;
-    }
-
-    p, li {
-      color: #cfcfcf;
-      font-size: 17px;
-    }
-
-    a {
-      color: #35d3c3;
-      text-decoration: none;
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
-
-    footer {
-      margin-top: 56px;
-      color: #888;
-      font-size: 14px;
-    }
+    main { max-width: 760px; margin: 0 auto; padding: 56px 24px 72px; }
+    .brand { display: flex; align-items: center; gap: 14px; margin-bottom: 40px; }
+    .brand a { font-size: 20px; font-weight: 600; letter-spacing: 0.14em; color: var(--bone); }
+    h1 { font-size: 40px; line-height: 1.15; margin: 0 0 8px; color: var(--bone); }
+    h2 { margin-top: 40px; margin-bottom: 8px; font-size: 20px; color: var(--letter); }
+    p, li { font-size: 17px; }
+    ol, ul { padding-left: 22px; }
+    a { color: var(--letter); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .updated { color: var(--muted); font-size: 15px; margin: 0 0 32px; }
+    .lede { color: var(--zero); font-size: 19px; }
+    strong { color: var(--bone); font-weight: 600; }
+    footer { margin-top: 56px; padding-top: 24px; border-top: 1px solid var(--rule); color: var(--muted); font-size: 14px; }
+    footer a { color: var(--muted); text-decoration: underline; }
   </style>
 </head>
 <body>
   <main>
+    <div class="brand">
+      <svg viewBox="0 0 100 100" width="40" height="40" role="img" aria-label="Afinora">
+        <g transform="translate(5 6.567) scale(0.9)">
+          <defs>
+            <mask id="afinora-zero-gap" maskUnits="userSpaceOnUse" x="0" y="0" width="100" height="100">
+              <rect x="0" y="0" width="100" height="100" fill="#ffffff"/>
+              <circle cx="50" cy="66" r="7.5" fill="#000000"/>
+            </mask>
+          </defs>
+          <path d="M27 66 L73 66" fill="none" stroke="#2f7f60" stroke-width="6" stroke-linecap="round" mask="url(#afinora-zero-gap)"/>
+          <g fill="none" stroke="#34d399" stroke-width="11">
+            <path d="M20 88 L32.38 56.64"/>
+            <path d="M80 88 L67.62 56.64"/>
+            <path d="M36.42 46.4 L50 12 L63.58 46.4" stroke-linejoin="round"/>
+          </g>
+          <circle cx="50" cy="66" r="5" fill="#6ee7b7"/>
+        </g>
+      </svg>
+      <a href="index.html">AFINORA</a>
+    </div>
+
     <h1>Privacy Policy</h1>
-    <p>Last updated: May 28, 2026</p>
+    <p class="updated">Effective date: September 11, 2026</p>
 
-    <p>
-      Afinora is designed to be privacy-friendly. This Privacy Policy explains how the app handles information.
-    </p>
+    <p>Afinora is a practice app for string instruments: a tuner, a metronome, a scale and chord reference, ear and technique training, and a recorder for playing over backing tracks. This policy explains how the app handles data.</p>
 
-    <h2>Microphone access</h2>
-    <p>
-      Afinora uses microphone access only to detect the pitch of your instrument in real time.
-      Microphone audio is processed locally on your device.
-    </p>
-    <p>
-      Afinora does not record, store, upload, sell, or share microphone audio.
-    </p>
+    <p class="lede">The short version: Afinora has no account, no advertising and no analytics. It makes no network requests of its own except to manage a purchase. Everything you play, record or configure stays on your device unless you share it yourself.</p>
 
-    <h2>Personal data</h2>
-    <p>
-      Afinora does not require you to create an account and does not collect personal information directly from you.
-    </p>
+    <h2>Data collection</h2>
+    <p>Afinora does not require an account and does not collect personal information.</p>
+    <p>Afinora has no servers of its own. It does not send your audio, your recordings, your backing tracks, your settings or your practice history anywhere.</p>
 
-    <h2>Purchases</h2>
-    <p>
-      Afinora may offer an optional in-app purchase. Purchases are processed by Apple through the App Store.
-      Afinora does not receive or store your payment card details.
-    </p>
+    <h2>Microphone</h2>
+    <p>Afinora requests microphone access for two purposes:</p>
+    <ol>
+      <li><strong>Pitch and timing detection</strong>, in the tuner and in ear and technique training. This audio is analysed on the device as it arrives and is never written to a file, kept, uploaded, sold or shared. Nothing of it survives the moment it is analysed.</li>
+      <li><strong>Recording in Studio</strong>, when you press record. This audio is written to a file on your device, because a recording is the point of it. It is not uploaded.</li>
+    </ol>
+    <p>Technique training can also listen through a USB audio interface connected to your device. Audio from an interface is treated exactly like microphone audio.</p>
+
+    <h2>Camera</h2>
+    <p>Afinora requests camera access only for Studio, and only while a take is set to video. The camera is used to record the take you asked for. No frame is uploaded, and Afinora never uses the camera outside Studio.</p>
+
+    <h2>Photos and videos</h2>
+    <p>Afinora asks for write-only access to your photo library, and asks for it only at the moment you save a Studio take to your gallery. Afinora does not read, browse, index or scan your existing photos or videos. Write-only is the permission the app requests, not merely a promise about how it behaves.</p>
+
+    <h2>Backing tracks and files</h2>
+    <p>When you import a backing track, you choose the file yourself through your device's own file picker. Afinora copies it into its own folder so that it can remember the section you marked on it, and reads nothing else from your storage. Imported tracks are not uploaded, and copies that no track in your list still points at are deleted automatically.</p>
+
+    <h2>Recordings</h2>
+    <p>Studio takes are written to your device's cache directory. They stay there until you discard them, until Afinora cleans up a take that nothing points at any more, or until your operating system reclaims the space.</p>
+    <p>A take leaves your device only in two ways, and both are ones you start:</p>
+    <ul>
+      <li>Saving it to your gallery, where it becomes an ordinary file on your device.</li>
+      <li>Sharing it, which hands the file to whichever app you pick in your system's share sheet. What that app does with it is governed by that app's own privacy policy.</li>
+    </ul>
+    <p>Afinora never uploads a recording on its own, in the background, or for any purpose of its own.</p>
+
+    <h2>Data stored on your device</h2>
+    <p>Afinora stores the following locally, and only locally: your settings, custom tunings, metronome preferences, ear-training scores, technique practice history and audio-interface calibration, your Studio session with its list of recent tracks, and your trial and purchase state.</p>
+    <p>Technique practice history records what you configured and how you performed — tempo, notes, accuracy and timing. It never contains audio.</p>
+    <p>Deleting the app removes this data, with one deliberate exception described below.</p>
+
+    <h2>Purchase identifier</h2>
+    <p>Afinora generates a random identifier for your installation the first time it runs and stores it on your device. It is not derived from your device, your accounts, your advertising identifier or anything about you, and it is not shared with anyone but the purchase entitlement service described below.</p>
+    <p>Its only purpose is to let a purchase you already made be recognised again after a reinstall. On iOS it is stored in the system keychain, which is why it — and therefore your Pro purchase and your trial state — can survive deleting and reinstalling the app.</p>
 
     <h2>Analytics and advertising</h2>
-    <p>
-      Afinora does not show external ads. The app does not use microphone audio for advertising or tracking.
-    </p>
+    <p>Afinora contains no third-party advertising, no ad SDKs, no analytics SDK, no crash reporting, no login and no custom backend, and no third-party tracking of any kind. The app may show first-party prompts about Afinora features or Pro access; those are part of the product, not advertising.</p>
 
-    <h2>Children’s privacy</h2>
-    <p>
-      Afinora does not knowingly collect personal information from children.
-    </p>
+    <h2>Payments</h2>
+    <p>Afinora offers an optional one-time in-app purchase to unlock Pro features. There is no subscription.</p>
+    <p>Purchases are processed by Google Play or the Apple App Store, depending on where you installed the app. Afinora never sees or stores payment card information.</p>
+    <p>Afinora uses RevenueCat to manage purchase status and Pro access. RevenueCat receives the random installation identifier described above, and may process purchase history and store receipt or purchase token information for entitlement management. This is the only network traffic Afinora originates.</p>
+
+    <h2>Children</h2>
+    <p>Afinora is not directed at children and does not knowingly collect data from children.</p>
 
     <h2>Contact</h2>
-    <p>
-      If you have questions about this Privacy Policy, contact:
-      <a href="mailto:cyberxkte@gmail.com">cyberxkte@gmail.com</a>
-    </p>
+    <p>For privacy or support questions, contact <a href="mailto:cyberxkte@gmail.com">cyberxkte@gmail.com</a>.</p>
 
-    <h2>Links</h2>
-    <p>
-      <a href="index.html">Home</a> ·
-      <a href="support.html">Support</a>
-    </p>
+    <h2>Changes</h2>
+    <p>This policy may be updated as the app evolves. Any material changes will be reflected in the published policy, with a new effective date.</p>
 
     <footer>
-      © 2026 Gianfranco Marmo. All rights reserved.
+      <a href="index.html">Home</a> · <a href="support.html">Support</a><br />
+      © 2026 Afinora
     </footer>
   </main>
 </body>
 </html>
-```

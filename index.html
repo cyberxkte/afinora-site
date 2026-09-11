@@ -1,117 +1,127 @@
-```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Afinora - Real-time tuner for strings</title>
+  <title>Afinora - Practice room for string players</title>
+  <meta name="description" content="Tuner, technique training graded note by note, Studio takes over a backing track, scales and metronome. Works with a USB audio interface. No ads, no account." />
   <style>
+    :root {
+      --field: #04231b;
+      --letter: #34d399;
+      --scale: #2f7f60;
+      --zero: #6ee7b7;
+      --bone: #f2efe6;
+      --body: #c7cdc9;
+      --muted: #8a9691;
+      --rule: #14342a;
+      --card: #072b21;
+    }
     body {
       margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
-      background: #050505;
-      color: #f5f5f5;
-      line-height: 1.6;
+      font-family: system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
+      background: var(--field);
+      color: var(--body);
+      line-height: 1.65;
     }
-
-    main {
-      max-width: 860px;
-      margin: 0 auto;
-      padding: 64px 24px;
+    main { max-width: 860px; margin: 0 auto; padding: 56px 24px 72px; }
+    .hero { display: flex; align-items: center; gap: 22px; flex-wrap: wrap; }
+    h1 { font-size: 52px; letter-spacing: 0.1em; margin: 0; color: var(--bone); }
+    .tagline { font-size: 22px; color: var(--zero); margin: 18px 0 0; }
+    .badge {
+      display: inline-block; margin-top: 22px; padding: 9px 18px;
+      border: 2px solid var(--letter); border-radius: 999px;
+      color: var(--zero); font-size: 16px;
     }
-
-    h1 {
-      font-size: 56px;
-      margin: 0 0 8px;
-    }
-
-    h2 {
-      margin-top: 48px;
-      color: #35d3c3;
-    }
-
-    p {
-      color: #cfcfcf;
-      font-size: 18px;
-    }
-
-    ul {
-      padding-left: 22px;
-      color: #cfcfcf;
-      font-size: 18px;
-    }
-
-    a {
-      color: #35d3c3;
-      text-decoration: none;
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
-
-    .tagline {
-      font-size: 24px;
-      color: #35d3c3;
-      margin-bottom: 32px;
-    }
-
-    .card {
-      border: 1px solid #252525;
-      border-radius: 18px;
-      padding: 24px;
-      background: #101010;
-      margin-top: 24px;
-    }
-
-    footer {
-      margin-top: 56px;
-      color: #888;
-      font-size: 14px;
-    }
+    h2 { margin-top: 52px; margin-bottom: 10px; font-size: 22px; color: var(--letter); }
+    p, li { font-size: 17px; }
+    ul { padding-left: 22px; }
+    a { color: var(--letter); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .cards { display: grid; gap: 16px; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); margin-top: 8px; }
+    .card { border: 1px solid var(--rule); border-radius: 16px; padding: 20px 22px; background: var(--card); }
+    .card h3 { margin: 0 0 6px; font-size: 17px; color: var(--bone); }
+    .card p { margin: 0; font-size: 16px; }
+    strong { color: var(--bone); font-weight: 600; }
+    footer { margin-top: 56px; padding-top: 24px; border-top: 1px solid var(--rule); color: var(--muted); font-size: 14px; }
+    footer a { color: var(--muted); text-decoration: underline; }
   </style>
 </head>
 <body>
   <main>
-    <h1>Afinora</h1>
-    <p class="tagline">Real-time tuner for guitar and string instruments.</p>
-
-    <div class="card">
-      <p>
-        Afinora helps musicians tune quickly and accurately with real-time pitch detection,
-        a clean cents indicator, standard and alternate tunings, reference tones, and ear training.
-      </p>
+    <div class="hero">
+      <svg viewBox="0 0 100 100" width="96" height="96" role="img" aria-label="Afinora">
+        <g transform="translate(5 6.567) scale(0.9)">
+          <defs>
+            <mask id="afinora-zero-gap" maskUnits="userSpaceOnUse" x="0" y="0" width="100" height="100">
+              <rect x="0" y="0" width="100" height="100" fill="#ffffff"/>
+              <circle cx="50" cy="66" r="7.5" fill="#000000"/>
+            </mask>
+          </defs>
+          <path d="M27 66 L73 66" fill="none" stroke="#2f7f60" stroke-width="6" stroke-linecap="round" mask="url(#afinora-zero-gap)"/>
+          <g fill="none" stroke="#34d399" stroke-width="11">
+            <path d="M20 88 L32.38 56.64"/>
+            <path d="M80 88 L67.62 56.64"/>
+            <path d="M36.42 46.4 L50 12 L63.58 46.4" stroke-linejoin="round"/>
+          </g>
+          <circle cx="50" cy="66" r="5" fill="#6ee7b7"/>
+        </g>
+      </svg>
+      <h1>AFINORA</h1>
     </div>
 
-    <h2>Features</h2>
-    <ul>
-      <li>Real-time pitch detection using the microphone</li>
-      <li>Clear cents indicator for accurate tuning</li>
-      <li>Support for guitar, bass, violin, ukulele, mandolin, banjo, cello and more</li>
-      <li>Standard and alternate tunings</li>
-      <li>Custom tunings</li>
-      <li>Adjustable A4 reference pitch</li>
-      <li>Reference tones and ear training</li>
-      <li>Dark and light themes</li>
-      <li>No external ads</li>
-    </ul>
+    <p class="tagline">A practice room for string players. It starts as a real-time tuner and carries on into everything you do once the strings are in tune.</p>
+    <p><span class="badge">Works with a USB audio interface</span></p>
 
-    <h2>Privacy-friendly</h2>
-    <p>
-      Afinora processes microphone audio on your device to detect pitch.
-      The app does not record, store, upload, sell or share microphone audio.
-    </p>
+    <h2>What it does</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Technique training</h3>
+        <p>Play a scale shape against the metronome and every note is graded as it arrives: clean, late or missed. Pitch and timing are measured separately, so you know which one failed.</p>
+      </div>
+      <div class="card">
+        <h3>Studio</h3>
+        <p>Import a backing track, mark a section, loop it and slow it down. Record yourself over it as audio or video, then save the take or share it.</p>
+      </div>
+      <div class="card">
+        <h3>Tuner</h3>
+        <p>Real-time detection on the device, ten instruments, over 30 standard and alternate tunings plus your own, and six A4 references from 432 to 442 Hz.</p>
+      </div>
+      <div class="card">
+        <h3>Chords and scales</h3>
+        <p>20 scales and 20 chords drawn on the neck of your instrument in your tuning, with a fullscreen view and the chords that belong to the key.</p>
+      </div>
+      <div class="card">
+        <h3>Metronome</h3>
+        <p>An audio engine that does not drift. 30-300 BPM, tap tempo, signatures from 2/4 to 12/8, and any beat of the bar accented or muted.</p>
+      </div>
+      <div class="card">
+        <h3>Ear training</h3>
+        <p>Notes and intervals, answered on your real instrument rather than by tapping a button.</p>
+      </div>
+    </div>
 
-    <h2>Links</h2>
-    <p>
-      <a href="support.html">Support</a> ·
-      <a href="privacy.html">Privacy Policy</a>
-    </p>
+    <h2>Why a wired signal matters</h2>
+    <p>Grading a note requires hearing it exactly. An unamplified electric guitar is not a signal a detector can read reliably, and a room microphone drops notes as soon as there is noise. Plug into a USB audio interface and Afinora detects it, compensates its latency and tells you it is connected.</p>
+    <p>Tested with the Fender Mustang Micro Plus; other compatible USB audio interfaces should work the same way. Acoustic instruments can train through the phone microphone instead.</p>
+
+    <h2>Instruments</h2>
+    <p>Guitar, 7-string guitar, bass, ukulele, Venezuelan cuatro, violin, viola, cello, mandolin and banjo.</p>
+
+    <h2>Free and Pro</h2>
+    <p>Afinora opens with 5 days of full access. After that the free version keeps one instrument of your choice, the major and minor scales, and 5 Studio recordings. <strong>Afinora Pro is a one-time purchase, not a subscription</strong>, and unlocks everything permanently.</p>
+
+    <h2>Private by default</h2>
+    <p>No account, no ads, no tracking. Audio used for tuning and training is analysed on the device as it arrives and is never recorded or uploaded. Studio recordings stay on your phone unless you share them yourself. See the <a href="privacy.html">Privacy Policy</a>.</p>
+
+    <h2>Get it</h2>
+    <p><a href="https://play.google.com/store/apps/details?id=com.afinora.app">Afinora on Google Play</a></p>
+    <p>Available in 9 languages: English, Spanish, Italian, French, Portuguese, German, Japanese, Chinese and Russian.</p>
 
     <footer>
-      © 2026 Gianfranco Marmo. All rights reserved.
+      <a href="support.html">Support</a> · <a href="privacy.html">Privacy Policy</a><br />
+      © 2026 Afinora · Fender and Mustang Micro Plus are trademarks of Fender Musical Instruments Corporation. Afinora is not affiliated with, endorsed by, or sponsored by Fender.
     </footer>
   </main>
 </body>
 </html>
-```
