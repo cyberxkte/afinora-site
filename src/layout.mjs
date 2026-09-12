@@ -53,6 +53,54 @@ export function pageUrl(lang, page) {
   return page === 'index' ? `/${dir}` : `/${dir}${page}.html`;
 }
 
+/**
+ * The same URL, but marked as a deliberate choice of language.
+ *
+ * The root page sends a visitor to their own language on a first visit, so a
+ * plain link back to English would bounce straight back here. `?hl=` says "the
+ * reader picked this", which the redirect script records and then obeys
+ * forever. It rides on the URL rather than on a click handler so that it still
+ * works with no JavaScript, and every page carries a query-free canonical so
+ * the parameter never reaches an index.
+ */
+export function chosenLangUrl(lang, page) {
+  return `${pageUrl(lang, page)}?hl=${lang}`;
+}
+
+/**
+ * Sends a first-time visitor to their own language, once, from the root only.
+ *
+ * Runs inline and synchronously in <head> so the English page never paints
+ * before the redirect. It goes on every page, because remembering a choice has
+ * to happen wherever the reader makes it — but it only ever *redirects* from
+ * the root. Deliberately narrow:
+ *
+ *  - privacy.html and support.html are the URLs both stores have on file, and
+ *    a reviewer opening one must land on exactly it, in the language they
+ *    asked for. Those pages record a choice and redirect no one.
+ *  - A reader who picks a language is obeyed from then on, via ?hl= and a
+ *    remembered flag. Without that, the English link would bounce a Spanish
+ *    browser straight back to /es/.
+ *  - Crawlers are left alone. Google asks for hreflang rather than redirects,
+ *    and hreflang is what tells it the other eight versions exist.
+ *  - replace(), not assign(), so Back leaves the site instead of ping-ponging.
+ */
+export function redirectScript(langs) {
+  const others = langs.filter((l) => l !== 'en');
+  return `<script>(function(){try{
+var K='afinora.lang',u=new URL(location.href),q=u.searchParams.get('hl');
+if(q){try{localStorage.setItem(K,q);}catch(e){}
+u.searchParams.delete('hl');history.replaceState(null,'',u.pathname+u.search+u.hash);return;}
+if(u.pathname!=='/'&&u.pathname!=='/index.html')return;
+try{if(localStorage.getItem(K))return;}catch(e){}
+if(/bot|crawl|spider|slurp|bingpreview|duckduckgo|baidu|yandex|lighthouse/i.test(navigator.userAgent))return;
+var S=${JSON.stringify(others)},L=navigator.languages||[navigator.language||'en'];
+for(var i=0;i<L.length;i++){var c=String(L[i]).toLowerCase().split('-')[0];
+if(c==='en')return;
+if(S.indexOf(c)>-1){location.replace('/'+c+'/');return;}}
+}catch(e){}})();</script>`;
+}
+
 /** A link from one page to another within the same language. */
 export function rel(lang, from, to) {
   const target = pageUrl(lang, to);
@@ -120,6 +168,7 @@ function head({ lang, page, t, langs, strings }) {
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
   <link rel="stylesheet" href="/assets/css/site.css">${jsonLd}
   <script>window.AFINORA_I18N=${JSON.stringify(strings)};</script>
+  ${redirectScript(langs)}
 </head>`;
 }
 
@@ -127,7 +176,7 @@ function header({ lang, page, t, langs, langNames }) {
   const others = langs
     .map((l) => (l === lang
       ? `<span class="current">${esc(langNames[l])}</span>`
-      : `<a href="${pageUrl(l, page)}" hreflang="${l}" lang="${l}">${esc(langNames[l])}</a>`))
+      : `<a href="${chosenLangUrl(l, page)}" hreflang="${l}" lang="${l}">${esc(langNames[l])}</a>`))
     .join('\n        ');
 
   return `<header class="site-header">
@@ -153,7 +202,7 @@ function footer({ lang, page, t, langs, langNames }) {
   const instruments = t('footer.seo');
   const otherLangs = langs
     .filter((l) => l !== lang)
-    .map((l) => `<li><a href="${pageUrl(l, page)}" hreflang="${l}" lang="${l}">${esc(langNames[l])}</a></li>`)
+    .map((l) => `<li><a href="${chosenLangUrl(l, page)}" hreflang="${l}" lang="${l}">${esc(langNames[l])}</a></li>`)
     .join('\n          ');
 
   return `<footer class="site-footer">
