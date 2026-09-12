@@ -321,10 +321,24 @@ p { margin: 0; text-wrap: pretty; }
 
 .store-btn {
   display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 11px 22px;
+  border-radius: 10px;
+}
+
+.store-lines {
+  display: flex;
   flex-direction: column;
   gap: 2px;
-  padding: 13px 26px;
-  border-radius: 10px;
+}
+
+/* Sized to the cap height of the label beside it, so the glyph reads as part of
+   the type rather than as a picture stuck next to it. */
+.store-glyph {
+  width: 26px;
+  height: 26px;
+  flex: 0 0 auto;
 }
 .store-btn .top {
   font: 400 10.5px/1 var(--mono);

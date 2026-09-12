@@ -2,7 +2,9 @@
   "index": {
     "title": "Afinora — Guitar tuner, metronome and technique training for string instruments",
     "description": "A guitar tuner that also trains you. Real-time pitch detection for ten instruments, a metronome, scales and chords on your own neck, and training that grades every note you play. Works with a USB audio interface. No account, no ads.",
-    "pricing": { "freeBody": "One instrument, major and minor scales, the full metronome, five recordings." }
+    "pricing": {
+      "freeBody": "One instrument, major and minor scales, the full metronome, five recordings."
+    }
   },
   "support": {
     "title": "Support — Afinora",
@@ -168,20 +170,41 @@
     "body": "Real-time pitch detection for ten instruments, a metronome, scales and chords drawn on your own neck, and training that listens as you play and grades every note separately. It all runs on the device, with no account.",
     "getItOn": "Get it on",
     "downloadOn": "Download on",
-    "fine": "No account · no ads · audio never leaves the phone"
+    "fine": "No account · no ads · audio never leaves the phone",
+    "newTab": "opens in a new tab"
   },
   "stats": [
-    { "figure": "10", "label": "Instruments" },
-    { "figure": "30+", "label": "Tunings" },
-    { "figure": "432–442", "label": "Reference Hz" },
-    { "figure": "9", "label": "Languages" }
+    {
+      "figure": "10",
+      "label": "Instruments"
+    },
+    {
+      "figure": "30+",
+      "label": "Tunings"
+    },
+    {
+      "figure": "432–442",
+      "label": "Reference Hz"
+    },
+    {
+      "figure": "9",
+      "label": "Languages"
+    }
   ],
   "instruments": {
     "heading": "Ten instruments, with their tunings",
     "body": "Its own strings, its own alternate tunings, and its neck drawn with the frets it has — or without them.",
     "list": [
-      "Guitar", "7-string guitar", "Bass", "Ukulele", "Venezuelan cuatro",
-      "Violin", "Viola", "Cello", "Mandolin", "Banjo"
+      "Guitar",
+      "7-string guitar",
+      "Bass",
+      "Ukulele",
+      "Venezuelan cuatro",
+      "Violin",
+      "Viola",
+      "Cello",
+      "Mandolin",
+      "Banjo"
     ]
   },
   "technique": {
@@ -283,7 +306,13 @@
     "instrumentsHeading": "Instruments",
     "helpHeading": "Help",
     "made": "Made for people who practise",
-    "seo": ["Guitar tuner", "Bass tuner", "Ukulele tuner", "Violin tuner", "Cuatro tuner"]
+    "seo": [
+      "Guitar tuner",
+      "Bass tuner",
+      "Ukulele tuner",
+      "Violin tuner",
+      "Cuatro tuner"
+    ]
   },
   "ui": {
     "tabTune": "Tune",

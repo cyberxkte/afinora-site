@@ -8,15 +8,55 @@
 
 import { esc, page, rel, PLAY_URL, APPLE_URL, MARK } from '../layout.mjs';
 
+/*
+ * The two store glyphs.
+ *
+ * Both are trademarks, used here to say where the app can be had — which is
+ * what they are for. Apple's and Google's brand guidelines would rather you
+ * used their own ready-made badges; those are images in their own styling and
+ * would sit oddly against these buttons, so the glyph goes inside the site's
+ * button instead, the way most product sites do it. If cast-iron compliance
+ * ever matters more than the look, swap in the official badge images.
+ */
+const PLAY_GLYPH = `<svg class="store-glyph" viewBox="0 0 512 512" aria-hidden="true" focusable="false">
+      <path fill="#00C3FF" d="M47.6 1.2C41.7 7.4 38.2 17.1 38.2 29.6v452.8c0 12.5 3.5 22.2 9.4 28.4l1.5 1.5 253.7-253.7v-6L49.1-.3z"/>
+      <path fill="#FFCE00" d="M387 341.3l-84.6-84.7v-6l84.7-84.7 1.9 1.1 100.3 57c28.6 16.3 28.6 42.9 0 59.2l-100.3 57z"/>
+      <path fill="#FF3A44" d="M388.9 340.1L302.4 253.6 47.6 508.4c9.4 10 25 11.2 42.6 1.2z"/>
+      <path fill="#00D26A" d="M388.9 167.1L90.2-2.4C72.6-12.4 57-11.2 47.6-1.2l254.8 254.8z"/>
+    </svg>`;
+
+const APPLE_GLYPH = `<svg class="store-glyph" viewBox="0 0 384 512" aria-hidden="true" focusable="false">
+      <path fill="currentColor" d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"/>
+    </svg>`;
+
+/*
+ * Store links open in a new tab.
+ *
+ * A reader who taps one has not finished with this page — they are checking a
+ * price or a screenshot — and sending them away means losing whatever they were
+ * reading. `noopener` is what stops the opened page from reaching back into
+ * this one through window.opener.
+ *
+ * The new tab is announced to screen readers: arriving somewhere else with no
+ * warning and no way back is disorienting when you cannot see the tab strip.
+ */
 function storeButtons(t, className = '') {
   return `<div class="store-row${className ? ' ' + className : ''}">
-      <a class="store-btn play" href="${PLAY_URL}" rel="noopener">
-        <span class="top">${esc(t('hero.getItOn'))}</span>
-        <span class="name">Google Play</span>
+      <a class="store-btn play" href="${PLAY_URL}" target="_blank" rel="noopener noreferrer">
+        ${PLAY_GLYPH}
+        <span class="store-lines">
+          <span class="top">${esc(t('hero.getItOn'))}</span>
+          <span class="name">Google Play</span>
+        </span>
+        <span class="sr-only">${esc(t('hero.newTab'))}</span>
       </a>
-      <a class="store-btn apple" href="${APPLE_URL}" rel="noopener">
-        <span class="top">${esc(t('hero.downloadOn'))}</span>
-        <span class="name">App Store</span>
+      <a class="store-btn apple" href="${APPLE_URL}" target="_blank" rel="noopener noreferrer">
+        ${APPLE_GLYPH}
+        <span class="store-lines">
+          <span class="top">${esc(t('hero.downloadOn'))}</span>
+          <span class="name">App Store</span>
+        </span>
+        <span class="sr-only">${esc(t('hero.newTab'))}</span>
       </a>
     </div>`;
 }

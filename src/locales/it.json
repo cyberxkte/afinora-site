@@ -2,7 +2,9 @@
   "index": {
     "title": "Afinora — Accordatore per chitarra, metronomo e allenamento tecnico per strumenti a corda",
     "description": "Un accordatore per chitarra che ti allena anche. Rilevamento dell'intonazione in tempo reale per dieci strumenti, metronomo, scale e accordi sul tuo manico, e allenamento che valuta ogni nota che suoni. Funziona con un'interfaccia audio USB. Senza account e senza pubblicità.",
-    "pricing": { "freeBody": "Uno strumento, scale maggiore e minore, il metronomo completo, cinque registrazioni." }
+    "pricing": {
+      "freeBody": "Uno strumento, scale maggiore e minore, il metronomo completo, cinque registrazioni."
+    }
   },
   "support": {
     "title": "Assistenza — Afinora",
@@ -168,20 +170,41 @@
     "body": "Rilevamento dell'intonazione in tempo reale per dieci strumenti, un metronomo, scale e accordi disegnati sul tuo manico, e allenamento che ascolta mentre suoni e valuta ogni nota separatamente. Funziona tutto sul dispositivo, senza account.",
     "getItOn": "Disponibile su",
     "downloadOn": "Scaricala su",
-    "fine": "Senza account · senza pubblicità · l'audio non lascia mai il telefono"
+    "fine": "Senza account · senza pubblicità · l'audio non lascia mai il telefono",
+    "newTab": "si apre in una nuova scheda"
   },
   "stats": [
-    { "figure": "10", "label": "Strumenti" },
-    { "figure": "30+", "label": "Accordature" },
-    { "figure": "432–442", "label": "Hz di riferimento" },
-    { "figure": "9", "label": "Lingue" }
+    {
+      "figure": "10",
+      "label": "Strumenti"
+    },
+    {
+      "figure": "30+",
+      "label": "Accordature"
+    },
+    {
+      "figure": "432–442",
+      "label": "Hz di riferimento"
+    },
+    {
+      "figure": "9",
+      "label": "Lingue"
+    }
   ],
   "instruments": {
     "heading": "Dieci strumenti, con le loro accordature",
     "body": "Le sue corde, le sue accordature alternative e il suo manico disegnato con i tasti che ha, o senza.",
     "list": [
-      "Chitarra", "Chitarra a 7 corde", "Basso", "Ukulele", "Cuatro venezuelano",
-      "Violino", "Viola", "Violoncello", "Mandolino", "Banjo"
+      "Chitarra",
+      "Chitarra a 7 corde",
+      "Basso",
+      "Ukulele",
+      "Cuatro venezuelano",
+      "Violino",
+      "Viola",
+      "Violoncello",
+      "Mandolino",
+      "Banjo"
     ]
   },
   "technique": {
@@ -283,7 +306,13 @@
     "instrumentsHeading": "Strumenti",
     "helpHeading": "Aiuto",
     "made": "Fatta per chi si esercita",
-    "seo": ["Accordatore chitarra", "Accordatore basso", "Accordatore ukulele", "Accordatore violino", "Accordatore cuatro"]
+    "seo": [
+      "Accordatore chitarra",
+      "Accordatore basso",
+      "Accordatore ukulele",
+      "Accordatore violino",
+      "Accordatore cuatro"
+    ]
   },
   "ui": {
     "tabTune": "Accorda",

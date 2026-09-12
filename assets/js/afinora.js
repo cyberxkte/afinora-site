@@ -138,7 +138,17 @@
     };
     var inst = INSTRUMENTS[kind] || INSTRUMENTS.guitar;
     var STRINGS = inst.strings;
-    var CYCLE = 5.2;
+    /*
+     * Seconds per string.
+     *
+     * Was 5.2, which left the needle sitting inside 48-52% for well over two
+     * seconds of every cycle — true to a real tuner holding a string in tune,
+     * but on a web page it reads as a frozen animation rather than a settled
+     * one. Shorter cycle, earlier release and a slightly livelier residual
+     * wobble: the gesture is the same, it just does not dwell.
+     */
+    var CYCLE = 3.6;
+    var RELEASE = 0.8;      // where the string is let go and the next is picked
 
     var root = el('div', 'position:relative;background:#0a0a0a;padding:18px 16px 12px;'
       + 'display:flex;flex-direction:column;gap:14px;height:100%;box-sizing:border-box;'
@@ -239,8 +249,11 @@
       var s = STRINGS[idx];
 
       var ease = p < 0.62 ? 1 - Math.pow(1 - p / 0.62, 2.4) : 1;
-      var cents = -38 * (1 - ease) + Math.sin(secs * 7.5) * (1.6 + 5 * (1 - ease));
-      if (p > 0.9) cents = cents * (1 - (p - 0.9) / 0.1) - 41 * ((p - 0.9) / 0.1);
+      var cents = -38 * (1 - ease) + Math.sin(secs * 7.5) * (2.4 + 5 * (1 - ease));
+      if (p > RELEASE) {
+        var out = (p - RELEASE) / (1 - RELEASE);
+        cents = cents * (1 - out) - 41 * out;
+      }
       var abs = Math.abs(cents);
 
       var zone = abs <= 4.5 ? 0 : abs <= 19 ? 1 : 2;

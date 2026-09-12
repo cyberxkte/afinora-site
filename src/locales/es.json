@@ -2,7 +2,9 @@
   "index": {
     "title": "Afinora — Afinador de guitarra, metrónomo y entrenamiento técnico para instrumentos de cuerda",
     "description": "Un afinador de guitarra que además te entrena. Detección de tono en tiempo real para diez instrumentos, metrónomo, escalas y acordes sobre tu propio mástil, y entrenamiento que califica cada nota que tocas. Funciona con interfaz de audio USB. Sin cuenta y sin anuncios.",
-    "pricing": { "freeBody": "Un instrumento, escalas mayor y menor, el metrónomo completo, cinco grabaciones." }
+    "pricing": {
+      "freeBody": "Un instrumento, escalas mayor y menor, el metrónomo completo, cinco grabaciones."
+    }
   },
   "support": {
     "title": "Soporte — Afinora",
@@ -168,20 +170,41 @@
     "body": "Detección de tono en tiempo real para diez instrumentos, un metrónomo, escalas y acordes dibujados sobre tu propio mástil, y entrenamiento que escucha mientras tocas y califica cada nota por separado. Todo funciona en el dispositivo, sin cuenta.",
     "getItOn": "Disponible en",
     "downloadOn": "Descárgala en",
-    "fine": "Sin cuenta · sin anuncios · el audio nunca sale del teléfono"
+    "fine": "Sin cuenta · sin anuncios · el audio nunca sale del teléfono",
+    "newTab": "se abre en una pestaña nueva"
   },
   "stats": [
-    { "figure": "10", "label": "Instrumentos" },
-    { "figure": "30+", "label": "Afinaciones" },
-    { "figure": "432–442", "label": "Hz de referencia" },
-    { "figure": "9", "label": "Idiomas" }
+    {
+      "figure": "10",
+      "label": "Instrumentos"
+    },
+    {
+      "figure": "30+",
+      "label": "Afinaciones"
+    },
+    {
+      "figure": "432–442",
+      "label": "Hz de referencia"
+    },
+    {
+      "figure": "9",
+      "label": "Idiomas"
+    }
   ],
   "instruments": {
     "heading": "Diez instrumentos, con sus afinaciones",
     "body": "Sus propias cuerdas, sus propias afinaciones alternativas y su mástil dibujado con los trastes que tiene, o sin ellos.",
     "list": [
-      "Guitarra", "Guitarra de 7 cuerdas", "Bajo", "Ukelele", "Cuatro venezolano",
-      "Violín", "Viola", "Violonchelo", "Mandolina", "Banjo"
+      "Guitarra",
+      "Guitarra de 7 cuerdas",
+      "Bajo",
+      "Ukelele",
+      "Cuatro venezolano",
+      "Violín",
+      "Viola",
+      "Violonchelo",
+      "Mandolina",
+      "Banjo"
     ]
   },
   "technique": {
@@ -283,7 +306,13 @@
     "instrumentsHeading": "Instrumentos",
     "helpHeading": "Ayuda",
     "made": "Hecha para quien practica",
-    "seo": ["Afinador de guitarra", "Afinador de bajo", "Afinador de ukelele", "Afinador de violín", "Afinador de cuatro"]
+    "seo": [
+      "Afinador de guitarra",
+      "Afinador de bajo",
+      "Afinador de ukelele",
+      "Afinador de violín",
+      "Afinador de cuatro"
+    ]
   },
   "ui": {
     "tabTune": "Afinar",

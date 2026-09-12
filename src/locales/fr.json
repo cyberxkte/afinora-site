@@ -2,7 +2,9 @@
   "index": {
     "title": "Afinora — Accordeur de guitare, métronome et entraînement technique pour instruments à cordes",
     "description": "Un accordeur de guitare qui vous entraîne aussi. Détection de hauteur en temps réel pour dix instruments, métronome, gammes et accords sur votre propre manche, et un entraînement qui note chaque note que vous jouez. Fonctionne avec une interface audio USB. Sans compte ni publicité.",
-    "pricing": { "freeBody": "Un instrument, gammes majeure et mineure, le métronome complet, cinq enregistrements." }
+    "pricing": {
+      "freeBody": "Un instrument, gammes majeure et mineure, le métronome complet, cinq enregistrements."
+    }
   },
   "support": {
     "title": "Assistance — Afinora",
@@ -168,20 +170,41 @@
     "body": "Détection de hauteur en temps réel pour dix instruments, un métronome, des gammes et des accords dessinés sur votre propre manche, et un entraînement qui écoute pendant que vous jouez et note chaque note séparément. Tout tourne sur l'appareil, sans compte.",
     "getItOn": "Disponible sur",
     "downloadOn": "Télécharger sur",
-    "fine": "Sans compte · sans publicité · l'audio ne quitte jamais le téléphone"
+    "fine": "Sans compte · sans publicité · l'audio ne quitte jamais le téléphone",
+    "newTab": "ouvre un nouvel onglet"
   },
   "stats": [
-    { "figure": "10", "label": "Instruments" },
-    { "figure": "30+", "label": "Accordages" },
-    { "figure": "432–442", "label": "Hz de référence" },
-    { "figure": "9", "label": "Langues" }
+    {
+      "figure": "10",
+      "label": "Instruments"
+    },
+    {
+      "figure": "30+",
+      "label": "Accordages"
+    },
+    {
+      "figure": "432–442",
+      "label": "Hz de référence"
+    },
+    {
+      "figure": "9",
+      "label": "Langues"
+    }
   ],
   "instruments": {
     "heading": "Dix instruments, avec leurs accordages",
     "body": "Ses propres cordes, ses propres accordages alternatifs et son manche dessiné avec les frettes qu'il a — ou sans.",
     "list": [
-      "Guitare", "Guitare 7 cordes", "Basse", "Ukulélé", "Cuatro vénézuélien",
-      "Violon", "Alto", "Violoncelle", "Mandoline", "Banjo"
+      "Guitare",
+      "Guitare 7 cordes",
+      "Basse",
+      "Ukulélé",
+      "Cuatro vénézuélien",
+      "Violon",
+      "Alto",
+      "Violoncelle",
+      "Mandoline",
+      "Banjo"
     ]
   },
   "technique": {
@@ -283,7 +306,13 @@
     "instrumentsHeading": "Instruments",
     "helpHeading": "Aide",
     "made": "Faite pour ceux qui travaillent leur instrument",
-    "seo": ["Accordeur guitare", "Accordeur basse", "Accordeur ukulélé", "Accordeur violon", "Accordeur cuatro"]
+    "seo": [
+      "Accordeur guitare",
+      "Accordeur basse",
+      "Accordeur ukulélé",
+      "Accordeur violon",
+      "Accordeur cuatro"
+    ]
   },
   "ui": {
     "tabTune": "Accorder",
