@@ -167,7 +167,7 @@
   "hero": {
     "eyebrow": "Per chitarra, basso, ukulele, cuatro venezuelano, violino e violoncello",
     "heading": "Un accordatore, un metronomo e un allenatore che ascolta come suoni.",
-    "body": "Rileva l'intonazione in tempo reale su dieci strumenti, un metronomo, scale e accordi disegnati sul tuo manico, e un allenamento che ti ascolta suonare e valuta ogni nota una per una. Gira tutto sul telefono, senza account.",
+    "body": "Rileva l'intonazione in tempo reale su dieci strumenti. Porta un metronomo, scale e accordi disegnati sul tuo manico, e un allenamento che ti ascolta suonare e valuta ogni nota una per una. Gira tutto sul telefono, senza account.",
     "getItOn": "Disponibile su",
     "downloadOn": "Scaricala su",
     "fine": "Senza account · senza pubblicità · l'audio non lascia mai il telefono",
@@ -193,7 +193,7 @@
   ],
   "instruments": {
     "heading": "Dieci strumenti, con le loro accordature",
-    "body": "Ognuno con le sue corde, le sue accordature alternative e il manico disegnato con i tasti che ha davvero, o senza nessuno.",
+    "body": "Ognuno con le sue corde, le sue accordature alternative e il manico disegnato con i tasti che ha davvero, o senza tasti se non ne ha.",
     "list": [
       "Chitarra",
       "Chitarra a 7 corde",
@@ -210,17 +210,17 @@
   "technique": {
     "eyebrow": "Allenamento tecnico",
     "heading": "Ti ascolta suonare e valuta intonazione e tempo di ogni nota",
-    "body": "Scegli una scala, imposti un tempo e la suoni sul metronomo. Il rilevatore ascolta e valuta ogni nota appena la suoni: intonata e a tempo, in ritardo, oppure non rilevata. Intonazione e tempo si misurano separatamente, così alla fine sai esattamente quali note riprendere invece di andare a intuito. Le note scorrono lungo il manico con un colore per dito e una corsia per corda, e tu le suoni sullo strumento.",
+    "body": "Scegli una scala, imposti un tempo e la suoni sul metronomo. Il rilevatore ascolta e valuta ogni nota appena la suoni: in centro al tempo, in ritardo, oppure non suonata. Intonazione e tempo si misurano separatamente, così alla fine sai esattamente quali note riprendere invece di andare a intuito. Le note scorrono lungo il manico con un colore per dito e una corsia per corda, e tu le suoni sullo strumento.",
     "legendPerfect": "In centro al tempo",
-    "legendHit": "Suonata, ma fuori tempo",
-    "legendMiss": "Non è arrivata",
+    "legendHit": "Suonata, ma in ritardo",
+    "legendMiss": "Non è suonata",
     "points": [
       {
         "heading": "Usa i tuoi esercizi",
         "body": "Trovi pattern di scala già pronti, oppure incolli i tuoi come testo e Afinora li trasforma in un percorso."
       },
       {
-        "heading": "Il tempo sale da solo",
+        "heading": "Il tempo si regola da solo",
         "body": "Il loop accelera finché gli stai dietro e abbassa il tempo non appena fai fatica."
       },
       {
@@ -247,8 +247,8 @@
     },
     "studio": {
       "eyebrow": "04 · Studio",
-      "heading": "Registrati mentre suoni sulla base",
-      "body": "Carichi una base, segni il punto che ti dà filo da torcere, lo metti in loop e lo rallenti. Ti registri sopra in audio o in video, salvi nella galleria o condividi. Le registrazioni sono file sul tuo telefono: l’app non le carica da nessuna parte."
+      "heading": "Registrati mentre suoni sulla base musicale",
+      "body": "Carichi una base musicale, segni il punto che ti dà filo da torcere, lo metti in loop e lo rallenti. Ti registri sopra in audio o in video, salvi nella galleria o condividi. Le registrazioni sono file sul tuo telefono: l’app non le carica da nessuna parte."
     },
     "ear": {
       "eyebrow": "05 · Allenamento dell'orecchio",
@@ -261,7 +261,7 @@
     }
   },
   "listens": {
-    "eyebrow": "Come ascolta",
+    "eyebrow": "Ingresso audio",
     "heading": "Come ti ascolta Afinora",
     "body": "Valutare nota per nota funziona solo se il segnale che entra è pulito. Questi sono i tre casi: guarda qual è il tuo.",
     "acoustic": {
@@ -338,7 +338,7 @@
     "scalesTab": "Scale",
     "chordsTab": "Accordi",
     "scaleDegrees": "7 note",
-    "fretboard": "Tastiera",
+    "fretboard": "Manico",
     "frets": "tasti",
     "notesTab": "Note",
     "degreesTab": "Gradi",
@@ -348,9 +348,9 @@
     "audioChip": "AUDIO",
     "videoChip": "VIDEO",
     "inputLevel": "Livello d'ingresso",
-    "backingTrack": "Base",
+    "backingTrack": "Base musicale",
     "loopChip": "Loop",
-    "autosaveChip": "Salvataggio auto",
+    "autosaveChip": "Autosalvataggio",
     "speedUpChip": "+5% di velocità a ogni giro",
     "shoutPerfect": "PERFETTO!",
     "shoutGood": "BENE!",

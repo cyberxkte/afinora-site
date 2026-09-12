@@ -53,7 +53,7 @@
     "heading": "Política de Privacidad de Afinora",
     "effective": "Fecha de entrada en vigor: 30 de agosto de 2026",
     "summary": "La versión corta: Afinora no tiene cuenta, ni publicidad, ni analítica, y no hace peticiones de red propias salvo para gestionar una compra. Todo lo que tocas, grabas o configuras se queda en tu dispositivo salvo que lo compartas tú.",
-    "intro": "Afinora es una aplicación de estudio para instrumentos de cuerda: un afinador, un metrónomo, una referencia de escalas y acordes, entrenamiento auditivo y técnico, y un grabador para tocar sobre pistas de acompañamiento. Esta política explica cómo trata los datos la aplicación.",
+    "intro": "Afinora es una aplicación de estudio para instrumentos de cuerda: un afinador, un metrónomo, una referencia de escalas y acordes, entrenamiento auditivo y técnico, y un grabador para tocar sobre pistas de fondo. Esta política explica cómo trata los datos la aplicación.",
     "contactHeading": "Contacto",
     "contactBody": "Para consultas de privacidad o soporte, escribe a:",
     "translationNote": "Esta traducción se ofrece por comodidad. En caso de discrepancia, prevalece la versión en inglés de esta política.",
@@ -62,7 +62,7 @@
         "heading": "Recopilación de datos",
         "paragraphs": [
           "Afinora no requiere una cuenta y no recopila información personal.",
-          "Afinora no tiene servidores. No envía a ninguna parte tu audio, tus grabaciones, tus pistas de acompañamiento, tus ajustes ni tu historial de práctica."
+          "Afinora no tiene servidores. No envía a ninguna parte tu audio, tus grabaciones, tus pistas de fondo, tus ajustes ni tu historial de práctica."
         ]
       },
       {
@@ -73,26 +73,26 @@
         ],
         "ordered": true,
         "list": [
-          "<strong>Detección de tono y de tiempo</strong>, en el afinador y en el entrenamiento auditivo y técnico. Este audio se analiza en el dispositivo según llega y nunca se escribe en un archivo, ni se conserva, sube, vende o comparte. No sobrevive nada de él al momento en que se analiza.",
+          "<strong>Detección de afinación y de tiempo</strong>, en el afinador y en el entrenamiento auditivo y técnico. Este audio se analiza en el dispositivo según llega y nunca se escribe en un archivo, ni se conserva, sube, vende o comparte. No sobrevive nada de él al momento en que se analiza.",
           "<strong>Grabación en Estudio</strong>, cuando pulsas grabar. Este audio sí se escribe en un archivo de tu dispositivo, porque una grabación es justamente el propósito. No se sube."
         ]
       },
       {
         "heading": "Cámara",
         "paragraphs": [
-          "Afinora solicita acceso a la cámara solo para Estudio, y solo mientras una toma está configurada como vídeo. La cámara se usa para grabar la toma que has pedido. No se sube ningún fotograma, y Afinora nunca usa la cámara fuera de Estudio."
+          "Afinora solicita acceso a la cámara solo para Estudio, y solo mientras una toma está configurada como video. La cámara se usa para grabar la toma que has pedido. No se sube ningún fotograma, y Afinora nunca usa la cámara fuera de Estudio."
         ]
       },
       {
-        "heading": "Fotos y vídeos",
+        "heading": "Fotos y videos",
         "paragraphs": [
-          "Afinora pide acceso de solo escritura a tu galería, y lo pide únicamente en el momento en que guardas una toma de Estudio en ella. Afinora no lee, explora, indexa ni escanea tus fotos o vídeos existentes. El permiso de solo escritura es el que la aplicación solicita, no una simple promesa sobre su comportamiento."
+          "Afinora pide acceso de solo escritura a tu galería, y lo pide únicamente en el momento en que guardas una toma de Estudio en ella. Afinora no lee, explora, indexa ni escanea tus fotos o videos existentes. El permiso de solo escritura es el que la aplicación solicita, no una simple promesa sobre su comportamiento."
         ]
       },
       {
-        "heading": "Pistas de acompañamiento y archivos",
+        "heading": "Pistas de fondo y archivos",
         "paragraphs": [
-          "Cuando importas una pista de acompañamiento, eliges el archivo tú mismo mediante el selector de archivos de tu dispositivo. Afinora lo copia a su propia carpeta para poder recordar la sección que marcaste en él, y no lee nada más de tu almacenamiento. Las pistas importadas no se suben, y las copias a las que ya no apunta ninguna pista de tu lista se eliminan automáticamente."
+          "Cuando importas una pista de fondo, eliges el archivo tú mismo mediante el selector de archivos de tu dispositivo. Afinora lo copia a su propia carpeta para poder recordar la sección que marcaste en él, y no lee nada más de tu almacenamiento. Las pistas importadas no se suben, y las copias a las que ya no apunta ninguna pista de tu lista se eliminan automáticamente."
         ]
       },
       {
@@ -167,7 +167,7 @@
   "hero": {
     "eyebrow": "Para guitarra, bajo, ukelele, cuatro venezolano, violín y violonchelo",
     "heading": "Un afinador, un metrónomo y un entrenador que escucha cómo tocas.",
-    "body": "Detecta la afinación en tiempo real en diez instrumentos, metrónomo, escalas y acordes dibujados en tu propio mástil, y un entrenamiento que te escucha tocar y puntúa cada nota por separado. Todo ocurre en el teléfono, sin cuenta.",
+    "body": "Detecta la afinación en tiempo real en diez instrumentos. Trae metrónomo, escalas y acordes dibujados en tu propio mástil, y un entrenamiento que te escucha tocar y puntúa cada nota por separado. Todo ocurre en el teléfono, sin cuenta.",
     "getItOn": "Disponible en",
     "downloadOn": "Descárgalo en el",
     "fine": "Sin cuenta · sin anuncios · el audio nunca sale del teléfono",
@@ -193,7 +193,7 @@
   ],
   "instruments": {
     "heading": "Diez instrumentos, con sus afinaciones",
-    "body": "Cada uno con sus cuerdas, sus afinaciones alternativas y su mástil dibujado con los trastes que tiene de verdad, o sin ninguno.",
+    "body": "Cada uno con sus cuerdas, sus afinaciones alternativas y su mástil dibujado con los trastes que tiene de verdad, o sin trastes si no los lleva.",
     "list": [
       "Guitarra",
       "Guitarra de 7 cuerdas",
@@ -210,9 +210,9 @@
   "technique": {
     "eyebrow": "Entrenamiento técnico",
     "heading": "Te escucha tocar y puntúa la afinación y el ritmo de cada nota",
-    "body": "Eliges una escala, pones un tempo y la tocas con el metrónomo. El detector escucha y puntúa cada nota por separado según suena: afinada y a tiempo, tarde, o no ha sonado. La afinación y el ritmo se miden por separado, así que al terminar sabes exactamente qué notas trabajar en vez de intuirlo. Las notas avanzan por el mástil con un color por dedo y un carril por cuerda, y tú las tocas en el instrumento.",
+    "body": "Eliges una escala, pones un tempo y la tocas con el metrónomo. El detector escucha y puntúa cada nota por separado según suena: clavada en el pulso, tarde, o no llegó a sonar. La afinación y el ritmo se miden por separado, así que al terminar sabes exactamente qué notas trabajar en vez de intuirlo. Las notas avanzan por el mástil con un color por dedo y un carril por cuerda, y tú las tocas en el instrumento.",
     "legendPerfect": "Clavada en el pulso",
-    "legendHit": "Sonó, pero se fue de tiempo",
+    "legendHit": "Sonó, pero tarde",
     "legendMiss": "No llegó a sonar",
     "points": [
       {
@@ -220,7 +220,7 @@
         "body": "Trae patrones de escala ya hechos, o pega los tuyos en texto y Afinora los convierte en un recorrido."
       },
       {
-        "heading": "El tempo sube automáticamente",
+        "heading": "El tempo se ajusta solo",
         "body": "El bucle va acelerando mientras le sigues el ritmo, y baja el tempo en cuanto te cuesta."
       },
       {
@@ -243,12 +243,12 @@
     "metronome": {
       "eyebrow": "03 · Metrónomo",
       "heading": "Pon el tempo, elige el compás y toca",
-      "body": "¿No sabes a cuántos va? Márcalo con el dedo y Afinora lo calcula. De 30 a 300 BPM, compases de 2/4 a 12/8 y subdivisiones hasta semicorcheas, que es lo que salva en los tempos lentos, donde lo que te descoloca es el hueco entre pulso y pulso. Toca cualquier pulso del compás para acentuarlo o silenciarlo. Es el mismo clic con el que el entrenamiento mide tu ritmo, y viene entero en la versión gratuita."
+      "body": "¿No sabes a cuántos va? Márcalo con el dedo y Afinora lo calcula. De 30 a 300 BPM, compases de 2/4 a 12/8 y subdivisiones hasta semicorcheas, que son las que salvan en los tempos lentos, donde lo que te descoloca es el hueco entre pulso y pulso. Toca cualquier pulso del compás para acentuarlo o silenciarlo. Es el mismo clic con el que el entrenamiento mide tu ritmo, y viene entero en la versión gratuita."
     },
     "studio": {
       "eyebrow": "04 · Estudio",
-      "heading": "Grábate tocando sobre la base",
-      "body": "Mete una base, marca el trozo que se te atraviesa, ponlo en bucle y bájale la velocidad. Grábate encima en audio o en vídeo, guárdalo en la galería o compártelo. Las grabaciones son archivos de tu teléfono: la aplicación no las sube a ningún sitio."
+      "heading": "Grábate tocando sobre la pista de fondo",
+      "body": "Importa una pista de fondo, marca el trozo que se te resiste, ponlo en bucle y bájale la velocidad. Grábate encima en audio o en video, guárdalo en la galería o compártelo. Las grabaciones son archivos de tu teléfono: la aplicación no las sube a ningún sitio."
     },
     "ear": {
       "eyebrow": "05 · Entrenamiento auditivo",
@@ -261,7 +261,7 @@
     }
   },
   "listens": {
-    "eyebrow": "Cómo escucha",
+    "eyebrow": "Entrada de audio",
     "heading": "Cómo te escucha Afinora",
     "body": "Puntuar nota a nota solo sale bien si la señal que entra es limpia. Estos son los tres casos; mira cuál es el tuyo.",
     "acoustic": {
@@ -292,7 +292,7 @@
     "freeBody": "Un instrumento, escalas mayor y menor, el metrónomo completo, cinco grabaciones.",
     "proHeading": "Pro · pago único",
     "proBody": "Los diez instrumentos, las veinte escalas y veinte acordes, el entrenamiento técnico completo y Estudio sin límites.",
-    "price": "9,99 € o 9,99 US$ en la mayoría de países",
+    "price": "9,99 € o 9,99 US$ en la mayoría de los países",
     "neverHeading": "Lo que no vas a encontrar",
     "neverBody": "Suscripciones, anuncios, cuentas, rastreo ni audio subido a un servidor."
   },
@@ -338,7 +338,7 @@
     "scalesTab": "Escalas",
     "chordsTab": "Acordes",
     "scaleDegrees": "7 notas",
-    "fretboard": "Diapasón",
+    "fretboard": "Mástil",
     "frets": "trastes",
     "notesTab": "Notas",
     "degreesTab": "Grados",
@@ -346,10 +346,10 @@
     "colourIsString": "Color = cuerda",
     "screenStudio": "Estudio",
     "audioChip": "AUDIO",
-    "videoChip": "VÍDEO",
+    "videoChip": "VIDEO",
     "inputLevel": "Nivel de entrada",
-    "backingTrack": "Base",
-    "loopChip": "Bucle",
+    "backingTrack": "Pista de fondo",
+    "loopChip": "Loop",
     "autosaveChip": "Autoguardado",
     "speedUpChip": "+5% de velocidad cada vuelta",
     "shoutPerfect": "¡PERFECTO!",

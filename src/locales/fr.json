@@ -193,7 +193,7 @@
   ],
   "instruments": {
     "heading": "Dix instruments, avec leurs accordages",
-    "body": "Chacun avec ses cordes, ses accordages alternatifs et son manche dessiné avec les frettes qu'il a vraiment, ou sans aucune.",
+    "body": "Chacun avec ses cordes, ses accordages alternatifs et son manche dessiné avec les frettes qu'il a vraiment, ou sans frettes du tout s'il n'en a pas.",
     "list": [
       "Guitare",
       "Guitare 7 cordes",
@@ -210,17 +210,17 @@
   "technique": {
     "eyebrow": "Entraînement technique",
     "heading": "Il vous écoute jouer et note la justesse et le placement de chaque note",
-    "body": "Vous choisissez une gamme, réglez un tempo et la jouez au métronome. Le détecteur écoute et note chaque note séparément dès qu'elle sonne : juste et à temps, en retard, ou pas détectée. La justesse et le placement se mesurent à part, donc à la fin vous savez exactement quelles notes retravailler au lieu de le deviner. Les notes défilent le long du manche avec une couleur par doigt et une voie par corde, et vous les jouez sur l'instrument.",
+    "body": "Vous choisissez une gamme, réglez un tempo et la jouez au métronome. Le détecteur écoute et note chaque note séparément dès qu'elle sonne : pile dans le temps, en retard, ou pas jouée. La justesse et le placement se mesurent à part, donc à la fin vous savez exactement quelles notes retravailler au lieu de le deviner. Les notes défilent le long du manche avec une couleur par doigt et une voie par corde, et vous les jouez sur l'instrument.",
     "legendPerfect": "Pile dans le temps",
-    "legendHit": "Jouée, mais à côté du temps",
-    "legendMiss": "Pas sortie",
+    "legendHit": "Jouée, mais en retard",
+    "legendMiss": "Pas jouée",
     "points": [
       {
         "heading": "Utilisez vos propres exercices",
         "body": "Des motifs de gammes tout prêts, ou collez les vôtres en texte et Afinora en fait un parcours."
       },
       {
-        "heading": "Le tempo monte tout seul",
+        "heading": "Le tempo se règle tout seul",
         "body": "La boucle accélère tant que vous suivez, et redescend dès que ça coince."
       },
       {
@@ -243,11 +243,11 @@
     "metronome": {
       "eyebrow": "03 · Métronome",
       "heading": "Réglez le tempo, choisissez la mesure et jouez",
-      "body": "Vous ne connaissez pas le BPM ? Tapez-le et Afinora le calcule. De 30 à 300 BPM, des mesures de 2/4 à 12/8, et des subdivisions jusqu'aux doubles croches — celles qui aident dans les tempos lents, où c'est l'espace entre les temps qui vous déstabilise. Touchez n'importe quel temps de la mesure pour l'accentuer ou le muter. C'est le même clic contre lequel l'entraînement technique mesure votre placement, et il est complet dans la version gratuite."
+      "body": "Vous ne connaissez pas le BPM ? Tapez-le et Afinora le calcule. De 30 à 300 BPM, des mesures de 2/4 à 12/8, et des subdivisions jusqu'aux doubles croches — celles qui aident dans les tempos lents, où c'est l'espace entre les temps qui vous déstabilise. Touchez n'importe quel temps de la mesure pour l'accentuer ou le muter. C'est le même clic sur lequel l'entraînement technique mesure votre placement, et il est complet dans la version gratuite."
     },
     "studio": {
       "eyebrow": "04 · Studio",
-      "heading": "Enregistrez-vous en jouant sur la bande",
+      "heading": "Enregistrez-vous en jouant sur la piste d'accompagnement",
       "body": "Importez une piste d'accompagnement, marquez le passage qui vous résiste, mettez-le en boucle et ralentissez-le. Enregistrez-vous par-dessus en audio ou en vidéo, sauvegardez dans votre galerie ou partagez. Les enregistrements sont des fichiers sur votre téléphone : l'application ne les envoie jamais."
     },
     "ear": {
@@ -261,7 +261,7 @@
     }
   },
   "listens": {
-    "eyebrow": "Comment il écoute",
+    "eyebrow": "Entrée audio",
     "heading": "Comment Afinora vous écoute",
     "body": "Noter note par note ne marche que si le signal qui entre est propre. Voici les trois cas : regardez lequel est le vôtre.",
     "acoustic": {
@@ -348,7 +348,7 @@
     "audioChip": "AUDIO",
     "videoChip": "VIDÉO",
     "inputLevel": "Niveau d'entrée",
-    "backingTrack": "Bande",
+    "backingTrack": "Piste d'accompagnement",
     "loopChip": "Boucle",
     "autosaveChip": "Sauvegarde auto",
     "speedUpChip": "+5% de vitesse à chaque tour",

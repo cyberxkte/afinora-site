@@ -32,8 +32,8 @@
   <meta name="twitter:image" content="https://afinora.app/brand/play-feature-graphic.png">
   <link rel="preload" href="/assets/fonts/space-grotesk-500-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="/assets/fonts/ibm-plex-sans-400-latin.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="stylesheet" href="/assets/css/fonts.css?v=eabaf2d7f9">
-  <link rel="stylesheet" href="/assets/css/site.css?v=1a4719505a">
+  <link rel="stylesheet" href="/assets/css/fonts.css?v=25dfc66ca5">
+  <link rel="stylesheet" href="/assets/css/site.css?v=2f86029419">
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"Afinora","applicationCategory":"MusicApplication","operatingSystem":"Android, iOS","description":"Tuner for guitar, bass, ukulele, Venezuelan cuatro, violin and more. Metronome, scales on your own neck, and training that grades every note. No account, no ads.","url":"https://afinora.app/","inLanguage":["en","es","it","fr","pt","de","ja","zh","ru"],"offers":{"@type":"Offer","price":"0","priceCurrency":"USD","description":"One instrument, major and minor scales, the full metronome, five recordings."},"author":{"@type":"Organization","name":"Afinora","url":"https://afinora.app/"}}</script>
   <script>window.AFINORA_I18N={"tabTune":"Tune","tabMetronome":"Metronome","tabScales":"Scales","tabTraining":"Training","tabStudio":"Studio","instGuitar":"Guitar","instViolin":"Violin","tunerStandard":"Standard","tunerInTune":"In tune","tunerFlat":"Flat","tunerSharp":"Sharp","tunerCentered":"Centered","tunerDetected":"Detected","tunerTarget":"Target","tunerCents":"Cents","screenMetronome":"Metronome","metroHint":"Tap a beat to accent or silence it","metroSubdivision":"Subdivision","metroSound":"Sound","screenScales":"Chords & Scales","scalesTab":"Scales","chordsTab":"Chords","scaleDegrees":"7 notes","fretboard":"Fretboard","frets":"frets","notesTab":"Notes","degreesTab":"Degrees","tonic":"Tonic","colourIsString":"Colour = string","screenStudio":"Studio","audioChip":"AUDIO","videoChip":"VIDEO","inputLevel":"Input level","backingTrack":"Backing track","loopChip":"Loop","autosaveChip":"Auto-save","speedUpChip":"+5% speed-up per loop","shoutPerfect":"PERFECT!","shoutGood":"GOOD!","shoutMiss":"MISS!","highwayAlt":"Afinora's note highway: notes travel along the neck and each one is graded as it crosses the cursor"};</script>
   <script>(function(){try{
@@ -185,14 +185,14 @@ if(S.indexOf(c)>-1){location.replace('/'+c+'/');return;}}
   <div class="wrap">
     <p class="eyebrow">Technique training</p>
     <h2 style="margin-top:14px">It listens as you play and grades every note for pitch and timing</h2>
-    <p class="lead" style="margin-top:20px">You pick a scale, set a tempo and play it against the metronome. The pitch detector listens and grades every note separately the moment it arrives: in tune and on time, late, or not detected. Pitch and timing are measured apart, so when you finish you know which specific notes to work on instead of guessing. The notes travel along the neck with one colour per finger and one lane per string, and you play them on the instrument.</p>
+    <p class="lead" style="margin-top:20px">You pick a scale, set a tempo and play it to the metronome. The detector listens and grades every note separately as it sounds: dead on the beat, played but late, or never sounded. Pitch and timing are measured apart, so when you finish you know which notes to work on instead of guessing. The notes travel along the neck with one colour per finger and one lane per string, and you play them on the instrument.</p>
 
     <div class="highway-card">
       <div data-mock="highway"></div>
       <div class="legend">
         <div><span class="dot" style="background:#5ee7f0"></span>Dead on the beat</div>
-        <div><span class="dot" style="background:#8fbf5a"></span>Played, but it slipped</div>
-        <div><span class="dot" style="background:#e0554a"></span>Never arrived</div>
+        <div><span class="dot" style="background:#8fbf5a"></span>Played, but late</div>
+        <div><span class="dot" style="background:#e0554a"></span>Never sounded</div>
       </div>
     </div>
 
@@ -202,7 +202,7 @@ if(S.indexOf(c)>-1){location.replace('/'+c+'/');return;}}
         <p class="small">Built-in scale patterns, or paste your own as plain text and Afinora turns it into a route.</p>
       </div>
       <div>
-        <h3>The tempo rises automatically</h3>
+        <h3>The tempo moves on its own</h3>
         <p class="small">The loop speeds up while you keep up and drops the tempo when you don't.</p>
       </div>
       <div>
@@ -281,7 +281,7 @@ if(S.indexOf(c)>-1){location.replace('/'+c+'/');return;}}
 
 <section class="listens" id="how-it-listens">
   <div class="wrap">
-    <p class="eyebrow">How it listens</p>
+    <p class="eyebrow">Audio input</p>
     <h2 class="sub-h2" style="margin-top:14px">How Afinora listens to your instrument</h2>
     <p class="lead" style="margin-top:16px">Grading note by note only works if the signal coming in is clean. These are the three cases, and which one applies to you.</p>
 
@@ -458,6 +458,6 @@ if(S.indexOf(c)>-1){location.replace('/'+c+'/');return;}}
     </div>
   </div>
 </footer>
-<script src="/assets/js/afinora.js?v=9918ba9582" defer></script>
+<script src="/assets/js/afinora.js?v=bf0a3dfb1c" defer></script>
 </body>
 </html>

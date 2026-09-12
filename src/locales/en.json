@@ -210,17 +210,17 @@
   "technique": {
     "eyebrow": "Technique training",
     "heading": "It listens as you play and grades every note for pitch and timing",
-    "body": "You pick a scale, set a tempo and play it against the metronome. The pitch detector listens and grades every note separately the moment it arrives: in tune and on time, late, or not detected. Pitch and timing are measured apart, so when you finish you know which specific notes to work on instead of guessing. The notes travel along the neck with one colour per finger and one lane per string, and you play them on the instrument.",
+    "body": "You pick a scale, set a tempo and play it to the metronome. The detector listens and grades every note separately as it sounds: dead on the beat, played but late, or never sounded. Pitch and timing are measured apart, so when you finish you know which notes to work on instead of guessing. The notes travel along the neck with one colour per finger and one lane per string, and you play them on the instrument.",
     "legendPerfect": "Dead on the beat",
-    "legendHit": "Played, but it slipped",
-    "legendMiss": "Never arrived",
+    "legendHit": "Played, but late",
+    "legendMiss": "Never sounded",
     "points": [
       {
         "heading": "Bring your own exercises",
         "body": "Built-in scale patterns, or paste your own as plain text and Afinora turns it into a route."
       },
       {
-        "heading": "The tempo rises automatically",
+        "heading": "The tempo moves on its own",
         "body": "The loop speeds up while you keep up and drops the tempo when you don't."
       },
       {
@@ -261,7 +261,7 @@
     }
   },
   "listens": {
-    "eyebrow": "How it listens",
+    "eyebrow": "Audio input",
     "heading": "How Afinora listens to your instrument",
     "body": "Grading note by note only works if the signal coming in is clean. These are the three cases, and which one applies to you.",
     "acoustic": {

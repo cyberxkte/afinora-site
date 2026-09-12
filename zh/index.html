@@ -32,8 +32,8 @@
   <meta name="twitter:image" content="https://afinora.app/brand/play-feature-graphic.png">
   <link rel="preload" href="/assets/fonts/space-grotesk-500-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="/assets/fonts/ibm-plex-sans-400-latin.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="stylesheet" href="/assets/css/fonts.css?v=eabaf2d7f9">
-  <link rel="stylesheet" href="/assets/css/site.css?v=1a4719505a">
+  <link rel="stylesheet" href="/assets/css/fonts.css?v=25dfc66ca5">
+  <link rel="stylesheet" href="/assets/css/site.css?v=2f86029419">
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"Afinora","applicationCategory":"MusicApplication","operatingSystem":"Android, iOS","description":"适用于吉他、贝斯、尤克里里、委内瑞拉四弦琴、小提琴等的调音器。节拍器、画在你指板上的音阶，以及为每个音评分的训练。无需账号，没有广告。","url":"https://afinora.app/","inLanguage":["en","es","it","fr","pt","de","ja","zh","ru"],"offers":{"@type":"Offer","price":"0","priceCurrency":"USD","description":"一种乐器、大调与小调音阶、完整的节拍器、五段录音。"},"author":{"@type":"Organization","name":"Afinora","url":"https://afinora.app/"}}</script>
   <script>window.AFINORA_I18N={"tabTune":"调音","tabMetronome":"节拍器","tabScales":"音阶","tabTraining":"训练","tabStudio":"录音室","instGuitar":"吉他","instViolin":"小提琴","tunerStandard":"标准","tunerInTune":"准了","tunerFlat":"偏低","tunerSharp":"偏高","tunerCentered":"居中","tunerDetected":"检测到","tunerTarget":"目标","tunerCents":"音分","screenMetronome":"节拍器","metroHint":"点击某一拍以加重或静音","metroSubdivision":"细分","metroSound":"音色","screenScales":"和弦与音阶","scalesTab":"音阶","chordsTab":"和弦","scaleDegrees":"7 个音","fretboard":"指板","frets":"品","notesTab":"音名","degreesTab":"级数","tonic":"主音","colourIsString":"颜色 = 弦","screenStudio":"录音室","audioChip":"音频","videoChip":"视频","inputLevel":"输入电平","backingTrack":"伴奏","loopChip":"循环","autosaveChip":"自动保存","speedUpChip":"每次循环 +5% 速度","shoutPerfect":"完美!","shoutGood":"不错!","shoutMiss":"没中!","highwayAlt":"Afinora 的音符轨道：音符沿指板移动，每一个在越过光标时被评分"};</script>
   <script>(function(){try{
@@ -185,14 +185,14 @@ if(S.indexOf(c)>-1){location.replace('/'+c+'/');return;}}
   <div class="wrap">
     <p class="eyebrow">技巧训练</p>
     <h2 style="margin-top:14px">边弹边听，从音准和节奏两方面为每个音评分</h2>
-    <p class="lead" style="margin-top:20px">你选一条音阶、设定速度，跟着节拍器弹。音高检测器一边聆听，一边在每个音到达的瞬间单独评分：音准且准时、偏晚，或没有检测到。音准和节奏分开测量，所以弹完之后你知道该练哪几个具体的音，而不是凭感觉猜。音符沿着琴颈移动，一个手指一种颜色、一根弦一条轨道，而你在真正的乐器上弹奏它们。</p>
+    <p class="lead" style="margin-top:20px">你选一条音阶、设定速度，跟着节拍器弹。音高检测器一边聆听，一边在每个音响起的瞬间单独评分：正好踩在拍上、偏晚，或没有响。音准和节奏分开测量，所以弹完之后你知道该练哪几个具体的音，而不是凭感觉猜。音符沿着琴颈移动，一个手指一种颜色、一根弦一条轨道，而你在真正的乐器上弹奏它们。</p>
 
     <div class="highway-card">
       <div data-mock="highway"></div>
       <div class="legend">
         <div><span class="dot" style="background:#5ee7f0"></span>正好踩在拍上</div>
-        <div><span class="dot" style="background:#8fbf5a"></span>弹到了，但滑掉了</div>
-        <div><span class="dot" style="background:#e0554a"></span>始终没到</div>
+        <div><span class="dot" style="background:#8fbf5a"></span>弹到了，但偏晚</div>
+        <div><span class="dot" style="background:#e0554a"></span>没有响</div>
       </div>
     </div>
 
@@ -202,7 +202,7 @@ if(S.indexOf(c)>-1){location.replace('/'+c+'/');return;}}
         <p class="small">内置音阶型，或把你自己的以纯文本粘贴进来，Afinora 会把它变成一条路线。</p>
       </div>
       <div>
-        <h3>速度会自动提升</h3>
+        <h3>速度会自动调整</h3>
         <p class="small">只要你跟得上，循环就会加快；跟不上时它会把速度降下来。</p>
       </div>
       <div>
@@ -281,7 +281,7 @@ if(S.indexOf(c)>-1){location.replace('/'+c+'/');return;}}
 
 <section class="listens" id="how-it-listens">
   <div class="wrap">
-    <p class="eyebrow">它如何聆听</p>
+    <p class="eyebrow">音频输入</p>
     <h2 class="sub-h2" style="margin-top:14px">Afinora 如何聆听你的乐器</h2>
     <p class="lead" style="margin-top:16px">只有送进来的信号足够干净，逐音评分才成立。以下是三种情形，看看哪一种适合你。</p>
 
@@ -458,6 +458,6 @@ if(S.indexOf(c)>-1){location.replace('/'+c+'/');return;}}
     </div>
   </div>
 </footer>
-<script src="/assets/js/afinora.js?v=9918ba9582" defer></script>
+<script src="/assets/js/afinora.js?v=bf0a3dfb1c" defer></script>
 </body>
 </html>

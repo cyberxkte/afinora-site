@@ -193,7 +193,7 @@
   ],
   "instruments": {
     "heading": "Dez instrumentos, com as suas afinações",
-    "body": "Cada um com as suas cordas, as suas afinações alternativas e o braço desenhado com os trastes que tem mesmo, ou sem nenhum.",
+    "body": "Cada um com as suas cordas, as suas afinações alternativas e o braço desenhado com os trastes que tem mesmo, ou sem trastes se não os tiver.",
     "list": [
       "Guitarra",
       "Guitarra de 7 cordas",
@@ -210,9 +210,9 @@
   "technique": {
     "eyebrow": "Treino técnico",
     "heading": "Ouve-te tocar e avalia a afinação e o tempo de cada nota",
-    "body": "Escolhes uma escala, defines um andamento e tocas com o metrónomo. O detetor ouve e avalia cada nota em separado assim que ela soa: afinada e a tempo, atrasada, ou não detetada. A afinação e o tempo medem-se em separado, por isso no fim sabes exatamente que notas trabalhar em vez de adivinhar. As notas percorrem o braço com uma cor por dedo e uma faixa por corda, e és tu que as tocas no instrumento.",
+    "body": "Escolhes uma escala, defines um andamento e tocas com o metrónomo. O detetor ouve e avalia cada nota em separado assim que ela soa: em cima do tempo, atrasada, ou não chegou a soar. A afinação e o tempo medem-se em separado, por isso no fim sabes exatamente que notas trabalhar em vez de adivinhar. As notas percorrem o braço com uma cor por dedo e uma faixa por corda, e és tu que as tocas no instrumento.",
     "legendPerfect": "Em cima do tempo",
-    "legendHit": "Soou, mas fora de tempo",
+    "legendHit": "Soou, mas atrasada",
     "legendMiss": "Não chegou a soar",
     "points": [
       {
@@ -220,7 +220,7 @@
         "body": "Tens padrões de escala já feitos, ou colas os teus em texto e o Afinora transforma-os num percurso."
       },
       {
-        "heading": "O andamento sobe sozinho",
+        "heading": "O andamento ajusta-se sozinho",
         "body": "O ciclo vai acelerando enquanto lhe acompanhas o ritmo, e baixa o andamento mal comeces a falhar."
       },
       {
@@ -247,8 +247,8 @@
     },
     "studio": {
       "eyebrow": "04 · Estúdio",
-      "heading": "Grava-te a tocar por cima da base",
-      "body": "Importa uma base musical, marca a secção que te custa, põe em ciclo e abranda. Grava-te por cima em áudio ou vídeo, guarda na galeria ou partilha. As gravações são ficheiros do teu telemóvel: a aplicação nunca as envia."
+      "heading": "Grava-te a tocar por cima do playback",
+      "body": "Importa um playback, marca a secção que te custa, põe em loop e abranda. Grava-te por cima em áudio ou vídeo, guarda na galeria ou partilha. As gravações são ficheiros do teu telemóvel: a aplicação nunca as envia para lado nenhum."
     },
     "ear": {
       "eyebrow": "05 · Treino auditivo",
@@ -261,7 +261,7 @@
     }
   },
   "listens": {
-    "eyebrow": "Como ouve",
+    "eyebrow": "Entrada de áudio",
     "heading": "Como o Afinora te ouve",
     "body": "Avaliar nota a nota só resulta se o sinal que entra for limpo. Estes são os três casos: vê qual é o teu.",
     "acoustic": {
@@ -348,9 +348,9 @@
     "audioChip": "ÁUDIO",
     "videoChip": "VÍDEO",
     "inputLevel": "Nível de entrada",
-    "backingTrack": "Base",
-    "loopChip": "Ciclo",
-    "autosaveChip": "Guardar auto",
+    "backingTrack": "Playback",
+    "loopChip": "Loop",
+    "autosaveChip": "Autossalvamento",
     "speedUpChip": "+5% de velocidade por ciclo",
     "shoutPerfect": "PERFEITO!",
     "shoutGood": "BOA!",

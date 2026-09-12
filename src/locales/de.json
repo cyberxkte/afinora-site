@@ -193,7 +193,7 @@
   ],
   "instruments": {
     "heading": "Zehn Instrumente, mit ihren Stimmungen",
-    "body": "Jedes mit seinen eigenen Saiten, seinen alternativen Stimmungen und einem Hals, der mit den Bünden gezeichnet ist, die er wirklich hat — oder ganz ohne.",
+    "body": "Jedes mit seinen eigenen Saiten, seinen alternativen Stimmungen und einem Hals, der mit den Bünden gezeichnet ist, die er wirklich hat — oder ganz ohne Bünde, wenn er keine hat.",
     "list": [
       "Gitarre",
       "7-saitige Gitarre",
@@ -210,17 +210,17 @@
   "technique": {
     "eyebrow": "Techniktraining",
     "heading": "Hört dir beim Spielen zu und bewertet Tonhöhe und Timing jedes Tons",
-    "body": "Du wählst eine Tonleiter, stellst ein Tempo ein und spielst sie zum Metronom. Der Detektor hört zu und bewertet jeden Ton einzeln, sobald er klingt: sauber und im Takt, zu spät, oder gar nicht erkannt. Tonhöhe und Timing werden getrennt gemessen, also weißt du am Ende genau, welche Töne du üben musst, statt es zu erraten. Die Töne wandern über das Griffbrett, eine Farbe pro Finger und eine Spur pro Saite, und du spielst sie auf dem Instrument.",
+    "body": "Du wählst eine Tonleiter, stellst ein Tempo ein und spielst sie zum Metronom. Der Detektor hört zu und bewertet jeden Ton einzeln, sobald er klingt: genau im Takt, zu spät, oder gar nicht erkannt. Tonhöhe und Timing werden getrennt gemessen, also weißt du am Ende genau, welche Töne du üben musst, statt es zu erraten. Die Töne wandern über das Griffbrett, eine Farbe pro Finger und eine Spur pro Saite, und du spielst sie auf dem Instrument.",
     "legendPerfect": "Genau im Takt",
-    "legendHit": "Gespielt, aber neben dem Takt",
-    "legendMiss": "Kam gar nicht an",
+    "legendHit": "Gespielt, aber zu spät",
+    "legendMiss": "Gar nicht erkannt",
     "points": [
       {
         "heading": "Nimm deine eigenen Übungen mit",
         "body": "Fertige Skalenmuster, oder füge deine eigenen als Text ein und Afinora macht eine Strecke daraus."
       },
       {
-        "heading": "Das Tempo steigt automatisch",
+        "heading": "Das Tempo regelt sich selbst",
         "body": "Die Schleife zieht an, solange du mithältst, und nimmt das Tempo zurück, sobald es klemmt."
       },
       {
@@ -247,8 +247,8 @@
     },
     "studio": {
       "eyebrow": "04 · Studio",
-      "heading": "Nimm dich auf, während du zum Playback spielst",
-      "body": "Importiere ein Playback, markiere die Stelle, die dir Probleme macht, lege sie in eine Schleife und verlangsame sie. Nimm dich darüber als Audio oder Video auf, speichere es in deiner Galerie oder teile es. Aufnahmen sind Dateien auf deinem Telefon: die App lädt sie nie hoch."
+      "heading": "Nimm dich auf, während du zum Backing-Track spielst",
+      "body": "Importiere einen Backing-Track, markiere die Stelle, die dir Probleme macht, lege sie in eine Schleife und verlangsame sie. Nimm dich darüber als Audio oder Video auf, speichere es in deiner Galerie oder teile es. Aufnahmen sind Dateien auf deinem Telefon: die App lädt sie nirgendwohin hoch."
     },
     "ear": {
       "eyebrow": "05 · Gehörtraining",
@@ -261,7 +261,7 @@
     }
   },
   "listens": {
-    "eyebrow": "Wie es zuhört",
+    "eyebrow": "Audio-Eingang",
     "heading": "Wie Afinora dir zuhört",
     "body": "Ton für Ton zu bewerten klappt nur, wenn das ankommende Signal sauber ist. Das sind die drei Fälle — schau, welcher deiner ist.",
     "acoustic": {
@@ -348,8 +348,8 @@
     "audioChip": "AUDIO",
     "videoChip": "VIDEO",
     "inputLevel": "Eingangspegel",
-    "backingTrack": "Playback",
-    "loopChip": "Schleife",
+    "backingTrack": "Backing-Track",
+    "loopChip": "Loop",
     "autosaveChip": "Auto-Speichern",
     "speedUpChip": "+5% Tempo pro Durchlauf",
     "shoutPerfect": "PERFEKT!",
