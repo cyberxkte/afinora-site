@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Afinora — 弦楽器のためのギターチューナー、メトロノーム、テクニック練習アプリ</title>
+  <meta name="description" content="練習まで見てくれるギターチューナー。10種類の楽器に対応したリアルタイム音程検出、メトロノーム、自分の指板に描かれるスケールとコード、そして弾いた音を一音ずつ採点するトレーニング。USBオーディオインターフェースに対応。アカウント不要、広告なし。">
+  <link rel="canonical" href="https://afinora.app/ja/">
+  <link rel="alternate" hreflang="en" href="https://afinora.app/">
+  <link rel="alternate" hreflang="es" href="https://afinora.app/es/">
+  <link rel="alternate" hreflang="it" href="https://afinora.app/it/">
+  <link rel="alternate" hreflang="fr" href="https://afinora.app/fr/">
+  <link rel="alternate" hreflang="pt" href="https://afinora.app/pt/">
+  <link rel="alternate" hreflang="de" href="https://afinora.app/de/">
+  <link rel="alternate" hreflang="ja" href="https://afinora.app/ja/">
+  <link rel="alternate" hreflang="zh" href="https://afinora.app/zh/">
+  <link rel="alternate" hreflang="ru" href="https://afinora.app/ru/">
+  <link rel="alternate" hreflang="x-default" href="https://afinora.app/">
+  <link rel="icon" href="/brand/play-icon-512.png" type="image/png">
+  <link rel="apple-touch-icon" href="/brand/play-icon-512.png">
+  <meta name="theme-color" content="#050505">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Afinora">
+  <meta property="og:locale" content="ja">
+  <meta property="og:title" content="Afinora — 弦楽器のためのギターチューナー、メトロノーム、テクニック練習アプリ">
+  <meta property="og:description" content="練習まで見てくれるギターチューナー。10種類の楽器に対応したリアルタイム音程検出、メトロノーム、自分の指板に描かれるスケールとコード、そして弾いた音を一音ずつ採点するトレーニング。USBオーディオインターフェースに対応。アカウント不要、広告なし。">
+  <meta property="og:url" content="https://afinora.app/ja/">
+  <meta property="og:image" content="https://afinora.app/brand/play-feature-graphic.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Afinora — 弦楽器のためのギターチューナー、メトロノーム、テクニック練習アプリ">
+  <meta name="twitter:description" content="練習まで見てくれるギターチューナー。10種類の楽器に対応したリアルタイム音程検出、メトロノーム、自分の指板に描かれるスケールとコード、そして弾いた音を一音ずつ採点するトレーニング。USBオーディオインターフェースに対応。アカウント不要、広告なし。">
+  <meta name="twitter:image" content="https://afinora.app/brand/play-feature-graphic.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+  <link rel="stylesheet" href="/assets/css/site.css">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"Afinora","applicationCategory":"MusicApplication","operatingSystem":"Android, iOS","description":"練習まで見てくれるギターチューナー。10種類の楽器に対応したリアルタイム音程検出、メトロノーム、自分の指板に描かれるスケールとコード、そして弾いた音を一音ずつ採点するトレーニング。USBオーディオインターフェースに対応。アカウント不要、広告なし。","url":"https://afinora.app/","inLanguage":["en","es","it","fr","pt","de","ja","zh","ru"],"offers":{"@type":"Offer","price":"0","priceCurrency":"USD","description":"楽器1つ、メジャーとマイナーのスケール、メトロノーム全機能、録音5件。"},"author":{"@type":"Organization","name":"Afinora","url":"https://afinora.app/"}}</script>
+  <script>window.AFINORA_I18N={"tabTune":"チューン","tabMetronome":"メトロノーム","tabScales":"スケール","tabTraining":"練習","tabStudio":"スタジオ","instGuitar":"ギター","instViolin":"ヴァイオリン","tunerStandard":"標準","tunerInTune":"合っています","tunerFlat":"低い","tunerSharp":"高い","tunerCentered":"中央","tunerDetected":"検出","tunerTarget":"目標","tunerCents":"セント","screenMetronome":"メトロノーム","metroHint":"拍をタップしてアクセントまたはミュート","metroSubdivision":"分割","metroSound":"音色","screenScales":"コードとスケール","scalesTab":"スケール","chordsTab":"コード","scaleDegrees":"7音","fretboard":"指板","frets":"フレット","notesTab":"音名","degreesTab":"度数","tonic":"主音","colourIsString":"色 = 弦","screenStudio":"スタジオ","audioChip":"音声","videoChip":"動画","inputLevel":"入力レベル","backingTrack":"バッキングトラック","loopChip":"ループ","autosaveChip":"自動保存","speedUpChip":"ループごとに+5%","shoutPerfect":"パーフェクト!","shoutGood":"グッド!","shoutMiss":"ミス!","highwayAlt":"Afinoraのノートハイウェイ：音符が指板を流れ、カーソルを横切るたびに採点されます"};</script>
+</head>
+<body id="top">
+<a class="skip" href="#main">本文へスキップ</a>
+<header class="site-header">
+  <div class="inner">
+    <a class="brand" href="#top">
+      <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+  <g transform="translate(5 6.567) scale(0.9)">
+    <defs>
+      <mask id="m" maskUnits="userSpaceOnUse" x="0" y="0" width="100" height="100">
+        <rect x="0" y="0" width="100" height="100" fill="#fff"/>
+        <circle cx="50" cy="66" r="7.5" fill="#000"/>
+      </mask>
+    </defs>
+    <path d="M27 66 L73 66" fill="none" stroke="#2f7f60" stroke-width="6" stroke-linecap="round" mask="url(#m)"/>
+    <g fill="none" stroke="#34d399" stroke-width="11">
+      <path d="M20 88 L32.38 56.64"/>
+      <path d="M80 88 L67.62 56.64"/>
+      <path d="M36.42 46.4 L50 12 L63.58 46.4" stroke-linejoin="round"/>
+    </g>
+    <circle cx="50" cy="66" r="5" fill="#6ee7b7"/>
+  </g>
+</svg>
+      <span class="name">Afinora</span>
+    </a>
+    <div class="header-right">
+      <details class="lang">
+        <summary aria-label="言語を変更">JA <span aria-hidden="true">▾</span></summary>
+        <div class="lang-panel">
+        <a href="/" hreflang="en" lang="en">English</a>
+        <a href="/es/" hreflang="es" lang="es">Español</a>
+        <a href="/it/" hreflang="it" lang="it">Italiano</a>
+        <a href="/fr/" hreflang="fr" lang="fr">Français</a>
+        <a href="/pt/" hreflang="pt" lang="pt">Português</a>
+        <a href="/de/" hreflang="de" lang="de">Deutsch</a>
+        <span class="current">日本語</span>
+        <a href="/zh/" hreflang="zh" lang="zh">中文</a>
+        <a href="/ru/" hreflang="ru" lang="ru">Русский</a>
+        </div>
+      </details>
+      <a class="btn" href="#download">ダウンロード</a>
+    </div>
+  </div>
+</header>
+<main id="main">
+
+<section class="hero">
+  <div data-mock="field"></div>
+  <div class="hero-scrim"></div>
+  <div class="wrap">
+    <div class="hero-grid">
+      <div class="hero-copy">
+        <p class="eyebrow">ギター、ベース、ウクレレ、擦弦楽器のために</p>
+        <h1>チューナーとメトロノーム、そしてあなたの演奏を聴くトレーナー。</h1>
+        <p class="lead">10種類の楽器に対応したリアルタイム音程検出、メトロノーム、自分の指板に描かれるスケールとコード、そして演奏を聴きながら一音ずつ別々に採点するトレーニング。すべて端末上で動作し、アカウントは不要です。</p>
+        <div class="store-row">
+      <a class="store-btn play" href="https://play.google.com/store/apps/details?id=com.afinora.app" rel="noopener">
+        <span class="top">入手先</span>
+        <span class="name">Google Play</span>
+      </a>
+      <a class="store-btn apple" href="https://apps.apple.com/app/afinora/id6771803917" rel="noopener">
+        <span class="top">ダウンロード</span>
+        <span class="name">App Store</span>
+      </a>
+    </div>
+        <p class="fine">アカウント不要 · 広告なし · 音声は端末から出ません</p>
+      </div>
+      <div>
+        <div class="phone">
+          <div class="screen" data-mock="tuner"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="stats">
+  <div class="wrap">
+    <div class="grid">
+      <div class="cell">
+        <div class="figure">10</div>
+        <div class="label">楽器</div>
+      </div>
+      <div class="cell">
+        <div class="figure">30+</div>
+        <div class="label">チューニング</div>
+      </div>
+      <div class="cell">
+        <div class="figure">432–442</div>
+        <div class="label">基準Hz</div>
+      </div>
+      <div class="cell">
+        <div class="figure">9</div>
+        <div class="label">言語</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="instruments">
+  <div class="wrap">
+    <h2 class="sub-h2">10種類の楽器と、そのチューニング</h2>
+    <p class="lead" style="margin-top:14px">楽器ごとの弦、楽器ごとの変則チューニング、そして実際のフレットどおりに描かれる指板。フレットのない楽器はそのままに。</p>
+    <div class="pill-row">
+      <span class="pill">ギター</span>
+      <span class="pill">7弦ギター</span>
+      <span class="pill">ベース</span>
+      <span class="pill">ウクレレ</span>
+      <span class="pill">ベネズエラ・クアトロ</span>
+      <span class="pill">ヴァイオリン</span>
+      <span class="pill">ヴィオラ</span>
+      <span class="pill">チェロ</span>
+      <span class="pill">マンドリン</span>
+      <span class="pill">バンジョー</span>
+    </div>
+  </div>
+</section>
+
+<section class="technique" id="features">
+  <div class="wrap">
+    <p class="eyebrow">テクニック練習</p>
+    <h2 style="margin-top:14px">演奏を聴きながら、音程とタイミングを一音ずつ採点します</h2>
+    <p class="lead" style="margin-top:20px">スケールを選び、テンポを決めて、メトロノームに合わせて弾きます。音程検出器が聴き取り、音が届いた瞬間に一音ずつ別々に採点します。正確で時間どおりか、遅れたか、検出されなかったか。音程とタイミングは別々に測るため、終わったときには当て推量ではなく、どの音を練習すべきかがわかります。音符は指ごとの色と弦ごとのレーンで指板を流れ、あなたはそれを実際の楽器で弾きます。</p>
+
+    <div class="highway-card">
+      <div data-mock="highway"></div>
+      <div class="legend">
+        <div><span class="dot" style="background:#5ee7f0"></span>ぴったり拍の上</div>
+        <div><span class="dot" style="background:#8fbf5a"></span>弾けたが、ずれた</div>
+        <div><span class="dot" style="background:#e0554a"></span>届かなかった</div>
+      </div>
+    </div>
+
+    <div class="trio">
+      <div>
+        <h3>自分の練習課題を持ち込める</h3>
+        <p class="small">内蔵のスケールパターンに加え、自分のものをテキストで貼り付ければAfinoraがコースに変換します。</p>
+      </div>
+      <div>
+        <h3>テンポは自動で上がる</h3>
+        <p class="small">ついていけている間はループが速くなり、ついていけなくなるとテンポが下がります。</p>
+      </div>
+      <div>
+        <h3>スケールごとの履歴</h3>
+        <p class="small">練習ごとに履歴が残るので、上達が測定された数字になります。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="blocks">
+      <div class="block" id="tuner">
+      <div class="block-copy">
+        <p class="eyebrow">01 · チューナー</p>
+        <h2 class="block-h2">どの音も正確に読み取ります</h2>
+        <p class="lead">リアルタイムの音程検出を端末上で処理します。標準および変則チューニング30種類以上に加え、自分で作ったものも使えます。任意の弦の基準音と、432から442 Hzまで6種類のA4基準。アンプを通さないエレキギターも読み取ります。</p>
+      </div>
+      <div>
+        <div class="phone phone-sm phone-violin">
+          <div class="screen" data-mock="tuner-violin"></div>
+        </div>
+      </div>
+    </div>
+      <div class="block mirrored" id="scales">
+      <div class="block-copy">
+        <p class="eyebrow">02 · コードとスケール</p>
+        <h2 class="block-h2">指板全体を、あなたのチューニングで</h2>
+        <p class="lead">20種類のスケールと20種類のコードを、実際に弾く位置に描きます。最大24フレット、全画面表示にも対応。音名か度数か、バレーを含むコードフォーム、そして表示中のキーに属するコード。そこからスケールはそのまま練習へ進めます。</p>
+      </div>
+      <div>
+        <div class="phone phone-sm">
+          <div class="screen" data-mock="fretboard"></div>
+        </div>
+      </div>
+    </div>
+      <div class="block" id="metronome">
+      <div class="block-copy">
+        <p class="eyebrow">03 · メトロノーム</p>
+        <h2 class="block-h2">テンポを決め、拍子を選び、弾く</h2>
+        <p class="lead">BPMがわからない？　タップすればAfinoraが割り出します。30〜300 BPM、2/4から12/8までの拍子、16分音符までの分割に対応。遅いテンポでこそ効く機能で、崩れる原因は拍と拍の間にあります。小節内の任意の拍をタップしてアクセントやミュートを設定できます。テクニック練習があなたのタイミングを測る基準となる同じクリックで、無料版でも完全に使えます。</p>
+      </div>
+      <div>
+        <div class="phone phone-sm">
+          <div class="screen" data-mock="metronome"></div>
+        </div>
+      </div>
+    </div>
+      <div class="block mirrored" id="studio">
+      <div class="block-copy">
+        <p class="eyebrow">04 · スタジオ</p>
+        <h2 class="block-h2">バッキングトラックに重ねて自分を録音</h2>
+        <p class="lead">バッキングトラックを読み込み、苦手な区間に印を付け、ループさせて速度を落とします。その上に音声または動画で自分を録音し、ギャラリーに保存するか共有します。録音は端末上のファイルで、アプリが送信することはありません。</p>
+      </div>
+      <div>
+        <div class="phone phone-sm">
+          <div class="screen" data-mock="studio"></div>
+        </div>
+      </div>
+    </div>
+      <div class="block" id="ear-training">
+        <div class="block-copy">
+          <p class="eyebrow">05 · 聴音練習</p>
+          <h2 class="block-h2">聴こえた音を、自分の楽器で弾く</h2>
+          <p class="lead">Afinoraが音または音程を鳴らし、あなたが指板の上で見つけて弾くと、検出器が正解かどうかを判定します。画面の選択肢を選ぶのではなく、楽器で答えます。</p>
+        </div>
+        <div class="price-card">
+          <h3>9言語対応</h3>
+          <p style="margin-top:10px">スペイン語、英語、イタリア語、フランス語、ポルトガル語、ドイツ語、日本語、中国語、ロシア語。メニューだけでなくアプリ全体が対応しています。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="listens" id="how-it-listens">
+  <div class="wrap">
+    <p class="eyebrow">聴き取りの仕組み</p>
+    <h2 class="sub-h2" style="margin-top:14px">Afinoraがあなたの楽器を聴き取る方法</h2>
+    <p class="lead" style="margin-top:16px">一音ずつの採点は、入ってくる信号がきれいな場合にだけ成立します。ケースは3つ。あなたはどれに当たるでしょうか。</p>
+
+    <div class="listen-grid">
+      <div class="listen-card">
+        <div class="listen-figure" data-mock="listen-mic"></div>
+        <div class="listen-body">
+          <h3>アコースティック：マイクで</h3>
+          <p>アコースティックギター、ヴァイオリン、チェロ、ウクレレ、マンドリン、クアトロ。端末のマイクだけでチューニングも練習もできます。</p>
+        </div>
+      </div>
+      <div class="listen-card usb">
+        <div class="listen-figure" data-mock="listen-usb"></div>
+        <div class="listen-body">
+          <h3>エレキ：USBインターフェースで</h3>
+          <p>アンプを通さないエレキは、検出器が確実に読み取れる信号ではありません。室内マイクは雑音があるとすぐに音を取りこぼします。インターフェースを使えばAfinoraがそれを検出し、レイテンシーを補正して、接続されていることを知らせます。</p>
+        </div>
+      </div>
+      <div class="listen-card">
+        <div class="listen-figure" data-mock="listen-device"></div>
+        <div class="listen-body">
+          <h3>処理はすべてここで</h3>
+          <p>チューニングと練習に使う音声は、届いたそばから端末上で解析されます。録音もアップロードもされません。</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Naming the hardware is referential use, and it is only defensible with
+         this attribution attached. Keep it, and keep the brand out of headings,
+         images and page titles. -->
+    <p class="trademark">Fender Mustang Micro Plusで動作確認済みで、他の対応USBオーディオインターフェースでも動作します。FenderおよびMustang Micro PlusはFender Musical Instruments Corporationの商標です。AfinoraはFenderと提携しておらず、Fenderによる推奨や後援も受けていません。</p>
+  </div>
+</section>
+
+<section id="privacy">
+  <div class="wrap">
+    <div class="two-col">
+      <div>
+        <p class="eyebrow">最初からプライベート</p>
+        <h2 class="sub-h2" style="margin-top:14px">アカウントなし、広告なし、追跡なし</h2>
+      </div>
+      <div>
+        <p class="lead">登録もログインもありません。アプリを開いて弾くだけです。第三者の広告も、独自の解析もありません。チューニングと練習に使う音声は届いたそばから端末上で解析され、録音もアップロードもされません。スタジオの録音は、あなたが自分で共有しない限り端末内にとどまります。</p>
+        <div class="link-list">
+          <a href="privacy.html">プライバシー</a>
+          <a href="support.html">サポートとご質問</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="pricing" id="pro">
+  <div class="wrap">
+    <p class="eyebrow">無料版とPro</p>
+    <h2 class="sub-h2" style="margin-top:14px">まるまる5日間から始まります</h2>
+    <p class="lead" style="margin-top:16px">その後、無料版ではお好きな楽器1つ、メジャーとマイナーのスケール、メトロノームの全機能、そしてスタジオの録音5件が使えます。Proはサブスクリプションではなく買い切りで、残りをすべて恒久的に解放します。</p>
+    <div class="price-grid">
+      <div class="price-card">
+        <h3>無料</h3>
+        <p>楽器1つ、メジャーとマイナーのスケール、メトロノーム全機能、録音5件。</p>
+      </div>
+      <div class="price-card pro">
+        <h3>Pro · 買い切り</h3>
+        <p>10種類すべての楽器、20のスケールと20のコード、テクニック練習の全機能、そして制限のないスタジオ。</p>
+        <!-- The price appears exactly once on the page, and near the bottom. -->
+        <p class="price">ほとんどの国で9.99米ドルまたは9.99ユーロ</p>
+      </div>
+      <div class="price-card">
+        <h3>決してないもの</h3>
+        <p>サブスクリプション、広告、アカウント、追跡、サーバーへの音声アップロード。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="download" id="download">
+  <div class="wrap">
+    <div class="mark"><svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+  <g transform="translate(5 6.567) scale(0.9)">
+    <defs>
+      <mask id="m" maskUnits="userSpaceOnUse" x="0" y="0" width="100" height="100">
+        <rect x="0" y="0" width="100" height="100" fill="#fff"/>
+        <circle cx="50" cy="66" r="7.5" fill="#000"/>
+      </mask>
+    </defs>
+    <path d="M27 66 L73 66" fill="none" stroke="#2f7f60" stroke-width="6" stroke-linecap="round" mask="url(#m)"/>
+    <g fill="none" stroke="#34d399" stroke-width="11">
+      <path d="M20 88 L32.38 56.64"/>
+      <path d="M80 88 L67.62 56.64"/>
+      <path d="M36.42 46.4 L50 12 L63.58 46.4" stroke-linejoin="round"/>
+    </g>
+    <circle cx="50" cy="66" r="5" fill="#6ee7b7"/>
+  </g>
+</svg></div>
+    <h2>Afinoraをダウンロード</h2>
+    <p class="lead">AndroidとiPhoneに対応、9言語で利用できます。</p>
+    <div class="store-row">
+      <a class="store-btn play" href="https://play.google.com/store/apps/details?id=com.afinora.app" rel="noopener">
+        <span class="top">入手先</span>
+        <span class="name">Google Play</span>
+      </a>
+      <a class="store-btn apple" href="https://apps.apple.com/app/afinora/id6771803917" rel="noopener">
+        <span class="top">ダウンロード</span>
+        <span class="name">App Store</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="name">Afinora</div>
+        <p>弦楽器のためのチューナー、メトロノーム、練習アプリ。</p>
+      </div>
+      <div>
+        <h4>アプリ</h4>
+        <ul>
+          <li><a href="#top#features">テクニック練習</a></li>
+          <li><a href="#top#tuner">チューナー</a></li>
+          <li><a href="#top#metronome">メトロノーム</a></li>
+          <li><a href="#top#scales">コードとスケール</a></li>
+          <li><a href="#top#studio">スタジオ</a></li>
+          <li><a href="#top#how-it-listens">聴き取りの仕組み</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>楽器</h4>
+        <ul>
+          <li><a href="#top#instruments">ギターチューナー</a></li>
+          <li><a href="#top#instruments">ベースチューナー</a></li>
+          <li><a href="#top#instruments">ウクレレチューナー</a></li>
+          <li><a href="#top#instruments">ヴァイオリンチューナー</a></li>
+          <li><a href="#top#instruments">クアトロチューナー</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>ヘルプ</h4>
+        <ul>
+          <li><a href="support.html">サポート</a></li>
+          <li><a href="privacy.html">プライバシー</a></li>
+          <li><a href="mailto:cyberxkte@gmail.com">cyberxkte@gmail.com</a></li>
+          <li><a href="/" hreflang="en" lang="en">English</a></li>
+          <li><a href="/es/" hreflang="es" lang="es">Español</a></li>
+          <li><a href="/it/" hreflang="it" lang="it">Italiano</a></li>
+          <li><a href="/fr/" hreflang="fr" lang="fr">Français</a></li>
+          <li><a href="/pt/" hreflang="pt" lang="pt">Português</a></li>
+          <li><a href="/de/" hreflang="de" lang="de">Deutsch</a></li>
+          <li><a href="/zh/" hreflang="zh" lang="zh">中文</a></li>
+          <li><a href="/ru/" hreflang="ru" lang="ru">Русский</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Afinora · afinora.app</span>
+      <span>練習する人のために</span>
+    </div>
+  </div>
+</footer>
+<script src="/assets/js/afinora.js" defer></script>
+</body>
+</html>

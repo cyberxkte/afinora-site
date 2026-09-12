@@ -1,127 +1,422 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Afinora - Practice room for string players</title>
-  <meta name="description" content="Tuner, technique training graded note by note, Studio takes over a backing track, scales and metronome. Works with a USB audio interface. No ads, no account." />
-  <style>
-    :root {
-      --field: #04231b;
-      --letter: #34d399;
-      --scale: #2f7f60;
-      --zero: #6ee7b7;
-      --bone: #f2efe6;
-      --body: #c7cdc9;
-      --muted: #8a9691;
-      --rule: #14342a;
-      --card: #072b21;
-    }
-    body {
-      margin: 0;
-      font-family: system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
-      background: var(--field);
-      color: var(--body);
-      line-height: 1.65;
-    }
-    main { max-width: 860px; margin: 0 auto; padding: 56px 24px 72px; }
-    .hero { display: flex; align-items: center; gap: 22px; flex-wrap: wrap; }
-    h1 { font-size: 52px; letter-spacing: 0.1em; margin: 0; color: var(--bone); }
-    .tagline { font-size: 22px; color: var(--zero); margin: 18px 0 0; }
-    .badge {
-      display: inline-block; margin-top: 22px; padding: 9px 18px;
-      border: 2px solid var(--letter); border-radius: 999px;
-      color: var(--zero); font-size: 16px;
-    }
-    h2 { margin-top: 52px; margin-bottom: 10px; font-size: 22px; color: var(--letter); }
-    p, li { font-size: 17px; }
-    ul { padding-left: 22px; }
-    a { color: var(--letter); text-decoration: none; }
-    a:hover { text-decoration: underline; }
-    .cards { display: grid; gap: 16px; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); margin-top: 8px; }
-    .card { border: 1px solid var(--rule); border-radius: 16px; padding: 20px 22px; background: var(--card); }
-    .card h3 { margin: 0 0 6px; font-size: 17px; color: var(--bone); }
-    .card p { margin: 0; font-size: 16px; }
-    strong { color: var(--bone); font-weight: 600; }
-    footer { margin-top: 56px; padding-top: 24px; border-top: 1px solid var(--rule); color: var(--muted); font-size: 14px; }
-    footer a { color: var(--muted); text-decoration: underline; }
-  </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Afinora — Guitar tuner, metronome and technique training for string instruments</title>
+  <meta name="description" content="A guitar tuner that also trains you. Real-time pitch detection for ten instruments, a metronome, scales and chords on your own neck, and training that grades every note you play. Works with a USB audio interface. No account, no ads.">
+  <link rel="canonical" href="https://afinora.app/">
+  <link rel="alternate" hreflang="en" href="https://afinora.app/">
+  <link rel="alternate" hreflang="es" href="https://afinora.app/es/">
+  <link rel="alternate" hreflang="it" href="https://afinora.app/it/">
+  <link rel="alternate" hreflang="fr" href="https://afinora.app/fr/">
+  <link rel="alternate" hreflang="pt" href="https://afinora.app/pt/">
+  <link rel="alternate" hreflang="de" href="https://afinora.app/de/">
+  <link rel="alternate" hreflang="ja" href="https://afinora.app/ja/">
+  <link rel="alternate" hreflang="zh" href="https://afinora.app/zh/">
+  <link rel="alternate" hreflang="ru" href="https://afinora.app/ru/">
+  <link rel="alternate" hreflang="x-default" href="https://afinora.app/">
+  <link rel="icon" href="/brand/play-icon-512.png" type="image/png">
+  <link rel="apple-touch-icon" href="/brand/play-icon-512.png">
+  <meta name="theme-color" content="#050505">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Afinora">
+  <meta property="og:locale" content="en">
+  <meta property="og:title" content="Afinora — Guitar tuner, metronome and technique training for string instruments">
+  <meta property="og:description" content="A guitar tuner that also trains you. Real-time pitch detection for ten instruments, a metronome, scales and chords on your own neck, and training that grades every note you play. Works with a USB audio interface. No account, no ads.">
+  <meta property="og:url" content="https://afinora.app/">
+  <meta property="og:image" content="https://afinora.app/brand/play-feature-graphic.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Afinora — Guitar tuner, metronome and technique training for string instruments">
+  <meta name="twitter:description" content="A guitar tuner that also trains you. Real-time pitch detection for ten instruments, a metronome, scales and chords on your own neck, and training that grades every note you play. Works with a USB audio interface. No account, no ads.">
+  <meta name="twitter:image" content="https://afinora.app/brand/play-feature-graphic.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+  <link rel="stylesheet" href="/assets/css/site.css">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"Afinora","applicationCategory":"MusicApplication","operatingSystem":"Android, iOS","description":"A guitar tuner that also trains you. Real-time pitch detection for ten instruments, a metronome, scales and chords on your own neck, and training that grades every note you play. Works with a USB audio interface. No account, no ads.","url":"https://afinora.app/","inLanguage":["en","es","it","fr","pt","de","ja","zh","ru"],"offers":{"@type":"Offer","price":"0","priceCurrency":"USD","description":"One instrument, major and minor scales, the full metronome, five recordings."},"author":{"@type":"Organization","name":"Afinora","url":"https://afinora.app/"}}</script>
+  <script>window.AFINORA_I18N={"tabTune":"Tune","tabMetronome":"Metronome","tabScales":"Scales","tabTraining":"Training","tabStudio":"Studio","instGuitar":"Guitar","instViolin":"Violin","tunerStandard":"Standard","tunerInTune":"In tune","tunerFlat":"Flat","tunerSharp":"Sharp","tunerCentered":"Centered","tunerDetected":"Detected","tunerTarget":"Target","tunerCents":"Cents","screenMetronome":"Metronome","metroHint":"Tap a beat to accent or silence it","metroSubdivision":"Subdivision","metroSound":"Sound","screenScales":"Chords & Scales","scalesTab":"Scales","chordsTab":"Chords","scaleDegrees":"7 notes","fretboard":"Fretboard","frets":"frets","notesTab":"Notes","degreesTab":"Degrees","tonic":"Tonic","colourIsString":"Colour = string","screenStudio":"Studio","audioChip":"AUDIO","videoChip":"VIDEO","inputLevel":"Input level","backingTrack":"Backing track","loopChip":"Loop","autosaveChip":"Auto-save","speedUpChip":"+5% speed-up per loop","shoutPerfect":"PERFECT!","shoutGood":"GOOD!","shoutMiss":"MISS!","highwayAlt":"Afinora's note highway: notes travel along the neck and each one is graded as it crosses the cursor"};</script>
 </head>
-<body>
-  <main>
-    <div class="hero">
-      <svg viewBox="0 0 100 100" width="96" height="96" role="img" aria-label="Afinora">
-        <g transform="translate(5 6.567) scale(0.9)">
-          <defs>
-            <mask id="afinora-zero-gap" maskUnits="userSpaceOnUse" x="0" y="0" width="100" height="100">
-              <rect x="0" y="0" width="100" height="100" fill="#ffffff"/>
-              <circle cx="50" cy="66" r="7.5" fill="#000000"/>
-            </mask>
-          </defs>
-          <path d="M27 66 L73 66" fill="none" stroke="#2f7f60" stroke-width="6" stroke-linecap="round" mask="url(#afinora-zero-gap)"/>
-          <g fill="none" stroke="#34d399" stroke-width="11">
-            <path d="M20 88 L32.38 56.64"/>
-            <path d="M80 88 L67.62 56.64"/>
-            <path d="M36.42 46.4 L50 12 L63.58 46.4" stroke-linejoin="round"/>
-          </g>
-          <circle cx="50" cy="66" r="5" fill="#6ee7b7"/>
-        </g>
-      </svg>
-      <h1>AFINORA</h1>
+<body id="top">
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="inner">
+    <a class="brand" href="#top">
+      <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+  <g transform="translate(5 6.567) scale(0.9)">
+    <defs>
+      <mask id="m" maskUnits="userSpaceOnUse" x="0" y="0" width="100" height="100">
+        <rect x="0" y="0" width="100" height="100" fill="#fff"/>
+        <circle cx="50" cy="66" r="7.5" fill="#000"/>
+      </mask>
+    </defs>
+    <path d="M27 66 L73 66" fill="none" stroke="#2f7f60" stroke-width="6" stroke-linecap="round" mask="url(#m)"/>
+    <g fill="none" stroke="#34d399" stroke-width="11">
+      <path d="M20 88 L32.38 56.64"/>
+      <path d="M80 88 L67.62 56.64"/>
+      <path d="M36.42 46.4 L50 12 L63.58 46.4" stroke-linejoin="round"/>
+    </g>
+    <circle cx="50" cy="66" r="5" fill="#6ee7b7"/>
+  </g>
+</svg>
+      <span class="name">Afinora</span>
+    </a>
+    <div class="header-right">
+      <details class="lang">
+        <summary aria-label="Change language">EN <span aria-hidden="true">▾</span></summary>
+        <div class="lang-panel">
+        <span class="current">English</span>
+        <a href="/es/" hreflang="es" lang="es">Español</a>
+        <a href="/it/" hreflang="it" lang="it">Italiano</a>
+        <a href="/fr/" hreflang="fr" lang="fr">Français</a>
+        <a href="/pt/" hreflang="pt" lang="pt">Português</a>
+        <a href="/de/" hreflang="de" lang="de">Deutsch</a>
+        <a href="/ja/" hreflang="ja" lang="ja">日本語</a>
+        <a href="/zh/" hreflang="zh" lang="zh">中文</a>
+        <a href="/ru/" hreflang="ru" lang="ru">Русский</a>
+        </div>
+      </details>
+      <a class="btn" href="#download">Download</a>
+    </div>
+  </div>
+</header>
+<main id="main">
+
+<section class="hero">
+  <div data-mock="field"></div>
+  <div class="hero-scrim"></div>
+  <div class="wrap">
+    <div class="hero-grid">
+      <div class="hero-copy">
+        <p class="eyebrow">For guitar, bass, ukulele and bowed strings</p>
+        <h1>A tuner, a metronome, and a trainer that listens to how you play.</h1>
+        <p class="lead">Real-time pitch detection for ten instruments, a metronome, scales and chords drawn on your own neck, and training that listens as you play and grades every note separately. It all runs on the device, with no account.</p>
+        <div class="store-row">
+      <a class="store-btn play" href="https://play.google.com/store/apps/details?id=com.afinora.app" rel="noopener">
+        <span class="top">Get it on</span>
+        <span class="name">Google Play</span>
+      </a>
+      <a class="store-btn apple" href="https://apps.apple.com/app/afinora/id6771803917" rel="noopener">
+        <span class="top">Download on</span>
+        <span class="name">App Store</span>
+      </a>
+    </div>
+        <p class="fine">No account · no ads · audio never leaves the phone</p>
+      </div>
+      <div>
+        <div class="phone">
+          <div class="screen" data-mock="tuner"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="stats">
+  <div class="wrap">
+    <div class="grid">
+      <div class="cell">
+        <div class="figure">10</div>
+        <div class="label">Instruments</div>
+      </div>
+      <div class="cell">
+        <div class="figure">30+</div>
+        <div class="label">Tunings</div>
+      </div>
+      <div class="cell">
+        <div class="figure">432–442</div>
+        <div class="label">Reference Hz</div>
+      </div>
+      <div class="cell">
+        <div class="figure">9</div>
+        <div class="label">Languages</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="instruments">
+  <div class="wrap">
+    <h2 class="sub-h2">Ten instruments, with their tunings</h2>
+    <p class="lead" style="margin-top:14px">Its own strings, its own alternate tunings, and its neck drawn with the frets it has — or without them.</p>
+    <div class="pill-row">
+      <span class="pill">Guitar</span>
+      <span class="pill">7-string guitar</span>
+      <span class="pill">Bass</span>
+      <span class="pill">Ukulele</span>
+      <span class="pill">Venezuelan cuatro</span>
+      <span class="pill">Violin</span>
+      <span class="pill">Viola</span>
+      <span class="pill">Cello</span>
+      <span class="pill">Mandolin</span>
+      <span class="pill">Banjo</span>
+    </div>
+  </div>
+</section>
+
+<section class="technique" id="features">
+  <div class="wrap">
+    <p class="eyebrow">Technique training</p>
+    <h2 style="margin-top:14px">It listens as you play and grades every note for pitch and timing</h2>
+    <p class="lead" style="margin-top:20px">You pick a scale, set a tempo and play it against the metronome. The pitch detector listens and grades every note separately the moment it arrives: in tune and on time, late, or not detected. Pitch and timing are measured apart, so when you finish you know which specific notes to work on instead of guessing. The notes travel along the neck with one colour per finger and one lane per string, and you play them on the instrument.</p>
+
+    <div class="highway-card">
+      <div data-mock="highway"></div>
+      <div class="legend">
+        <div><span class="dot" style="background:#5ee7f0"></span>Dead on the beat</div>
+        <div><span class="dot" style="background:#8fbf5a"></span>Played, but it slipped</div>
+        <div><span class="dot" style="background:#e0554a"></span>Never arrived</div>
+      </div>
     </div>
 
-    <p class="tagline">A practice room for string players. It starts as a real-time tuner and carries on into everything you do once the strings are in tune.</p>
-    <p><span class="badge">Works with a USB audio interface</span></p>
+    <div class="trio">
+      <div>
+        <h3>Bring your own exercises</h3>
+        <p class="small">Built-in scale patterns, or paste your own as plain text and Afinora turns it into a route.</p>
+      </div>
+      <div>
+        <h3>The tempo rises automatically</h3>
+        <p class="small">The loop speeds up while you keep up and drops the tempo when you don't.</p>
+      </div>
+      <div>
+        <h3>A history per scale</h3>
+        <p class="small">Every exercise keeps its own history, so progress is a measured figure.</p>
+      </div>
+    </div>
+  </div>
+</section>
 
-    <h2>What it does</h2>
-    <div class="cards">
-      <div class="card">
-        <h3>Technique training</h3>
-        <p>Play a scale shape against the metronome and every note is graded as it arrives: clean, late or missed. Pitch and timing are measured separately, so you know which one failed.</p>
+<section>
+  <div class="wrap">
+    <div class="blocks">
+      <div class="block" id="tuner">
+      <div class="block-copy">
+        <p class="eyebrow">01 · Tuner</p>
+        <h2 class="block-h2">Reads every note exactly</h2>
+        <p class="lead">Real-time pitch detection, processed on the device itself. Over thirty standard and alternate tunings, plus the ones you build yourself. A reference tone on any string and six A4 references, from 432 to 442 Hz. Reads an unplugged electric guitar.</p>
       </div>
-      <div class="card">
-        <h3>Studio</h3>
-        <p>Import a backing track, mark a section, loop it and slow it down. Record yourself over it as audio or video, then save the take or share it.</p>
+      <div>
+        <div class="phone phone-sm phone-violin">
+          <div class="screen" data-mock="tuner-violin"></div>
+        </div>
       </div>
-      <div class="card">
-        <h3>Tuner</h3>
-        <p>Real-time detection on the device, ten instruments, over 30 standard and alternate tunings plus your own, and six A4 references from 432 to 442 Hz.</p>
+    </div>
+      <div class="block mirrored" id="scales">
+      <div class="block-copy">
+        <p class="eyebrow">02 · Chords and scales</p>
+        <h2 class="block-h2">The whole neck, in your tuning</h2>
+        <p class="lead">Twenty scales and twenty chords, drawn where you actually play them: up to 24 frets, with a fullscreen view. Notes or degrees, chord voicings including barre shapes, and the chords that belong to the key you are looking at. From there, a scale goes straight into training.</p>
       </div>
-      <div class="card">
-        <h3>Chords and scales</h3>
-        <p>20 scales and 20 chords drawn on the neck of your instrument in your tuning, with a fullscreen view and the chords that belong to the key.</p>
+      <div>
+        <div class="phone phone-sm">
+          <div class="screen" data-mock="fretboard"></div>
+        </div>
       </div>
-      <div class="card">
-        <h3>Metronome</h3>
-        <p>An audio engine that does not drift. 30-300 BPM, tap tempo, signatures from 2/4 to 12/8, and any beat of the bar accented or muted.</p>
+    </div>
+      <div class="block" id="metronome">
+      <div class="block-copy">
+        <p class="eyebrow">03 · Metronome</p>
+        <h2 class="block-h2">Set the tempo, pick the bar, play</h2>
+        <p class="lead">Don't know the BPM? Tap it in and Afinora works it out. 30 to 300 BPM, bars from 2/4 to 12/8, and subdivisions down to sixteenths — the ones that help at slow tempos, where the space between beats is what throws you off. Tap any beat of the bar to accent it or mute it. It is the same click technique training measures your timing against, and it is complete in the free version.</p>
       </div>
-      <div class="card">
-        <h3>Ear training</h3>
-        <p>Notes and intervals, answered on your real instrument rather than by tapping a button.</p>
+      <div>
+        <div class="phone phone-sm">
+          <div class="screen" data-mock="metronome"></div>
+        </div>
+      </div>
+    </div>
+      <div class="block mirrored" id="studio">
+      <div class="block-copy">
+        <p class="eyebrow">04 · Studio</p>
+        <h2 class="block-h2">Record yourself over the backing track</h2>
+        <p class="lead">Import a backing track, mark the section that gives you trouble, loop it and slow it down. Record yourself over it as audio or video, save it to your gallery or share it. Recordings are files on your phone: the app never uploads them.</p>
+      </div>
+      <div>
+        <div class="phone phone-sm">
+          <div class="screen" data-mock="studio"></div>
+        </div>
+      </div>
+    </div>
+      <div class="block" id="ear-training">
+        <div class="block-copy">
+          <p class="eyebrow">05 · Ear training</p>
+          <h2 class="block-h2">You hear the note and play it on your instrument</h2>
+          <p class="lead">Afinora plays a note or an interval, you find it on the neck and play it, and the detector checks whether you got it right. You answer on the instrument, not by picking an option on screen.</p>
+        </div>
+        <div class="price-card">
+          <h3>Nine languages</h3>
+          <p style="margin-top:10px">Spanish, English, Italian, French, Portuguese, German, Japanese, Chinese and Russian. The whole app, not just the menus.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="listens" id="how-it-listens">
+  <div class="wrap">
+    <p class="eyebrow">How it listens</p>
+    <h2 class="sub-h2" style="margin-top:14px">How Afinora listens to your instrument</h2>
+    <p class="lead" style="margin-top:16px">Grading note by note only works if the signal coming in is clean. These are the three cases, and which one applies to you.</p>
+
+    <div class="listen-grid">
+      <div class="listen-card">
+        <div class="listen-figure" data-mock="listen-mic"></div>
+        <div class="listen-body">
+          <h3>Acoustic: through the microphone</h3>
+          <p>Acoustic guitar, violin, cello, ukulele, mandolin, cuatro. The phone's microphone is enough to tune and to train.</p>
+        </div>
+      </div>
+      <div class="listen-card usb">
+        <div class="listen-figure" data-mock="listen-usb"></div>
+        <div class="listen-body">
+          <h3>Electric: through a USB interface</h3>
+          <p>An unamplified electric is not a signal a detector can read reliably, and a room microphone drops notes as soon as there is noise. With an interface, Afinora detects it, compensates its latency and tells you it is connected.</p>
+        </div>
+      </div>
+      <div class="listen-card">
+        <div class="listen-figure" data-mock="listen-device"></div>
+        <div class="listen-body">
+          <h3>It is all processed here</h3>
+          <p>Audio used for tuning and training is analysed on the device as it arrives. It is never recorded or uploaded.</p>
+        </div>
       </div>
     </div>
 
-    <h2>Why a wired signal matters</h2>
-    <p>Grading a note requires hearing it exactly. An unamplified electric guitar is not a signal a detector can read reliably, and a room microphone drops notes as soon as there is noise. Plug into a USB audio interface and Afinora detects it, compensates its latency and tells you it is connected.</p>
-    <p>Tested with the Fender Mustang Micro Plus; other compatible USB audio interfaces should work the same way. Acoustic instruments can train through the phone microphone instead.</p>
+    <!-- Naming the hardware is referential use, and it is only defensible with
+         this attribution attached. Keep it, and keep the brand out of headings,
+         images and page titles. -->
+    <p class="trademark">Tested with the Fender Mustang Micro Plus, and works with other compatible USB audio interfaces. Fender and Mustang Micro Plus are trademarks of Fender Musical Instruments Corporation; Afinora is not affiliated with, endorsed by, or sponsored by Fender.</p>
+  </div>
+</section>
 
-    <h2>Instruments</h2>
-    <p>Guitar, 7-string guitar, bass, ukulele, Venezuelan cuatro, violin, viola, cello, mandolin and banjo.</p>
+<section id="privacy">
+  <div class="wrap">
+    <div class="two-col">
+      <div>
+        <p class="eyebrow">Private from the start</p>
+        <h2 class="sub-h2" style="margin-top:14px">No account, no ads, no tracking</h2>
+      </div>
+      <div>
+        <p class="lead">There is no sign-up and no login: you open the app and play. There are no third-party ads and no analytics of our own. Audio used for tuning and training is analysed on the device as it arrives and is never recorded or uploaded. Studio recordings stay on your phone unless you share them yourself.</p>
+        <div class="link-list">
+          <a href="privacy.html">Privacy</a>
+          <a href="support.html">Support and questions</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-    <h2>Free and Pro</h2>
-    <p>Afinora opens with 5 days of full access. After that the free version keeps one instrument of your choice, the major and minor scales, and 5 Studio recordings. <strong>Afinora Pro is a one-time purchase, not a subscription</strong>, and unlocks everything permanently.</p>
+<section class="pricing" id="pro">
+  <div class="wrap">
+    <p class="eyebrow">Free and Pro</p>
+    <h2 class="sub-h2" style="margin-top:14px">It opens with five full days</h2>
+    <p class="lead" style="margin-top:16px">After that, the free version keeps one instrument of your choice, the major and minor scales, the whole metronome and five Studio recordings. Pro is a one-time purchase, not a subscription, and unlocks the rest permanently.</p>
+    <div class="price-grid">
+      <div class="price-card">
+        <h3>Free</h3>
+        <p>One instrument, major and minor scales, the full metronome, five recordings.</p>
+      </div>
+      <div class="price-card pro">
+        <h3>Pro · one-time purchase</h3>
+        <p>All ten instruments, the twenty scales and twenty chords, the full technique training and Studio without limits.</p>
+        <!-- The price appears exactly once on the page, and near the bottom. -->
+        <p class="price">US$9.99 or €9.99 in most countries</p>
+      </div>
+      <div class="price-card">
+        <h3>What there never is</h3>
+        <p>A subscription, ads, an account, tracking, or audio uploaded to a server.</p>
+      </div>
+    </div>
+  </div>
+</section>
 
-    <h2>Private by default</h2>
-    <p>No account, no ads, no tracking. Audio used for tuning and training is analysed on the device as it arrives and is never recorded or uploaded. Studio recordings stay on your phone unless you share them yourself. See the <a href="privacy.html">Privacy Policy</a>.</p>
+<section class="download" id="download">
+  <div class="wrap">
+    <div class="mark"><svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+  <g transform="translate(5 6.567) scale(0.9)">
+    <defs>
+      <mask id="m" maskUnits="userSpaceOnUse" x="0" y="0" width="100" height="100">
+        <rect x="0" y="0" width="100" height="100" fill="#fff"/>
+        <circle cx="50" cy="66" r="7.5" fill="#000"/>
+      </mask>
+    </defs>
+    <path d="M27 66 L73 66" fill="none" stroke="#2f7f60" stroke-width="6" stroke-linecap="round" mask="url(#m)"/>
+    <g fill="none" stroke="#34d399" stroke-width="11">
+      <path d="M20 88 L32.38 56.64"/>
+      <path d="M80 88 L67.62 56.64"/>
+      <path d="M36.42 46.4 L50 12 L63.58 46.4" stroke-linejoin="round"/>
+    </g>
+    <circle cx="50" cy="66" r="5" fill="#6ee7b7"/>
+  </g>
+</svg></div>
+    <h2>Download Afinora</h2>
+    <p class="lead">Available for Android and iPhone, in nine languages.</p>
+    <div class="store-row">
+      <a class="store-btn play" href="https://play.google.com/store/apps/details?id=com.afinora.app" rel="noopener">
+        <span class="top">Get it on</span>
+        <span class="name">Google Play</span>
+      </a>
+      <a class="store-btn apple" href="https://apps.apple.com/app/afinora/id6771803917" rel="noopener">
+        <span class="top">Download on</span>
+        <span class="name">App Store</span>
+      </a>
+    </div>
+  </div>
+</section>
 
-    <h2>Get it</h2>
-    <p><a href="https://play.google.com/store/apps/details?id=com.afinora.app">Afinora on Google Play</a></p>
-    <p>Available in 9 languages: English, Spanish, Italian, French, Portuguese, German, Japanese, Chinese and Russian.</p>
-
-    <footer>
-      <a href="support.html">Support</a> · <a href="privacy.html">Privacy Policy</a><br />
-      © 2026 Afinora · Fender and Mustang Micro Plus are trademarks of Fender Musical Instruments Corporation. Afinora is not affiliated with, endorsed by, or sponsored by Fender.
-    </footer>
-  </main>
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="name">Afinora</div>
+        <p>Tuner, metronome and training for string instruments.</p>
+      </div>
+      <div>
+        <h4>The app</h4>
+        <ul>
+          <li><a href="#top#features">Technique training</a></li>
+          <li><a href="#top#tuner">Tuner</a></li>
+          <li><a href="#top#metronome">Metronome</a></li>
+          <li><a href="#top#scales">Chords and scales</a></li>
+          <li><a href="#top#studio">Studio</a></li>
+          <li><a href="#top#how-it-listens">How it listens</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Instruments</h4>
+        <ul>
+          <li><a href="#top#instruments">Guitar tuner</a></li>
+          <li><a href="#top#instruments">Bass tuner</a></li>
+          <li><a href="#top#instruments">Ukulele tuner</a></li>
+          <li><a href="#top#instruments">Violin tuner</a></li>
+          <li><a href="#top#instruments">Cuatro tuner</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Help</h4>
+        <ul>
+          <li><a href="support.html">Support</a></li>
+          <li><a href="privacy.html">Privacy</a></li>
+          <li><a href="mailto:cyberxkte@gmail.com">cyberxkte@gmail.com</a></li>
+          <li><a href="/es/" hreflang="es" lang="es">Español</a></li>
+          <li><a href="/it/" hreflang="it" lang="it">Italiano</a></li>
+          <li><a href="/fr/" hreflang="fr" lang="fr">Français</a></li>
+          <li><a href="/pt/" hreflang="pt" lang="pt">Português</a></li>
+          <li><a href="/de/" hreflang="de" lang="de">Deutsch</a></li>
+          <li><a href="/ja/" hreflang="ja" lang="ja">日本語</a></li>
+          <li><a href="/zh/" hreflang="zh" lang="zh">中文</a></li>
+          <li><a href="/ru/" hreflang="ru" lang="ru">Русский</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Afinora · afinora.app</span>
+      <span>Made for people who practise</span>
+    </div>
+  </div>
+</footer>
+<script src="/assets/js/afinora.js" defer></script>
 </body>
 </html>

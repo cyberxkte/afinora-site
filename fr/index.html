@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Afinora — Accordeur de guitare, métronome et entraînement technique pour instruments à cordes</title>
+  <meta name="description" content="Un accordeur de guitare qui vous entraîne aussi. Détection de hauteur en temps réel pour dix instruments, métronome, gammes et accords sur votre propre manche, et un entraînement qui note chaque note que vous jouez. Fonctionne avec une interface audio USB. Sans compte ni publicité.">
+  <link rel="canonical" href="https://afinora.app/fr/">
+  <link rel="alternate" hreflang="en" href="https://afinora.app/">
+  <link rel="alternate" hreflang="es" href="https://afinora.app/es/">
+  <link rel="alternate" hreflang="it" href="https://afinora.app/it/">
+  <link rel="alternate" hreflang="fr" href="https://afinora.app/fr/">
+  <link rel="alternate" hreflang="pt" href="https://afinora.app/pt/">
+  <link rel="alternate" hreflang="de" href="https://afinora.app/de/">
+  <link rel="alternate" hreflang="ja" href="https://afinora.app/ja/">
+  <link rel="alternate" hreflang="zh" href="https://afinora.app/zh/">
+  <link rel="alternate" hreflang="ru" href="https://afinora.app/ru/">
+  <link rel="alternate" hreflang="x-default" href="https://afinora.app/">
+  <link rel="icon" href="/brand/play-icon-512.png" type="image/png">
+  <link rel="apple-touch-icon" href="/brand/play-icon-512.png">
+  <meta name="theme-color" content="#050505">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Afinora">
+  <meta property="og:locale" content="fr">
+  <meta property="og:title" content="Afinora — Accordeur de guitare, métronome et entraînement technique pour instruments à cordes">
+  <meta property="og:description" content="Un accordeur de guitare qui vous entraîne aussi. Détection de hauteur en temps réel pour dix instruments, métronome, gammes et accords sur votre propre manche, et un entraînement qui note chaque note que vous jouez. Fonctionne avec une interface audio USB. Sans compte ni publicité.">
+  <meta property="og:url" content="https://afinora.app/fr/">
+  <meta property="og:image" content="https://afinora.app/brand/play-feature-graphic.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Afinora — Accordeur de guitare, métronome et entraînement technique pour instruments à cordes">
+  <meta name="twitter:description" content="Un accordeur de guitare qui vous entraîne aussi. Détection de hauteur en temps réel pour dix instruments, métronome, gammes et accords sur votre propre manche, et un entraînement qui note chaque note que vous jouez. Fonctionne avec une interface audio USB. Sans compte ni publicité.">
+  <meta name="twitter:image" content="https://afinora.app/brand/play-feature-graphic.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+  <link rel="stylesheet" href="/assets/css/site.css">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"Afinora","applicationCategory":"MusicApplication","operatingSystem":"Android, iOS","description":"Un accordeur de guitare qui vous entraîne aussi. Détection de hauteur en temps réel pour dix instruments, métronome, gammes et accords sur votre propre manche, et un entraînement qui note chaque note que vous jouez. Fonctionne avec une interface audio USB. Sans compte ni publicité.","url":"https://afinora.app/","inLanguage":["en","es","it","fr","pt","de","ja","zh","ru"],"offers":{"@type":"Offer","price":"0","priceCurrency":"USD","description":"Un instrument, gammes majeure et mineure, le métronome complet, cinq enregistrements."},"author":{"@type":"Organization","name":"Afinora","url":"https://afinora.app/"}}</script>
+  <script>window.AFINORA_I18N={"tabTune":"Accorder","tabMetronome":"Métronome","tabScales":"Gammes","tabTraining":"Entraîner","tabStudio":"Studio","instGuitar":"Guitare","instViolin":"Violon","tunerStandard":"Standard","tunerInTune":"Juste","tunerFlat":"Bas","tunerSharp":"Haut","tunerCentered":"Centré","tunerDetected":"Détecté","tunerTarget":"Cible","tunerCents":"Cents","screenMetronome":"Métronome","metroHint":"Touchez un temps pour l'accentuer ou le muter","metroSubdivision":"Subdivision","metroSound":"Son","screenScales":"Accords et gammes","scalesTab":"Gammes","chordsTab":"Accords","scaleDegrees":"7 notes","fretboard":"Manche","frets":"frettes","notesTab":"Notes","degreesTab":"Degrés","tonic":"Tonique","colourIsString":"Couleur = corde","screenStudio":"Studio","audioChip":"AUDIO","videoChip":"VIDÉO","inputLevel":"Niveau d'entrée","backingTrack":"Piste d'accompagnement","loopChip":"Boucle","autosaveChip":"Sauvegarde auto","speedUpChip":"+5% de vitesse par boucle","shoutPerfect":"PARFAIT !","shoutGood":"BIEN !","shoutMiss":"RATÉ !","highwayAlt":"L'autoroute de notes d'Afinora : les notes défilent le long du manche et chacune est notée quand elle franchit le curseur"};</script>
+</head>
+<body id="top">
+<a class="skip" href="#main">Aller au contenu</a>
+<header class="site-header">
+  <div class="inner">
+    <a class="brand" href="#top">
+      <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+  <g transform="translate(5 6.567) scale(0.9)">
+    <defs>
+      <mask id="m" maskUnits="userSpaceOnUse" x="0" y="0" width="100" height="100">
+        <rect x="0" y="0" width="100" height="100" fill="#fff"/>
+        <circle cx="50" cy="66" r="7.5" fill="#000"/>
+      </mask>
+    </defs>
+    <path d="M27 66 L73 66" fill="none" stroke="#2f7f60" stroke-width="6" stroke-linecap="round" mask="url(#m)"/>
+    <g fill="none" stroke="#34d399" stroke-width="11">
+      <path d="M20 88 L32.38 56.64"/>
+      <path d="M80 88 L67.62 56.64"/>
+      <path d="M36.42 46.4 L50 12 L63.58 46.4" stroke-linejoin="round"/>
+    </g>
+    <circle cx="50" cy="66" r="5" fill="#6ee7b7"/>
+  </g>
+</svg>
+      <span class="name">Afinora</span>
+    </a>
+    <div class="header-right">
+      <details class="lang">
+        <summary aria-label="Changer de langue">FR <span aria-hidden="true">▾</span></summary>
+        <div class="lang-panel">
+        <a href="/" hreflang="en" lang="en">English</a>
+        <a href="/es/" hreflang="es" lang="es">Español</a>
+        <a href="/it/" hreflang="it" lang="it">Italiano</a>
+        <span class="current">Français</span>
+        <a href="/pt/" hreflang="pt" lang="pt">Português</a>
+        <a href="/de/" hreflang="de" lang="de">Deutsch</a>
+        <a href="/ja/" hreflang="ja" lang="ja">日本語</a>
+        <a href="/zh/" hreflang="zh" lang="zh">中文</a>
+        <a href="/ru/" hreflang="ru" lang="ru">Русский</a>
+        </div>
+      </details>
+      <a class="btn" href="#download">Télécharger</a>
+    </div>
+  </div>
+</header>
+<main id="main">
+
+<section class="hero">
+  <div data-mock="field"></div>
+  <div class="hero-scrim"></div>
+  <div class="wrap">
+    <div class="hero-grid">
+      <div class="hero-copy">
+        <p class="eyebrow">Pour guitare, basse, ukulélé et cordes frottées</p>
+        <h1>Un accordeur, un métronome et un entraîneur qui écoute comment vous jouez.</h1>
+        <p class="lead">Détection de hauteur en temps réel pour dix instruments, un métronome, des gammes et des accords dessinés sur votre propre manche, et un entraînement qui écoute pendant que vous jouez et note chaque note séparément. Tout tourne sur l'appareil, sans compte.</p>
+        <div class="store-row">
+      <a class="store-btn play" href="https://play.google.com/store/apps/details?id=com.afinora.app" rel="noopener">
+        <span class="top">Disponible sur</span>
+        <span class="name">Google Play</span>
+      </a>
+      <a class="store-btn apple" href="https://apps.apple.com/app/afinora/id6771803917" rel="noopener">
+        <span class="top">Télécharger sur</span>
+        <span class="name">App Store</span>
+      </a>
+    </div>
+        <p class="fine">Sans compte · sans publicité · l'audio ne quitte jamais le téléphone</p>
+      </div>
+      <div>
+        <div class="phone">
+          <div class="screen" data-mock="tuner"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="stats">
+  <div class="wrap">
+    <div class="grid">
+      <div class="cell">
+        <div class="figure">10</div>
+        <div class="label">Instruments</div>
+      </div>
+      <div class="cell">
+        <div class="figure">30+</div>
+        <div class="label">Accordages</div>
+      </div>
+      <div class="cell">
+        <div class="figure">432–442</div>
+        <div class="label">Hz de référence</div>
+      </div>
+      <div class="cell">
+        <div class="figure">9</div>
+        <div class="label">Langues</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="instruments">
+  <div class="wrap">
+    <h2 class="sub-h2">Dix instruments, avec leurs accordages</h2>
+    <p class="lead" style="margin-top:14px">Ses propres cordes, ses propres accordages alternatifs et son manche dessiné avec les frettes qu'il a — ou sans.</p>
+    <div class="pill-row">
+      <span class="pill">Guitare</span>
+      <span class="pill">Guitare 7 cordes</span>
+      <span class="pill">Basse</span>
+      <span class="pill">Ukulélé</span>
+      <span class="pill">Cuatro vénézuélien</span>
+      <span class="pill">Violon</span>
+      <span class="pill">Alto</span>
+      <span class="pill">Violoncelle</span>
+      <span class="pill">Mandoline</span>
+      <span class="pill">Banjo</span>
+    </div>
+  </div>
+</section>
+
+<section class="technique" id="features">
+  <div class="wrap">
+    <p class="eyebrow">Entraînement technique</p>
+    <h2 style="margin-top:14px">Il écoute pendant que vous jouez et note chaque note sur la justesse et le placement</h2>
+    <p class="lead" style="margin-top:20px">Vous choisissez une gamme, réglez un tempo et la jouez contre le métronome. Le détecteur de hauteur écoute et note chaque note séparément dès qu'elle arrive : juste et à temps, en retard, ou non détectée. La justesse et le placement sont mesurés à part, donc à la fin vous savez quelles notes précises travailler au lieu de deviner. Les notes défilent le long du manche avec une couleur par doigt et une voie par corde, et vous les jouez sur l'instrument.</p>
+
+    <div class="highway-card">
+      <div data-mock="highway"></div>
+      <div class="legend">
+        <div><span class="dot" style="background:#5ee7f0"></span>Pile sur le temps</div>
+        <div><span class="dot" style="background:#8fbf5a"></span>Jouée, mais elle a glissé</div>
+        <div><span class="dot" style="background:#e0554a"></span>Jamais arrivée</div>
+      </div>
+    </div>
+
+    <div class="trio">
+      <div>
+        <h3>Apportez vos propres exercices</h3>
+        <p class="small">Des motifs de gammes intégrés, ou collez les vôtres en texte brut et Afinora en fait un parcours.</p>
+      </div>
+      <div>
+        <h3>Le tempo monte tout seul</h3>
+        <p class="small">La boucle accélère tant que vous suivez et redescend quand vous décrochez.</p>
+      </div>
+      <div>
+        <h3>Un historique par gamme</h3>
+        <p class="small">Chaque exercice garde son propre historique, si bien que le progrès est un chiffre mesuré.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="blocks">
+      <div class="block" id="tuner">
+      <div class="block-copy">
+        <p class="eyebrow">01 · Accordeur</p>
+        <h2 class="block-h2">Lit chaque note exactement</h2>
+        <p class="lead">Détection de hauteur en temps réel, traitée sur l'appareil lui-même. Plus de trente accordages standards et alternatifs, plus ceux que vous construisez. Un son de référence sur n'importe quelle corde et six références A4, de 432 à 442 Hz. Lit une guitare électrique non amplifiée.</p>
+      </div>
+      <div>
+        <div class="phone phone-sm phone-violin">
+          <div class="screen" data-mock="tuner-violin"></div>
+        </div>
+      </div>
+    </div>
+      <div class="block mirrored" id="scales">
+      <div class="block-copy">
+        <p class="eyebrow">02 · Accords et gammes</p>
+        <h2 class="block-h2">Tout le manche, dans votre accordage</h2>
+        <p class="lead">Vingt gammes et vingt accords, dessinés là où vous les jouez vraiment : jusqu'à 24 frettes, avec une vue plein écran. Notes ou degrés, positions d'accords y compris les barrés, et les accords qui appartiennent à la tonalité affichée. De là, une gamme passe directement à l'entraînement.</p>
+      </div>
+      <div>
+        <div class="phone phone-sm">
+          <div class="screen" data-mock="fretboard"></div>
+        </div>
+      </div>
+    </div>
+      <div class="block" id="metronome">
+      <div class="block-copy">
+        <p class="eyebrow">03 · Métronome</p>
+        <h2 class="block-h2">Réglez le tempo, choisissez la mesure, jouez</h2>
+        <p class="lead">Vous ne connaissez pas le BPM ? Tapez-le et Afinora le calcule. De 30 à 300 BPM, des mesures de 2/4 à 12/8, et des subdivisions jusqu'aux doubles croches — celles qui aident dans les tempos lents, où c'est l'espace entre les temps qui vous déstabilise. Touchez n'importe quel temps de la mesure pour l'accentuer ou le muter. C'est le même clic contre lequel l'entraînement technique mesure votre placement, et il est complet dans la version gratuite.</p>
+      </div>
+      <div>
+        <div class="phone phone-sm">
+          <div class="screen" data-mock="metronome"></div>
+        </div>
+      </div>
+    </div>
+      <div class="block mirrored" id="studio">
+      <div class="block-copy">
+        <p class="eyebrow">04 · Studio</p>
+        <h2 class="block-h2">Enregistrez-vous sur la piste d'accompagnement</h2>
+        <p class="lead">Importez une piste d'accompagnement, marquez le passage qui vous résiste, mettez-le en boucle et ralentissez-le. Enregistrez-vous par-dessus en audio ou en vidéo, sauvegardez dans votre galerie ou partagez. Les enregistrements sont des fichiers sur votre téléphone : l'application ne les envoie jamais.</p>
+      </div>
+      <div>
+        <div class="phone phone-sm">
+          <div class="screen" data-mock="studio"></div>
+        </div>
+      </div>
+    </div>
+      <div class="block" id="ear-training">
+        <div class="block-copy">
+          <p class="eyebrow">05 · Entraînement de l'oreille</p>
+          <h2 class="block-h2">Vous entendez la note et vous la jouez sur votre instrument</h2>
+          <p class="lead">Afinora joue une note ou un intervalle, vous le trouvez sur le manche et vous le jouez, et le détecteur vérifie si c'est juste. Vous répondez avec l'instrument, pas en choisissant une option à l'écran.</p>
+        </div>
+        <div class="price-card">
+          <h3>Neuf langues</h3>
+          <p style="margin-top:10px">Espagnol, anglais, italien, français, portugais, allemand, japonais, chinois et russe. Toute l'application, pas seulement les menus.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="listens" id="how-it-listens">
+  <div class="wrap">
+    <p class="eyebrow">Comment il écoute</p>
+    <h2 class="sub-h2" style="margin-top:14px">Comment Afinora écoute votre instrument</h2>
+    <p class="lead" style="margin-top:16px">Noter note par note ne fonctionne que si le signal entrant est propre. Voici les trois cas, et celui qui vous concerne.</p>
+
+    <div class="listen-grid">
+      <div class="listen-card">
+        <div class="listen-figure" data-mock="listen-mic"></div>
+        <div class="listen-body">
+          <h3>Acoustique : par le microphone</h3>
+          <p>Guitare acoustique, violon, violoncelle, ukulélé, mandoline, cuatro. Le microphone du téléphone suffit pour accorder et pour s'entraîner.</p>
+        </div>
+      </div>
+      <div class="listen-card usb">
+        <div class="listen-figure" data-mock="listen-usb"></div>
+        <div class="listen-body">
+          <h3>Électrique : par une interface USB</h3>
+          <p>Une électrique non amplifiée n'est pas un signal qu'un détecteur peut lire de façon fiable, et un microphone d'ambiance perd des notes dès qu'il y a du bruit. Avec une interface, Afinora la détecte, compense sa latence et vous indique qu'elle est branchée.</p>
+        </div>
+      </div>
+      <div class="listen-card">
+        <div class="listen-figure" data-mock="listen-device"></div>
+        <div class="listen-body">
+          <h3>Tout est traité ici</h3>
+          <p>L'audio utilisé pour accorder et s'entraîner est analysé sur l'appareil au fil de son arrivée. Il n'est jamais enregistré ni envoyé.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Naming the hardware is referential use, and it is only defensible with
+         this attribution attached. Keep it, and keep the brand out of headings,
+         images and page titles. -->
+    <p class="trademark">Testé avec la Fender Mustang Micro Plus, et compatible avec d'autres interfaces audio USB. Fender et Mustang Micro Plus sont des marques de Fender Musical Instruments Corporation ; Afinora n'est ni affiliée à Fender, ni approuvée ou sponsorisée par elle.</p>
+  </div>
+</section>
+
+<section id="privacy">
+  <div class="wrap">
+    <div class="two-col">
+      <div>
+        <p class="eyebrow">Privée dès le départ</p>
+        <h2 class="sub-h2" style="margin-top:14px">Sans compte, sans publicité, sans suivi</h2>
+      </div>
+      <div>
+        <p class="lead">Il n'y a ni inscription ni connexion : vous ouvrez l'application et vous jouez. Il n'y a pas de publicité tierce ni d'analyse de notre part. L'audio utilisé pour accorder et s'entraîner est analysé sur l'appareil au fil de son arrivée et n'est jamais enregistré ni envoyé. Les enregistrements de Studio restent sur votre téléphone, sauf si vous les partagez vous-même.</p>
+        <div class="link-list">
+          <a href="privacy.html">Confidentialité</a>
+          <a href="support.html">Assistance et questions</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="pricing" id="pro">
+  <div class="wrap">
+    <p class="eyebrow">Gratuit et Pro</p>
+    <h2 class="sub-h2" style="margin-top:14px">Elle s'ouvre sur cinq jours complets</h2>
+    <p class="lead" style="margin-top:16px">Ensuite, la version gratuite garde un instrument de votre choix, les gammes majeure et mineure, tout le métronome et cinq enregistrements de Studio. Pro est un achat unique, pas un abonnement, et débloque le reste définitivement.</p>
+    <div class="price-grid">
+      <div class="price-card">
+        <h3>Gratuit</h3>
+        <p>Un instrument, gammes majeure et mineure, le métronome complet, cinq enregistrements.</p>
+      </div>
+      <div class="price-card pro">
+        <h3>Pro · achat unique</h3>
+        <p>Les dix instruments, les vingt gammes et vingt accords, tout l'entraînement technique et Studio sans limites.</p>
+        <!-- The price appears exactly once on the page, and near the bottom. -->
+        <p class="price">9,99 € ou 9,99 US$ dans la plupart des pays</p>
+      </div>
+      <div class="price-card">
+        <h3>Ce qu'il n'y a jamais</h3>
+        <p>Un abonnement, de la publicité, un compte, du suivi, ou de l'audio envoyé sur un serveur.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="download" id="download">
+  <div class="wrap">
+    <div class="mark"><svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+  <g transform="translate(5 6.567) scale(0.9)">
+    <defs>
+      <mask id="m" maskUnits="userSpaceOnUse" x="0" y="0" width="100" height="100">
+        <rect x="0" y="0" width="100" height="100" fill="#fff"/>
+        <circle cx="50" cy="66" r="7.5" fill="#000"/>
+      </mask>
+    </defs>
+    <path d="M27 66 L73 66" fill="none" stroke="#2f7f60" stroke-width="6" stroke-linecap="round" mask="url(#m)"/>
+    <g fill="none" stroke="#34d399" stroke-width="11">
+      <path d="M20 88 L32.38 56.64"/>
+      <path d="M80 88 L67.62 56.64"/>
+      <path d="M36.42 46.4 L50 12 L63.58 46.4" stroke-linejoin="round"/>
+    </g>
+    <circle cx="50" cy="66" r="5" fill="#6ee7b7"/>
+  </g>
+</svg></div>
+    <h2>Téléchargez Afinora</h2>
+    <p class="lead">Disponible pour Android et iPhone, en neuf langues.</p>
+    <div class="store-row">
+      <a class="store-btn play" href="https://play.google.com/store/apps/details?id=com.afinora.app" rel="noopener">
+        <span class="top">Disponible sur</span>
+        <span class="name">Google Play</span>
+      </a>
+      <a class="store-btn apple" href="https://apps.apple.com/app/afinora/id6771803917" rel="noopener">
+        <span class="top">Télécharger sur</span>
+        <span class="name">App Store</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="name">Afinora</div>
+        <p>Accordeur, métronome et entraînement pour instruments à cordes.</p>
+      </div>
+      <div>
+        <h4>L'application</h4>
+        <ul>
+          <li><a href="#top#features">Entraînement technique</a></li>
+          <li><a href="#top#tuner">Accordeur</a></li>
+          <li><a href="#top#metronome">Métronome</a></li>
+          <li><a href="#top#scales">Accords et gammes</a></li>
+          <li><a href="#top#studio">Studio</a></li>
+          <li><a href="#top#how-it-listens">Comment il écoute</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Instruments</h4>
+        <ul>
+          <li><a href="#top#instruments">Accordeur guitare</a></li>
+          <li><a href="#top#instruments">Accordeur basse</a></li>
+          <li><a href="#top#instruments">Accordeur ukulélé</a></li>
+          <li><a href="#top#instruments">Accordeur violon</a></li>
+          <li><a href="#top#instruments">Accordeur cuatro</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Aide</h4>
+        <ul>
+          <li><a href="support.html">Assistance</a></li>
+          <li><a href="privacy.html">Confidentialité</a></li>
+          <li><a href="mailto:cyberxkte@gmail.com">cyberxkte@gmail.com</a></li>
+          <li><a href="/" hreflang="en" lang="en">English</a></li>
+          <li><a href="/es/" hreflang="es" lang="es">Español</a></li>
+          <li><a href="/it/" hreflang="it" lang="it">Italiano</a></li>
+          <li><a href="/pt/" hreflang="pt" lang="pt">Português</a></li>
+          <li><a href="/de/" hreflang="de" lang="de">Deutsch</a></li>
+          <li><a href="/ja/" hreflang="ja" lang="ja">日本語</a></li>
+          <li><a href="/zh/" hreflang="zh" lang="zh">中文</a></li>
+          <li><a href="/ru/" hreflang="ru" lang="ru">Русский</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Afinora · afinora.app</span>
+      <span>Faite pour ceux qui travaillent leur instrument</span>
+    </div>
+  </div>
+</footer>
+<script src="/assets/js/afinora.js" defer></script>
+</body>
+</html>

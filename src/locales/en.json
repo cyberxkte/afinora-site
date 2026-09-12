@@ -1,0 +1,331 @@
+{
+  "index": {
+    "title": "Afinora — Guitar tuner, metronome and technique training for string instruments",
+    "description": "A guitar tuner that also trains you. Real-time pitch detection for ten instruments, a metronome, scales and chords on your own neck, and training that grades every note you play. Works with a USB audio interface. No account, no ads.",
+    "pricing": { "freeBody": "One instrument, major and minor scales, the full metronome, five recordings." }
+  },
+  "support": {
+    "title": "Support — Afinora",
+    "description": "Help with Afinora: no sound detected, the note jumps around, the reference tone is wrong, technique training cannot see an electric guitar, restoring a Pro purchase, and where Studio recordings are stored.",
+    "heading": "If something does not sound the way it should",
+    "intro": "Almost everything that goes wrong with a tuner is the signal reaching it, not the tuner. Here are the cases we see again and again, and what to do about each.",
+    "contactHeading": "Write to us",
+    "contactBody": "If none of the above fixes it, tell us. Include the instrument, the phone and what you expected to happen; that is usually enough.",
+    "questions": [
+      {
+        "heading": "The app detects no sound",
+        "list": [
+          "Make sure microphone permission is allowed for Afinora.",
+          "Tune in a quiet environment.",
+          "Hold the phone near the instrument.",
+          "Play one string at a time and let it ring clearly for a moment.",
+          "Confirm the selected instrument and tuning match what you are playing."
+        ]
+      },
+      {
+        "heading": "The note jumps around",
+        "body": "Pitch detection can be affected by background noise, old strings, harmonics, or several strings ringing at once. Mute the other strings and try again."
+      },
+      {
+        "heading": "The reference tone is not what I expected",
+        "body": "Check the selected instrument, tuning and A4 reference frequency in Settings. The note buttons play the target sound for the current tuning, so if that reference is set to 432 Hz, the tone sounds at 432 Hz."
+      },
+      {
+        "heading": "Technique training cannot see my electric",
+        "body": "An unamplified electric guitar does not produce a signal a detector can read reliably, and a room microphone drops notes as soon as there is noise. Grading note by note needs a USB audio interface: plug one in and Afinora detects it, compensates its latency and tells you. Acoustic instruments do train through the phone's microphone.",
+        "callout": true
+      },
+      {
+        "heading": "I bought Pro and it is not showing",
+        "body": "Pro is a one-time purchase tied to your store account. If you changed phones or reinstalled the app, use the restore-purchases option inside Afinora with the same Google Play or App Store account you bought it with. If it still does not appear, write to us with the purchase date."
+      },
+      {
+        "heading": "Where do my recordings go?",
+        "body": "On your phone. Studio takes are files on the device; the app never uploads them to a server. You can save them to your gallery or share them yourself, and uninstalling the app deletes the ones you have not saved elsewhere."
+      }
+    ]
+  },
+  "privacy": {
+    "title": "Privacy Policy — Afinora",
+    "description": "Afinora has no account, no advertising and no analytics. Audio used for tuning and training is analysed on the device and never uploaded. This policy explains exactly how the app handles data.",
+    "heading": "Afinora Privacy Policy",
+    "effective": "Effective date: August 30, 2026",
+    "summary": "The short version: Afinora has no account, no advertising and no analytics, and it makes no network requests of its own except to manage a purchase. Everything you play, record or configure stays on your device unless you share it yourself.",
+    "intro": "Afinora is a practice app for string instruments: a tuner, a metronome, a scale and chord reference, ear and technique training, and a recorder for playing over backing tracks. This policy explains how the app handles data.",
+    "contactHeading": "Contact",
+    "contactBody": "For privacy or support questions, contact:",
+    "translationNote": "This translation is provided for convenience. In case of any discrepancy, the English version of this policy governs.",
+    "sections": [
+      {
+        "heading": "Data Collection",
+        "paragraphs": [
+          "Afinora does not require an account and does not collect personal information.",
+          "Afinora has no servers. It does not send your audio, your recordings, your backing tracks, your settings or your practice history anywhere."
+        ]
+      },
+      {
+        "heading": "Microphone",
+        "paragraphs": [
+          "Afinora requests microphone access for two purposes:",
+          "Technique training can also listen through a USB audio interface connected to your device. Audio from an interface is treated exactly like microphone audio."
+        ],
+        "ordered": true,
+        "list": [
+          "<strong>Pitch and timing detection</strong>, in the tuner and in ear and technique training. This audio is analysed on the device as it arrives and is never written to a file, kept, uploaded, sold or shared. Nothing of it survives the moment it is analysed.",
+          "<strong>Recording in Studio</strong>, when you press record. This audio is written to a file on your device because a recording is the point of it. It is not uploaded."
+        ]
+      },
+      {
+        "heading": "Camera",
+        "paragraphs": [
+          "Afinora requests camera access only for Studio, and only while a take is set to video. The camera is used to record the take you asked for. No frame is uploaded, and Afinora never uses the camera outside Studio."
+        ]
+      },
+      {
+        "heading": "Photos And Videos",
+        "paragraphs": [
+          "Afinora asks for write-only access to your photo library, and asks for it only at the moment you save a Studio take to your gallery. Afinora does not read, browse, index or scan your existing photos or videos. Write-only is the permission the app requests, not merely a promise about how it behaves."
+        ]
+      },
+      {
+        "heading": "Backing Tracks And Files",
+        "paragraphs": [
+          "When you import a backing track, you choose the file yourself through your device's own file picker. Afinora copies it into its own folder so that it can remember the section you marked on it, and reads nothing else from your storage. Imported tracks are not uploaded, and copies that no track in your list still points at are deleted automatically."
+        ]
+      },
+      {
+        "heading": "Recordings",
+        "paragraphs": [
+          "Studio takes are written to your device's cache directory. They stay there until you discard them, until Afinora cleans up a take that nothing points at any more, or until your operating system reclaims the space.",
+          "A take leaves your device only in two ways, and both are ones you start:",
+          "Afinora never uploads a recording on its own, in the background, or for any purpose of its own."
+        ],
+        "list": [
+          "Saving it to your gallery, where it becomes an ordinary file on your device.",
+          "Sharing it, which hands the file to whichever app you pick in your system's share sheet. What that app does with it is governed by that app's own privacy policy."
+        ]
+      },
+      {
+        "heading": "Data Stored On Your Device",
+        "paragraphs": [
+          "Afinora stores the following locally, and only locally: your settings, custom tunings, metronome preferences, ear-training scores, technique practice history and audio-interface calibration, your Studio session with its list of recent tracks, and your trial and purchase state.",
+          "Technique practice history records what you configured and how you performed — tempo, notes, accuracy and timing. It never contains audio.",
+          "Deleting the app removes this data, with one deliberate exception described below."
+        ]
+      },
+      {
+        "heading": "Purchase Identifier",
+        "paragraphs": [
+          "Afinora generates a random identifier for your installation the first time it runs and stores it on your device. It is not derived from your device, your accounts, your advertising identifier or anything about you, and it is not shared with anyone but the purchase entitlement service described below.",
+          "Its only purpose is to let a purchase you already made be recognised again after a reinstall. On iOS it is stored in the system keychain, which is why it — and therefore your Pro purchase and your trial state — can survive deleting and reinstalling the app."
+        ]
+      },
+      {
+        "heading": "Analytics And Advertising",
+        "paragraphs": [
+          "Afinora contains no third-party advertising, no ad SDKs, no analytics SDK, no crash reporting, no login and no custom backend, and no third-party tracking of any kind. The app may show first-party prompts about Afinora features or Pro access; those are part of the product, not advertising."
+        ]
+      },
+      {
+        "heading": "Payments",
+        "paragraphs": [
+          "Afinora offers an optional one-time in-app purchase to unlock Pro features. There is no subscription.",
+          "Purchases are processed by the Apple App Store or Google Play. Afinora never sees or stores payment card information.",
+          "Afinora uses RevenueCat to manage purchase status and Pro access. RevenueCat receives the random installation identifier described above, and may process purchase history and store receipt or purchase token information for entitlement management. This is the only network traffic Afinora originates."
+        ]
+      },
+      {
+        "heading": "Children",
+        "paragraphs": [
+          "Afinora is not directed at children and does not knowingly collect data from children."
+        ]
+      },
+      {
+        "heading": "Changes",
+        "paragraphs": [
+          "This policy may be updated as the app evolves. Any material changes will be reflected in the published policy."
+        ]
+      }
+    ]
+  },
+  "nav": {
+    "skip": "Skip to content",
+    "language": "Change language",
+    "download": "Download",
+    "home": "Home",
+    "support": "Support",
+    "privacy": "Privacy",
+    "technique": "Technique training",
+    "tuner": "Tuner",
+    "metronome": "Metronome",
+    "scales": "Chords and scales",
+    "studio": "Studio",
+    "howItListens": "How it listens"
+  },
+  "hero": {
+    "eyebrow": "For guitar, bass, ukulele and bowed strings",
+    "heading": "A tuner, a metronome, and a trainer that listens to how you play.",
+    "body": "Real-time pitch detection for ten instruments, a metronome, scales and chords drawn on your own neck, and training that listens as you play and grades every note separately. It all runs on the device, with no account.",
+    "getItOn": "Get it on",
+    "downloadOn": "Download on",
+    "fine": "No account · no ads · audio never leaves the phone"
+  },
+  "stats": [
+    { "figure": "10", "label": "Instruments" },
+    { "figure": "30+", "label": "Tunings" },
+    { "figure": "432–442", "label": "Reference Hz" },
+    { "figure": "9", "label": "Languages" }
+  ],
+  "instruments": {
+    "heading": "Ten instruments, with their tunings",
+    "body": "Its own strings, its own alternate tunings, and its neck drawn with the frets it has — or without them.",
+    "list": [
+      "Guitar", "7-string guitar", "Bass", "Ukulele", "Venezuelan cuatro",
+      "Violin", "Viola", "Cello", "Mandolin", "Banjo"
+    ]
+  },
+  "technique": {
+    "eyebrow": "Technique training",
+    "heading": "It listens as you play and grades every note for pitch and timing",
+    "body": "You pick a scale, set a tempo and play it against the metronome. The pitch detector listens and grades every note separately the moment it arrives: in tune and on time, late, or not detected. Pitch and timing are measured apart, so when you finish you know which specific notes to work on instead of guessing. The notes travel along the neck with one colour per finger and one lane per string, and you play them on the instrument.",
+    "legendPerfect": "Dead on the beat",
+    "legendHit": "Played, but it slipped",
+    "legendMiss": "Never arrived",
+    "points": [
+      {
+        "heading": "Bring your own exercises",
+        "body": "Built-in scale patterns, or paste your own as plain text and Afinora turns it into a route."
+      },
+      {
+        "heading": "The tempo rises automatically",
+        "body": "The loop speeds up while you keep up and drops the tempo when you don't."
+      },
+      {
+        "heading": "A history per scale",
+        "body": "Every exercise keeps its own history, so progress is a measured figure."
+      }
+    ]
+  },
+  "blocks": {
+    "tuner": {
+      "eyebrow": "01 · Tuner",
+      "heading": "Reads every note exactly",
+      "body": "Real-time pitch detection, processed on the device itself. Over thirty standard and alternate tunings, plus the ones you build yourself. A reference tone on any string and six A4 references, from 432 to 442 Hz. Reads an unplugged electric guitar."
+    },
+    "scales": {
+      "eyebrow": "02 · Chords and scales",
+      "heading": "The whole neck, in your tuning",
+      "body": "Twenty scales and twenty chords, drawn where you actually play them: up to 24 frets, with a fullscreen view. Notes or degrees, chord voicings including barre shapes, and the chords that belong to the key you are looking at. From there, a scale goes straight into training."
+    },
+    "metronome": {
+      "eyebrow": "03 · Metronome",
+      "heading": "Set the tempo, pick the bar, play",
+      "body": "Don't know the BPM? Tap it in and Afinora works it out. 30 to 300 BPM, bars from 2/4 to 12/8, and subdivisions down to sixteenths — the ones that help at slow tempos, where the space between beats is what throws you off. Tap any beat of the bar to accent it or mute it. It is the same click technique training measures your timing against, and it is complete in the free version."
+    },
+    "studio": {
+      "eyebrow": "04 · Studio",
+      "heading": "Record yourself over the backing track",
+      "body": "Import a backing track, mark the section that gives you trouble, loop it and slow it down. Record yourself over it as audio or video, save it to your gallery or share it. Recordings are files on your phone: the app never uploads them."
+    },
+    "ear": {
+      "eyebrow": "05 · Ear training",
+      "heading": "You hear the note and play it on your instrument",
+      "body": "Afinora plays a note or an interval, you find it on the neck and play it, and the detector checks whether you got it right. You answer on the instrument, not by picking an option on screen."
+    },
+    "languages": {
+      "heading": "Nine languages",
+      "body": "Spanish, English, Italian, French, Portuguese, German, Japanese, Chinese and Russian. The whole app, not just the menus."
+    }
+  },
+  "listens": {
+    "eyebrow": "How it listens",
+    "heading": "How Afinora listens to your instrument",
+    "body": "Grading note by note only works if the signal coming in is clean. These are the three cases, and which one applies to you.",
+    "acoustic": {
+      "heading": "Acoustic: through the microphone",
+      "body": "Acoustic guitar, violin, cello, ukulele, mandolin, cuatro. The phone's microphone is enough to tune and to train."
+    },
+    "electric": {
+      "heading": "Electric: through a USB interface",
+      "body": "An unamplified electric is not a signal a detector can read reliably, and a room microphone drops notes as soon as there is noise. With an interface, Afinora detects it, compensates its latency and tells you it is connected."
+    },
+    "device": {
+      "heading": "It is all processed here",
+      "body": "Audio used for tuning and training is analysed on the device as it arrives. It is never recorded or uploaded."
+    },
+    "trademark": "Tested with the Fender Mustang Micro Plus, and works with other compatible USB audio interfaces. Fender and Mustang Micro Plus are trademarks of Fender Musical Instruments Corporation; Afinora is not affiliated with, endorsed by, or sponsored by Fender."
+  },
+  "privacyTeaser": {
+    "eyebrow": "Private from the start",
+    "heading": "No account, no ads, no tracking",
+    "body": "There is no sign-up and no login: you open the app and play. There are no third-party ads and no analytics of our own. Audio used for tuning and training is analysed on the device as it arrives and is never recorded or uploaded. Studio recordings stay on your phone unless you share them yourself.",
+    "supportLink": "Support and questions"
+  },
+  "pricing": {
+    "eyebrow": "Free and Pro",
+    "heading": "It opens with five full days",
+    "body": "After that, the free version keeps one instrument of your choice, the major and minor scales, the whole metronome and five Studio recordings. Pro is a one-time purchase, not a subscription, and unlocks the rest permanently.",
+    "freeHeading": "Free",
+    "freeBody": "One instrument, major and minor scales, the full metronome, five recordings.",
+    "proHeading": "Pro · one-time purchase",
+    "proBody": "All ten instruments, the twenty scales and twenty chords, the full technique training and Studio without limits.",
+    "price": "US$9.99 or €9.99 in most countries",
+    "neverHeading": "What there never is",
+    "neverBody": "A subscription, ads, an account, tracking, or audio uploaded to a server."
+  },
+  "download": {
+    "heading": "Download Afinora",
+    "body": "Available for Android and iPhone, in nine languages."
+  },
+  "footer": {
+    "tagline": "Tuner, metronome and training for string instruments.",
+    "appHeading": "The app",
+    "instrumentsHeading": "Instruments",
+    "helpHeading": "Help",
+    "made": "Made for people who practise",
+    "seo": ["Guitar tuner", "Bass tuner", "Ukulele tuner", "Violin tuner", "Cuatro tuner"]
+  },
+  "ui": {
+    "tabTune": "Tune",
+    "tabMetronome": "Metronome",
+    "tabScales": "Scales",
+    "tabTraining": "Training",
+    "tabStudio": "Studio",
+    "instGuitar": "Guitar",
+    "instViolin": "Violin",
+    "tunerStandard": "Standard",
+    "tunerInTune": "In tune",
+    "tunerFlat": "Flat",
+    "tunerSharp": "Sharp",
+    "tunerCentered": "Centered",
+    "tunerDetected": "Detected",
+    "tunerTarget": "Target",
+    "tunerCents": "Cents",
+    "screenMetronome": "Metronome",
+    "metroHint": "Tap a beat to accent or silence it",
+    "metroSubdivision": "Subdivision",
+    "metroSound": "Sound",
+    "screenScales": "Chords & Scales",
+    "scalesTab": "Scales",
+    "chordsTab": "Chords",
+    "scaleDegrees": "7 notes",
+    "fretboard": "Fretboard",
+    "frets": "frets",
+    "notesTab": "Notes",
+    "degreesTab": "Degrees",
+    "tonic": "Tonic",
+    "colourIsString": "Colour = string",
+    "screenStudio": "Studio",
+    "audioChip": "AUDIO",
+    "videoChip": "VIDEO",
+    "inputLevel": "Input level",
+    "backingTrack": "Backing track",
+    "loopChip": "Loop",
+    "autosaveChip": "Auto-save",
+    "speedUpChip": "+5% speed-up per loop",
+    "shoutPerfect": "PERFECT!",
+    "shoutGood": "GOOD!",
+    "shoutMiss": "MISS!",
+    "highwayAlt": "Afinora's note highway: notes travel along the neck and each one is graded as it crosses the cursor"
+  }
+}

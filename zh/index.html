@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Afinora — 弦乐器的吉他调音器、节拍器与技巧训练</title>
+  <meta name="description" content="一款还能训练你的吉他调音器。十种乐器的实时音高检测、节拍器、画在你自己指板上的音阶与和弦，以及为你弹的每一个音单独评分的训练。支持 USB 音频接口。无需账号，没有广告。">
+  <link rel="canonical" href="https://afinora.app/zh/">
+  <link rel="alternate" hreflang="en" href="https://afinora.app/">
+  <link rel="alternate" hreflang="es" href="https://afinora.app/es/">
+  <link rel="alternate" hreflang="it" href="https://afinora.app/it/">
+  <link rel="alternate" hreflang="fr" href="https://afinora.app/fr/">
+  <link rel="alternate" hreflang="pt" href="https://afinora.app/pt/">
+  <link rel="alternate" hreflang="de" href="https://afinora.app/de/">
+  <link rel="alternate" hreflang="ja" href="https://afinora.app/ja/">
+  <link rel="alternate" hreflang="zh" href="https://afinora.app/zh/">
+  <link rel="alternate" hreflang="ru" href="https://afinora.app/ru/">
+  <link rel="alternate" hreflang="x-default" href="https://afinora.app/">
+  <link rel="icon" href="/brand/play-icon-512.png" type="image/png">
+  <link rel="apple-touch-icon" href="/brand/play-icon-512.png">
+  <meta name="theme-color" content="#050505">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Afinora">
+  <meta property="og:locale" content="zh">
+  <meta property="og:title" content="Afinora — 弦乐器的吉他调音器、节拍器与技巧训练">
+  <meta property="og:description" content="一款还能训练你的吉他调音器。十种乐器的实时音高检测、节拍器、画在你自己指板上的音阶与和弦，以及为你弹的每一个音单独评分的训练。支持 USB 音频接口。无需账号，没有广告。">
+  <meta property="og:url" content="https://afinora.app/zh/">
+  <meta property="og:image" content="https://afinora.app/brand/play-feature-graphic.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Afinora — 弦乐器的吉他调音器、节拍器与技巧训练">
+  <meta name="twitter:description" content="一款还能训练你的吉他调音器。十种乐器的实时音高检测、节拍器、画在你自己指板上的音阶与和弦，以及为你弹的每一个音单独评分的训练。支持 USB 音频接口。无需账号，没有广告。">
+  <meta name="twitter:image" content="https://afinora.app/brand/play-feature-graphic.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+  <link rel="stylesheet" href="/assets/css/site.css">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"Afinora","applicationCategory":"MusicApplication","operatingSystem":"Android, iOS","description":"一款还能训练你的吉他调音器。十种乐器的实时音高检测、节拍器、画在你自己指板上的音阶与和弦，以及为你弹的每一个音单独评分的训练。支持 USB 音频接口。无需账号，没有广告。","url":"https://afinora.app/","inLanguage":["en","es","it","fr","pt","de","ja","zh","ru"],"offers":{"@type":"Offer","price":"0","priceCurrency":"USD","description":"一种乐器、大调与小调音阶、完整的节拍器、五段录音。"},"author":{"@type":"Organization","name":"Afinora","url":"https://afinora.app/"}}</script>
+  <script>window.AFINORA_I18N={"tabTune":"调音","tabMetronome":"节拍器","tabScales":"音阶","tabTraining":"训练","tabStudio":"录音室","instGuitar":"吉他","instViolin":"小提琴","tunerStandard":"标准","tunerInTune":"准了","tunerFlat":"偏低","tunerSharp":"偏高","tunerCentered":"居中","tunerDetected":"检测到","tunerTarget":"目标","tunerCents":"音分","screenMetronome":"节拍器","metroHint":"点击某一拍以加重或静音","metroSubdivision":"细分","metroSound":"音色","screenScales":"和弦与音阶","scalesTab":"音阶","chordsTab":"和弦","scaleDegrees":"7 个音","fretboard":"指板","frets":"品","notesTab":"音名","degreesTab":"级数","tonic":"主音","colourIsString":"颜色 = 弦","screenStudio":"录音室","audioChip":"音频","videoChip":"视频","inputLevel":"输入电平","backingTrack":"伴奏","loopChip":"循环","autosaveChip":"自动保存","speedUpChip":"每次循环 +5% 速度","shoutPerfect":"完美!","shoutGood":"不错!","shoutMiss":"没中!","highwayAlt":"Afinora 的音符轨道：音符沿指板移动，每一个在越过光标时被评分"};</script>
+</head>
+<body id="top">
+<a class="skip" href="#main">跳到内容</a>
+<header class="site-header">
+  <div class="inner">
+    <a class="brand" href="#top">
+      <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+  <g transform="translate(5 6.567) scale(0.9)">
+    <defs>
+      <mask id="m" maskUnits="userSpaceOnUse" x="0" y="0" width="100" height="100">
+        <rect x="0" y="0" width="100" height="100" fill="#fff"/>
+        <circle cx="50" cy="66" r="7.5" fill="#000"/>
+      </mask>
+    </defs>
+    <path d="M27 66 L73 66" fill="none" stroke="#2f7f60" stroke-width="6" stroke-linecap="round" mask="url(#m)"/>
+    <g fill="none" stroke="#34d399" stroke-width="11">
+      <path d="M20 88 L32.38 56.64"/>
+      <path d="M80 88 L67.62 56.64"/>
+      <path d="M36.42 46.4 L50 12 L63.58 46.4" stroke-linejoin="round"/>
+    </g>
+    <circle cx="50" cy="66" r="5" fill="#6ee7b7"/>
+  </g>
+</svg>
+      <span class="name">Afinora</span>
+    </a>
+    <div class="header-right">
+      <details class="lang">
+        <summary aria-label="切换语言">ZH <span aria-hidden="true">▾</span></summary>
+        <div class="lang-panel">
+        <a href="/" hreflang="en" lang="en">English</a>
+        <a href="/es/" hreflang="es" lang="es">Español</a>
+        <a href="/it/" hreflang="it" lang="it">Italiano</a>
+        <a href="/fr/" hreflang="fr" lang="fr">Français</a>
+        <a href="/pt/" hreflang="pt" lang="pt">Português</a>
+        <a href="/de/" hreflang="de" lang="de">Deutsch</a>
+        <a href="/ja/" hreflang="ja" lang="ja">日本語</a>
+        <span class="current">中文</span>
+        <a href="/ru/" hreflang="ru" lang="ru">Русский</a>
+        </div>
+      </details>
+      <a class="btn" href="#download">下载</a>
+    </div>
+  </div>
+</header>
+<main id="main">
+
+<section class="hero">
+  <div data-mock="field"></div>
+  <div class="hero-scrim"></div>
+  <div class="wrap">
+    <div class="hero-grid">
+      <div class="hero-copy">
+        <p class="eyebrow">适用于吉他、贝斯、尤克里里和弓弦乐器</p>
+        <h1>一个调音器、一个节拍器，还有一位听你怎么弹的教练。</h1>
+        <p class="lead">十种乐器的实时音高检测、节拍器、画在你自己指板上的音阶与和弦，以及边弹边听、为每个音单独评分的训练。全部在设备上运行，无需账号。</p>
+        <div class="store-row">
+      <a class="store-btn play" href="https://play.google.com/store/apps/details?id=com.afinora.app" rel="noopener">
+        <span class="top">下载于</span>
+        <span class="name">Google Play</span>
+      </a>
+      <a class="store-btn apple" href="https://apps.apple.com/app/afinora/id6771803917" rel="noopener">
+        <span class="top">下载于</span>
+        <span class="name">App Store</span>
+      </a>
+    </div>
+        <p class="fine">无需账号 · 没有广告 · 音频绝不离开手机</p>
+      </div>
+      <div>
+        <div class="phone">
+          <div class="screen" data-mock="tuner"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="stats">
+  <div class="wrap">
+    <div class="grid">
+      <div class="cell">
+        <div class="figure">10</div>
+        <div class="label">乐器</div>
+      </div>
+      <div class="cell">
+        <div class="figure">30+</div>
+        <div class="label">调弦方式</div>
+      </div>
+      <div class="cell">
+        <div class="figure">432–442</div>
+        <div class="label">参考 Hz</div>
+      </div>
+      <div class="cell">
+        <div class="figure">9</div>
+        <div class="label">语言</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="instruments">
+  <div class="wrap">
+    <h2 class="sub-h2">十种乐器，各有其调弦方式</h2>
+    <p class="lead" style="margin-top:14px">各自的琴弦、各自的变则调弦，以及按它实际的品格绘制的琴颈——没有品的就照实画。</p>
+    <div class="pill-row">
+      <span class="pill">吉他</span>
+      <span class="pill">七弦吉他</span>
+      <span class="pill">贝斯</span>
+      <span class="pill">尤克里里</span>
+      <span class="pill">委内瑞拉四弦琴</span>
+      <span class="pill">小提琴</span>
+      <span class="pill">中提琴</span>
+      <span class="pill">大提琴</span>
+      <span class="pill">曼陀林</span>
+      <span class="pill">班卓琴</span>
+    </div>
+  </div>
+</section>
+
+<section class="technique" id="features">
+  <div class="wrap">
+    <p class="eyebrow">技巧训练</p>
+    <h2 style="margin-top:14px">边弹边听，从音准和节奏两方面为每个音评分</h2>
+    <p class="lead" style="margin-top:20px">你选一条音阶、设定速度，跟着节拍器弹。音高检测器一边聆听，一边在每个音到达的瞬间单独评分：音准且准时、偏晚，或没有检测到。音准和节奏分开测量，所以弹完之后你知道该练哪几个具体的音，而不是凭感觉猜。音符沿着琴颈移动，一个手指一种颜色、一根弦一条轨道，而你在真正的乐器上弹奏它们。</p>
+
+    <div class="highway-card">
+      <div data-mock="highway"></div>
+      <div class="legend">
+        <div><span class="dot" style="background:#5ee7f0"></span>正好踩在拍上</div>
+        <div><span class="dot" style="background:#8fbf5a"></span>弹到了，但滑掉了</div>
+        <div><span class="dot" style="background:#e0554a"></span>始终没到</div>
+      </div>
+    </div>
+
+    <div class="trio">
+      <div>
+        <h3>带上你自己的练习</h3>
+        <p class="small">内置音阶型，或把你自己的以纯文本粘贴进来，Afinora 会把它变成一条路线。</p>
+      </div>
+      <div>
+        <h3>速度会自动提升</h3>
+        <p class="small">只要你跟得上，循环就会加快；跟不上时它会把速度降下来。</p>
+      </div>
+      <div>
+        <h3>每条音阶都有自己的记录</h3>
+        <p class="small">每个练习都保留自己的历史，于是进步变成一个可测量的数字。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="blocks">
+      <div class="block" id="tuner">
+      <div class="block-copy">
+        <p class="eyebrow">01 · 调音器</p>
+        <h2 class="block-h2">每个音都读得准确</h2>
+        <p class="lead">实时音高检测，在设备本机处理。三十多种标准与变则调弦，加上你自己建立的。任意弦上的参考音，以及从 432 到 442 Hz 的六个 A4 参考。能读取未经放大的电吉他。</p>
+      </div>
+      <div>
+        <div class="phone phone-sm phone-violin">
+          <div class="screen" data-mock="tuner-violin"></div>
+        </div>
+      </div>
+    </div>
+      <div class="block mirrored" id="scales">
+      <div class="block-copy">
+        <p class="eyebrow">02 · 和弦与音阶</p>
+        <h2 class="block-h2">整块指板，按你的调弦</h2>
+        <p class="lead">二十条音阶和二十个和弦，画在你真正弹奏的位置：最多 24 品，支持全屏视图。音名或级数、包含横按在内的和弦把位，以及属于当前调性的和弦。从这里，一条音阶可以直接进入训练。</p>
+      </div>
+      <div>
+        <div class="phone phone-sm">
+          <div class="screen" data-mock="fretboard"></div>
+        </div>
+      </div>
+    </div>
+      <div class="block" id="metronome">
+      <div class="block-copy">
+        <p class="eyebrow">03 · 节拍器</p>
+        <h2 class="block-h2">设定速度，选好拍号，开始弹</h2>
+        <p class="lead">不知道 BPM？点几下，Afinora 会替你算出来。30 到 300 BPM，2/4 到 12/8 的拍号，细分到十六分音符——这些在慢速时最有用，因为让你乱掉的正是拍与拍之间的空隙。点击小节中的任意一拍即可加重或静音。技巧训练正是以这同一个节拍声来衡量你的节奏，而它在免费版中就是完整的。</p>
+      </div>
+      <div>
+        <div class="phone phone-sm">
+          <div class="screen" data-mock="metronome"></div>
+        </div>
+      </div>
+    </div>
+      <div class="block mirrored" id="studio">
+      <div class="block-copy">
+        <p class="eyebrow">04 · 录音室</p>
+        <h2 class="block-h2">跟着伴奏把自己录下来</h2>
+        <p class="lead">导入一段伴奏，标出让你头疼的段落，循环播放并放慢速度。以音频或视频把自己录在上面，保存到相册或分享出去。录音是你手机上的文件：应用绝不会上传。</p>
+      </div>
+      <div>
+        <div class="phone phone-sm">
+          <div class="screen" data-mock="studio"></div>
+        </div>
+      </div>
+    </div>
+      <div class="block" id="ear-training">
+        <div class="block-copy">
+          <p class="eyebrow">05 · 听音训练</p>
+          <h2 class="block-h2">你听到那个音，然后在乐器上弹出来</h2>
+          <p class="lead">Afinora 播放一个音或一个音程，你在指板上找到并弹出它，检测器判断你是否弹对。你用乐器作答，而不是在屏幕上点选项。</p>
+        </div>
+        <div class="price-card">
+          <h3>九种语言</h3>
+          <p style="margin-top:10px">西班牙语、英语、意大利语、法语、葡萄牙语、德语、日语、中文和俄语。整个应用，而不只是菜单。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="listens" id="how-it-listens">
+  <div class="wrap">
+    <p class="eyebrow">它如何聆听</p>
+    <h2 class="sub-h2" style="margin-top:14px">Afinora 如何聆听你的乐器</h2>
+    <p class="lead" style="margin-top:16px">只有送进来的信号足够干净，逐音评分才成立。以下是三种情形，看看哪一种适合你。</p>
+
+    <div class="listen-grid">
+      <div class="listen-card">
+        <div class="listen-figure" data-mock="listen-mic"></div>
+        <div class="listen-body">
+          <h3>原声：通过麦克风</h3>
+          <p>木吉他、小提琴、大提琴、尤克里里、曼陀林、四弦琴。手机麦克风足以调音和训练。</p>
+        </div>
+      </div>
+      <div class="listen-card usb">
+        <div class="listen-figure" data-mock="listen-usb"></div>
+        <div class="listen-body">
+          <h3>电声：通过 USB 接口</h3>
+          <p>未经放大的电吉他不是检测器能可靠读取的信号，而房间麦克风一有噪音就会漏音。接上接口后，Afinora 会检测到它、补偿其延迟，并提示你它已连接。</p>
+        </div>
+      </div>
+      <div class="listen-card">
+        <div class="listen-figure" data-mock="listen-device"></div>
+        <div class="listen-body">
+          <h3>一切都在这里处理</h3>
+          <p>用于调音和训练的音频在到达的同时于设备上分析。它绝不会被录下或上传。</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Naming the hardware is referential use, and it is only defensible with
+         this attribution attached. Keep it, and keep the brand out of headings,
+         images and page titles. -->
+    <p class="trademark">已通过 Fender Mustang Micro Plus 测试，也适用于其他兼容的 USB 音频接口。Fender 与 Mustang Micro Plus 是 Fender Musical Instruments Corporation 的商标；Afinora 与 Fender 无任何隶属关系，也未获其认可或赞助。</p>
+  </div>
+</section>
+
+<section id="privacy">
+  <div class="wrap">
+    <div class="two-col">
+      <div>
+        <p class="eyebrow">从一开始就是私密的</p>
+        <h2 class="sub-h2" style="margin-top:14px">没有账号，没有广告，没有追踪</h2>
+      </div>
+      <div>
+        <p class="lead">没有注册也没有登录：打开应用就弹。没有第三方广告，也没有我们自己的分析。用于调音和训练的音频在到达的同时于设备上分析，绝不会被录下或上传。录音室的录音留在你的手机上，除非你自己去分享。</p>
+        <div class="link-list">
+          <a href="privacy.html">隐私</a>
+          <a href="support.html">支持与问题</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="pricing" id="pro">
+  <div class="wrap">
+    <p class="eyebrow">免费版与 Pro</p>
+    <h2 class="sub-h2" style="margin-top:14px">打开就有完整的五天</h2>
+    <p class="lead" style="margin-top:16px">之后，免费版保留你选定的一种乐器、大调与小调音阶、完整的节拍器，以及五段录音室录音。Pro 是一次性购买而非订阅，永久解锁其余部分。</p>
+    <div class="price-grid">
+      <div class="price-card">
+        <h3>免费</h3>
+        <p>一种乐器、大调与小调音阶、完整的节拍器、五段录音。</p>
+      </div>
+      <div class="price-card pro">
+        <h3>Pro · 一次性购买</h3>
+        <p>全部十种乐器、二十条音阶和二十个和弦、完整的技巧训练，以及不受限制的录音室。</p>
+        <!-- The price appears exactly once on the page, and near the bottom. -->
+        <p class="price">在大多数国家为 9.99 美元或 9.99 欧元</p>
+      </div>
+      <div class="price-card">
+        <h3>永远不会有的东西</h3>
+        <p>订阅、广告、账号、追踪，或上传到服务器的音频。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="download" id="download">
+  <div class="wrap">
+    <div class="mark"><svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+  <g transform="translate(5 6.567) scale(0.9)">
+    <defs>
+      <mask id="m" maskUnits="userSpaceOnUse" x="0" y="0" width="100" height="100">
+        <rect x="0" y="0" width="100" height="100" fill="#fff"/>
+        <circle cx="50" cy="66" r="7.5" fill="#000"/>
+      </mask>
+    </defs>
+    <path d="M27 66 L73 66" fill="none" stroke="#2f7f60" stroke-width="6" stroke-linecap="round" mask="url(#m)"/>
+    <g fill="none" stroke="#34d399" stroke-width="11">
+      <path d="M20 88 L32.38 56.64"/>
+      <path d="M80 88 L67.62 56.64"/>
+      <path d="M36.42 46.4 L50 12 L63.58 46.4" stroke-linejoin="round"/>
+    </g>
+    <circle cx="50" cy="66" r="5" fill="#6ee7b7"/>
+  </g>
+</svg></div>
+    <h2>下载 Afinora</h2>
+    <p class="lead">支持 Android 和 iPhone，提供九种语言。</p>
+    <div class="store-row">
+      <a class="store-btn play" href="https://play.google.com/store/apps/details?id=com.afinora.app" rel="noopener">
+        <span class="top">下载于</span>
+        <span class="name">Google Play</span>
+      </a>
+      <a class="store-btn apple" href="https://apps.apple.com/app/afinora/id6771803917" rel="noopener">
+        <span class="top">下载于</span>
+        <span class="name">App Store</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="name">Afinora</div>
+        <p>面向弦乐器的调音器、节拍器与训练。</p>
+      </div>
+      <div>
+        <h4>应用</h4>
+        <ul>
+          <li><a href="#top#features">技巧训练</a></li>
+          <li><a href="#top#tuner">调音器</a></li>
+          <li><a href="#top#metronome">节拍器</a></li>
+          <li><a href="#top#scales">和弦与音阶</a></li>
+          <li><a href="#top#studio">录音室</a></li>
+          <li><a href="#top#how-it-listens">它如何聆听</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>乐器</h4>
+        <ul>
+          <li><a href="#top#instruments">吉他调音器</a></li>
+          <li><a href="#top#instruments">贝斯调音器</a></li>
+          <li><a href="#top#instruments">尤克里里调音器</a></li>
+          <li><a href="#top#instruments">小提琴调音器</a></li>
+          <li><a href="#top#instruments">四弦琴调音器</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>帮助</h4>
+        <ul>
+          <li><a href="support.html">支持</a></li>
+          <li><a href="privacy.html">隐私</a></li>
+          <li><a href="mailto:cyberxkte@gmail.com">cyberxkte@gmail.com</a></li>
+          <li><a href="/" hreflang="en" lang="en">English</a></li>
+          <li><a href="/es/" hreflang="es" lang="es">Español</a></li>
+          <li><a href="/it/" hreflang="it" lang="it">Italiano</a></li>
+          <li><a href="/fr/" hreflang="fr" lang="fr">Français</a></li>
+          <li><a href="/pt/" hreflang="pt" lang="pt">Português</a></li>
+          <li><a href="/de/" hreflang="de" lang="de">Deutsch</a></li>
+          <li><a href="/ja/" hreflang="ja" lang="ja">日本語</a></li>
+          <li><a href="/ru/" hreflang="ru" lang="ru">Русский</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Afinora · afinora.app</span>
+      <span>为坚持练习的人而做</span>
+    </div>
+  </div>
+</footer>
+<script src="/assets/js/afinora.js" defer></script>
+</body>
+</html>

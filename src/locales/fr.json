@@ -1,0 +1,331 @@
+{
+  "index": {
+    "title": "Afinora — Accordeur de guitare, métronome et entraînement technique pour instruments à cordes",
+    "description": "Un accordeur de guitare qui vous entraîne aussi. Détection de hauteur en temps réel pour dix instruments, métronome, gammes et accords sur votre propre manche, et un entraînement qui note chaque note que vous jouez. Fonctionne avec une interface audio USB. Sans compte ni publicité.",
+    "pricing": { "freeBody": "Un instrument, gammes majeure et mineure, le métronome complet, cinq enregistrements." }
+  },
+  "support": {
+    "title": "Assistance — Afinora",
+    "description": "Aide sur Afinora : aucun son détecté, la note saute, le son de référence n'est pas celui attendu, l'entraînement technique n'entend pas la guitare électrique, restaurer l'achat Pro et où sont rangés les enregistrements de Studio.",
+    "heading": "Si quelque chose ne sonne pas comme il faut",
+    "intro": "Presque tout ce qui cloche avec un accordeur vient du signal qui lui parvient, pas de l'accordeur. Voici les cas que nous voyons le plus souvent, et quoi faire pour chacun.",
+    "contactHeading": "Écrivez-nous",
+    "contactBody": "Si rien de ce qui précède ne règle le problème, dites-le-nous. Indiquez l'instrument, le téléphone et ce que vous attendiez ; cela suffit généralement.",
+    "questions": [
+      {
+        "heading": "L'application ne détecte aucun son",
+        "list": [
+          "Vérifiez qu'Afinora dispose de l'autorisation du microphone.",
+          "Accordez dans un environnement silencieux.",
+          "Rapprochez le téléphone de l'instrument.",
+          "Jouez une corde à la fois et laissez-la sonner clairement un instant.",
+          "Vérifiez que l'instrument et l'accordage sélectionnés correspondent à ce que vous jouez."
+        ]
+      },
+      {
+        "heading": "La note saute dans tous les sens",
+        "body": "La détection de hauteur souffre du bruit ambiant, des cordes usées, des harmoniques ou de plusieurs cordes qui sonnent en même temps. Étouffez les autres cordes et réessayez."
+      },
+      {
+        "heading": "Le son de référence n'est pas celui que j'attendais",
+        "body": "Vérifiez l'instrument, l'accordage et la fréquence de référence A4 dans les Réglages. Les boutons de note jouent le son cible de l'accordage en cours : si cette référence est réglée sur 432 Hz, le son sort à 432 Hz."
+      },
+      {
+        "heading": "L'entraînement technique n'entend pas mon électrique",
+        "body": "Une électrique non amplifiée ne produit pas un signal qu'un détecteur puisse lire de façon fiable, et un microphone d'ambiance perd des notes dès qu'il y a du bruit. Noter note par note demande une interface audio USB : branchez-en une et Afinora la détecte, compense sa latence et vous le signale. Les instruments acoustiques s'entraînent bien avec le microphone du téléphone.",
+        "callout": true
+      },
+      {
+        "heading": "J'ai acheté Pro et il n'apparaît pas",
+        "body": "Pro est un achat unique lié à votre compte de boutique. Si vous avez changé de téléphone ou réinstallé l'application, utilisez l'option de restauration des achats dans Afinora avec le même compte Google Play ou App Store que celui de l'achat. Si rien n'apparaît, écrivez-nous en indiquant la date d'achat."
+      },
+      {
+        "heading": "Où vont mes enregistrements ?",
+        "body": "Sur votre téléphone. Les prises de Studio sont des fichiers de l'appareil ; l'application ne les envoie jamais sur un serveur. Vous pouvez les enregistrer dans votre galerie ou les partager vous-même, et désinstaller l'application supprime celles que vous n'avez pas sauvegardées ailleurs."
+      }
+    ]
+  },
+  "privacy": {
+    "title": "Politique de confidentialité — Afinora",
+    "description": "Afinora n'a ni compte, ni publicité, ni analyse. L'audio utilisé pour accorder et s'entraîner est analysé sur l'appareil et n'est jamais envoyé. Cette politique explique exactement comment l'application traite les données.",
+    "heading": "Politique de confidentialité d'Afinora",
+    "effective": "Date d'entrée en vigueur : 30 août 2026",
+    "summary": "En résumé : Afinora n'a ni compte, ni publicité, ni analyse, et ne fait aucune requête réseau de son propre chef sauf pour gérer un achat. Tout ce que vous jouez, enregistrez ou configurez reste sur votre appareil, sauf si vous le partagez vous-même.",
+    "intro": "Afinora est une application de travail pour instruments à cordes : un accordeur, un métronome, une référence de gammes et d'accords, un entraînement de l'oreille et de la technique, et un enregistreur pour jouer sur des pistes d'accompagnement. Cette politique explique comment l'application traite les données.",
+    "contactHeading": "Contact",
+    "contactBody": "Pour toute question de confidentialité ou d'assistance, écrivez à :",
+    "translationNote": "Cette traduction est fournie par commodité. En cas de divergence, la version anglaise de cette politique fait foi.",
+    "sections": [
+      {
+        "heading": "Collecte de données",
+        "paragraphs": [
+          "Afinora ne demande pas de compte et ne collecte pas d'informations personnelles.",
+          "Afinora n'a pas de serveurs. Elle n'envoie nulle part votre audio, vos enregistrements, vos pistes d'accompagnement, vos réglages ni votre historique de travail."
+        ]
+      },
+      {
+        "heading": "Microphone",
+        "paragraphs": [
+          "Afinora demande l'accès au microphone pour deux usages :",
+          "L'entraînement technique peut aussi écouter via une interface audio USB reliée à votre appareil. L'audio d'une interface est traité exactement comme celui du microphone."
+        ],
+        "ordered": true,
+        "list": [
+          "<strong>Détection de la hauteur et du temps</strong>, dans l'accordeur et dans l'entraînement de l'oreille et de la technique. Cet audio est analysé sur l'appareil au fil de son arrivée et n'est jamais écrit dans un fichier, conservé, envoyé, vendu ou partagé. Rien n'en subsiste après l'analyse.",
+          "<strong>Enregistrement dans Studio</strong>, quand vous appuyez sur enregistrer. Cet audio est écrit dans un fichier sur votre appareil, car c'est précisément le but d'un enregistrement. Il n'est pas envoyé."
+        ]
+      },
+      {
+        "heading": "Appareil photo",
+        "paragraphs": [
+          "Afinora demande l'accès à l'appareil photo uniquement pour Studio, et uniquement quand une prise est réglée sur vidéo. L'appareil photo sert à enregistrer la prise que vous avez demandée. Aucune image n'est envoyée, et Afinora n'utilise jamais l'appareil photo en dehors de Studio."
+        ]
+      },
+      {
+        "heading": "Photos et vidéos",
+        "paragraphs": [
+          "Afinora demande un accès en écriture seule à votre galerie, et le demande seulement au moment où vous y enregistrez une prise de Studio. Afinora ne lit, ne parcourt, n'indexe ni n'analyse vos photos ou vidéos existantes. L'écriture seule est l'autorisation que l'application demande, pas simplement une promesse sur son comportement."
+        ]
+      },
+      {
+        "heading": "Pistes d'accompagnement et fichiers",
+        "paragraphs": [
+          "Quand vous importez une piste d'accompagnement, vous choisissez le fichier vous-même via le sélecteur de fichiers de votre appareil. Afinora le copie dans son propre dossier afin de pouvoir mémoriser la section que vous y avez marquée, et ne lit rien d'autre dans votre stockage. Les pistes importées ne sont pas envoyées, et les copies vers lesquelles plus aucune piste de votre liste ne pointe sont supprimées automatiquement."
+        ]
+      },
+      {
+        "heading": "Enregistrements",
+        "paragraphs": [
+          "Les prises de Studio sont écrites dans le répertoire cache de votre appareil. Elles y restent jusqu'à ce que vous les supprimiez, jusqu'à ce qu'Afinora nettoie une prise vers laquelle plus rien ne pointe, ou jusqu'à ce que votre système d'exploitation récupère l'espace.",
+          "Une prise ne quitte votre appareil que de deux façons, toutes deux déclenchées par vous :",
+          "Afinora n'envoie jamais un enregistrement de sa propre initiative, en arrière-plan, ni pour un usage qui lui serait propre."
+        ],
+        "list": [
+          "En l'enregistrant dans votre galerie, où elle devient un fichier ordinaire de votre appareil.",
+          "En la partageant, ce qui remet le fichier à l'application que vous choisissez dans le menu de partage du système. Ce que cette application en fait relève de sa propre politique de confidentialité."
+        ]
+      },
+      {
+        "heading": "Données stockées sur votre appareil",
+        "paragraphs": [
+          "Afinora stocke ce qui suit localement, et uniquement localement : vos réglages, vos accordages personnalisés, vos préférences de métronome, vos scores d'entraînement de l'oreille, votre historique de travail technique et l'étalonnage de l'interface audio, votre session Studio avec sa liste de pistes récentes, et l'état de votre essai et de votre achat.",
+          "L'historique de travail technique enregistre ce que vous avez configuré et comment vous vous en êtes sorti : tempo, notes, précision et placement. Il ne contient jamais d'audio.",
+          "Supprimer l'application efface ces données, à une exception délibérée près, décrite ci-dessous."
+        ]
+      },
+      {
+        "heading": "Identifiant d'achat",
+        "paragraphs": [
+          "Afinora génère un identifiant aléatoire pour votre installation au premier lancement et le stocke sur votre appareil. Il n'est dérivé ni de votre appareil, ni de vos comptes, ni de votre identifiant publicitaire, ni de quoi que ce soit vous concernant, et il n'est partagé avec personne d'autre que le service de gestion des droits d'achat décrit ci-dessous.",
+          "Son seul but est de permettre à un achat déjà effectué d'être reconnu à nouveau après une réinstallation. Sur iOS il est stocké dans le trousseau du système, ce qui explique pourquoi lui — et donc votre achat Pro et l'état de votre essai — peut survivre à la suppression puis à la réinstallation de l'application."
+        ]
+      },
+      {
+        "heading": "Analyse et publicité",
+        "paragraphs": [
+          "Afinora ne contient aucune publicité tierce, aucun SDK publicitaire, aucun SDK d'analyse, aucun rapport de plantage, aucune connexion, aucun serveur propre et aucun suivi tiers d'aucune sorte. L'application peut afficher ses propres messages au sujet de ses fonctions ou de l'accès Pro ; cela fait partie du produit, ce n'est pas de la publicité."
+        ]
+      },
+      {
+        "heading": "Paiements",
+        "paragraphs": [
+          "Afinora propose un achat intégré facultatif et unique pour débloquer les fonctions Pro. Il n'y a pas d'abonnement.",
+          "Les achats sont traités par l'App Store d'Apple ou Google Play. Afinora ne voit ni ne conserve jamais les informations de carte bancaire.",
+          "Afinora utilise RevenueCat pour gérer l'état de l'achat et l'accès Pro. RevenueCat reçoit l'identifiant d'installation aléatoire décrit plus haut, et peut traiter l'historique d'achat ainsi que les informations de reçu ou de jeton d'achat de la boutique pour la gestion des droits. C'est le seul trafic réseau qu'Afinora initie."
+        ]
+      },
+      {
+        "heading": "Enfants",
+        "paragraphs": [
+          "Afinora ne s'adresse pas aux enfants et ne collecte pas sciemment de données les concernant."
+        ]
+      },
+      {
+        "heading": "Modifications",
+        "paragraphs": [
+          "Cette politique peut être mise à jour à mesure que l'application évolue. Tout changement important sera reflété dans la politique publiée."
+        ]
+      }
+    ]
+  },
+  "nav": {
+    "skip": "Aller au contenu",
+    "language": "Changer de langue",
+    "download": "Télécharger",
+    "home": "Accueil",
+    "support": "Assistance",
+    "privacy": "Confidentialité",
+    "technique": "Entraînement technique",
+    "tuner": "Accordeur",
+    "metronome": "Métronome",
+    "scales": "Accords et gammes",
+    "studio": "Studio",
+    "howItListens": "Comment il écoute"
+  },
+  "hero": {
+    "eyebrow": "Pour guitare, basse, ukulélé et cordes frottées",
+    "heading": "Un accordeur, un métronome et un entraîneur qui écoute comment vous jouez.",
+    "body": "Détection de hauteur en temps réel pour dix instruments, un métronome, des gammes et des accords dessinés sur votre propre manche, et un entraînement qui écoute pendant que vous jouez et note chaque note séparément. Tout tourne sur l'appareil, sans compte.",
+    "getItOn": "Disponible sur",
+    "downloadOn": "Télécharger sur",
+    "fine": "Sans compte · sans publicité · l'audio ne quitte jamais le téléphone"
+  },
+  "stats": [
+    { "figure": "10", "label": "Instruments" },
+    { "figure": "30+", "label": "Accordages" },
+    { "figure": "432–442", "label": "Hz de référence" },
+    { "figure": "9", "label": "Langues" }
+  ],
+  "instruments": {
+    "heading": "Dix instruments, avec leurs accordages",
+    "body": "Ses propres cordes, ses propres accordages alternatifs et son manche dessiné avec les frettes qu'il a — ou sans.",
+    "list": [
+      "Guitare", "Guitare 7 cordes", "Basse", "Ukulélé", "Cuatro vénézuélien",
+      "Violon", "Alto", "Violoncelle", "Mandoline", "Banjo"
+    ]
+  },
+  "technique": {
+    "eyebrow": "Entraînement technique",
+    "heading": "Il écoute pendant que vous jouez et note chaque note sur la justesse et le placement",
+    "body": "Vous choisissez une gamme, réglez un tempo et la jouez contre le métronome. Le détecteur de hauteur écoute et note chaque note séparément dès qu'elle arrive : juste et à temps, en retard, ou non détectée. La justesse et le placement sont mesurés à part, donc à la fin vous savez quelles notes précises travailler au lieu de deviner. Les notes défilent le long du manche avec une couleur par doigt et une voie par corde, et vous les jouez sur l'instrument.",
+    "legendPerfect": "Pile sur le temps",
+    "legendHit": "Jouée, mais elle a glissé",
+    "legendMiss": "Jamais arrivée",
+    "points": [
+      {
+        "heading": "Apportez vos propres exercices",
+        "body": "Des motifs de gammes intégrés, ou collez les vôtres en texte brut et Afinora en fait un parcours."
+      },
+      {
+        "heading": "Le tempo monte tout seul",
+        "body": "La boucle accélère tant que vous suivez et redescend quand vous décrochez."
+      },
+      {
+        "heading": "Un historique par gamme",
+        "body": "Chaque exercice garde son propre historique, si bien que le progrès est un chiffre mesuré."
+      }
+    ]
+  },
+  "blocks": {
+    "tuner": {
+      "eyebrow": "01 · Accordeur",
+      "heading": "Lit chaque note exactement",
+      "body": "Détection de hauteur en temps réel, traitée sur l'appareil lui-même. Plus de trente accordages standards et alternatifs, plus ceux que vous construisez. Un son de référence sur n'importe quelle corde et six références A4, de 432 à 442 Hz. Lit une guitare électrique non amplifiée."
+    },
+    "scales": {
+      "eyebrow": "02 · Accords et gammes",
+      "heading": "Tout le manche, dans votre accordage",
+      "body": "Vingt gammes et vingt accords, dessinés là où vous les jouez vraiment : jusqu'à 24 frettes, avec une vue plein écran. Notes ou degrés, positions d'accords y compris les barrés, et les accords qui appartiennent à la tonalité affichée. De là, une gamme passe directement à l'entraînement."
+    },
+    "metronome": {
+      "eyebrow": "03 · Métronome",
+      "heading": "Réglez le tempo, choisissez la mesure, jouez",
+      "body": "Vous ne connaissez pas le BPM ? Tapez-le et Afinora le calcule. De 30 à 300 BPM, des mesures de 2/4 à 12/8, et des subdivisions jusqu'aux doubles croches — celles qui aident dans les tempos lents, où c'est l'espace entre les temps qui vous déstabilise. Touchez n'importe quel temps de la mesure pour l'accentuer ou le muter. C'est le même clic contre lequel l'entraînement technique mesure votre placement, et il est complet dans la version gratuite."
+    },
+    "studio": {
+      "eyebrow": "04 · Studio",
+      "heading": "Enregistrez-vous sur la piste d'accompagnement",
+      "body": "Importez une piste d'accompagnement, marquez le passage qui vous résiste, mettez-le en boucle et ralentissez-le. Enregistrez-vous par-dessus en audio ou en vidéo, sauvegardez dans votre galerie ou partagez. Les enregistrements sont des fichiers sur votre téléphone : l'application ne les envoie jamais."
+    },
+    "ear": {
+      "eyebrow": "05 · Entraînement de l'oreille",
+      "heading": "Vous entendez la note et vous la jouez sur votre instrument",
+      "body": "Afinora joue une note ou un intervalle, vous le trouvez sur le manche et vous le jouez, et le détecteur vérifie si c'est juste. Vous répondez avec l'instrument, pas en choisissant une option à l'écran."
+    },
+    "languages": {
+      "heading": "Neuf langues",
+      "body": "Espagnol, anglais, italien, français, portugais, allemand, japonais, chinois et russe. Toute l'application, pas seulement les menus."
+    }
+  },
+  "listens": {
+    "eyebrow": "Comment il écoute",
+    "heading": "Comment Afinora écoute votre instrument",
+    "body": "Noter note par note ne fonctionne que si le signal entrant est propre. Voici les trois cas, et celui qui vous concerne.",
+    "acoustic": {
+      "heading": "Acoustique : par le microphone",
+      "body": "Guitare acoustique, violon, violoncelle, ukulélé, mandoline, cuatro. Le microphone du téléphone suffit pour accorder et pour s'entraîner."
+    },
+    "electric": {
+      "heading": "Électrique : par une interface USB",
+      "body": "Une électrique non amplifiée n'est pas un signal qu'un détecteur peut lire de façon fiable, et un microphone d'ambiance perd des notes dès qu'il y a du bruit. Avec une interface, Afinora la détecte, compense sa latence et vous indique qu'elle est branchée."
+    },
+    "device": {
+      "heading": "Tout est traité ici",
+      "body": "L'audio utilisé pour accorder et s'entraîner est analysé sur l'appareil au fil de son arrivée. Il n'est jamais enregistré ni envoyé."
+    },
+    "trademark": "Testé avec la Fender Mustang Micro Plus, et compatible avec d'autres interfaces audio USB. Fender et Mustang Micro Plus sont des marques de Fender Musical Instruments Corporation ; Afinora n'est ni affiliée à Fender, ni approuvée ou sponsorisée par elle."
+  },
+  "privacyTeaser": {
+    "eyebrow": "Privée dès le départ",
+    "heading": "Sans compte, sans publicité, sans suivi",
+    "body": "Il n'y a ni inscription ni connexion : vous ouvrez l'application et vous jouez. Il n'y a pas de publicité tierce ni d'analyse de notre part. L'audio utilisé pour accorder et s'entraîner est analysé sur l'appareil au fil de son arrivée et n'est jamais enregistré ni envoyé. Les enregistrements de Studio restent sur votre téléphone, sauf si vous les partagez vous-même.",
+    "supportLink": "Assistance et questions"
+  },
+  "pricing": {
+    "eyebrow": "Gratuit et Pro",
+    "heading": "Elle s'ouvre sur cinq jours complets",
+    "body": "Ensuite, la version gratuite garde un instrument de votre choix, les gammes majeure et mineure, tout le métronome et cinq enregistrements de Studio. Pro est un achat unique, pas un abonnement, et débloque le reste définitivement.",
+    "freeHeading": "Gratuit",
+    "freeBody": "Un instrument, gammes majeure et mineure, le métronome complet, cinq enregistrements.",
+    "proHeading": "Pro · achat unique",
+    "proBody": "Les dix instruments, les vingt gammes et vingt accords, tout l'entraînement technique et Studio sans limites.",
+    "price": "9,99 € ou 9,99 US$ dans la plupart des pays",
+    "neverHeading": "Ce qu'il n'y a jamais",
+    "neverBody": "Un abonnement, de la publicité, un compte, du suivi, ou de l'audio envoyé sur un serveur."
+  },
+  "download": {
+    "heading": "Téléchargez Afinora",
+    "body": "Disponible pour Android et iPhone, en neuf langues."
+  },
+  "footer": {
+    "tagline": "Accordeur, métronome et entraînement pour instruments à cordes.",
+    "appHeading": "L'application",
+    "instrumentsHeading": "Instruments",
+    "helpHeading": "Aide",
+    "made": "Faite pour ceux qui travaillent leur instrument",
+    "seo": ["Accordeur guitare", "Accordeur basse", "Accordeur ukulélé", "Accordeur violon", "Accordeur cuatro"]
+  },
+  "ui": {
+    "tabTune": "Accorder",
+    "tabMetronome": "Métronome",
+    "tabScales": "Gammes",
+    "tabTraining": "Entraîner",
+    "tabStudio": "Studio",
+    "instGuitar": "Guitare",
+    "instViolin": "Violon",
+    "tunerStandard": "Standard",
+    "tunerInTune": "Juste",
+    "tunerFlat": "Bas",
+    "tunerSharp": "Haut",
+    "tunerCentered": "Centré",
+    "tunerDetected": "Détecté",
+    "tunerTarget": "Cible",
+    "tunerCents": "Cents",
+    "screenMetronome": "Métronome",
+    "metroHint": "Touchez un temps pour l'accentuer ou le muter",
+    "metroSubdivision": "Subdivision",
+    "metroSound": "Son",
+    "screenScales": "Accords et gammes",
+    "scalesTab": "Gammes",
+    "chordsTab": "Accords",
+    "scaleDegrees": "7 notes",
+    "fretboard": "Manche",
+    "frets": "frettes",
+    "notesTab": "Notes",
+    "degreesTab": "Degrés",
+    "tonic": "Tonique",
+    "colourIsString": "Couleur = corde",
+    "screenStudio": "Studio",
+    "audioChip": "AUDIO",
+    "videoChip": "VIDÉO",
+    "inputLevel": "Niveau d'entrée",
+    "backingTrack": "Piste d'accompagnement",
+    "loopChip": "Boucle",
+    "autosaveChip": "Sauvegarde auto",
+    "speedUpChip": "+5% de vitesse par boucle",
+    "shoutPerfect": "PARFAIT !",
+    "shoutGood": "BIEN !",
+    "shoutMiss": "RATÉ !",
+    "highwayAlt": "L'autoroute de notes d'Afinora : les notes défilent le long du manche et chacune est notée quand elle franchit le curseur"
+  }
+}

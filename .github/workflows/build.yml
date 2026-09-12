@@ -1,0 +1,50 @@
+# Rebuilds the site whenever a template or a translation changes.
+#
+# The generated HTML is committed back to the branch rather than deployed from
+# a workflow artefact, on purpose: GitHub Pages serves this branch directly, so
+# whatever is committed here is exactly what visitors get. If this workflow ever
+# breaks, the last good pages stay up — which matters, because both app stores
+# have privacy.html and support.html on file and a 404 there is a rejection.
+name: Build site
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'src/**'
+      - 'build.mjs'
+      - '.github/workflows/build.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: build-site
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      # No dependencies to install: build.mjs is plain Node with no packages.
+      - name: Build
+        run: node build.mjs
+
+      - name: Commit the rebuilt pages
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          if git diff --staged --quiet; then
+            echo "Nothing changed."
+          else
+            git commit -m "Rebuild the site from the templates and locales"
+            git push
+          fi

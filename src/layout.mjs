@@ -1,0 +1,215 @@
+/*
+ * The shell every page shares: head, header, footer.
+ *
+ * There is one of each, for every language. A page template supplies its own
+ * <main>; everything around it comes from here, so a change to the footer or
+ * the language menu happens once.
+ */
+
+export const SITE = 'https://afinora.app';
+export const PLAY_URL = 'https://play.google.com/store/apps/details?id=com.afinora.app';
+export const APPLE_URL = 'https://apps.apple.com/app/afinora/id6771803917';
+
+/**
+ * The contact address.
+ *
+ * This is the mailbox that actually receives mail today. docs/privacy-policy.md
+ * and the design both use support@afinora.app; switch this constant the moment
+ * that forwarder exists, and the whole site follows.
+ */
+export const CONTACT = 'cyberxkte@gmail.com';
+
+/** Escape for HTML text and double-quoted attributes. */
+export function esc(value) {
+  return String(value)
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;');
+}
+
+/** The mark, inlined so it paints with the first frame and costs no request. */
+export const MARK = `<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+  <g transform="translate(5 6.567) scale(0.9)">
+    <defs>
+      <mask id="m" maskUnits="userSpaceOnUse" x="0" y="0" width="100" height="100">
+        <rect x="0" y="0" width="100" height="100" fill="#fff"/>
+        <circle cx="50" cy="66" r="7.5" fill="#000"/>
+      </mask>
+    </defs>
+    <path d="M27 66 L73 66" fill="none" stroke="#2f7f60" stroke-width="6" stroke-linecap="round" mask="url(#m)"/>
+    <g fill="none" stroke="#34d399" stroke-width="11">
+      <path d="M20 88 L32.38 56.64"/>
+      <path d="M80 88 L67.62 56.64"/>
+      <path d="M36.42 46.4 L50 12 L63.58 46.4" stroke-linejoin="round"/>
+    </g>
+    <circle cx="50" cy="66" r="5" fill="#6ee7b7"/>
+  </g>
+</svg>`;
+
+/** Where a page lives for a given language. English sits at the root. */
+export function pageUrl(lang, page) {
+  const dir = lang === 'en' ? '' : `${lang}/`;
+  return page === 'index' ? `/${dir}` : `/${dir}${page}.html`;
+}
+
+/** A link from one page to another within the same language. */
+export function rel(lang, from, to) {
+  const target = pageUrl(lang, to);
+  // Every page of a language lives in the same directory, so a bare filename
+  // is enough and keeps the built pages portable.
+  return to === 'index' ? (from === 'index' ? '#top' : './') : `${to}.html`;
+}
+
+function head({ lang, page, t, langs, strings }) {
+  const url = SITE + pageUrl(lang, page);
+  const title = t(`${page}.title`);
+  const description = t(`${page}.description`);
+
+  const alternates = langs
+    .map((l) => `<link rel="alternate" hreflang="${l}" href="${SITE}${pageUrl(l, page)}">`)
+    .concat(`<link rel="alternate" hreflang="x-default" href="${SITE}${pageUrl('en', page)}">`)
+    .join('\n  ');
+
+  // Told to Google as an application rather than an article: it is what makes
+  // the store rating and the platform show up in a result.
+  const jsonLd = page === 'index' ? `
+  <script type="application/ld+json">${JSON.stringify({
+    '@context': 'https://schema.org',
+    '@type': 'SoftwareApplication',
+    name: 'Afinora',
+    applicationCategory: 'MusicApplication',
+    operatingSystem: 'Android, iOS',
+    description,
+    url: SITE + '/',
+    inLanguage: langs,
+    offers: {
+      '@type': 'Offer',
+      price: '0',
+      priceCurrency: 'USD',
+      description: t('index.pricing.freeBody'),
+    },
+    author: { '@type': 'Organization', name: 'Afinora', url: SITE + '/' },
+  })}</script>` : '';
+
+  return `<!DOCTYPE html>
+<html lang="${lang}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>${esc(title)}</title>
+  <meta name="description" content="${esc(description)}">
+  <link rel="canonical" href="${url}">
+  ${alternates}
+  <link rel="icon" href="/brand/play-icon-512.png" type="image/png">
+  <link rel="apple-touch-icon" href="/brand/play-icon-512.png">
+  <meta name="theme-color" content="#050505">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Afinora">
+  <meta property="og:locale" content="${lang}">
+  <meta property="og:title" content="${esc(title)}">
+  <meta property="og:description" content="${esc(description)}">
+  <meta property="og:url" content="${url}">
+  <meta property="og:image" content="${SITE}/brand/play-feature-graphic.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="${esc(title)}">
+  <meta name="twitter:description" content="${esc(description)}">
+  <meta name="twitter:image" content="${SITE}/brand/play-feature-graphic.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+  <link rel="stylesheet" href="/assets/css/site.css">${jsonLd}
+  <script>window.AFINORA_I18N=${JSON.stringify(strings)};</script>
+</head>`;
+}
+
+function header({ lang, page, t, langs, langNames }) {
+  const others = langs
+    .map((l) => (l === lang
+      ? `<span class="current">${esc(langNames[l])}</span>`
+      : `<a href="${pageUrl(l, page)}" hreflang="${l}" lang="${l}">${esc(langNames[l])}</a>`))
+    .join('\n        ');
+
+  return `<header class="site-header">
+  <div class="inner">
+    <a class="brand" href="${rel(lang, page, 'index')}">
+      ${MARK}
+      <span class="name">Afinora</span>
+    </a>
+    <div class="header-right">
+      <details class="lang">
+        <summary aria-label="${esc(t('nav.language'))}">${lang.toUpperCase()} <span aria-hidden="true">▾</span></summary>
+        <div class="lang-panel">
+        ${others}
+        </div>
+      </details>
+      <a class="btn" href="${page === 'index' ? '#download' : rel(lang, page, 'index') + '#download'}">${esc(t('nav.download'))}</a>
+    </div>
+  </div>
+</header>`;
+}
+
+function footer({ lang, page, t, langs, langNames }) {
+  const instruments = t('footer.seo');
+  const otherLangs = langs
+    .filter((l) => l !== lang)
+    .map((l) => `<li><a href="${pageUrl(l, page)}" hreflang="${l}" lang="${l}">${esc(langNames[l])}</a></li>`)
+    .join('\n          ');
+
+  return `<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="name">Afinora</div>
+        <p>${esc(t('footer.tagline'))}</p>
+      </div>
+      <div>
+        <h4>${esc(t('footer.appHeading'))}</h4>
+        <ul>
+          <li><a href="${rel(lang, page, 'index')}#features">${esc(t('nav.technique'))}</a></li>
+          <li><a href="${rel(lang, page, 'index')}#tuner">${esc(t('nav.tuner'))}</a></li>
+          <li><a href="${rel(lang, page, 'index')}#metronome">${esc(t('nav.metronome'))}</a></li>
+          <li><a href="${rel(lang, page, 'index')}#scales">${esc(t('nav.scales'))}</a></li>
+          <li><a href="${rel(lang, page, 'index')}#studio">${esc(t('nav.studio'))}</a></li>
+          <li><a href="${rel(lang, page, 'index')}#how-it-listens">${esc(t('nav.howItListens'))}</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>${esc(t('footer.instrumentsHeading'))}</h4>
+        <ul>
+          ${instruments.map((s) => `<li><a href="${rel(lang, page, 'index')}#instruments">${esc(s)}</a></li>`).join('\n          ')}
+        </ul>
+      </div>
+      <div>
+        <h4>${esc(t('footer.helpHeading'))}</h4>
+        <ul>
+          <li><a href="${rel(lang, page, 'support')}">${esc(t('nav.support'))}</a></li>
+          <li><a href="${rel(lang, page, 'privacy')}">${esc(t('nav.privacy'))}</a></li>
+          <li><a href="mailto:${CONTACT}">${CONTACT}</a></li>
+          ${otherLangs}
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Afinora · afinora.app</span>
+      <span>${esc(t('footer.made'))}</span>
+    </div>
+  </div>
+</footer>`;
+}
+
+/** Wrap a page body in the shell. */
+export function page(ctx, main) {
+  return `${head(ctx)}
+<body id="top">
+<a class="skip" href="#main">${esc(ctx.t('nav.skip'))}</a>
+${header(ctx)}
+<main id="main">
+${main}
+</main>
+${footer(ctx)}
+<script src="/assets/js/afinora.js" defer></script>
+</body>
+</html>
+`;
+}
