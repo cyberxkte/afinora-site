@@ -1,7 +1,7 @@
 {
   "index": {
     "title": "Afinora — Accordatore per chitarra, metronomo e allenamento tecnico per strumenti a corda",
-    "description": "Un accordatore per chitarra che ti allena anche. Rilevamento dell'intonazione in tempo reale per dieci strumenti, metronomo, scale e accordi sul tuo manico, e allenamento che valuta ogni nota che suoni. Funziona con un'interfaccia audio USB. Senza account e senza pubblicità.",
+    "description": "Accordatore per chitarra, basso, ukulele, cuatro venezuelano, violino e altri. Metronomo, scale sul tuo manico e allenamento che valuta ogni nota. Senza account.",
     "pricing": {
       "freeBody": "Uno strumento, scale maggiore e minore, il metronomo completo, cinque registrazioni."
     }
@@ -165,7 +165,7 @@
     "howItListens": "Come ascolta"
   },
   "hero": {
-    "eyebrow": "Per chitarra, basso, ukulele, violino e violoncello",
+    "eyebrow": "Per chitarra, basso, ukulele, cuatro, violino e violoncello",
     "heading": "Un accordatore, un metronomo e un allenatore che ascolta come suoni.",
     "body": "Rileva l'intonazione in tempo reale su dieci strumenti, un metronomo, scale e accordi disegnati sul tuo manico, e un allenamento che ti ascolta suonare e valuta ogni nota una per una. Gira tutto sul telefono, senza account.",
     "getItOn": "Disponibile su",

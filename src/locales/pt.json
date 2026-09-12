@@ -1,7 +1,7 @@
 {
   "index": {
     "title": "Afinora — Afinador de guitarra, metrónomo e treino técnico para instrumentos de corda",
-    "description": "Um afinador de guitarra que também te treina. Deteção de altura em tempo real para dez instrumentos, metrónomo, escalas e acordes no teu próprio braço, e treino que avalia cada nota que tocas. Funciona com interface de áudio USB. Sem conta e sem anúncios.",
+    "description": "Afinador de guitarra, baixo, ukulele, cuatro venezuelano, violino e mais. Metrónomo, escalas no teu braço e treino que avalia cada nota. Sem conta nem anúncios.",
     "pricing": {
       "freeBody": "Um instrumento, escalas maior e menor, o metrónomo completo, cinco gravações."
     }
@@ -165,7 +165,7 @@
     "howItListens": "Como ouve"
   },
   "hero": {
-    "eyebrow": "Para guitarra, baixo, ukulele, violino e violoncelo",
+    "eyebrow": "Para guitarra, baixo, ukulele, cuatro, violino e violoncelo",
     "heading": "Um afinador, um metrónomo e um treinador que ouve como tocas.",
     "body": "Deteta a afinação em tempo real em dez instrumentos, metrónomo, escalas e acordes desenhados no teu próprio braço, e um treino que te ouve tocar e avalia cada nota em separado. Corre tudo no telemóvel, sem conta.",
     "getItOn": "Disponível no",

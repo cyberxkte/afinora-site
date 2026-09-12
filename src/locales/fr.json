@@ -1,7 +1,7 @@
 {
   "index": {
     "title": "Afinora — Accordeur de guitare, métronome et entraînement technique pour instruments à cordes",
-    "description": "Un accordeur de guitare qui vous entraîne aussi. Détection de hauteur en temps réel pour dix instruments, métronome, gammes et accords sur votre propre manche, et un entraînement qui note chaque note que vous jouez. Fonctionne avec une interface audio USB. Sans compte ni publicité.",
+    "description": "Accordeur pour guitare, basse, ukulélé, cuatro vénézuélien, violon et plus. Métronome, gammes sur votre manche et entraînement qui note chaque note. Sans compte.",
     "pricing": {
       "freeBody": "Un instrument, gammes majeure et mineure, le métronome complet, cinq enregistrements."
     }
@@ -165,7 +165,7 @@
     "howItListens": "Comment il écoute"
   },
   "hero": {
-    "eyebrow": "Pour guitare, basse, ukulélé, violon et violoncelle",
+    "eyebrow": "Pour guitare, basse, ukulélé, cuatro, violon et violoncelle",
     "heading": "Un accordeur, un métronome et un entraîneur qui écoute comment vous jouez.",
     "body": "Détection de la justesse en temps réel sur dix instruments, un métronome, des gammes et des accords dessinés sur votre propre manche, et un entraînement qui vous écoute jouer et note chaque note séparément. Tout tourne sur le téléphone, sans compte.",
     "getItOn": "Disponible sur",

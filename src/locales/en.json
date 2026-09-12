@@ -1,7 +1,7 @@
 {
   "index": {
     "title": "Afinora — Guitar tuner, metronome and technique training for string instruments",
-    "description": "A guitar tuner that also trains you. Real-time pitch detection for ten instruments, a metronome, scales and chords on your own neck, and training that grades every note you play. Works with a USB audio interface. No account, no ads.",
+    "description": "Tuner for guitar, bass, ukulele, Venezuelan cuatro, violin and more. Metronome, scales on your own neck, and training that grades every note. No account, no ads.",
     "pricing": {
       "freeBody": "One instrument, major and minor scales, the full metronome, five recordings."
     }
@@ -165,7 +165,7 @@
     "howItListens": "How it listens"
   },
   "hero": {
-    "eyebrow": "For guitar, bass, ukulele and bowed strings",
+    "eyebrow": "For guitar, bass, ukulele, cuatro, violin and cello",
     "heading": "A tuner, a metronome, and a trainer that listens to how you play.",
     "body": "Real-time pitch detection for ten instruments, a metronome, scales and chords drawn on your own neck, and training that listens as you play and grades every note separately. It all runs on the device, with no account.",
     "getItOn": "Get it on",
