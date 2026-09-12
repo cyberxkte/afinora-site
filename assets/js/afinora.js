@@ -1002,6 +1002,29 @@
       });
     }, { rootMargin: '0px 0px -12% 0px', threshold: 0.08 });
     sections.forEach(function (s) { io.observe(s); });
+
+    /**
+     * Show everything at once before jumping to an anchor.
+     *
+     * A hidden section still occupies its space but sits 22px low, and it
+     * snaps into place the moment the smooth scroll passes it. Every one of
+     * those shifts moves the target further up while the browser is still
+     * travelling towards where it used to be, so a jump to #download lands
+     * short — which reads as a link that does nothing. Revealing first means
+     * the page has stopped moving before the scroll starts.
+     */
+    document.addEventListener('click', function (event) {
+      var link = event.target.closest && event.target.closest('a[href*="#"]');
+      if (!link) return;
+      var href = link.getAttribute('href') || '';
+      var hash = href.slice(href.indexOf('#'));
+      if (hash.length < 2 || !document.querySelector(hash)) return;
+      // Only for links that stay on this page.
+      var path = href.split('#')[0];
+      if (path && path !== location.pathname && path !== './' && path !== '') return;
+      io.disconnect();
+      sections.forEach(function (s) { s.classList.add('shown'); });
+    }, true);
   }
 
   /** Close the language menu on an outside click, the way a menu should. */

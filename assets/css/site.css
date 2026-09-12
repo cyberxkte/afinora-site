@@ -60,6 +60,12 @@ html {
   scroll-behavior: smooth;
   /* The header is sticky, so an anchored heading would land underneath it. */
   scroll-padding-top: 84px;
+  /* clip, not hidden, and on html rather than body.
+     `overflow-x: hidden` on the body forces overflow-y to auto, which makes the
+     body its own scroll container — and a nested scroller silently breaks every
+     jump to an anchor on the page: the hash changes and nothing moves. `clip`
+     contains a stray wide element without creating a scroll container at all. */
+  overflow-x: clip;
 }
 
 body {
@@ -68,7 +74,6 @@ body {
   color: var(--ink);
   font: 400 18px/1.6 var(--body);
   -webkit-font-smoothing: antialiased;
-  overflow-x: hidden;
 }
 
 /* Declared on purpose: without it a link added later renders browser-default

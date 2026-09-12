@@ -8,7 +8,15 @@
 
 export const SITE = 'https://afinora.app';
 export const PLAY_URL = 'https://play.google.com/store/apps/details?id=com.afinora.app';
-export const APPLE_URL = 'https://apps.apple.com/app/afinora/id6771803917';
+/*
+ * No country code and no name slug on purpose.
+ *
+ * A regional link (/mx/, /us/) shows "not available in your country" to
+ * everyone outside it, and a slug taken from the app's name breaks the day the
+ * name changes — which it already did, from "Afinora" to "Afinora: Tuner &
+ * Training". The bare id lets Apple send each visitor to their own storefront.
+ */
+export const APPLE_URL = 'https://apps.apple.com/app/id6771803917';
 
 /**
  * The contact address.
@@ -103,10 +111,20 @@ if(S.indexOf(c)>-1){location.replace('/'+c+'/');return;}}
 
 /** A link from one page to another within the same language. */
 export function rel(lang, from, to) {
-  const target = pageUrl(lang, to);
   // Every page of a language lives in the same directory, so a bare filename
   // is enough and keeps the built pages portable.
   return to === 'index' ? (from === 'index' ? '#top' : './') : `${to}.html`;
+}
+
+/**
+ * A link to a section of the landing page.
+ *
+ * On the landing page itself that is a bare `#id`. Concatenating rel()'s
+ * output instead produced `#top#features`, which is not an anchor, does not
+ * match anything, and quietly does nothing when clicked.
+ */
+export function anchor(lang, from, id) {
+  return from === 'index' ? `#${id}` : `./#${id}`;
 }
 
 function head({ lang, page, t, langs, strings, assets }) {
@@ -192,7 +210,7 @@ function header({ lang, page, t, langs, langNames }) {
         ${others}
         </div>
       </details>
-      <a class="btn" href="${page === 'index' ? '#download' : rel(lang, page, 'index') + '#download'}">${esc(t('nav.download'))}</a>
+      <a class="btn" href="${anchor(lang, page, 'download')}">${esc(t('nav.download'))}</a>
     </div>
   </div>
 </header>`;
@@ -215,18 +233,18 @@ function footer({ lang, page, t, langs, langNames }) {
       <div>
         <h4>${esc(t('footer.appHeading'))}</h4>
         <ul>
-          <li><a href="${rel(lang, page, 'index')}#features">${esc(t('nav.technique'))}</a></li>
-          <li><a href="${rel(lang, page, 'index')}#tuner">${esc(t('nav.tuner'))}</a></li>
-          <li><a href="${rel(lang, page, 'index')}#metronome">${esc(t('nav.metronome'))}</a></li>
-          <li><a href="${rel(lang, page, 'index')}#scales">${esc(t('nav.scales'))}</a></li>
-          <li><a href="${rel(lang, page, 'index')}#studio">${esc(t('nav.studio'))}</a></li>
-          <li><a href="${rel(lang, page, 'index')}#how-it-listens">${esc(t('nav.howItListens'))}</a></li>
+          <li><a href="${anchor(lang, page, 'features')}">${esc(t('nav.technique'))}</a></li>
+          <li><a href="${anchor(lang, page, 'tuner')}">${esc(t('nav.tuner'))}</a></li>
+          <li><a href="${anchor(lang, page, 'metronome')}">${esc(t('nav.metronome'))}</a></li>
+          <li><a href="${anchor(lang, page, 'scales')}">${esc(t('nav.scales'))}</a></li>
+          <li><a href="${anchor(lang, page, 'studio')}">${esc(t('nav.studio'))}</a></li>
+          <li><a href="${anchor(lang, page, 'how-it-listens')}">${esc(t('nav.howItListens'))}</a></li>
         </ul>
       </div>
       <div>
         <h4>${esc(t('footer.instrumentsHeading'))}</h4>
         <ul>
-          ${instruments.map((s) => `<li><a href="${rel(lang, page, 'index')}#instruments">${esc(s)}</a></li>`).join('\n          ')}
+          ${instruments.map((s) => `<li><a href="${anchor(lang, page, 'instruments')}">${esc(s)}</a></li>`).join('\n          ')}
         </ul>
       </div>
       <div>
