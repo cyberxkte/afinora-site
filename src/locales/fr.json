@@ -165,7 +165,7 @@
     "howItListens": "Comment il écoute"
   },
   "hero": {
-    "eyebrow": "Pour guitare, basse, ukulélé, cuatro, violon et violoncelle",
+    "eyebrow": "Pour guitare, basse, ukulélé, cuatro vénézuélien, violon et violoncelle",
     "heading": "Un accordeur, un métronome et un entraîneur qui écoute comment vous jouez.",
     "body": "Détection de la justesse en temps réel sur dix instruments, un métronome, des gammes et des accords dessinés sur votre propre manche, et un entraînement qui vous écoute jouer et note chaque note séparément. Tout tourne sur le téléphone, sans compte.",
     "getItOn": "Disponible sur",
@@ -266,7 +266,7 @@
     "body": "Noter note par note ne marche que si le signal qui entre est propre. Voici les trois cas : regardez lequel est le vôtre.",
     "acoustic": {
       "heading": "Acoustique : par le microphone",
-      "body": "Guitare acoustique, violon, violoncelle, ukulélé, mandoline, cuatro. Le microphone du téléphone suffit pour accorder et pour s'entraîner."
+      "body": "Guitare acoustique, violon, violoncelle, ukulélé, mandoline, cuatro vénézuélien. Le microphone du téléphone suffit pour accorder et pour travailler."
     },
     "electric": {
       "heading": "Électrique : par interface USB",
@@ -311,7 +311,7 @@
       "Accordeur basse",
       "Accordeur ukulélé",
       "Accordeur violon",
-      "Accordeur cuatro"
+      "Accordeur cuatro vénézuélien"
     ]
   },
   "ui": {

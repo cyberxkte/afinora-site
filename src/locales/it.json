@@ -165,7 +165,7 @@
     "howItListens": "Come ascolta"
   },
   "hero": {
-    "eyebrow": "Per chitarra, basso, ukulele, cuatro, violino e violoncello",
+    "eyebrow": "Per chitarra, basso, ukulele, cuatro venezuelano, violino e violoncello",
     "heading": "Un accordatore, un metronomo e un allenatore che ascolta come suoni.",
     "body": "Rileva l'intonazione in tempo reale su dieci strumenti, un metronomo, scale e accordi disegnati sul tuo manico, e un allenamento che ti ascolta suonare e valuta ogni nota una per una. Gira tutto sul telefono, senza account.",
     "getItOn": "Disponibile su",
@@ -266,7 +266,7 @@
     "body": "Valutare nota per nota funziona solo se il segnale che entra è pulito. Questi sono i tre casi: guarda qual è il tuo.",
     "acoustic": {
       "heading": "Acustico: dal microfono",
-      "body": "Chitarra acustica, violino, violoncello, ukulele, mandolino, cuatro. Il microfono del telefono basta per accordare e per allenarsi."
+      "body": "Chitarra acustica, violino, violoncello, ukulele, mandolino, cuatro venezuelano. Il microfono del telefono basta per accordare e per allenarsi."
     },
     "electric": {
       "heading": "Elettrico: da un'interfaccia USB",
@@ -311,7 +311,7 @@
       "Accordatore basso",
       "Accordatore ukulele",
       "Accordatore violino",
-      "Accordatore cuatro"
+      "Accordatore cuatro venezuelano"
     ]
   },
   "ui": {

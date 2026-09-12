@@ -165,7 +165,7 @@
     "howItListens": "Como ouve"
   },
   "hero": {
-    "eyebrow": "Para guitarra, baixo, ukulele, cuatro, violino e violoncelo",
+    "eyebrow": "Para guitarra, baixo, ukulele, cuatro venezuelano, violino e violoncelo",
     "heading": "Um afinador, um metrónomo e um treinador que ouve como tocas.",
     "body": "Deteta a afinação em tempo real em dez instrumentos, metrónomo, escalas e acordes desenhados no teu próprio braço, e um treino que te ouve tocar e avalia cada nota em separado. Corre tudo no telemóvel, sem conta.",
     "getItOn": "Disponível no",
@@ -266,7 +266,7 @@
     "body": "Avaliar nota a nota só resulta se o sinal que entra for limpo. Estes são os três casos: vê qual é o teu.",
     "acoustic": {
       "heading": "Acústico: pelo microfone",
-      "body": "Guitarra acústica, violino, violoncelo, ukulele, bandolim, cuatro. O microfone do telemóvel chega para afinar e para treinar."
+      "body": "Guitarra acústica, violino, violoncelo, ukulele, bandolim, cuatro venezuelano. O microfone do telemóvel chega para afinar e para treinar."
     },
     "electric": {
       "heading": "Elétrico: por interface USB",
@@ -311,7 +311,7 @@
       "Afinador de baixo",
       "Afinador de ukulele",
       "Afinador de violino",
-      "Afinador de cuatro"
+      "Afinador de cuatro venezuelano"
     ]
   },
   "ui": {

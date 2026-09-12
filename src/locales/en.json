@@ -165,7 +165,7 @@
     "howItListens": "How it listens"
   },
   "hero": {
-    "eyebrow": "For guitar, bass, ukulele, cuatro, violin and cello",
+    "eyebrow": "For guitar, bass, ukulele, Venezuelan cuatro, violin and cello",
     "heading": "A tuner, a metronome, and a trainer that listens to how you play.",
     "body": "Real-time pitch detection for ten instruments, a metronome, scales and chords drawn on your own neck, and training that listens as you play and grades every note separately. It all runs on the device, with no account.",
     "getItOn": "Get it on",
@@ -266,7 +266,7 @@
     "body": "Grading note by note only works if the signal coming in is clean. These are the three cases, and which one applies to you.",
     "acoustic": {
       "heading": "Acoustic: through the microphone",
-      "body": "Acoustic guitar, violin, cello, ukulele, mandolin, cuatro. The phone's microphone is enough to tune and to train."
+      "body": "Acoustic guitar, violin, cello, ukulele, mandolin, Venezuelan cuatro. The phone’s microphone is enough to tune and to train."
     },
     "electric": {
       "heading": "Electric: through a USB interface",
@@ -311,7 +311,7 @@
       "Bass tuner",
       "Ukulele tuner",
       "Violin tuner",
-      "Cuatro tuner"
+      "Venezuelan cuatro tuner"
     ]
   },
   "ui": {

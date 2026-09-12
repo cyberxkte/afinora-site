@@ -165,7 +165,7 @@
     "howItListens": "Wie es zuhört"
   },
   "hero": {
-    "eyebrow": "Für Gitarre, Bass, Ukulele, Cuatro, Geige und Cello",
+    "eyebrow": "Für Gitarre, Bass, Ukulele, venezolanischer Cuatro, Geige und Cello",
     "heading": "Ein Stimmgerät, ein Metronom und ein Trainer, der zuhört, wie du spielst.",
     "body": "Erkennt die Tonhöhe in Echtzeit auf zehn Instrumenten, dazu ein Metronom, Skalen und Akkorde auf deinem eigenen Griffbrett und ein Training, das dir beim Spielen zuhört und jeden Ton einzeln bewertet. Läuft komplett auf dem Telefon, ohne Konto.",
     "getItOn": "Jetzt bei",
@@ -266,7 +266,7 @@
     "body": "Ton für Ton zu bewerten klappt nur, wenn das ankommende Signal sauber ist. Das sind die drei Fälle — schau, welcher deiner ist.",
     "acoustic": {
       "heading": "Akustisch: über das Mikrofon",
-      "body": "Akustikgitarre, Violine, Cello, Ukulele, Mandoline, Cuatro. Das Telefonmikrofon reicht zum Stimmen und zum Trainieren."
+      "body": "Akustikgitarre, Geige, Cello, Ukulele, Mandoline, venezolanischer Cuatro. Das Telefonmikrofon reicht zum Stimmen und zum Üben."
     },
     "electric": {
       "heading": "Elektrisch: über ein USB-Interface",
@@ -311,7 +311,7 @@
       "Stimmgerät Bass",
       "Stimmgerät Ukulele",
       "Stimmgerät Violine",
-      "Stimmgerät Cuatro"
+      "Stimmgerät venezolanischer Cuatro"
     ]
   },
   "ui": {
