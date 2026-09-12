@@ -135,6 +135,7 @@ async function main() {
   const assets = {
     css: await assetVersion('assets/css/site.css'),
     js: await assetVersion('assets/js/afinora.js'),
+    fonts: await assetVersion('assets/css/fonts.css'),
   };
   let written = 0;
 

@@ -141,7 +141,8 @@
     var CYCLE = 5.2;
 
     var root = el('div', 'position:relative;background:#0a0a0a;padding:18px 16px 12px;'
-      + 'display:flex;flex-direction:column;gap:14px;height:100%;box-sizing:border-box');
+      + 'display:flex;flex-direction:column;gap:14px;height:100%;box-sizing:border-box;'
+      + 'overflow:hidden');
 
     // Header
     var head = add(root, el('div', 'display:flex;align-items:flex-start;'
@@ -296,13 +297,17 @@
     var DIAL_R = 44.2;
     var DOT = 10.1;
 
-    var root = el('div', 'position:relative;background:#0a0a0a;padding:18px 16px 12px;'
-      + 'display:flex;flex-direction:column;gap:16px;height:100%;box-sizing:border-box');
+    // Same rule as Studio: the dial is the only row that flexes, everything
+    // else keeps its height, and the column is clipped rather than allowed to
+    // grow past the frame.
+    var root = el('div', 'position:relative;background:#0a0a0a;padding:16px 16px 12px;'
+      + 'display:flex;flex-direction:column;gap:11px;height:100%;box-sizing:border-box;'
+      + 'overflow:hidden');
     add(root, screenHead(t('screenMetronome', 'Metronome')));
 
     // The dial must be the flexible child: sized by width instead, every child
     // is intrinsic and the column overflows the frame.
-    var dialWrap = add(root, el('div', 'flex:1 1 0;min-height:104px;display:flex;'
+    var dialWrap = add(root, el('div', 'flex:1 1 0;min-height:72px;display:flex;'
       + 'align-items:center;justify-content:center'));
     var dial = add(dialWrap, el('div', 'position:relative;height:100%;max-width:96%;aspect-ratio:1'));
     add(dial, el('div', 'position:absolute;inset:6.1%;border-radius:50%;background:#0e0f12'));
@@ -325,28 +330,29 @@
       dots.push(dot);
     }
 
-    add(root, el('div', 'font:400 9.5px/1.4 ' + MONO + ';letter-spacing:.14em;'
+    add(root, el('div', 'flex:0 0 auto;font:400 9px/1.35 ' + MONO + ';letter-spacing:.1em;'
       + 'text-transform:uppercase;color:#a8a29e;text-align:center',
       t('metroHint', 'Tap a beat to accent or silence it')));
 
-    var steps = add(root, el('div', 'display:flex;gap:6px'));
+    var steps = add(root, el('div', 'flex:0 0 auto;display:flex;gap:5px'));
     [['−5', false], ['−1', false], ['TAP', true], ['+1', false], ['+5', false]]
       .forEach(function (s) {
-        add(steps, el('div', 'flex:1 1 0;min-width:0;border-radius:9px;padding:9px 2px;'
+        add(steps, el('div', 'flex:1 1 0;min-width:0;border-radius:9px;padding:8px 2px;'
           + 'text-align:center;background:' + (s[1] ? '#0c2018' : '#0e0f12')
           + ';border:1px solid ' + (s[1] ? '#2dd4bf' : '#1c1d22')
           + ';color:' + (s[1] ? '#2dd4bf' : '#fafaf9') + ';font:500 12px/1 ' + MONO, s[0]));
       });
 
-    var play = add(root, el('div', 'display:flex;justify-content:center'));
+    var play = add(root, el('div', 'flex:0 0 auto;display:flex;justify-content:center'));
     // It is running, so it shows pause.
-    var transport = add(play, el('div', 'width:52px;height:52px;border-radius:50%;'
+    var transport = add(play, el('div', 'width:46px;height:46px;border-radius:50%;'
       + 'background:#2dd4bf;display:flex;align-items:center;justify-content:center;gap:4px'));
-    add(transport, el('span', 'width:5px;height:18px;border-radius:2px;background:#04211d'));
-    add(transport, el('span', 'width:5px;height:18px;border-radius:2px;background:#04211d'));
+    add(transport, el('span', 'width:5px;height:16px;border-radius:2px;background:#04211d'));
+    add(transport, el('span', 'width:5px;height:16px;border-radius:2px;background:#04211d'));
 
-    var panel = add(root, el('div', 'background:#0e0f12;border:1px solid #1c1d22;'
-      + 'border-radius:12px;padding:8px;display:flex;flex-direction:column;gap:7px'));
+    var panel = add(root, el('div', 'flex:0 0 auto;background:#0e0f12;'
+      + 'border:1px solid #1c1d22;border-radius:12px;padding:7px;display:flex;'
+      + 'flex-direction:column;gap:6px'));
     var sigRow = add(panel, el('div', 'display:flex;gap:3px'));
     SIGNATURES.forEach(function (s) {
       var on = s === '4/4';
@@ -423,7 +429,8 @@
     }
 
     var root = el('div', 'position:relative;background:#0a0a0a;padding:18px 16px 12px;'
-      + 'display:flex;flex-direction:column;gap:14px;height:100%;box-sizing:border-box');
+      + 'display:flex;flex-direction:column;gap:14px;height:100%;box-sizing:border-box;'
+      + 'overflow:hidden');
     add(root, screenHead(t('screenScales', 'Chords & Scales')));
 
     var mode = add(root, el('div', 'display:flex;gap:6px'));
@@ -548,19 +555,28 @@
       return Math.floor(total / 60) + ':' + String(total % 60).padStart(2, '0');
     }
 
+    // StudioScreen.tsx's rule, and the reason this screen holds together: every
+    // row has a fixed height except one, which takes the slack. Two elastic
+    // rows, or a row of chips allowed to wrap, and the column grows past the
+    // frame — which on a page reads as the whole screen printed on top of
+    // itself.
     var root = el('div', 'position:relative;background:#0a0a0a;padding:18px 16px 12px;'
-      + 'display:flex;flex-direction:column;gap:14px;height:100%;box-sizing:border-box');
+      + 'display:flex;flex-direction:column;gap:12px;height:100%;box-sizing:border-box;'
+      + 'overflow:hidden');
     add(root, screenHead(t('screenStudio', 'Studio')));
 
     function chip(parent, text, on) {
-      return add(parent, el('div', 'border-radius:99px;padding:8px 13px;'
-        + 'font:500 11.5px/1 ' + MONO + ';background:' + (on ? '#0c2018' : '#0e0f12')
+      return add(parent, el('div', 'flex:0 1 auto;min-width:0;border-radius:99px;'
+        + 'padding:8px 12px;font:500 11px/1 ' + MONO
+        + ';background:' + (on ? '#0c2018' : '#0e0f12')
         + ';border:1px solid ' + (on ? '#2dd4bf' : '#1c1d22')
-        + ';color:' + (on ? '#2dd4bf' : '#a8a29e') + ';white-space:nowrap', text));
+        + ';color:' + (on ? '#2dd4bf' : '#a8a29e')
+        + ';white-space:nowrap;overflow:hidden;text-overflow:ellipsis', text));
     }
 
-    var lvl = add(root, el('div', 'background:#0e0f12;border:1px solid #1c1d22;'
-      + 'border-radius:12px;padding:12px;display:flex;flex-direction:column;gap:10px'));
+    var lvl = add(root, el('div', 'flex:0 0 auto;background:#0e0f12;'
+      + 'border:1px solid #1c1d22;border-radius:12px;padding:11px;display:flex;'
+      + 'flex-direction:column;gap:9px'));
     var modes = add(lvl, el('div', 'display:flex;gap:5px'));
     chip(modes, t('audioChip', 'AUDIO'), true);
     chip(modes, t('videoChip', 'VIDEO'), false);
@@ -575,9 +591,10 @@
       + 'text-transform:uppercase;color:#a8a29e;text-align:center',
       t('inputLevel', 'Input level')));
 
-    var trk = add(root, el('div', 'flex:1;min-height:0;background:#0e0f12;'
-      + 'border:1px solid #1c1d22;border-radius:12px;padding:12px;display:flex;'
-      + 'flex-direction:column;gap:10px'));
+    // The one elastic row on the screen.
+    var trk = add(root, el('div', 'flex:1 1 0;min-height:0;background:#0e0f12;'
+      + 'border:1px solid #1c1d22;border-radius:12px;padding:11px;display:flex;'
+      + 'flex-direction:column;gap:9px;overflow:hidden'));
     var trkHead = add(trk, el('div', 'display:flex;align-items:center;gap:9px'));
     add(trkHead, el('div', 'width:30px;height:30px;border-radius:9px;border:1px solid #2dd4bf;'
       + 'color:#2dd4bf;display:flex;align-items:center;justify-content:center;'
@@ -589,7 +606,10 @@
     add(trkMid, el('div', 'font:400 9px/1 ' + MONO + ';letter-spacing:.14em;'
       + 'text-transform:uppercase;color:#a8a29e', t('backingTrack', 'Backing track')));
 
-    var wave = add(trk, el('div', 'position:relative;flex:1;min-height:58px'));
+    // Low floor on purpose, the same reasoning as the app's viewer: the limit
+    // is not how small a waveform is still useful, but how small it has to get
+    // before it pushes a control off the screen.
+    var wave = add(trk, el('div', 'position:relative;flex:1 1 0;min-height:34px'));
     var barRow = add(wave, el('div', 'position:absolute;inset:0;display:flex;'
       + 'align-items:center;gap:2px'));
     var bars = [];
@@ -615,13 +635,15 @@
     var now = add(times, el('span', 'font:500 13px/1 ' + MONO + ';color:#fafaf9'));
     add(times, el('span', 'font:400 10px/1 ' + MONO + ';color:#fb7185', 'B ' + clock(B)));
 
-    var ctl = add(root, el('div', 'display:flex;gap:6px;flex-wrap:wrap'));
+    // One row, no wrap, and only the two controls the copy talks about. Four
+    // chips wrapped onto three lines on a 280px frame and took the height the
+    // waveform needed; three fitted but arrived truncated to "Auto-s...",
+    // which reads as a bug rather than as a screenshot.
+    var ctl = add(root, el('div', 'flex:0 0 auto;display:flex;gap:6px;overflow:hidden'));
     chip(ctl, '− 100% +', false);
     chip(ctl, t('loopChip', 'Loop'), true);
-    chip(ctl, t('autosaveChip', 'Auto-save'), false);
-    chip(ctl, t('speedUpChip', '+5% speed-up per loop'), false);
 
-    var recWrap = add(root, el('div', 'display:flex;justify-content:center'));
+    var recWrap = add(root, el('div', 'flex:0 0 auto;display:flex;justify-content:center'));
     var recOuter = add(recWrap, el('div', 'width:58px;height:58px;border-radius:50%;'
       + 'background:#101114;display:flex;align-items:center;justify-content:center'));
     var rec = add(recOuter, el('div', 'width:34px;height:34px;border-radius:50%;background:#fb7185'));

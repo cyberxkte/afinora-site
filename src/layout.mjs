@@ -55,6 +55,21 @@ export const MARK = `<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/sv
   </g>
 </svg>`;
 
+/*
+ * Typefaces, served from this domain and never from fonts.googleapis.com: that
+ * request hands every visitor's IP address to Google before they have agreed to
+ * anything. See assets/css/fonts.css for the rest of the reasoning.
+ *
+ * The two faces that set the first screen are preloaded so the headline does
+ * not flash. Both are variable files — one covers every weight of its family,
+ * which is why the preloaded name says 500 and the headline at 700 still uses
+ * it.
+ */
+const FONT_PRELOADS = [
+  'space-grotesk-500-latin.woff2',
+  'ibm-plex-sans-400-latin.woff2',
+];
+
 /** Where a page lives for a given language. English sits at the root. */
 export function pageUrl(lang, page) {
   const dir = lang === 'en' ? '' : `${lang}/`;
@@ -128,6 +143,10 @@ export function anchor(lang, from, id) {
 }
 
 function head({ lang, page, t, langs, strings, assets }) {
+  const FONTS = FONT_PRELOADS
+    .map((f) => `<link rel="preload" href="/assets/fonts/${f}" as="font" type="font/woff2" crossorigin>`)
+    .concat(`<link rel="stylesheet" href="/assets/css/fonts.css?v=${assets.fonts}">`)
+    .join('\n  ');
   const url = SITE + pageUrl(lang, page);
   const title = t(`${page}.title`);
   const description = t(`${page}.description`);
@@ -181,9 +200,7 @@ function head({ lang, page, t, langs, strings, assets }) {
   <meta name="twitter:title" content="${esc(title)}">
   <meta name="twitter:description" content="${esc(description)}">
   <meta name="twitter:image" content="${SITE}/brand/play-feature-graphic.png">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+  ${FONTS}
   <link rel="stylesheet" href="/assets/css/site.css?v=${assets.css}">${jsonLd}
   <script>window.AFINORA_I18N=${JSON.stringify(strings)};</script>
   ${redirectScript(langs)}
