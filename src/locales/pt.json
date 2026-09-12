@@ -165,11 +165,11 @@
     "howItListens": "Como ouve"
   },
   "hero": {
-    "eyebrow": "Para guitarra, baixo, ukulele e cordas de arco",
+    "eyebrow": "Para guitarra, baixo, ukulele, violino e violoncelo",
     "heading": "Um afinador, um metrónomo e um treinador que ouve como tocas.",
-    "body": "Deteção de altura em tempo real para dez instrumentos, um metrónomo, escalas e acordes desenhados no teu próprio braço, e treino que ouve enquanto tocas e avalia cada nota em separado. Corre tudo no dispositivo, sem conta.",
+    "body": "Deteta a afinação em tempo real em dez instrumentos, metrónomo, escalas e acordes desenhados no teu próprio braço, e um treino que te ouve tocar e avalia cada nota em separado. Corre tudo no telemóvel, sem conta.",
     "getItOn": "Disponível no",
-    "downloadOn": "Transferir na",
+    "downloadOn": "Descarregar na",
     "fine": "Sem conta · sem anúncios · o áudio nunca sai do telemóvel",
     "newTab": "abre num separador novo"
   },
@@ -193,7 +193,7 @@
   ],
   "instruments": {
     "heading": "Dez instrumentos, com as suas afinações",
-    "body": "As suas cordas, as suas afinações alternativas e o seu braço desenhado com os trastes que tem — ou sem eles.",
+    "body": "Cada um com as suas cordas, as suas afinações alternativas e o braço desenhado com os trastes que tem mesmo, ou sem nenhum.",
     "list": [
       "Guitarra",
       "Guitarra de 7 cordas",
@@ -209,30 +209,30 @@
   },
   "technique": {
     "eyebrow": "Treino técnico",
-    "heading": "Ouve enquanto tocas e avalia cada nota em afinação e tempo",
-    "body": "Escolhes uma escala, defines um andamento e tocas contra o metrónomo. O detetor de altura ouve e avalia cada nota em separado no momento em que chega: afinada e a tempo, atrasada, ou não detetada. A afinação e o tempo são medidos à parte, por isso no fim sabes que notas concretas trabalhar em vez de adivinhar. As notas viajam pelo braço com uma cor por dedo e uma faixa por corda, e tu tocas-as no instrumento.",
-    "legendPerfect": "Mesmo no tempo",
-    "legendHit": "Tocada, mas escapou",
-    "legendMiss": "Nunca chegou",
+    "heading": "Ouve-te tocar e avalia a afinação e o tempo de cada nota",
+    "body": "Escolhes uma escala, defines um andamento e tocas com o metrónomo. O detetor ouve e avalia cada nota em separado assim que ela soa: afinada e a tempo, atrasada, ou não detetada. A afinação e o tempo medem-se em separado, por isso no fim sabes exatamente que notas trabalhar em vez de adivinhar. As notas percorrem o braço com uma cor por dedo e uma faixa por corda, e és tu que as tocas no instrumento.",
+    "legendPerfect": "Em cima do tempo",
+    "legendHit": "Soou, mas fora de tempo",
+    "legendMiss": "Não chegou a soar",
     "points": [
       {
-        "heading": "Traz os teus exercícios",
-        "body": "Padrões de escala incluídos, ou cola os teus como texto simples e o Afinora transforma-os num percurso."
+        "heading": "Usa os teus exercícios",
+        "body": "Tens padrões de escala já feitos, ou colas os teus em texto e o Afinora transforma-os num percurso."
       },
       {
         "heading": "O andamento sobe sozinho",
-        "body": "O ciclo acelera enquanto acompanhas e baixa o andamento quando não acompanhas."
+        "body": "O ciclo vai acelerando enquanto lhe acompanhas o ritmo, e baixa o andamento mal comeces a falhar."
       },
       {
         "heading": "Um histórico por escala",
-        "body": "Cada exercício guarda o seu próprio histórico, por isso o progresso é um número medido."
+        "body": "Cada exercício guarda o seu próprio histórico, por isso a evolução mede-se em vez de se adivinhar."
       }
     ]
   },
   "blocks": {
     "tuner": {
       "eyebrow": "01 · Afinador",
-      "heading": "Lê cada nota com exatidão",
+      "heading": "Lê cada nota com precisão",
       "body": "Deteção de altura em tempo real, processada no próprio dispositivo. Mais de trinta afinações padrão e alternativas, além das que construíres. Um tom de referência em qualquer corda e seis referências A4, de 432 a 442 Hz. Lê uma guitarra elétrica sem amplificação."
     },
     "scales": {
@@ -242,17 +242,17 @@
     },
     "metronome": {
       "eyebrow": "03 · Metrónomo",
-      "heading": "Define o andamento, escolhe o compasso, toca",
+      "heading": "Define o andamento, escolhe o compasso e toca",
       "body": "Não sabes os BPM? Marca-os com o dedo e o Afinora calcula. De 30 a 300 BPM, compassos de 2/4 a 12/8, e subdivisões até semicolcheias — as que ajudam em andamentos lentos, onde o que te desequilibra é o espaço entre as pulsações. Toca em qualquer tempo do compasso para o acentuar ou silenciar. É o mesmo clique contra o qual o treino técnico mede o teu tempo, e está completo na versão gratuita."
     },
     "studio": {
       "eyebrow": "04 · Estúdio",
-      "heading": "Grava-te por cima da base musical",
+      "heading": "Grava-te a tocar por cima da base",
       "body": "Importa uma base musical, marca a secção que te custa, põe em ciclo e abranda. Grava-te por cima em áudio ou vídeo, guarda na galeria ou partilha. As gravações são ficheiros do teu telemóvel: a aplicação nunca as envia."
     },
     "ear": {
       "eyebrow": "05 · Treino auditivo",
-      "heading": "Ouves a nota e tocas-la no teu instrumento",
+      "heading": "Ouves a nota e procura-la no teu instrumento",
       "body": "O Afinora toca uma nota ou um intervalo, tu encontra-lo no braço e toca-lo, e o detetor verifica se acertaste. Respondes com o instrumento, não escolhendo uma opção no ecrã."
     },
     "languages": {
@@ -262,14 +262,14 @@
   },
   "listens": {
     "eyebrow": "Como ouve",
-    "heading": "Como o Afinora ouve o teu instrumento",
-    "body": "Avaliar nota a nota só funciona se o sinal que entra for limpo. Estes são os três casos, e qual se aplica a ti.",
+    "heading": "Como o Afinora te ouve",
+    "body": "Avaliar nota a nota só resulta se o sinal que entra for limpo. Estes são os três casos: vê qual é o teu.",
     "acoustic": {
       "heading": "Acústico: pelo microfone",
       "body": "Guitarra acústica, violino, violoncelo, ukulele, bandolim, cuatro. O microfone do telemóvel chega para afinar e para treinar."
     },
     "electric": {
-      "heading": "Elétrico: por uma interface USB",
+      "heading": "Elétrico: por interface USB",
       "body": "Uma elétrica sem amplificação não é um sinal que um detetor consiga ler de forma fiável, e um microfone de sala perde notas assim que há ruído. Com uma interface, o Afinora deteta-a, compensa a latência e avisa-te de que está ligada."
     },
     "device": {
@@ -286,15 +286,15 @@
   },
   "pricing": {
     "eyebrow": "Grátis e Pro",
-    "heading": "Abre com cinco dias completos",
+    "heading": "Começa com cinco dias inteiros",
     "body": "Depois, a versão gratuita mantém um instrumento à tua escolha, as escalas maior e menor, o metrónomo inteiro e cinco gravações do Estúdio. O Pro é uma compra única, não uma subscrição, e desbloqueia o resto para sempre.",
     "freeHeading": "Grátis",
     "freeBody": "Um instrumento, escalas maior e menor, o metrónomo completo, cinco gravações.",
-    "proHeading": "Pro · compra única",
+    "proHeading": "Pro · pagamento único",
     "proBody": "Os dez instrumentos, as vinte escalas e vinte acordes, o treino técnico completo e o Estúdio sem limites.",
     "price": "9,99 € ou 9,99 US$ na maioria dos países",
-    "neverHeading": "O que nunca existe",
-    "neverBody": "Uma subscrição, anúncios, uma conta, rastreio, ou áudio enviado para um servidor."
+    "neverHeading": "O que nunca vais encontrar",
+    "neverBody": "Subscrições, anúncios, contas, rastreio ou áudio enviado para um servidor."
   },
   "download": {
     "heading": "Transfere o Afinora",
@@ -305,7 +305,7 @@
     "appHeading": "A aplicação",
     "instrumentsHeading": "Instrumentos",
     "helpHeading": "Ajuda",
-    "made": "Feita para quem pratica",
+    "made": "Feita para quem se senta a estudar",
     "seo": [
       "Afinador de guitarra",
       "Afinador de baixo",
@@ -348,7 +348,7 @@
     "audioChip": "ÁUDIO",
     "videoChip": "VÍDEO",
     "inputLevel": "Nível de entrada",
-    "backingTrack": "Base musical",
+    "backingTrack": "Base",
     "loopChip": "Ciclo",
     "autosaveChip": "Guardar auto",
     "speedUpChip": "+5% de velocidade por ciclo",

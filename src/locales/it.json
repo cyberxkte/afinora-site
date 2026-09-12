@@ -10,9 +10,9 @@
     "title": "Assistenza — Afinora",
     "description": "Aiuto con Afinora: non rileva suono, la nota salta, il tono di riferimento non è quello atteso, l'allenamento tecnico non sente la chitarra elettrica, ripristinare l'acquisto Pro e dove finiscono le registrazioni di Studio.",
     "heading": "Se qualcosa non suona come dovrebbe",
-    "intro": "Quasi tutto ciò che non va in un accordatore è il segnale che gli arriva, non l'accordatore. Ecco i casi che vediamo più spesso e cosa fare per ciascuno.",
+    "intro": "Quasi tutto quello che non va in un accordatore è il segnale che gli arriva, non l’accordatore. Questi sono i casi che vediamo in continuazione, e cosa fare in ognuno.",
     "contactHeading": "Scrivici",
-    "contactBody": "Se nulla di quanto sopra risolve, raccontacelo. Indica lo strumento, il telefono e cosa ti aspettavi che succedesse; di solito basta.",
+    "contactBody": "Se niente di tutto questo risolve, scrivicelo. Dicci lo strumento, il telefono e cosa ti aspettavi che succedesse; di solito basta.",
     "questions": [
       {
         "heading": "L'app non rileva alcun suono",
@@ -26,7 +26,7 @@
       },
       {
         "heading": "La nota salta da una parte all'altra",
-        "body": "Il rilevamento dell'intonazione risente del rumore di fondo, delle corde vecchie, degli armonici o di più corde che suonano insieme. Smorza le altre corde e riprova."
+        "body": "Il rilevamento risente del rumore di fondo, delle corde consumate, degli armonici o di più corde che suonano insieme. Smorza le altre corde e riprova."
       },
       {
         "heading": "Il tono di riferimento non è quello che mi aspettavo",
@@ -34,7 +34,7 @@
       },
       {
         "heading": "L'allenamento tecnico non sente la mia elettrica",
-        "body": "Una elettrica non amplificata non produce un segnale che un rilevatore possa leggere in modo affidabile, e un microfono ambientale perde note appena c'è rumore. Valutare nota per nota richiede un'interfaccia audio USB: collegala e Afinora la rileva, ne compensa la latenza e te lo segnala. Gli strumenti acustici si allenano con il microfono del telefono.",
+        "body": "Una elettrica non amplificata non dà un segnale che un rilevatore possa leggere in modo affidabile, e un microfono ambientale perde note appena c'è rumore. Per valutare nota per nota serve un'interfaccia audio USB: collegala e Afinora la riconosce, ne compensa la latenza e te lo segnala. Gli strumenti acustici si allenano con il microfono del telefono.",
         "callout": true
       },
       {
@@ -165,9 +165,9 @@
     "howItListens": "Come ascolta"
   },
   "hero": {
-    "eyebrow": "Per chitarra, basso, ukulele e archi",
+    "eyebrow": "Per chitarra, basso, ukulele, violino e violoncello",
     "heading": "Un accordatore, un metronomo e un allenatore che ascolta come suoni.",
-    "body": "Rilevamento dell'intonazione in tempo reale per dieci strumenti, un metronomo, scale e accordi disegnati sul tuo manico, e allenamento che ascolta mentre suoni e valuta ogni nota separatamente. Funziona tutto sul dispositivo, senza account.",
+    "body": "Rileva l'intonazione in tempo reale su dieci strumenti, un metronomo, scale e accordi disegnati sul tuo manico, e un allenamento che ti ascolta suonare e valuta ogni nota una per una. Gira tutto sul telefono, senza account.",
     "getItOn": "Disponibile su",
     "downloadOn": "Scaricala su",
     "fine": "Senza account · senza pubblicità · l'audio non lascia mai il telefono",
@@ -193,7 +193,7 @@
   ],
   "instruments": {
     "heading": "Dieci strumenti, con le loro accordature",
-    "body": "Le sue corde, le sue accordature alternative e il suo manico disegnato con i tasti che ha, o senza.",
+    "body": "Ognuno con le sue corde, le sue accordature alternative e il manico disegnato con i tasti che ha davvero, o senza nessuno.",
     "list": [
       "Chitarra",
       "Chitarra a 7 corde",
@@ -209,51 +209,51 @@
   },
   "technique": {
     "eyebrow": "Allenamento tecnico",
-    "heading": "Ascolta mentre suoni e valuta ogni nota per intonazione e tempo",
-    "body": "Scegli una scala, imposti un tempo e la suoni contro il metronomo. Il rilevatore di intonazione ascolta e valuta ogni nota separatamente nel momento in cui arriva: intonata e a tempo, in ritardo, o non rilevata. Intonazione e tempo sono misurati a parte, così alla fine sai quali note specifiche lavorare invece di tirare a indovinare. Le note viaggiano lungo il manico con un colore per dito e una corsia per corda, e le suoni sullo strumento.",
-    "legendPerfect": "Esatta sul tempo",
-    "legendHit": "Suonata, ma è scivolata",
-    "legendMiss": "Non è mai arrivata",
+    "heading": "Ti ascolta suonare e valuta intonazione e tempo di ogni nota",
+    "body": "Scegli una scala, imposti un tempo e la suoni sul metronomo. Il rilevatore ascolta e valuta ogni nota appena la suoni: intonata e a tempo, in ritardo, oppure non rilevata. Intonazione e tempo si misurano separatamente, così alla fine sai esattamente quali note riprendere invece di andare a intuito. Le note scorrono lungo il manico con un colore per dito e una corsia per corda, e tu le suoni sullo strumento.",
+    "legendPerfect": "In centro al tempo",
+    "legendHit": "Suonata, ma fuori tempo",
+    "legendMiss": "Non è arrivata",
     "points": [
       {
-        "heading": "Porta i tuoi esercizi",
-        "body": "Pattern di scala già pronti, oppure incolla i tuoi come testo semplice e Afinora li trasforma in un percorso."
+        "heading": "Usa i tuoi esercizi",
+        "body": "Trovi pattern di scala già pronti, oppure incolli i tuoi come testo e Afinora li trasforma in un percorso."
       },
       {
         "heading": "Il tempo sale da solo",
-        "body": "Il loop accelera finché stai dietro e abbassa il tempo quando non ci riesci."
+        "body": "Il loop accelera finché gli stai dietro e abbassa il tempo non appena fai fatica."
       },
       {
         "heading": "Uno storico per scala",
-        "body": "Ogni esercizio conserva il proprio storico, così i progressi sono una cifra misurata."
+        "body": "Ogni esercizio tiene la sua cronologia, così i progressi si misurano invece di intuirli."
       }
     ]
   },
   "blocks": {
     "tuner": {
       "eyebrow": "01 · Accordatore",
-      "heading": "Legge ogni nota con esattezza",
-      "body": "Rilevamento dell'intonazione in tempo reale, elaborato sul dispositivo stesso. Oltre trenta accordature standard e alternative, più quelle che costruisci tu. Un tono di riferimento su qualsiasi corda e sei riferimenti A4, da 432 a 442 Hz. Legge una chitarra elettrica non amplificata."
+      "heading": "Legge ogni nota con precisione",
+      "body": "Rilevamento dell'intonazione in tempo reale, elaborato sul telefono stesso. Oltre trenta accordature standard e alternative, più quelle che ti costruisci tu. Una nota di riferimento su qualsiasi corda e sei riferimenti per il La, da 432 a 442 Hz. Legge una chitarra elettrica non amplificata."
     },
     "scales": {
       "eyebrow": "02 · Accordi e scale",
       "heading": "Tutto il manico, nella tua accordatura",
-      "body": "Venti scale e venti accordi, disegnati dove li suoni davvero: fino a 24 tasti, con vista a schermo intero. Note o gradi, posizioni di accordo comprese quelle col barré, e gli accordi che appartengono alla tonalità che stai guardando. Da lì una scala passa direttamente all'allenamento."
+      "body": "Venti scale e venti accordi, disegnati dove li suoni davvero: fino a 24 tasti, con vista a schermo intero. Note o gradi, diteggiature con il barré incluso, e gli accordi che appartengono alla tonalità che hai davanti. Da lì una scala passa dritta all'allenamento."
     },
     "metronome": {
       "eyebrow": "03 · Metronomo",
-      "heading": "Imposta il tempo, scegli la battuta, suona",
-      "body": "Non sai i BPM? Battili col dito e Afinora li calcola. Da 30 a 300 BPM, battute da 2/4 a 12/8, e suddivisioni fino ai sedicesimi: quelle che aiutano ai tempi lenti, dove è lo spazio fra i battiti a farti sbandare. Tocca qualsiasi battito della battuta per accentarlo o silenziarlo. È lo stesso click contro cui l'allenamento tecnico misura il tuo tempo, ed è completo nella versione gratuita."
+      "heading": "Imposta il tempo, scegli la battuta e suona",
+      "body": "Non sai a quanti BPM va? Battilo col dito e Afinora lo calcola. Da 30 a 300 BPM, battute da 2/4 a 12/8 e suddivisioni fino ai sedicesimi, quelle che salvano ai tempi lenti, dove a farti sbandare è proprio lo spazio fra un battito e l'altro. Tocca qualsiasi battito per accentarlo o silenziarlo. È lo stesso click su cui l'allenamento misura il tuo tempo, e nella versione gratuita è completo."
     },
     "studio": {
       "eyebrow": "04 · Studio",
-      "heading": "Registrati sopra la base musicale",
-      "body": "Importa una base, marca la sezione che ti dà problemi, mettila in loop e rallentala. Registrati sopra in audio o video, salva nella galleria o condividi. Le registrazioni sono file sul tuo telefono: l'app non le carica mai."
+      "heading": "Registrati mentre suoni sulla base",
+      "body": "Carichi una base, segni il punto che ti dà filo da torcere, lo metti in loop e lo rallenti. Ti registri sopra in audio o in video, salvi nella galleria o condividi. Le registrazioni sono file sul tuo telefono: l’app non le carica da nessuna parte."
     },
     "ear": {
       "eyebrow": "05 · Allenamento dell'orecchio",
-      "heading": "Senti la nota e la suoni sul tuo strumento",
-      "body": "Afinora suona una nota o un intervallo, tu lo trovi sul manico e lo suoni, e il rilevatore controlla se hai indovinato. Rispondi con lo strumento, non scegliendo un'opzione sullo schermo."
+      "heading": "Senti la nota e la cerchi sul tuo strumento",
+      "body": "Afinora suona una nota o un intervallo, tu lo trovi sul manico e lo suoni, e il rilevatore controlla se ci hai preso. Rispondi con lo strumento, non scegliendo un'opzione sullo schermo."
     },
     "languages": {
       "heading": "Nove lingue",
@@ -262,39 +262,39 @@
   },
   "listens": {
     "eyebrow": "Come ascolta",
-    "heading": "Come Afinora ascolta il tuo strumento",
-    "body": "Valutare nota per nota funziona solo se il segnale in ingresso è pulito. Questi sono i tre casi, e quale riguarda te.",
+    "heading": "Come ti ascolta Afinora",
+    "body": "Valutare nota per nota funziona solo se il segnale che entra è pulito. Questi sono i tre casi: guarda qual è il tuo.",
     "acoustic": {
       "heading": "Acustico: dal microfono",
       "body": "Chitarra acustica, violino, violoncello, ukulele, mandolino, cuatro. Il microfono del telefono basta per accordare e per allenarsi."
     },
     "electric": {
       "heading": "Elettrico: da un'interfaccia USB",
-      "body": "Una elettrica non amplificata non è un segnale che un rilevatore possa leggere in modo affidabile, e un microfono ambientale perde note appena c'è rumore. Con un'interfaccia, Afinora la rileva, ne compensa la latenza e ti avvisa che è collegata."
+      "body": "Una elettrica non amplificata non dà un segnale che un rilevatore possa leggere in modo affidabile, e un microfono ambientale perde note appena c'è rumore. Con un'interfaccia, Afinora la riconosce, ne compensa la latenza e ti avvisa che è collegata."
     },
     "device": {
-      "heading": "Viene elaborato tutto qui",
-      "body": "L'audio usato per accordare e allenarsi viene analizzato sul dispositivo mentre arriva. Non viene mai registrato né caricato."
+      "heading": "Si elabora tutto qui",
+      "body": "L'audio usato per accordare e allenarsi viene analizzato sul telefono mentre entra. Non viene né registrato né caricato."
     },
     "trademark": "Testato con la Fender Mustang Micro Plus, e funziona con altre interfacce audio USB compatibili. Fender e Mustang Micro Plus sono marchi di Fender Musical Instruments Corporation; Afinora non è affiliata a Fender, né da essa approvata o sponsorizzata."
   },
   "privacyTeaser": {
     "eyebrow": "Privata fin dall'inizio",
     "heading": "Senza account, senza pubblicità, senza tracciamento",
-    "body": "Non c'è registrazione né login: apri l'app e suoni. Non ci sono annunci di terze parti né analisi nostre. L'audio usato per accordare e allenarsi viene analizzato sul dispositivo mentre arriva e non viene mai registrato né caricato. Le registrazioni di Studio restano sul tuo telefono, a meno che non le condivida tu.",
+    "body": "Non c'è registrazione né login: apri l'app e suoni. Non ci sono annunci di terze parti né analisi nostre. L'audio usato per accordare e allenarsi viene analizzato sul telefono mentre entra, e non viene né registrato né caricato. Le registrazioni di Studio restano sul tuo telefono, a meno che non le condivida tu.",
     "supportLink": "Assistenza e domande"
   },
   "pricing": {
     "eyebrow": "Gratis e Pro",
-    "heading": "Si apre con cinque giorni pieni",
-    "body": "Dopo, la versione gratuita mantiene uno strumento a tua scelta, le scale maggiore e minore, tutto il metronomo e cinque registrazioni di Studio. Pro è un acquisto unico, non un abbonamento, e sblocca il resto per sempre.",
+    "heading": "Si parte con cinque giorni interi",
+    "body": "Dopo, la versione gratuita tiene uno strumento a tua scelta, le scale maggiore e minore, tutto il metronomo e cinque registrazioni di Studio. Pro è un pagamento unico, non un abbonamento, e sblocca il resto per sempre.",
     "freeHeading": "Gratis",
     "freeBody": "Uno strumento, scale maggiore e minore, il metronomo completo, cinque registrazioni.",
-    "proHeading": "Pro · acquisto unico",
+    "proHeading": "Pro · pagamento unico",
     "proBody": "Tutti e dieci gli strumenti, le venti scale e i venti accordi, l'allenamento tecnico completo e Studio senza limiti.",
     "price": "9,99 € o 9,99 US$ nella maggior parte dei paesi",
-    "neverHeading": "Ciò che non c'è mai",
-    "neverBody": "Un abbonamento, pubblicità, un account, tracciamento, o audio caricato su un server."
+    "neverHeading": "Quello che non troverai",
+    "neverBody": "Abbonamenti, pubblicità, account, tracciamento o audio caricato su un server."
   },
   "download": {
     "heading": "Scarica Afinora",
@@ -305,7 +305,7 @@
     "appHeading": "L'app",
     "instrumentsHeading": "Strumenti",
     "helpHeading": "Aiuto",
-    "made": "Fatta per chi si esercita",
+    "made": "Fatta per chi si mette lì a studiare",
     "seo": [
       "Accordatore chitarra",
       "Accordatore basso",
@@ -348,10 +348,10 @@
     "audioChip": "AUDIO",
     "videoChip": "VIDEO",
     "inputLevel": "Livello d'ingresso",
-    "backingTrack": "Base musicale",
+    "backingTrack": "Base",
     "loopChip": "Loop",
     "autosaveChip": "Salvataggio auto",
-    "speedUpChip": "+5% di velocità per loop",
+    "speedUpChip": "+5% di velocità a ogni giro",
     "shoutPerfect": "PERFETTO!",
     "shoutGood": "BENE!",
     "shoutMiss": "MANCATA!",

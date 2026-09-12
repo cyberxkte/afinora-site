@@ -165,9 +165,9 @@
     "howItListens": "Wie es zuhört"
   },
   "hero": {
-    "eyebrow": "Für Gitarre, Bass, Ukulele und Streichinstrumente",
+    "eyebrow": "Für Gitarre, Bass, Ukulele, Geige und Cello",
     "heading": "Ein Stimmgerät, ein Metronom und ein Trainer, der zuhört, wie du spielst.",
-    "body": "Echtzeit-Tonhöhenerkennung für zehn Instrumente, ein Metronom, Skalen und Akkorde auf deinem eigenen Griffbrett, und ein Training, das zuhört, während du spielst, und jeden Ton einzeln bewertet. Alles läuft auf dem Gerät, ohne Konto.",
+    "body": "Erkennt die Tonhöhe in Echtzeit auf zehn Instrumenten, dazu ein Metronom, Skalen und Akkorde auf deinem eigenen Griffbrett und ein Training, das dir beim Spielen zuhört und jeden Ton einzeln bewertet. Läuft komplett auf dem Telefon, ohne Konto.",
     "getItOn": "Jetzt bei",
     "downloadOn": "Laden im",
     "fine": "Kein Konto · keine Werbung · das Audio verlässt das Telefon nie",
@@ -193,7 +193,7 @@
   ],
   "instruments": {
     "heading": "Zehn Instrumente, mit ihren Stimmungen",
-    "body": "Eigene Saiten, eigene alternative Stimmungen und ein Hals, gezeichnet mit den Bünden, die er hat — oder ohne.",
+    "body": "Jedes mit seinen eigenen Saiten, seinen alternativen Stimmungen und einem Hals, der mit den Bünden gezeichnet ist, die er wirklich hat — oder ganz ohne.",
     "list": [
       "Gitarre",
       "7-saitige Gitarre",
@@ -209,30 +209,30 @@
   },
   "technique": {
     "eyebrow": "Techniktraining",
-    "heading": "Es hört zu, während du spielst, und bewertet jeden Ton nach Tonhöhe und Timing",
-    "body": "Du wählst eine Tonleiter, stellst ein Tempo ein und spielst sie gegen das Metronom. Der Tonhöhendetektor hört zu und bewertet jeden Ton einzeln in dem Moment, in dem er ankommt: sauber und im Takt, zu spät, oder nicht erkannt. Tonhöhe und Timing werden getrennt gemessen, sodass du am Ende weißt, welche konkreten Töne du üben musst, statt zu raten. Die Töne wandern über das Griffbrett, eine Farbe pro Finger und eine Spur pro Saite, und du spielst sie auf dem Instrument.",
-    "legendPerfect": "Genau auf dem Schlag",
-    "legendHit": "Gespielt, aber verrutscht",
-    "legendMiss": "Nie angekommen",
+    "heading": "Hört dir beim Spielen zu und bewertet Tonhöhe und Timing jedes Tons",
+    "body": "Du wählst eine Tonleiter, stellst ein Tempo ein und spielst sie zum Metronom. Der Detektor hört zu und bewertet jeden Ton einzeln, sobald er klingt: sauber und im Takt, zu spät, oder gar nicht erkannt. Tonhöhe und Timing werden getrennt gemessen, also weißt du am Ende genau, welche Töne du üben musst, statt es zu erraten. Die Töne wandern über das Griffbrett, eine Farbe pro Finger und eine Spur pro Saite, und du spielst sie auf dem Instrument.",
+    "legendPerfect": "Genau im Takt",
+    "legendHit": "Gespielt, aber neben dem Takt",
+    "legendMiss": "Kam gar nicht an",
     "points": [
       {
-        "heading": "Bring deine eigenen Übungen mit",
-        "body": "Eingebaute Skalenmuster, oder füge deine eigenen als einfachen Text ein und Afinora macht eine Strecke daraus."
+        "heading": "Nimm deine eigenen Übungen mit",
+        "body": "Fertige Skalenmuster, oder füge deine eigenen als Text ein und Afinora macht eine Strecke daraus."
       },
       {
         "heading": "Das Tempo steigt automatisch",
-        "body": "Die Schleife wird schneller, solange du mithältst, und senkt das Tempo, wenn nicht."
+        "body": "Die Schleife zieht an, solange du mithältst, und nimmt das Tempo zurück, sobald es klemmt."
       },
       {
         "heading": "Ein Verlauf je Tonleiter",
-        "body": "Jede Übung führt ihren eigenen Verlauf, sodass Fortschritt eine gemessene Zahl ist."
+        "body": "Jede Übung führt ihren eigenen Verlauf, so wird Fortschritt gemessen statt geschätzt."
       }
     ]
   },
   "blocks": {
     "tuner": {
       "eyebrow": "01 · Stimmgerät",
-      "heading": "Liest jeden Ton exakt",
+      "heading": "Liest jeden Ton genau",
       "body": "Echtzeit-Tonhöhenerkennung, direkt auf dem Gerät verarbeitet. Über dreißig Standard- und alternative Stimmungen, dazu die, die du selbst baust. Ein Referenzton auf jeder Saite und sechs A4-Referenzen, von 432 bis 442 Hz. Liest eine unverstärkte E-Gitarre."
     },
     "scales": {
@@ -242,17 +242,17 @@
     },
     "metronome": {
       "eyebrow": "03 · Metronom",
-      "heading": "Tempo setzen, Takt wählen, spielen",
+      "heading": "Tempo einstellen, Takt wählen, spielen",
       "body": "Du kennst die BPM nicht? Tippe sie ein und Afinora rechnet sie aus. 30 bis 300 BPM, Takte von 2/4 bis 12/8, und Unterteilungen bis zur Sechzehntel — genau die, die bei langsamen Tempi helfen, wo dich der Abstand zwischen den Schlägen aus dem Tritt bringt. Tippe auf einen beliebigen Schlag, um ihn zu betonen oder stummzuschalten. Es ist derselbe Klick, gegen den das Techniktraining dein Timing misst, und es ist in der kostenlosen Version vollständig."
     },
     "studio": {
       "eyebrow": "04 · Studio",
-      "heading": "Nimm dich über dem Playback auf",
+      "heading": "Nimm dich auf, während du zum Playback spielst",
       "body": "Importiere ein Playback, markiere die Stelle, die dir Probleme macht, lege sie in eine Schleife und verlangsame sie. Nimm dich darüber als Audio oder Video auf, speichere es in deiner Galerie oder teile es. Aufnahmen sind Dateien auf deinem Telefon: die App lädt sie nie hoch."
     },
     "ear": {
       "eyebrow": "05 · Gehörtraining",
-      "heading": "Du hörst den Ton und spielst ihn auf deinem Instrument",
+      "heading": "Du hörst den Ton und suchst ihn auf deinem Instrument",
       "body": "Afinora spielt einen Ton oder ein Intervall, du findest ihn auf dem Griffbrett und spielst ihn, und der Detektor prüft, ob es stimmt. Du antwortest mit dem Instrument, nicht durch Antippen einer Option auf dem Bildschirm."
     },
     "languages": {
@@ -262,8 +262,8 @@
   },
   "listens": {
     "eyebrow": "Wie es zuhört",
-    "heading": "Wie Afinora deinem Instrument zuhört",
-    "body": "Die Bewertung Ton für Ton funktioniert nur, wenn das ankommende Signal sauber ist. Das sind die drei Fälle, und welcher auf dich zutrifft.",
+    "heading": "Wie Afinora dir zuhört",
+    "body": "Ton für Ton zu bewerten klappt nur, wenn das ankommende Signal sauber ist. Das sind die drei Fälle — schau, welcher deiner ist.",
     "acoustic": {
       "heading": "Akustisch: über das Mikrofon",
       "body": "Akustikgitarre, Violine, Cello, Ukulele, Mandoline, Cuatro. Das Telefonmikrofon reicht zum Stimmen und zum Trainieren."
@@ -286,15 +286,15 @@
   },
   "pricing": {
     "eyebrow": "Kostenlos und Pro",
-    "heading": "Sie startet mit fünf vollen Tagen",
+    "heading": "Es geht mit fünf ganzen Tagen los",
     "body": "Danach behält die kostenlose Version ein Instrument deiner Wahl, die Dur- und Moll-Tonleiter, das gesamte Metronom und fünf Studio-Aufnahmen. Pro ist ein einmaliger Kauf, kein Abonnement, und schaltet den Rest dauerhaft frei.",
     "freeHeading": "Kostenlos",
     "freeBody": "Ein Instrument, Dur- und Moll-Tonleiter, das vollständige Metronom, fünf Aufnahmen.",
-    "proHeading": "Pro · einmaliger Kauf",
+    "proHeading": "Pro · einmalige Zahlung",
     "proBody": "Alle zehn Instrumente, die zwanzig Skalen und zwanzig Akkorde, das vollständige Techniktraining und Studio ohne Grenzen.",
     "price": "9,99 € oder 9,99 US$ in den meisten Ländern",
-    "neverHeading": "Was es nie gibt",
-    "neverBody": "Ein Abonnement, Werbung, ein Konto, Tracking, oder auf einen Server hochgeladenes Audio."
+    "neverHeading": "Was es hier nie gibt",
+    "neverBody": "Abos, Werbung, Konten, Tracking oder Audio, das auf einen Server hochgeladen wird."
   },
   "download": {
     "heading": "Afinora herunterladen",
@@ -305,7 +305,7 @@
     "appHeading": "Die App",
     "instrumentsHeading": "Instrumente",
     "helpHeading": "Hilfe",
-    "made": "Gemacht für Leute, die üben",
+    "made": "Gemacht für alle, die sich wirklich hinsetzen und üben",
     "seo": [
       "Stimmgerät Gitarre",
       "Stimmgerät Bass",
@@ -351,7 +351,7 @@
     "backingTrack": "Playback",
     "loopChip": "Schleife",
     "autosaveChip": "Auto-Speichern",
-    "speedUpChip": "+5% Tempo pro Schleife",
+    "speedUpChip": "+5% Tempo pro Durchlauf",
     "shoutPerfect": "PERFEKT!",
     "shoutGood": "GUT!",
     "shoutMiss": "DANEBEN!",

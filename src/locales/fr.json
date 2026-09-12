@@ -165,11 +165,11 @@
     "howItListens": "Comment il écoute"
   },
   "hero": {
-    "eyebrow": "Pour guitare, basse, ukulélé et cordes frottées",
+    "eyebrow": "Pour guitare, basse, ukulélé, violon et violoncelle",
     "heading": "Un accordeur, un métronome et un entraîneur qui écoute comment vous jouez.",
-    "body": "Détection de hauteur en temps réel pour dix instruments, un métronome, des gammes et des accords dessinés sur votre propre manche, et un entraînement qui écoute pendant que vous jouez et note chaque note séparément. Tout tourne sur l'appareil, sans compte.",
+    "body": "Détection de la justesse en temps réel sur dix instruments, un métronome, des gammes et des accords dessinés sur votre propre manche, et un entraînement qui vous écoute jouer et note chaque note séparément. Tout tourne sur le téléphone, sans compte.",
     "getItOn": "Disponible sur",
-    "downloadOn": "Télécharger sur",
+    "downloadOn": "Télécharger dans l'",
     "fine": "Sans compte · sans publicité · l'audio ne quitte jamais le téléphone",
     "newTab": "ouvre un nouvel onglet"
   },
@@ -193,7 +193,7 @@
   ],
   "instruments": {
     "heading": "Dix instruments, avec leurs accordages",
-    "body": "Ses propres cordes, ses propres accordages alternatifs et son manche dessiné avec les frettes qu'il a — ou sans.",
+    "body": "Chacun avec ses cordes, ses accordages alternatifs et son manche dessiné avec les frettes qu'il a vraiment, ou sans aucune.",
     "list": [
       "Guitare",
       "Guitare 7 cordes",
@@ -209,30 +209,30 @@
   },
   "technique": {
     "eyebrow": "Entraînement technique",
-    "heading": "Il écoute pendant que vous jouez et note chaque note sur la justesse et le placement",
-    "body": "Vous choisissez une gamme, réglez un tempo et la jouez contre le métronome. Le détecteur de hauteur écoute et note chaque note séparément dès qu'elle arrive : juste et à temps, en retard, ou non détectée. La justesse et le placement sont mesurés à part, donc à la fin vous savez quelles notes précises travailler au lieu de deviner. Les notes défilent le long du manche avec une couleur par doigt et une voie par corde, et vous les jouez sur l'instrument.",
-    "legendPerfect": "Pile sur le temps",
-    "legendHit": "Jouée, mais elle a glissé",
-    "legendMiss": "Jamais arrivée",
+    "heading": "Il vous écoute jouer et note la justesse et le placement de chaque note",
+    "body": "Vous choisissez une gamme, réglez un tempo et la jouez au métronome. Le détecteur écoute et note chaque note séparément dès qu'elle sonne : juste et à temps, en retard, ou pas détectée. La justesse et le placement se mesurent à part, donc à la fin vous savez exactement quelles notes retravailler au lieu de le deviner. Les notes défilent le long du manche avec une couleur par doigt et une voie par corde, et vous les jouez sur l'instrument.",
+    "legendPerfect": "Pile dans le temps",
+    "legendHit": "Jouée, mais à côté du temps",
+    "legendMiss": "Pas sortie",
     "points": [
       {
-        "heading": "Apportez vos propres exercices",
-        "body": "Des motifs de gammes intégrés, ou collez les vôtres en texte brut et Afinora en fait un parcours."
+        "heading": "Utilisez vos propres exercices",
+        "body": "Des motifs de gammes tout prêts, ou collez les vôtres en texte et Afinora en fait un parcours."
       },
       {
         "heading": "Le tempo monte tout seul",
-        "body": "La boucle accélère tant que vous suivez et redescend quand vous décrochez."
+        "body": "La boucle accélère tant que vous suivez, et redescend dès que ça coince."
       },
       {
         "heading": "Un historique par gamme",
-        "body": "Chaque exercice garde son propre historique, si bien que le progrès est un chiffre mesuré."
+        "body": "Chaque exercice garde son propre historique, si bien que les progrès se mesurent au lieu de se deviner."
       }
     ]
   },
   "blocks": {
     "tuner": {
       "eyebrow": "01 · Accordeur",
-      "heading": "Lit chaque note exactement",
+      "heading": "Lit chaque note avec précision",
       "body": "Détection de hauteur en temps réel, traitée sur l'appareil lui-même. Plus de trente accordages standards et alternatifs, plus ceux que vous construisez. Un son de référence sur n'importe quelle corde et six références A4, de 432 à 442 Hz. Lit une guitare électrique non amplifiée."
     },
     "scales": {
@@ -242,17 +242,17 @@
     },
     "metronome": {
       "eyebrow": "03 · Métronome",
-      "heading": "Réglez le tempo, choisissez la mesure, jouez",
+      "heading": "Réglez le tempo, choisissez la mesure et jouez",
       "body": "Vous ne connaissez pas le BPM ? Tapez-le et Afinora le calcule. De 30 à 300 BPM, des mesures de 2/4 à 12/8, et des subdivisions jusqu'aux doubles croches — celles qui aident dans les tempos lents, où c'est l'espace entre les temps qui vous déstabilise. Touchez n'importe quel temps de la mesure pour l'accentuer ou le muter. C'est le même clic contre lequel l'entraînement technique mesure votre placement, et il est complet dans la version gratuite."
     },
     "studio": {
       "eyebrow": "04 · Studio",
-      "heading": "Enregistrez-vous sur la piste d'accompagnement",
+      "heading": "Enregistrez-vous en jouant sur la bande",
       "body": "Importez une piste d'accompagnement, marquez le passage qui vous résiste, mettez-le en boucle et ralentissez-le. Enregistrez-vous par-dessus en audio ou en vidéo, sauvegardez dans votre galerie ou partagez. Les enregistrements sont des fichiers sur votre téléphone : l'application ne les envoie jamais."
     },
     "ear": {
       "eyebrow": "05 · Entraînement de l'oreille",
-      "heading": "Vous entendez la note et vous la jouez sur votre instrument",
+      "heading": "Vous entendez la note et vous la cherchez sur votre instrument",
       "body": "Afinora joue une note ou un intervalle, vous le trouvez sur le manche et vous le jouez, et le détecteur vérifie si c'est juste. Vous répondez avec l'instrument, pas en choisissant une option à l'écran."
     },
     "languages": {
@@ -262,14 +262,14 @@
   },
   "listens": {
     "eyebrow": "Comment il écoute",
-    "heading": "Comment Afinora écoute votre instrument",
-    "body": "Noter note par note ne fonctionne que si le signal entrant est propre. Voici les trois cas, et celui qui vous concerne.",
+    "heading": "Comment Afinora vous écoute",
+    "body": "Noter note par note ne marche que si le signal qui entre est propre. Voici les trois cas : regardez lequel est le vôtre.",
     "acoustic": {
       "heading": "Acoustique : par le microphone",
       "body": "Guitare acoustique, violon, violoncelle, ukulélé, mandoline, cuatro. Le microphone du téléphone suffit pour accorder et pour s'entraîner."
     },
     "electric": {
-      "heading": "Électrique : par une interface USB",
+      "heading": "Électrique : par interface USB",
       "body": "Une électrique non amplifiée n'est pas un signal qu'un détecteur peut lire de façon fiable, et un microphone d'ambiance perd des notes dès qu'il y a du bruit. Avec une interface, Afinora la détecte, compense sa latence et vous indique qu'elle est branchée."
     },
     "device": {
@@ -286,15 +286,15 @@
   },
   "pricing": {
     "eyebrow": "Gratuit et Pro",
-    "heading": "Elle s'ouvre sur cinq jours complets",
+    "heading": "On commence par cinq jours entiers",
     "body": "Ensuite, la version gratuite garde un instrument de votre choix, les gammes majeure et mineure, tout le métronome et cinq enregistrements de Studio. Pro est un achat unique, pas un abonnement, et débloque le reste définitivement.",
     "freeHeading": "Gratuit",
     "freeBody": "Un instrument, gammes majeure et mineure, le métronome complet, cinq enregistrements.",
-    "proHeading": "Pro · achat unique",
+    "proHeading": "Pro · paiement unique",
     "proBody": "Les dix instruments, les vingt gammes et vingt accords, tout l'entraînement technique et Studio sans limites.",
     "price": "9,99 € ou 9,99 US$ dans la plupart des pays",
-    "neverHeading": "Ce qu'il n'y a jamais",
-    "neverBody": "Un abonnement, de la publicité, un compte, du suivi, ou de l'audio envoyé sur un serveur."
+    "neverHeading": "Ce que vous ne trouverez jamais",
+    "neverBody": "Abonnement, publicité, compte, suivi, ou audio envoyé sur un serveur."
   },
   "download": {
     "heading": "Téléchargez Afinora",
@@ -305,7 +305,7 @@
     "appHeading": "L'application",
     "instrumentsHeading": "Instruments",
     "helpHeading": "Aide",
-    "made": "Faite pour ceux qui travaillent leur instrument",
+    "made": "Faite pour ceux qui bossent leur instrument",
     "seo": [
       "Accordeur guitare",
       "Accordeur basse",
@@ -348,10 +348,10 @@
     "audioChip": "AUDIO",
     "videoChip": "VIDÉO",
     "inputLevel": "Niveau d'entrée",
-    "backingTrack": "Piste d'accompagnement",
+    "backingTrack": "Bande",
     "loopChip": "Boucle",
     "autosaveChip": "Sauvegarde auto",
-    "speedUpChip": "+5% de vitesse par boucle",
+    "speedUpChip": "+5% de vitesse à chaque tour",
     "shoutPerfect": "PARFAIT !",
     "shoutGood": "BIEN !",
     "shoutMiss": "RATÉ !",
