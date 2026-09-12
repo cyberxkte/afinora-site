@@ -19,22 +19,18 @@ import { esc, page, rel, PLAY_URL, APPLE_URL, MARK } from '../layout.mjs';
  * ever matters more than the look, swap in the official badge images.
  */
 /*
- * One colour, not four.
+ * Play's glyph in its own four colours, which need a dark ground to work.
  *
- * Play's glyph is normally blue, green, yellow and red. On this button's mint
- * ground its own green disappears into the background and the blue and yellow
- * fight it, so the whole thing reads as a smudge. Drawn in the button's ink it
- * is still unmistakably the Play triangle, and it matches the Apple mark beside
- * it. The four paths are kept as they are and simply share a fill, which makes
- * them one silhouette.
+ * On the mint button they had nowhere to sit: the glyph's green vanished into
+ * the background and the blue and yellow fought it. Both buttons now share the
+ * App Store button's dark ground, where all four colours read cleanly and the
+ * two marks look like a pair rather than two pieces from different places.
  */
 const PLAY_GLYPH = `<svg class="store-glyph" viewBox="0 0 512 512" aria-hidden="true" focusable="false">
-      <g fill="currentColor">
-        <path d="M47.6 1.2C41.7 7.4 38.2 17.1 38.2 29.6v452.8c0 12.5 3.5 22.2 9.4 28.4l1.5 1.5 253.7-253.7v-6L49.1-.3z"/>
-        <path d="M387 341.3l-84.6-84.7v-6l84.7-84.7 1.9 1.1 100.3 57c28.6 16.3 28.6 42.9 0 59.2l-100.3 57z"/>
-        <path d="M388.9 340.1L302.4 253.6 47.6 508.4c9.4 10 25 11.2 42.6 1.2z"/>
-        <path d="M388.9 167.1L90.2-2.4C72.6-12.4 57-11.2 47.6-1.2l254.8 254.8z"/>
-      </g>
+      <path fill="#00C3FF" d="M47.6 1.2C41.7 7.4 38.2 17.1 38.2 29.6v452.8c0 12.5 3.5 22.2 9.4 28.4l1.5 1.5 253.7-253.7v-6L49.1-.3z"/>
+      <path fill="#FFCE00" d="M387 341.3l-84.6-84.7v-6l84.7-84.7 1.9 1.1 100.3 57c28.6 16.3 28.6 42.9 0 59.2l-100.3 57z"/>
+      <path fill="#FF3A44" d="M388.9 340.1L302.4 253.6 47.6 508.4c9.4 10 25 11.2 42.6 1.2z"/>
+      <path fill="#00D26A" d="M388.9 167.1L90.2-2.4C72.6-12.4 57-11.2 47.6-1.2l254.8 254.8z"/>
     </svg>`;
 
 const APPLE_GLYPH = `<svg class="store-glyph" viewBox="0 0 384 512" aria-hidden="true" focusable="false">

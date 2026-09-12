@@ -349,16 +349,20 @@ p { margin: 0; text-wrap: pretty; }
 }
 .store-btn .name { font: 600 17px/1.2 var(--display); white-space: nowrap; }
 
-.store-btn.play { background: var(--in-tune); color: var(--forest-bg); }
-.store-btn.play:hover { background: var(--accent); color: var(--forest-bg); }
-.store-btn.play .top { opacity: .72; }
-
+/* Both stores share one dark ground.
+   Play's glyph is four colours and needs somewhere dark to sit; on a mint
+   button its own green disappeared into the background. Matching the two also
+   stops them reading as a primary and a secondary choice — the visitor's phone
+   decides which one they need, not us. */
+.store-btn.play,
 .store-btn.apple {
   border: 1px solid rgba(250, 250, 249, .3);
   background: rgba(5, 5, 5, .55);
   color: var(--ink);
 }
-.store-btn.apple:hover { border-color: var(--ink); color: var(--ink); }
+.store-btn.play:hover,
+.store-btn.apple:hover { border-color: var(--in-tune); color: var(--ink); }
+.store-btn.play .top,
 .store-btn.apple .top { color: var(--ink-dim); }
 
 /* ----------------------------------------------------------------- phone */
