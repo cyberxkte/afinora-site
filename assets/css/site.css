@@ -718,6 +718,63 @@ a.pill:hover { border-color: var(--in-tune); color: var(--in-tune); }
 }
 .js-reveal section.shown { opacity: 1; transform: none; }
 
+/* ---------------------------------------------------------------- phones */
+
+/*
+ * The layout is fluid everywhere else — every size is a clamp() and every grid
+ * is auto-fit — so this is not a breakpoint the design hangs off. It tightens
+ * the one place the fluid version reads badly: on a 360px screen the hero ran
+ * to 1.77 screenfuls before the phone mockup appeared, which is a long way to
+ * scroll past prose to reach the thing being sold.
+ */
+@media (max-width: 560px) {
+  :root { --section-y: clamp(36px, 8vw, 56px); }
+
+  .hero { padding-top: 26px; }
+  .hero-copy { gap: 16px; }
+  .hero .lead { font-size: 16.5px; line-height: 1.52; }
+  .hero .fine { font-size: 12px; line-height: 1.6; }
+
+  /* Full width and stacked. Two buttons side by side at this width leave each
+     one too narrow for its two lines of label, and a full-width target is
+     easier to hit with a thumb. */
+  .store-row { flex-direction: column; }
+  .store-btn { justify-content: center; padding: 13px 18px; }
+
+  /* The hero phone is the point of the section, so it keeps its size while the
+     words around it give way. The floor is what the tuner screen actually needs
+     once its labels start wrapping at this width — measured, not guessed. */
+  .phone { height: clamp(516px, 160vw, 560px); }
+  .phone-sm { height: clamp(500px, 155vw, 552px); }
+  .phone-violin { height: clamp(516px, 160vw, 560px); }
+
+  .stats .cell { padding: 18px 0; }
+  .stats .figure { font-size: 26px; }
+
+  .legend { padding: 16px 18px; gap: 12px 20px; }
+  .listen-body, .price-card, .callout, .summary-card { padding: 20px 18px; }
+  .pill { font-size: 14.5px; padding: 9px 16px; }
+
+  .footer-grid { gap: 26px; }
+  .footer-bottom { margin-top: 30px; }
+}
+
+/*
+ * The narrowest phones still in use, where the header is the tight part: the
+ * mark, the language control and a Download label that is "Herunterladen" in
+ * German do not fit one 320px row at full size. The row must stay one row — a
+ * header that wraps to two lines pushes the whole page down and looks broken —
+ * so the controls shrink instead.
+ */
+@media (max-width: 400px) {
+  .site-header .inner { padding: 0 14px; gap: 8px; }
+  .brand svg { width: 26px; height: 26px; }
+  .brand .name { font-size: 18px; }
+  .btn { padding: 8px 12px; font-size: 13.5px; }
+  .lang > summary { padding: 6px 8px; font-size: 11px; gap: 4px; }
+  :root { --gutter: 16px; }
+}
+
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
   .js-reveal section.pending { opacity: 1; transform: none; transition: none; }

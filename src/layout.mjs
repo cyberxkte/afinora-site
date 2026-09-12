@@ -21,11 +21,22 @@ export const APPLE_URL = 'https://apps.apple.com/app/id6771803917';
 /**
  * The contact address.
  *
- * This is the mailbox that actually receives mail today. docs/privacy-policy.md
- * and the design both use support@afinora.app; switch this constant the moment
- * that forwarder exists, and the whole site follows.
+ * An address on the product's own domain rather than a personal one: it is what
+ * docs/privacy-policy.md already promises, it survives changing mail providers,
+ * and it keeps a private mailbox off a public page.
+ *
+ * It is a Porkbun forwarder, which means IT ONLY WORKS WHILE THAT FORWARDER
+ * EXISTS. Both stores require a working way to make contact, and Apple has been
+ * known to try the address during review — a bouncing mailbox is worse than no
+ * mailbox. If the forwarder is ever removed, change this constant back to one
+ * that receives mail before the change is published.
+ *
+ * It appears on support.html and privacy.html only, never in the footer: those
+ * two pages are where the stores require it, and an address repeated in the
+ * footer of all 27 pages is what harvesters feed on. The footer's Support link
+ * leads to it.
  */
-export const CONTACT = 'cyberxkte@gmail.com';
+export const CONTACT = 'support@afinora.app';
 
 /** Escape for HTML text and double-quoted attributes. */
 export function esc(value) {
@@ -269,7 +280,6 @@ function footer({ lang, page, t, langs, langNames }) {
         <ul>
           <li><a href="${rel(lang, page, 'support')}">${esc(t('nav.support'))}</a></li>
           <li><a href="${rel(lang, page, 'privacy')}">${esc(t('nav.privacy'))}</a></li>
-          <li><a href="mailto:${CONTACT}">${CONTACT}</a></li>
           ${otherLangs}
         </ul>
       </div>

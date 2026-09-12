@@ -973,10 +973,17 @@
       try {
         pieces[i].frame(secs, beat);
       } catch (err) {
+        // A piece that throws is dropped, told apart from the rest, and
+        // recorded where it can be read back later. "It only animates
+        // sometimes" is impossible to diagnose from a description, and a
+        // console message is gone the moment the tab is closed.
         pieces.splice(i, 1);
+        window.__afinoraFailed = (window.__afinoraFailed || []).concat(
+          [(pieces[i] && pieces[i].name) || 'unknown', String(err && err.message)]);
         if (window.console && console.warn) console.warn('Afinora: mockup stopped', err);
       }
     }
+    window.__afinoraFrames = (window.__afinoraFrames || 0) + 1;
   }
 
   var running = false;
