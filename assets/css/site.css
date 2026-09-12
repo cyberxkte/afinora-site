@@ -298,6 +298,10 @@ p { margin: 0; text-wrap: pretty; }
 
 .hero .wrap { position: relative; }
 
+/* The vibrating strings, as their own layer over the hero's ground. Positioned
+   from the stylesheet rather than inline so the phone rules below can move it. */
+.string-field { position: absolute; inset: 0; }
+
 .hero-grid {
   display: grid;
   /* min() matters: a bare minmax(460px, 1fr) makes 460px a hard floor and
@@ -740,6 +744,17 @@ a.pill:hover { border-color: var(--in-tune); color: var(--in-tune); }
      easier to hit with a thumb. */
   .store-row { flex-direction: column; }
   .store-btn { justify-content: center; padding: 13px 18px; }
+
+  /*
+   * The vibrating strings drop to the lower half of the hero.
+   *
+   * At this width the copy runs the full width of the section, so six
+   * horizontal lines cross right through it and the headline reads as struck
+   * out. Below the text they are scenery again — and they sit behind the phone,
+   * which is where a string field belongs anyway. Fainter too: there is far
+   * less room here for something that is only atmosphere.
+   */
+  .string-field { inset: 46% 0 0; opacity: .6; }
 
   /* The hero phone is the point of the section, so it keeps its size while the
      words around it give way. The floor is what the tuner screen actually needs

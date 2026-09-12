@@ -819,13 +819,24 @@
     add(root, el('div', 'position:absolute;inset:0;background:'
       + 'radial-gradient(120% 90% at 18% 40%,#10231d 0%,#06130f 45%,#050505 100%)'));
 
+    // The strings get their own layer so a stylesheet can move them without
+    // taking the ground with them. On a phone the copy runs the full width of
+    // the section and these horizontal lines cross straight through it, which
+    // reads as struck-out text rather than as a background; site.css drops this
+    // layer to the lower part of the hero, behind the phone, where it is
+    // scenery again. The gradient above stays where it is.
+    // No inline inset here on purpose: an inline style beats the stylesheet,
+    // and site.css needs to be able to move this layer on a phone.
+    var strings = add(root, el('div'));
+    strings.className = 'string-field';
+
     var lanes = [];
     for (var l = 0; l < 6; l++) {
       var top = 14 + l * 13.5;
       var thick = l < 3 ? 2.5 - l * 0.4 : 1.4 - (l - 3) * 0.15;
-      var line = add(root, el('div', 'position:absolute;left:-4%;right:-4%;top:' + top + '%;'
+      var line = add(strings, el('div', 'position:absolute;left:-4%;right:-4%;top:' + top + '%;'
         + 'height:' + thick + 'px;background:' + LANE_INK[l] + ';opacity:.28;filter:blur(.3px)'));
-      var glow = add(root, el('div', 'position:absolute;top:' + top + '%;width:13%;'
+      var glow = add(strings, el('div', 'position:absolute;top:' + top + '%;width:13%;'
         + 'height:' + (thick + 2) + 'px;border-radius:99px;background:' + LANE_INK[l]
         + ';opacity:.5;filter:blur(4px)'));
       lanes.push({
