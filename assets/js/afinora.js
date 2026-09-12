@@ -65,8 +65,8 @@
   }
   function add(parent, child) { parent.appendChild(child); return child; }
 
-  var reduced = window.matchMedia
-    && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var reduced = !!(window.matchMedia
+    && window.matchMedia('(prefers-reduced-motion: reduce)').matches);
 
   // -------------------------------------------------- shared app chrome
 
@@ -918,18 +918,68 @@
 
     // One static frame either way, so a reduced-motion visitor sees a composed
     // screen rather than an empty one.
-    pieces.forEach(function (piece) { piece.frame(1.6, 1.6 * (BPM / 60)); });
+    draw(1.6);
 
     if (reduced || !pieces.length) return;
+    run();
+  }
 
-    var t0 = performance.now();
-    function tick(now) {
-      var secs = (now - t0) / 1000;
-      var beat = (secs / 60) * BPM;
-      for (var i = 0; i < pieces.length; i++) pieces[i].frame(secs, beat);
-      requestAnimationFrame(tick);
+  /**
+   * Paint one frame.
+   *
+   * Each piece is wrapped on its own: without this, a single throw anywhere in
+   * the ten would skip the requestAnimationFrame at the end of the tick and
+   * kill the whole loop silently, leaving every mockup drawn but frozen. A
+   * piece that fails is dropped and the rest keep running.
+   */
+  function draw(secs) {
+    var beat = (secs / 60) * BPM;
+    for (var i = pieces.length - 1; i >= 0; i--) {
+      try {
+        pieces[i].frame(secs, beat);
+      } catch (err) {
+        pieces.splice(i, 1);
+        if (window.console && console.warn) console.warn('Afinora: mockup stopped', err);
+      }
     }
-    requestAnimationFrame(tick);
+  }
+
+  var running = false;
+
+  function run() {
+    if (running || reduced || !pieces.length) return;
+    running = true;
+    var t0 = performance.now();
+    (function tick(now) {
+      draw((now - t0) / 1000);
+      if (running) requestAnimationFrame(tick);
+    })(performance.now());
+  }
+
+  /**
+   * Browsers stop requestAnimationFrame in a hidden tab and resume it on
+   * return, but a tab discarded and restored by a memory saver comes back with
+   * no loop at all. Restarting on the way back in costs nothing and covers it.
+   */
+  function watchVisibility() {
+    document.addEventListener('visibilitychange', function () {
+      if (document.visibilityState === 'visible' && !reduced) {
+        running = false;
+        run();
+      }
+    });
+
+    // Someone who turns system animations back on while the page is open
+    // should get them, rather than having to reload.
+    if (window.matchMedia) {
+      var query = window.matchMedia('(prefers-reduced-motion: reduce)');
+      var onChange = function (e) {
+        reduced = e.matches;
+        if (!reduced) run();
+      };
+      if (query.addEventListener) query.addEventListener('change', onChange);
+      else if (query.addListener) query.addListener(onChange);
+    }
   }
 
   /**
@@ -966,7 +1016,7 @@
     });
   }
 
-  function start() { mount(); reveal(); languageMenu(); }
+  function start() { mount(); watchVisibility(); reveal(); languageMenu(); }
 
   if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', start);

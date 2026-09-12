@@ -109,7 +109,7 @@ export function rel(lang, from, to) {
   return to === 'index' ? (from === 'index' ? '#top' : './') : `${to}.html`;
 }
 
-function head({ lang, page, t, langs, strings }) {
+function head({ lang, page, t, langs, strings, assets }) {
   const url = SITE + pageUrl(lang, page);
   const title = t(`${page}.title`);
   const description = t(`${page}.description`);
@@ -166,7 +166,7 @@ function head({ lang, page, t, langs, strings }) {
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
-  <link rel="stylesheet" href="/assets/css/site.css">${jsonLd}
+  <link rel="stylesheet" href="/assets/css/site.css?v=${assets.css}">${jsonLd}
   <script>window.AFINORA_I18N=${JSON.stringify(strings)};</script>
   ${redirectScript(langs)}
 </head>`;
@@ -257,7 +257,7 @@ ${header(ctx)}
 ${main}
 </main>
 ${footer(ctx)}
-<script src="/assets/js/afinora.js" defer></script>
+<script src="/assets/js/afinora.js?v=${ctx.assets.js}" defer></script>
 </body>
 </html>
 `;

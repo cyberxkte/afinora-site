@@ -13,9 +13,9 @@
  * URL for nine languages.
  */
 
-import { readFile, writeFile, mkdir, readdir, copyFile, rm, stat } from 'node:fs/promises';
-import { existsSync } from 'node:fs';
-import { dirname, join, relative } from 'node:path';
+import { readFile, writeFile, mkdir } from 'node:fs/promises';
+import { createHash } from 'node:crypto';
+import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 import { SITE, pageUrl } from './src/layout.mjs';
@@ -118,8 +118,24 @@ ${urls.join('\n')}
 `;
 }
 
+/**
+ * A short content hash for the stylesheet and the script.
+ *
+ * It rides on the URL as ?v= so that a change reaches a visitor who already has
+ * the old file cached. Without it, a browser holding a stale afinora.js shows
+ * every mockup drawn but frozen, and no amount of republishing fixes it.
+ */
+async function assetVersion(path) {
+  const bytes = await readFile(join(ROOT, path));
+  return createHash('sha256').update(bytes).digest('hex').slice(0, 10);
+}
+
 async function main() {
   const reference = await loadLocale('en');
+  const assets = {
+    css: await assetVersion('assets/css/site.css'),
+    js: await assetVersion('assets/js/afinora.js'),
+  };
   let written = 0;
 
   for (const lang of LANGS) {
@@ -136,6 +152,7 @@ async function main() {
         langs: LANGS,
         langNames: LANG_NAMES,
         strings: runtimeStrings(strings),
+        assets,
       };
       const html = template(ctx);
 
