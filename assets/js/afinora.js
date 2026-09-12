@@ -65,6 +65,19 @@
   }
   function add(parent, child) { parent.appendChild(child); return child; }
 
+  /**
+   * Modulo that cannot return a negative index.
+   *
+   * JavaScript's % keeps the sign of the dividend, so -1 % 6 is -1 and the
+   * array lookup that follows is undefined. Every cycling index here goes
+   * through this, so a clock that ever reads oddly slows an animation down
+   * rather than killing it.
+   */
+  function wrap(index, length) {
+    if (!isFinite(index)) return 0;
+    return ((Math.floor(index) % length) + length) % length;
+  }
+
   var reduced = !!(window.matchMedia
     && window.matchMedia('(prefers-reduced-motion: reduce)').matches);
 
@@ -244,7 +257,7 @@
     add(root, tabBar('Tuner'));
 
     function frame(secs) {
-      var idx = Math.floor(secs / CYCLE + (kind === 'violin' ? 2.4 : 0)) % STRINGS.length;
+      var idx = wrap(secs / CYCLE + (kind === 'violin' ? 2.4 : 0), STRINGS.length);
       var p = (secs % CYCLE) / CYCLE;
       var s = STRINGS[idx];
 
@@ -537,7 +550,7 @@
 
     var lastStep = -1;
     function frame(secs, beat) {
-      var step = Math.floor(beat * 2) % SEQ.length;
+      var step = wrap(beat * 2, SEQ.length);
       if (step === lastStep) return;
       lastStep = step;
       var playing = SEQ[step];
@@ -986,16 +999,39 @@
     window.__afinoraFrames = (window.__afinoraFrames || 0) + 1;
   }
 
-  var running = false;
+  var runToken = 0;
 
+  /**
+   * Start the clock.
+   *
+   * The zero comes from the first frame the browser actually delivers, not from
+   * a performance.now() taken beforehand. requestAnimationFrame hands the
+   * callback the timestamp of the frame it belongs to, and that can be EARLIER
+   * than a now() read moments earlier in the same frame — which made the first
+   * elapsed time negative, sent Math.floor(secs / CYCLE) to -1, and had the
+   * tuner read STRINGS[-1].hz. The piece threw, was dropped, and sat frozen for
+   * the rest of the visit.
+   *
+   * It only ever hit the hero tuner: the violin's cycle carries a +2.4 offset
+   * that keeps its index positive through a small negative, and the fretboard
+   * has no offset either, so it went down with it. Whether it happened at all
+   * depended on where in a frame the script was parsed, which is why it looked
+   * like it broke at random.
+   *
+   * The token retires any earlier loop instead of leaving it running. Without
+   * it, every return to the tab started another one and they painted over each
+   * other from different zeros.
+   */
   function run() {
-    if (running || reduced || !pieces.length) return;
-    running = true;
-    var t0 = performance.now();
-    (function tick(now) {
+    if (reduced || !pieces.length) return;
+    var token = ++runToken;
+    var t0 = null;
+    requestAnimationFrame(function tick(now) {
+      if (token !== runToken) return;
+      if (t0 === null) t0 = now;
       draw((now - t0) / 1000);
-      if (running) requestAnimationFrame(tick);
-    })(performance.now());
+      requestAnimationFrame(tick);
+    });
   }
 
   /**
@@ -1005,10 +1041,7 @@
    */
   function watchVisibility() {
     document.addEventListener('visibilitychange', function () {
-      if (document.visibilityState === 'visible' && !reduced) {
-        running = false;
-        run();
-      }
+      if (document.visibilityState === 'visible') run();
     });
 
     // Someone who turns system animations back on while the page is open
