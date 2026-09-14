@@ -208,8 +208,8 @@
   },
   "technique": {
     "eyebrow": "Entraînement technique",
-    "heading": "Il note la justesse et le placement de chaque note que vous jouez",
-    "body": "Vous choisissez une gamme, réglez un tempo et la jouez au métronome. Le détecteur écoute et note chaque note séparément dès qu'elle sonne : pile dans le temps, en retard, ou pas jouée. La justesse et le placement se mesurent à part, donc à la fin vous savez exactement quelles notes retravailler au lieu de le deviner. Les notes défilent le long du manche avec une couleur par doigt et une voie par corde, et vous les jouez sur l'instrument.",
+    "heading": "À la fin, vous savez laquelle des deux a lâché",
+    "body": "Quand la boucle se termine, le rapport vous attend : combien de notes étaient propres, combien sont sorties de la pulsation, et où chacune est tombée par rapport au temps. La justesse et le placement sont deux chiffres distincts, donc une note juste mais en retard ne disparaît pas derrière une moyenne, et vous savez laquelle des deux travailler.",
     "legendPerfect": "Pile dans le temps",
     "legendHit": "Jouée, mais en retard",
     "legendMiss": "Pas jouée",
@@ -354,6 +354,18 @@
     "shoutPerfect": "PARFAIT !",
     "shoutGood": "BIEN !",
     "shoutMiss": "RATÉ !",
-    "highwayAlt": "L'autoroute de notes d'Afinora : les notes défilent le long du manche et chacune est notée quand elle franchit le curseur"
+    "highwayAlt": "L'autoroute de notes d'Afinora : les notes défilent le long du manche et chacune est notée quand elle franchit le curseur",
+    "reportHeadline": "Net et propre",
+    "reportExercise": "Gamme majeure · frettes 5-8",
+    "reportClean": "Notes propres",
+    "reportRhythm": "Rythme",
+    "reportWhere": "Quand tombent vos notes",
+    "reportEarly": "Tôt",
+    "reportLate": "Tard",
+    "reportOnPulse": "Sur le temps",
+    "reportVerdictClean": "Propre",
+    "reportVerdictLate": "Hors pulsation",
+    "reportVerdictMissed": "Pas jouée",
+    "screenTechnique": "Travail"
   }
 }

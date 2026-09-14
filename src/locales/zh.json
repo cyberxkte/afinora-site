@@ -208,8 +208,8 @@
   },
   "technique": {
     "eyebrow": "技巧训练",
-    "heading": "边弹边听，从音准和节奏两方面为每个音评分",
-    "body": "你选一条音阶、设定速度，跟着节拍器弹。音高检测器一边聆听，一边在每个音响起的瞬间单独评分：正好踩在拍上、偏晚，或没有响。音准和节奏分开测量，所以弹完之后你知道该练哪几个具体的音，而不是凭感觉猜。音符沿着琴颈移动，一个手指一种颜色、一根弦一条轨道，而你在真正的乐器上弹奏它们。",
+    "heading": "弹完之后，你知道是哪一样出了问题",
+    "body": "循环结束后，报告就在那里：多少个音是干净的、多少个偏离了拍点，以及每个音相对拍子落在哪里。音准和节奏是两个分开的数字，所以一个音准无误但偏晚的音不会被平均值藏起来，你知道该练的是哪一样。",
     "legendPerfect": "正好踩在拍上",
     "legendHit": "弹到了，但偏晚",
     "legendMiss": "没有响",
@@ -354,6 +354,18 @@
     "shoutPerfect": "完美!",
     "shoutGood": "不错!",
     "shoutMiss": "没中!",
-    "highwayAlt": "Afinora 的音符轨道：音符沿指板移动，每一个在越过光标时被评分"
+    "highwayAlt": "Afinora 的音符轨道：音符沿指板移动，每一个在越过光标时被评分",
+    "reportHeadline": "干净利落",
+    "reportExercise": "大调音阶 · 5-8品",
+    "reportClean": "干净的音",
+    "reportRhythm": "节奏",
+    "reportWhere": "你的音落在哪里",
+    "reportEarly": "偏早",
+    "reportLate": "偏晚",
+    "reportOnPulse": "在拍上",
+    "reportVerdictClean": "干净",
+    "reportVerdictLate": "偏离拍点",
+    "reportVerdictMissed": "没有响",
+    "screenTechnique": "训练"
   }
 }

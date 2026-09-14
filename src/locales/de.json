@@ -208,8 +208,8 @@
   },
   "technique": {
     "eyebrow": "Techniktraining",
-    "heading": "Es bewertet Tonhöhe und Timing jedes Tons, den du spielst",
-    "body": "Du wählst eine Tonleiter, stellst ein Tempo ein und spielst sie zum Metronom. Der Detektor hört zu und bewertet jeden Ton einzeln, sobald er klingt: genau im Takt, zu spät, oder gar nicht erkannt. Tonhöhe und Timing werden getrennt gemessen, also weißt du am Ende genau, welche Töne du üben musst, statt es zu erraten. Die Töne wandern über das Griffbrett, eine Farbe pro Finger und eine Spur pro Saite, und du spielst sie auf dem Instrument.",
+    "heading": "Am Ende weißt du, welches von beiden gepatzt hat",
+    "body": "Wenn die Schleife endet, wartet der Bericht: wie viele Töne sauber waren, wie viele neben dem Puls lagen und wo jeder einzelne zum Schlag gelandet ist. Tonhöhe und Timing sind zwei getrennte Zahlen, also verschwindet ein sauberer, aber zu später Ton nicht hinter einem Mittelwert — und du weißt, welches von beiden du üben musst.",
     "legendPerfect": "Genau im Takt",
     "legendHit": "Gespielt, aber zu spät",
     "legendMiss": "Gar nicht erkannt",
@@ -354,6 +354,18 @@
     "shoutPerfect": "PERFEKT!",
     "shoutGood": "GUT!",
     "shoutMiss": "DANEBEN!",
-    "highwayAlt": "Afinoras Notenautobahn: die Töne wandern über das Griffbrett und jeder wird bewertet, wenn er den Cursor kreuzt"
+    "highwayAlt": "Afinoras Notenautobahn: die Töne wandern über das Griffbrett und jeder wird bewertet, wenn er den Cursor kreuzt",
+    "reportHeadline": "Das war sauber",
+    "reportExercise": "Dur-Tonleiter · Bünde 5-8",
+    "reportClean": "Saubere Töne",
+    "reportRhythm": "Rhythmus",
+    "reportWhere": "Wann deine Töne landen",
+    "reportEarly": "Früh",
+    "reportLate": "Spät",
+    "reportOnPulse": "Im Puls",
+    "reportVerdictClean": "Sauber",
+    "reportVerdictLate": "Neben dem Puls",
+    "reportVerdictMissed": "Nicht erkannt",
+    "screenTechnique": "Üben"
   }
 }

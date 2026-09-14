@@ -314,8 +314,46 @@ p { margin: 0; text-wrap: pretty; }
 /* The hero is one column now: the highway runs the full width beneath the
    words rather than a phone standing beside them. A note travelling along a
    neck needs the width to read as movement. */
-.hero-copy { max-width: 760px; }
-.hero .highway-card { margin-top: 34px; }
+/*
+ * The hero: the claim on the left, what backs it on the right.
+ *
+ * Stacked in one column the headline and the paragraph fought for the same
+ * eye, and the headline could not grow without pushing the buttons down the
+ * page. Apart, the headline can be as large as it deserves to be and the
+ * paragraph reads as support rather than as the next thing to get through.
+ *
+ * Both collapse to one column below 900px, in the order they are written.
+ */
+.hero-split {
+  display: grid;
+  gap: clamp(26px, 4vw, 56px);
+  align-items: start;
+}
+@media (min-width: 900px) {
+  .hero-split { grid-template-columns: 1.08fr 1fr; }
+}
+
+.hero-claim {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+/* Bigger than the stacked version allowed: it has a column to itself now. */
+@media (min-width: 900px) {
+  .hero-claim h1 { font-size: clamp(38px, 4.4vw, 60px); }
+}
+
+.hero-detail {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+/* Optically level with the headline rather than with the eyebrow above it. */
+@media (min-width: 900px) {
+  .hero-detail { padding-top: 34px; }
+}
+
+.hero .highway-card { margin-top: clamp(30px, 4vw, 48px); }
 
 .hero-copy {
   display: flex;
@@ -844,3 +882,24 @@ a.pill:hover { border-color: var(--in-tune); color: var(--in-tune); }
   .js-reveal section.pending { opacity: 1; transform: none; transition: none; }
   * { animation-duration: .001ms !important; animation-iteration-count: 1 !important; }
 }
+
+/* The training section: the three points on one side, the report on the other.
+   Stacked, the points read as a list to get through; beside the screen they
+   read as captions to it. */
+.technique-grid {
+  display: grid;
+  gap: clamp(28px, 4vw, 52px);
+  align-items: center;
+  margin-top: 34px;
+}
+@media (min-width: 900px) {
+  .technique-grid { grid-template-columns: 1fr minmax(260px, 340px); }
+}
+.trio-stacked {
+  display: grid;
+  gap: 26px;
+}
+@media (min-width: 900px) {
+  .trio-stacked { grid-template-columns: 1fr; }
+}
+.technique-figure { display: flex; justify-content: center; }

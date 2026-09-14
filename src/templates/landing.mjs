@@ -104,12 +104,16 @@ export default function landing(ctx) {
   <div data-mock="field"></div>
   <div class="hero-scrim"></div>
   <div class="wrap">
-    <div class="hero-copy">
-      <p class="eyebrow">${esc(t('hero.eyebrow'))}</p>
-      <h1>${esc(t('hero.heading'))}</h1>
-      <p class="lead">${esc(t('hero.body'))}</p>
-      ${storeButtons(t)}
-      <p class="fine">${esc(t('hero.fine'))}</p>
+    <div class="hero-split">
+      <div class="hero-claim">
+        <p class="eyebrow">${esc(t('hero.eyebrow'))}</p>
+        <h1>${esc(t('hero.heading'))}</h1>
+      </div>
+      <div class="hero-detail">
+        <p class="lead">${esc(t('hero.body'))}</p>
+        ${storeButtons(t)}
+        <p class="fine">${esc(t('hero.fine'))}</p>
+      </div>
     </div>
 
     <div class="highway-card">
@@ -129,11 +133,23 @@ export default function landing(ctx) {
     <h2 style="margin-top:14px">${esc(t('technique.heading'))}</h2>
     <p class="lead" style="margin-top:20px">${esc(t('technique.body'))}</p>
 
-    <div class="trio">
-      ${t('technique.points').map((p) => `<div>
-        <h3>${esc(p.heading)}</h3>
-        <p class="small">${esc(p.body)}</p>
-      </div>`).join('\n      ')}
+    <!--
+      The report screen, not the highway again. The hero shows the exercise
+      running; this shows what it leaves behind, which is the half a visitor
+      cannot guess from the picture above.
+    -->
+    <div class="technique-grid">
+      <div class="trio trio-stacked">
+        ${t('technique.points').map((p) => `<div>
+          <h3>${esc(p.heading)}</h3>
+          <p class="small">${esc(p.body)}</p>
+        </div>`).join('\n        ')}
+      </div>
+      <div class="technique-figure">
+        <div class="phone phone-sm">
+          <div class="screen" data-mock="report"></div>
+        </div>
+      </div>
     </div>
   </div>
 </section>

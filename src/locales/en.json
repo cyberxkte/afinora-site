@@ -208,8 +208,8 @@
   },
   "technique": {
     "eyebrow": "Technique training",
-    "heading": "It grades the pitch and the timing of every note you play",
-    "body": "You pick a scale, set a tempo and play it to the metronome. The detector listens and grades every note separately as it sounds: dead on the beat, played but late, or never sounded. Pitch and timing are measured apart, so when you finish you know which notes to work on instead of guessing. The notes travel along the neck with one colour per finger and one lane per string, and you play them on the instrument.",
+    "heading": "When you finish, you know which of the two failed",
+    "body": "When the loop ends, the report is waiting: how many notes were clean, how many were off the pulse, and where each one landed against the beat. Pitch and timing are two separate numbers, so a note that was in tune but late is not hidden behind an average — and you know which of the two to practise.",
     "legendPerfect": "Dead on the beat",
     "legendHit": "Played, but late",
     "legendMiss": "Never sounded",
@@ -354,6 +354,18 @@
     "shoutPerfect": "PERFECT!",
     "shoutGood": "GOOD!",
     "shoutMiss": "MISS!",
-    "highwayAlt": "Afinora's note highway: notes travel along the neck and each one is graded as it crosses the cursor"
+    "highwayAlt": "Afinora's note highway: notes travel along the neck and each one is graded as it crosses the cursor",
+    "reportHeadline": "That was clean",
+    "reportExercise": "Major scale · frets 5-8",
+    "reportClean": "Clean notes",
+    "reportRhythm": "Rhythm",
+    "reportWhere": "Where your notes land",
+    "reportEarly": "Early",
+    "reportLate": "Late",
+    "reportOnPulse": "On the pulse",
+    "reportVerdictClean": "Clean",
+    "reportVerdictLate": "Off the pulse",
+    "reportVerdictMissed": "Never arrived",
+    "screenTechnique": "Training"
   }
 }

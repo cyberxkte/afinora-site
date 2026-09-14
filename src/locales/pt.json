@@ -208,8 +208,8 @@
   },
   "technique": {
     "eyebrow": "Treino técnico",
-    "heading": "Avalia a afinação e o tempo de cada nota que tocas",
-    "body": "Escolhes uma escala, defines um andamento e tocas com o metrónomo. O detetor ouve e avalia cada nota em separado assim que ela soa: em cima do tempo, atrasada, ou não chegou a soar. A afinação e o tempo medem-se em separado, por isso no fim sabes exatamente que notas trabalhar em vez de adivinhar. As notas percorrem o braço com uma cor por dedo e uma faixa por corda, e és tu que as tocas no instrumento.",
+    "heading": "No fim sabes qual das duas falhou",
+    "body": "Quando o ciclo acaba, o relatório está à espera: quantas notas saíram limpas, quantas ficaram fora do pulso e onde caiu cada uma em relação ao tempo. A afinação e o ritmo são dois números separados, por isso uma nota afinada mas atrasada não fica escondida atrás de uma média, e sabes qual das duas coisas trabalhar.",
     "legendPerfect": "Em cima do tempo",
     "legendHit": "Soou, mas atrasada",
     "legendMiss": "Não chegou a soar",
@@ -354,6 +354,18 @@
     "shoutPerfect": "PERFEITO!",
     "shoutGood": "BOA!",
     "shoutMiss": "FALHOU!",
-    "highwayAlt": "A autoestrada de notas do Afinora: as notas viajam pelo braço e cada uma é avaliada ao cruzar o cursor"
+    "highwayAlt": "A autoestrada de notas do Afinora: as notas viajam pelo braço e cada uma é avaliada ao cruzar o cursor",
+    "reportHeadline": "Saiu limpo",
+    "reportExercise": "Escala maior · trastes 5-8",
+    "reportClean": "Notas limpas",
+    "reportRhythm": "Ritmo",
+    "reportWhere": "Quando caem as tuas notas",
+    "reportEarly": "Cedo",
+    "reportLate": "Tarde",
+    "reportOnPulse": "No pulso",
+    "reportVerdictClean": "Limpa",
+    "reportVerdictLate": "Fora do pulso",
+    "reportVerdictMissed": "Não soou",
+    "screenTechnique": "Treino"
   }
 }

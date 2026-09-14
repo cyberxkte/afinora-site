@@ -33,9 +33,9 @@
   <link rel="preload" href="/assets/fonts/space-grotesk-500-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="/assets/fonts/ibm-plex-sans-400-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="/assets/css/fonts.css?v=eabaf2d7f9">
-  <link rel="stylesheet" href="/assets/css/site.css?v=bf7df0c517">
+  <link rel="stylesheet" href="/assets/css/site.css?v=14c018c72c">
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"Afinora","applicationCategory":"MusicApplication","operatingSystem":"Android, iOS","description":"Тюнер для гитары, баса, укулеле, венесуэльского куатро, скрипки и других. Метроном, гаммы на вашем грифе и тренировка с оценкой каждой ноты. Без аккаунта и рекламы.","url":"https://afinora.app/","inLanguage":["en","es","it","fr","pt","de","ja","zh","ru"],"offers":{"@type":"Offer","price":"0","priceCurrency":"USD","description":"Один инструмент, мажорная и минорная гаммы, полный метроном, пять записей."},"author":{"@type":"Organization","name":"Afinora","url":"https://afinora.app/"}}</script>
-  <script>window.AFINORA_I18N={"tabTune":"Строй","tabMetronome":"Метроном","tabScales":"Гаммы","tabTraining":"Тренировка","tabStudio":"Студия","instGuitar":"Гитара","instViolin":"Скрипка","tunerStandard":"Стандарт","tunerInTune":"Чисто","tunerFlat":"Низко","tunerSharp":"Высоко","tunerCentered":"По центру","tunerDetected":"Определено","tunerTarget":"Цель","tunerCents":"Центы","screenMetronome":"Метроном","metroHint":"Коснитесь доли, чтобы акцентировать или заглушить","metroSubdivision":"Дробление","metroSound":"Звук","screenScales":"Аккорды и гаммы","scalesTab":"Гаммы","chordsTab":"Аккорды","scaleDegrees":"7 нот","fretboard":"Гриф","frets":"ладов","notesTab":"Ноты","degreesTab":"Ступени","tonic":"Тоника","colourIsString":"Цвет = струна","screenStudio":"Студия","audioChip":"АУДИО","videoChip":"ВИДЕО","inputLevel":"Уровень входа","backingTrack":"Минусовка","loopChip":"Луп","autosaveChip":"Автосохранение","speedUpChip":"+5% темпа за цикл","shoutPerfect":"ИДЕАЛЬНО!","shoutGood":"ХОРОШО!","shoutMiss":"МИМО!","highwayAlt":"Нотная дорожка Afinora: ноты движутся вдоль грифа, и каждая оценивается при пересечении курсора"};</script>
+  <script>window.AFINORA_I18N={"tabTune":"Строй","tabMetronome":"Метроном","tabScales":"Гаммы","tabTraining":"Тренировка","tabStudio":"Студия","instGuitar":"Гитара","instViolin":"Скрипка","tunerStandard":"Стандарт","tunerInTune":"Чисто","tunerFlat":"Низко","tunerSharp":"Высоко","tunerCentered":"По центру","tunerDetected":"Определено","tunerTarget":"Цель","tunerCents":"Центы","screenMetronome":"Метроном","metroHint":"Коснитесь доли, чтобы акцентировать или заглушить","metroSubdivision":"Дробление","metroSound":"Звук","screenScales":"Аккорды и гаммы","scalesTab":"Гаммы","chordsTab":"Аккорды","scaleDegrees":"7 нот","fretboard":"Гриф","frets":"ладов","notesTab":"Ноты","degreesTab":"Ступени","tonic":"Тоника","colourIsString":"Цвет = струна","screenStudio":"Студия","audioChip":"АУДИО","videoChip":"ВИДЕО","inputLevel":"Уровень входа","backingTrack":"Минусовка","loopChip":"Луп","autosaveChip":"Автосохранение","speedUpChip":"+5% темпа за цикл","shoutPerfect":"ИДЕАЛЬНО!","shoutGood":"ХОРОШО!","shoutMiss":"МИМО!","highwayAlt":"Нотная дорожка Afinora: ноты движутся вдоль грифа, и каждая оценивается при пересечении курсора","reportHeadline":"Вышло чисто","reportExercise":"Мажорная гамма · лады 5-8","reportClean":"Чистые ноты","reportRhythm":"Ритм","reportWhere":"Когда попадают ваши ноты","reportEarly":"Рано","reportLate":"Поздно","reportOnPulse":"В долю","reportVerdictClean":"Чисто","reportVerdictLate":"Мимо доли","reportVerdictMissed":"Не прозвучала","screenTechnique":"Тренировка"};</script>
   <script>(function(){try{
 var K='afinora.lang',u=new URL(location.href),q=u.searchParams.get('hl');
 if(q){try{localStorage.setItem(K,q);}catch(e){}
@@ -98,11 +98,14 @@ if(S.indexOf(c)>-1){location.replace('/'+c+'/');return;}}
   <div data-mock="field"></div>
   <div class="hero-scrim"></div>
   <div class="wrap">
-    <div class="hero-copy">
-      <p class="eyebrow">Для гитары, баса, укулеле, венесуэльского куатро, скрипки и других</p>
-      <h1>Сыграйте гамму. Оно скажет, какие ноты опоздали.</h1>
-      <p class="lead">Afinora слушает вашу игру и оценивает каждую ноту отдельно: высота измеряется отдельно от ритма, поэтому в конце вы точно знаете, что отрабатывать. Ещё оно настраивает десять инструментов и включает полноценный метроном. Всё на устройстве, без аккаунта.</p>
-      <div class="store-row">
+    <div class="hero-split">
+      <div class="hero-claim">
+        <p class="eyebrow">Для гитары, баса, укулеле, венесуэльского куатро, скрипки и других</p>
+        <h1>Сыграйте гамму. Оно скажет, какие ноты опоздали.</h1>
+      </div>
+      <div class="hero-detail">
+        <p class="lead">Afinora слушает вашу игру и оценивает каждую ноту отдельно: высота измеряется отдельно от ритма, поэтому в конце вы точно знаете, что отрабатывать. Ещё оно настраивает десять инструментов и включает полноценный метроном. Всё на устройстве, без аккаунта.</p>
+        <div class="store-row">
       <a class="store-btn play" href="https://play.google.com/store/apps/details?id=com.afinora.app" rel="noopener noreferrer">
         <svg class="store-glyph" viewBox="0 0 512 512" aria-hidden="true" focusable="false">
       <path fill="#00C3FF" d="M47.6 1.2C41.7 7.4 38.2 17.1 38.2 29.6v452.8c0 12.5 3.5 22.2 9.4 28.4l1.5 1.5 253.7-253.7v-6L49.1-.3z"/>
@@ -125,7 +128,8 @@ if(S.indexOf(c)>-1){location.replace('/'+c+'/');return;}}
         </span>
       </a>
     </div>
-      <p class="fine">Без аккаунта · без рекламы · звук никогда не покидает телефон</p>
+        <p class="fine">Без аккаунта · без рекламы · звук никогда не покидает телефон</p>
+      </div>
     </div>
 
     <div class="highway-card">
@@ -142,21 +146,33 @@ if(S.indexOf(c)>-1){location.replace('/'+c+'/');return;}}
 <section class="technique" id="features">
   <div class="wrap">
     <p class="eyebrow">Тренировка техники</p>
-    <h2 style="margin-top:14px">Оценивает высоту и ритм каждой сыгранной ноты</h2>
-    <p class="lead" style="margin-top:20px">Вы выбираете гамму, задаёте темп и играете её под метроном. Детектор высоты слушает и оценивает каждую ноту отдельно в момент её звучания: точно в долю, с опозданием, или не прозвучала. Высота и ритм измеряются порознь, поэтому в конце вы знаете, какие именно ноты отрабатывать, а не гадаете. Ноты движутся вдоль грифа — по цвету на палец и по дорожке на струну, — и вы играете их на инструменте.</p>
+    <h2 style="margin-top:14px">В конце вы знаете, что именно подвело</h2>
+    <p class="lead" style="margin-top:20px">Когда цикл заканчивается, вас ждёт отчёт: сколько нот прозвучало чисто, сколько ушло мимо доли и где каждая легла относительно счёта. Высота и ритм — два отдельных числа, поэтому чистая, но опоздавшая нота не прячется за средним, и вы знаете, что именно отрабатывать.</p>
 
-    <div class="trio">
-      <div>
-        <h3>Приносите свои упражнения</h3>
-        <p class="small">Встроенные гаммовые шаблоны или свои собственные: вставьте их обычным текстом, и Afinora превратит их в маршрут.</p>
+    <!--
+      The report screen, not the highway again. The hero shows the exercise
+      running; this shows what it leaves behind, which is the half a visitor
+      cannot guess from the picture above.
+    -->
+    <div class="technique-grid">
+      <div class="trio trio-stacked">
+        <div>
+          <h3>Приносите свои упражнения</h3>
+          <p class="small">Встроенные гаммовые шаблоны или свои собственные: вставьте их обычным текстом, и Afinora превратит их в маршрут.</p>
+        </div>
+        <div>
+          <h3>Темп подстраивается сам</h3>
+          <p class="small">Цикл ускоряется, пока вы успеваете, и снижает темп, когда нет.</p>
+        </div>
+        <div>
+          <h3>История по каждой гамме</h3>
+          <p class="small">У каждого упражнения своя история, так что прогресс становится измеренной величиной.</p>
+        </div>
       </div>
-      <div>
-        <h3>Темп подстраивается сам</h3>
-        <p class="small">Цикл ускоряется, пока вы успеваете, и снижает темп, когда нет.</p>
-      </div>
-      <div>
-        <h3>История по каждой гамме</h3>
-        <p class="small">У каждого упражнения своя история, так что прогресс становится измеренной величиной.</p>
+      <div class="technique-figure">
+        <div class="phone phone-sm">
+          <div class="screen" data-mock="report"></div>
+        </div>
       </div>
     </div>
   </div>
@@ -453,6 +469,6 @@ if(S.indexOf(c)>-1){location.replace('/'+c+'/');return;}}
     </div>
   </div>
 </footer>
-<script src="/assets/js/afinora.js?v=9918ba9582" defer></script>
+<script src="/assets/js/afinora.js?v=361e7ca387" defer></script>
 </body>
 </html>

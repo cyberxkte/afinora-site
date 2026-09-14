@@ -208,8 +208,8 @@
   },
   "technique": {
     "eyebrow": "Allenamento tecnico",
-    "heading": "Valuta intonazione e tempo di ogni nota che suoni",
-    "body": "Scegli una scala, imposta il tempo e suonala seguendo il metronomo. Il rilevatore ascolta e valuta ogni nota singolarmente mentre la suoni: perfettamente a tempo, in ritardo oppure non suonata. Intonazione e tempo vengono misurati separatamente, così alla fine sai esattamente su quali note lavorare, senza andare a intuito. Le note scorrono lungo il manico, con un colore per ogni dito e una corsia per ogni corda, e tu le esegui sullo strumento.",
+    "heading": "Alla fine sai quale delle due è mancata",
+    "body": "Quando il loop finisce ti aspetta il resoconto: quante note sono uscite pulite, quante sono andate fuori pulsazione e dove è caduta ciascuna rispetto al tempo. Intonazione e ritmo sono due numeri separati, così una nota intonata ma in ritardo non si nasconde dietro una media, e sai quale delle due cose riprendere.",
     "legendPerfect": "Perfettamente a tempo",
     "legendHit": "Suonata, ma in ritardo",
     "legendMiss": "Non suonata",
@@ -354,6 +354,18 @@
     "shoutPerfect": "PERFETTO!",
     "shoutGood": "BENE!",
     "shoutMiss": "MANCATA!",
-    "highwayAlt": "L'autostrada di note di Afinora: le note viaggiano lungo il manico e ognuna viene valutata quando attraversa il cursore"
+    "highwayAlt": "L'autostrada di note di Afinora: le note viaggiano lungo il manico e ognuna viene valutata quando attraversa il cursore",
+    "reportHeadline": "Pulito",
+    "reportExercise": "Scala maggiore · tasti 5-8",
+    "reportClean": "Note pulite",
+    "reportRhythm": "Ritmo",
+    "reportWhere": "Quando cadono le tue note",
+    "reportEarly": "Presto",
+    "reportLate": "Tardi",
+    "reportOnPulse": "Sul tempo",
+    "reportVerdictClean": "Pulita",
+    "reportVerdictLate": "Fuori pulsazione",
+    "reportVerdictMissed": "Non suonata",
+    "screenTechnique": "Allenati"
   }
 }
