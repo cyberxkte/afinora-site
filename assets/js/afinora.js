@@ -698,15 +698,28 @@
   }
 
   /** The note highway: notes travel right to left through one fixed cursor. */
-  function buildHighway() {
-    var root = el('div', 'position:relative;width:100%;'
-      + 'height:clamp(180px,22vw,260px);overflow:hidden;background:#0b1613');
+  function buildHighway(opts) {
+    /*
+      Compact mode is the same drawing at card size: four lanes instead of six
+      so the strings do not merge, smaller type, notes closer together so
+      several are on screen at once, and no shouted verdict — there is no room
+      for a word that size, and the border colour already carries it.
+    */
+    var compact = !!(opts && opts.compact);
+    var lanes = compact ? 4 : LANES;
+    var perBeat = compact ? 15 : PCT_PER_BEAT;
+    var top = compact ? 14 : 22;
+    var band = compact ? 72 : 56;
+
+    var root = el('div', 'position:relative;width:100%;overflow:hidden;background:#0b1613;'
+      + 'height:' + (compact ? '118px;border-radius:11px;border:1px solid #1c1d22'
+                             : 'clamp(180px,22vw,260px)'));
     root.setAttribute('role', 'img');
     root.setAttribute('aria-label', t('highwayAlt',
       "Afinora's note highway: notes travel along the neck and each one is graded as it crosses the cursor"));
 
     add(root, el('div', 'position:absolute;inset:0;background:linear-gradient(#0b1613,#123128)'));
-    add(root, el('div', 'position:absolute;left:0;right:0;top:22%;height:56%;'
+    add(root, el('div', 'position:absolute;left:0;right:0;top:' + top + '%;height:' + band + '%;'
       + 'background:linear-gradient(' + NECK.join(',') + ');'
       + 'border-top:1px solid #54412a;border-bottom:1px solid #54412a'));
 
@@ -714,42 +727,49 @@
     for (var b = 0; b <= TOTAL; b += 4) {
       barLines.push({
         beat: b,
-        node: add(root, el('div', 'position:absolute;top:22%;height:56%;width:1px;'
-          + 'background:rgba(255,180,84,.32)'))
+        node: add(root, el('div', 'position:absolute;top:' + top + '%;height:' + band + '%;'
+          + 'width:1px;background:rgba(255,180,84,.32)'))
       });
     }
 
-    for (var l = 0; l < LANES; l++) {
-      add(root, el('div', 'position:absolute;left:0;right:0;top:calc(22% + '
-        + ((l + 0.5) * 56) / LANES + '%);height:' + (l < 3 ? '2px' : '1px')
-        + ';background:' + (l < 3 ? '#b08d52' : '#cfc9bb')
+    for (var l = 0; l < lanes; l++) {
+      add(root, el('div', 'position:absolute;left:0;right:0;top:calc(' + top + '% + '
+        + ((l + 0.5) * band) / lanes + '%);height:' + (l < lanes / 2 ? '2px' : '1px')
+        + ';background:' + (l < lanes / 2 ? '#b08d52' : '#cfc9bb')
         + ';box-shadow:0 1px 2px rgba(0,0,0,.4)'));
     }
 
     var notes = [];
     for (var i = 0; i < TOTAL; i++) {
-      var lane = (i * 5) % LANES;
+      var lane = (i * 5) % lanes;
       var finger = PATTERN[i % PATTERN.length];
-      var node = add(root, el('div', 'position:absolute;top:calc(22% + '
-        + ((lane + 0.5) * 56) / LANES + '%);transform:translate(-50%,-50%);min-width:26px;'
-        + 'padding:3px 7px;border-radius:7px;text-align:center;'
-        + 'font:600 13px/1 ' + MONO, String(5 + finger)));
+      var node = add(root, el('div', 'position:absolute;top:calc(' + top + '% + '
+        + ((lane + 0.5) * band) / lanes + '%);transform:translate(-50%,-50%);'
+        + 'min-width:' + (compact ? '19px' : '26px') + ';'
+        + 'padding:' + (compact ? '2px 5px' : '3px 7px') + ';'
+        + 'border-radius:' + (compact ? '5px' : '7px') + ';text-align:center;'
+        + 'font:600 ' + (compact ? '10px' : '13px') + '/1 ' + MONO, String(5 + finger)));
       notes.push({ node: node, index: i, finger: finger, verdict: VERDICTS[i % VERDICTS.length] });
     }
 
-    add(root, el('div', 'position:absolute;top:12%;bottom:12%;left:' + CURSOR + '%;width:2px;'
+    add(root, el('div', 'position:absolute;top:' + (compact ? 6 : 12) + '%;'
+      + 'bottom:' + (compact ? 6 : 12) + '%;left:' + CURSOR + '%;width:2px;'
       + 'background:#fff8ea;box-shadow:0 0 12px rgba(255,248,234,.7)'));
 
+    // No room for a shouted verdict at card size, and the note's own border
+    // already says the same thing.
     var shout = add(root, el('div', 'position:absolute;left:' + CURSOR + '%;top:4%;'
       + 'font:700 clamp(18px,2.4vw,30px)/1 ' + DISPLAY + ';letter-spacing:-.02em;'
-      + 'text-shadow:0 2px 18px rgba(0,0,0,.85);white-space:nowrap;opacity:0'));
+      + 'text-shadow:0 2px 18px rgba(0,0,0,.85);white-space:nowrap;opacity:0;'
+      + 'display:' + (compact ? 'none' : 'block')));
 
     var ticks = [];
     for (var k = 0; k <= TOTAL; k++) {
       ticks.push({
         beat: k,
-        node: add(root, el('div', 'position:absolute;bottom:10px;width:3px;border-radius:2px;'
-          + 'height:' + (k % 4 === 0 ? '14px' : '8px')
+        node: add(root, el('div', 'position:absolute;bottom:' + (compact ? '5px' : '10px')
+          + ';width:' + (compact ? '2px' : '3px') + ';border-radius:2px;'
+          + 'height:' + (k % 4 === 0 ? (compact ? '8px' : '14px') : (compact ? '5px' : '8px'))
           + ';background:' + (k % 4 === 0 ? '#ffb454' : FINGER[k % FINGER.length])
           + ';opacity:' + (k % 4 === 0 ? '.95' : '.65')))
       });
@@ -771,14 +791,14 @@
       var phase = beat % TOTAL;
 
       barLines.forEach(function (bar) {
-        place(bar.node, CURSOR + (bar.beat - phase) * PCT_PER_BEAT);
+        place(bar.node, CURSOR + (bar.beat - phase) * perBeat);
       });
       ticks.forEach(function (tick) {
-        place(tick.node, CURSOR + (tick.beat - phase) * PCT_PER_BEAT);
+        place(tick.node, CURSOR + (tick.beat - phase) * perBeat);
       });
 
       notes.forEach(function (note) {
-        var x = CURSOR + (note.index - phase) * PCT_PER_BEAT;
+        var x = CURSOR + (note.index - phase) * perBeat;
         if (!place(note.node, x)) return;
         var passed = x < CURSOR - 0.6;
         var tone = VERDICT[note.verdict];
@@ -958,43 +978,6 @@
   }
 
   /**
-   * Notes crossing the cursor: the exercise itself, in miniature.
-   *
-   * The same clock and the same finger colours as the full highway, so the two
-   * read as the same feature rather than two different drawings.
-   */
-  function buildMiniExercise() {
-    var root = miniFrame();
-    var LANES_MINI = 5;
-    for (var l = 0; l < LANES_MINI; l++) {
-      add(root, el('div', 'position:absolute;left:0;right:0;height:1px;'
-        + 'top:' + (20 + l * 19) + '%;background:#3a2a18'));
-    }
-    add(root, el('div', 'position:absolute;left:22%;top:6%;bottom:6%;width:1px;background:#e8eae9'));
-
-    var SEQ = [[0, 5], [1, 6], [2, 4], [3, 3], [1, 4], [4, 5], [2, 6], [0, 4]];
-    var notes = SEQ.map(function (pair) {
-      var node = add(root, el('div', 'position:absolute;transform:translate(-50%,-50%);'
-        + 'padding:1px 5px;border-radius:5px;font:600 9px/1.5 ' + MONO
-        + ';color:#141110;background:' + FINGER[pair[0] % FINGER.length]
-        + ';top:' + (20 + pair[0] * 19) + '%', String(pair[1])));
-      return node;
-    });
-
-    function frame(secs, beat) {
-      var span = SEQ.length + 3;
-      var phase = beat % span;
-      for (var i = 0; i < notes.length; i++) {
-        var x = 22 + (i - phase) * 13;
-        var seen = x > -12 && x < 112;
-        notes[i].style.display = seen ? 'block' : 'none';
-        if (seen) notes[i].style.left = x + '%';
-      }
-    }
-    return { node: root, frame: frame };
-  }
-
-  /**
    * The tempo climbing: a number that rises and bars that fill behind it.
    *
    * It only moves upward, because that is what the feature does — the loop
@@ -1022,14 +1005,24 @@
     }
 
     var STEPS = [80, 88, 96, 104, 112, 120];
-    function frame(secs) {
-      var p = (secs % 9) / 9;
-      var at = Math.min(Math.floor(p * 7), 5);
-      bpm.textContent = String(STEPS[at]);
+    function frame(secs, beat) {
+      var p = (secs % 11) / 11;
+      var at = Math.min(Math.floor(p * 6.6), 5);
+
+      // The number climbs into each step instead of snapping to it, which is
+      // what a tempo that is being raised actually looks like.
+      var within = Math.min((p * 6.6) - at, 1);
+      var from = at === 0 ? STEPS[0] : STEPS[at - 1];
+      var eased = within < 0.35 ? (within / 0.35) : 1;
+      bpm.textContent = String(Math.round(from + (STEPS[at] - from) * eased));
+
       delta.style.opacity = at === 0 ? '0' : '1';
+      // The live bar breathes on the beat, so the card is running, not frozen.
+      var pulse = 0.72 + 0.28 * Math.abs(Math.sin(beat * Math.PI));
       for (var i = 0; i < cells.length; i++) {
-        var on = i <= at;
-        cells[i].style.background = on ? (i === at ? '#2dd4bf' : '#12332c') : '#0d211c';
+        if (i > at) { cells[i].style.background = '#0d211c'; cells[i].style.opacity = '1'; continue; }
+        cells[i].style.background = i === at ? '#2dd4bf' : '#12332c';
+        cells[i].style.opacity = i === at ? String(pulse) : '1';
       }
     }
     return { node: root, frame: frame };
@@ -1065,20 +1058,33 @@
     add(figure, el('span', 'font:400 9px/1 ' + MONO + ';color:#2dd4bf', '+19'));
 
     var bars = add(pad, el('div', 'display:flex;gap:3px;align-items:flex-end;height:20px'));
-    var HEIGHTS = [34, 40, 38, 48, 52, 60, 58, 68, 74, 82, 100];
-    var cells = HEIGHTS.map(function (h, i) {
-      return add(bars, el('div', 'flex:1 1 0;border-radius:2px;height:' + h + '%;'
-        + 'background:' + (i === HEIGHTS.length - 1 ? '#2dd4bf' : '#12332c')));
+    var NOTES_H = [34, 40, 38, 48, 52, 60, 58, 68, 74, 82, 100];
+    var TIMING_H = [22, 30, 46, 36, 44, 50, 62, 56, 64, 70, 88];
+    var cells = NOTES_H.map(function (h, i) {
+      return add(bars, el('div', 'flex:1 1 0;border-radius:2px;height:0%;transition:height .3s;'
+        + 'background:' + (i === NOTES_H.length - 1 ? '#2dd4bf' : '#12332c')));
     });
 
     function frame(secs) {
-      // The two tabs take turns, which is how a player actually reads it.
-      var timing = (secs % 8) > 4;
+      // The two tabs take turns, which is how a player actually reads it, and
+      // the bars redraw for each — the point is that the two histories differ.
+      var cycle = secs % 9;
+      var timing = cycle > 4.5;
+      var into = timing ? cycle - 4.5 : cycle;
+
       tabNotes.style.borderColor = timing ? '#1c3a32' : '#2dd4bf';
       tabNotes.style.color = timing ? '#a8a29e' : '#2dd4bf';
       tabTiming.style.borderColor = timing ? '#2dd4bf' : '#1c3a32';
       tabTiming.style.color = timing ? '#2dd4bf' : '#a8a29e';
       pct.textContent = timing ? '78%' : '91%';
+
+      // Grown in from the left, so the last bar being the tallest is something
+      // the reader watches happen.
+      var heights = timing ? TIMING_H : NOTES_H;
+      for (var i = 0; i < cells.length; i++) {
+        var due = (i / cells.length) * 1.5;
+        cells[i].style.height = (into > due ? heights[i] : 0) + '%';
+      }
     }
     return { node: root, frame: frame };
   }
@@ -1090,7 +1096,7 @@
     fretboard: buildFretboard,
     studio: buildStudio,
     highway: buildHighway,
-    'mini-exercise': buildMiniExercise,
+    'mini-exercise': function () { return buildHighway({ compact: true }); },
     'mini-tempo': buildMiniTempo,
     'mini-history': buildMiniHistory,
     field: buildStringField,
