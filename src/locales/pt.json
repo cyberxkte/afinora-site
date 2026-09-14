@@ -1,10 +1,7 @@
 {
   "index": {
     "title": "Afinora — Afinador de guitarra, metrónomo e treino técnico para instrumentos de corda",
-    "description": "Afinador de guitarra, baixo, ukulele, cuatro venezuelano, violino e mais. Metrónomo, escalas no teu braço e treino que avalia cada nota. Sem conta nem anúncios.",
-    "pricing": {
-      "freeBody": "Um instrumento, escalas maior e menor, o metrónomo completo, cinco gravações."
-    }
+    "description": "Afinador de guitarra, baixo, ukulele, cuatro venezuelano, violino e mais. Metrónomo, escalas no teu braço e treino que avalia cada nota. Sem conta nem anúncios."
   },
   "support": {
     "title": "Apoio — Afinora",
@@ -192,8 +189,8 @@
   ],
   "technique": {
     "eyebrow": "Treino técnico",
-    "heading": "No fim sabes qual das duas falhou",
-    "body": "Quando o ciclo acaba, o relatório está à espera: quantas notas saíram limpas, quantas ficaram fora do pulso e onde caiu cada uma em relação ao tempo. A afinação e o ritmo são dois números separados, por isso uma nota afinada mas atrasada não fica escondida atrás de uma média, e sabes qual das duas coisas trabalhar.",
+    "heading": "No fim sabes se falhou a afinação ou o ritmo",
+    "body": "Quando o exercício acaba, o relatório está à espera: quantas notas saíram limpas, quantas escorregaram para fora do tempo e onde caiu cada uma. São dois números à parte, por isso uma nota afinada mas atrasada não desaparece dentro de uma média, e trabalhas o que falhou mesmo.",
     "legendPerfect": "Em cima do tempo",
     "legendHit": "Soou, mas atrasada",
     "legendMiss": "Não chegou a soar",
@@ -263,12 +260,45 @@
     "heading": "Começa com cinco dias inteiros",
     "body": "Depois, a versão gratuita mantém um instrumento à tua escolha, as escalas maior e menor, o metrónomo inteiro e cinco gravações do Estúdio. O Pro é uma compra única, não uma subscrição, e desbloqueia o resto para sempre.",
     "freeHeading": "Grátis",
-    "freeBody": "Um instrumento, escalas maior e menor, o metrónomo completo, cinco gravações.",
     "proHeading": "Pro · pagamento único",
-    "proBody": "Os dez instrumentos, as vinte escalas e vinte acordes, o treino técnico completo e o Estúdio sem limites.",
     "price": "9,99 € ou 9,99 US$ na maioria dos países",
-    "neverHeading": "O que nunca vais encontrar",
-    "neverBody": "Subscrições, anúncios, contas, rastreio ou áudio enviado para um servidor."
+    "neverBody": "Sem subscrição · sem anúncios · sem conta · sem rastreio · sem áudio num servidor",
+    "freeItems": [
+      {
+        "n": "1",
+        "label": "instrumento"
+      },
+      {
+        "n": "2",
+        "label": "escalas, maior e menor"
+      },
+      {
+        "n": "1",
+        "label": "metrónomo, completo"
+      },
+      {
+        "n": "5",
+        "label": "gravações de Estúdio"
+      }
+    ],
+    "proItems": [
+      {
+        "n": "10",
+        "label": "instrumentos"
+      },
+      {
+        "n": "20",
+        "label": "escalas"
+      },
+      {
+        "n": "20",
+        "label": "acordes"
+      },
+      {
+        "n": "∞",
+        "label": "gravações de Estúdio"
+      }
+    ]
   },
   "download": {
     "heading": "Transfere o Afinora",
@@ -342,5 +372,20 @@
     "reportVerdictLate": "Fora do pulso",
     "reportVerdictMissed": "Não soou",
     "screenTechnique": "Treino"
+  },
+  "instruments": {
+    "heading": "Dez instrumentos, cada um com as suas afinações",
+    "list": [
+      "Guitarra",
+      "Guitarra de 7 cordas",
+      "Baixo",
+      "Ukulele",
+      "Cuatro venezuelano",
+      "Violino",
+      "Viola",
+      "Violoncelo",
+      "Bandolim",
+      "Banjo"
+    ]
   }
 }

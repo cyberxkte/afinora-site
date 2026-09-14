@@ -33,8 +33,8 @@
   <link rel="preload" href="/assets/fonts/space-grotesk-500-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="/assets/fonts/ibm-plex-sans-400-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="/assets/css/fonts.css?v=eabaf2d7f9">
-  <link rel="stylesheet" href="/assets/css/site.css?v=74d723be86">
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"Afinora","applicationCategory":"MusicApplication","operatingSystem":"Android, iOS","description":"Afinador de guitarra, bajo, ukelele, cuatro venezolano, violín y más. Metrónomo, escalas en tu mástil y entrenamiento que puntúa cada nota. Sin cuenta ni anuncios.","url":"https://afinora.app/","inLanguage":["en","es","it","fr","pt","de","ja","zh","ru"],"offers":{"@type":"Offer","price":"0","priceCurrency":"USD","description":"Un instrumento, escalas mayor y menor, el metrónomo completo, cinco grabaciones."},"author":{"@type":"Organization","name":"Afinora","url":"https://afinora.app/"}}</script>
+  <link rel="stylesheet" href="/assets/css/site.css?v=61e629e1bf">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"Afinora","applicationCategory":"MusicApplication","operatingSystem":"Android, iOS","description":"Afinador de guitarra, bajo, ukelele, cuatro venezolano, violín y más. Metrónomo, escalas en tu mástil y entrenamiento que puntúa cada nota. Sin cuenta ni anuncios.","url":"https://afinora.app/","inLanguage":["en","es","it","fr","pt","de","ja","zh","ru"],"offers":{"@type":"Offer","price":"0","priceCurrency":"USD","description":"1 instrumento, 2 escalas, mayor y menor, 1 metrónomo, entero, 5 grabaciones de Estudio"},"author":{"@type":"Organization","name":"Afinora","url":"https://afinora.app/"}}</script>
   <script>window.AFINORA_I18N={"tabTune":"Afinar","tabMetronome":"Metrónomo","tabScales":"Escalas","tabTraining":"Entrenar","tabStudio":"Estudio","instGuitar":"Guitarra","instViolin":"Violín","tunerStandard":"Estándar","tunerInTune":"Afinada","tunerFlat":"Baja","tunerSharp":"Alta","tunerCentered":"Centrada","tunerDetected":"Detectada","tunerTarget":"Objetivo","tunerCents":"Cents","screenMetronome":"Metrónomo","metroHint":"Toca un pulso para acentuarlo o silenciarlo","metroSubdivision":"Subdivisión","metroSound":"Sonido","screenScales":"Acordes y escalas","scalesTab":"Escalas","chordsTab":"Acordes","scaleDegrees":"7 notas","fretboard":"Mástil","frets":"trastes","notesTab":"Notas","degreesTab":"Grados","tonic":"Tónica","colourIsString":"Color = cuerda","screenStudio":"Estudio","audioChip":"AUDIO","videoChip":"VIDEO","inputLevel":"Nivel de entrada","backingTrack":"Pista de fondo","loopChip":"Loop","autosaveChip":"Autoguardado","speedUpChip":"+5% de velocidad cada vuelta","shoutPerfect":"¡PERFECTO!","shoutGood":"¡BIEN!","shoutMiss":"¡FALLO!","highwayAlt":"La autopista de notas de Afinora: las notas viajan por el mástil y cada una se califica al cruzar el cursor","reportHeadline":"Salió limpio","reportExercise":"Escala mayor · trastes 5-8","reportClean":"Notas limpias","reportRhythm":"Ritmo","reportWhere":"Cuándo caen tus notas","reportEarly":"Pronto","reportLate":"Tarde","reportOnPulse":"En el pulso","reportVerdictClean":"Limpia","reportVerdictLate":"Fuera de pulso","reportVerdictMissed":"No llegó","screenTechnique":"Entrenar"};</script>
   <script>(function(){try{
 var K='afinora.lang',u=new URL(location.href),q=u.searchParams.get('hl');
@@ -147,8 +147,8 @@ if(S.indexOf(c)>-1){location.replace('/'+c+'/');return;}}
     <div class="technique-grid">
       <div>
         <p class="eyebrow">Entrenamiento técnico</p>
-        <h2 style="margin-top:14px">Al terminar sabes cuál de las dos falló</h2>
-        <p class="lead" style="margin-top:20px">Cuando termina el bucle, te espera el informe: cuántas notas salieron limpias, cuántas se fueron de pulso y dónde cayó cada una respecto al tiempo. La afinación y el ritmo son dos cifras separadas, así que una nota afinada pero tarde no se esconde detrás de una media, y sabes cuál de las dos cosas practicar.</p>
+        <h2 style="margin-top:14px">Al terminar sabes si falló la afinación o el ritmo</h2>
+        <p class="lead" style="margin-top:20px">Cuando acaba el ejercicio te espera el informe: cuántas notas salieron limpias, cuántas se fueron de tiempo y dónde cayó cada una. Son dos cifras aparte, así que una nota afinada pero tarde no desaparece dentro de una media, y practicas lo que de verdad falló.</p>
       </div>
 
     <!--
@@ -319,27 +319,100 @@ if(S.indexOf(c)>-1){location.replace('/'+c+'/');return;}}
   </div>
 </section>
 
+<section class="instruments" id="instruments">
+  <div class="wrap">
+    <h2 class="sub-h2">Diez instrumentos, cada uno con sus afinaciones</h2>
+    <div class="inst-frieze">
+      <div class="inst">
+        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.4"
+             stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 25.5c0-3.4 2-5.6 4.5-5.6s4.5 2.2 4.5 5.6c0 2-1.1 3.2-1.1 4.6 0 1.6 1.6 2.9 1.6 5.4 0 3.6-2.2 6.2-5 6.2s-5-2.6-5-6.2c0-2.5 1.6-3.8 1.6-5.4 0-1.4-1.1-2.6-1.1-4.6Z"/><circle cx="24.5" cy="33.2" r="2.1"/><path d="M24.5 19.9V7.5"/><path d="M22.7 7.5h3.6v-2h-3.6z"/></svg>
+        <span>Guitarra</span>
+      </div>
+      <div class="inst">
+        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.4"
+             stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 25.5c0-3.4 2-5.6 4.5-5.6s4.5 2.2 4.5 5.6c0 2-1.1 3.2-1.1 4.6 0 1.6 1.6 2.9 1.6 5.4 0 3.6-2.2 6.2-5 6.2s-5-2.6-5-6.2c0-2.5 1.6-3.8 1.6-5.4 0-1.4-1.1-2.6-1.1-4.6Z"/><circle cx="24.5" cy="33.2" r="2.1"/><path d="M24.5 19.9V6"/><path d="M22.4 6h4.2v-2.4h-4.2z"/></svg>
+        <span>Guitarra de 7 cuerdas</span>
+      </div>
+      <div class="inst">
+        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.4"
+             stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19.4 30.4c0-2.6 1.4-4.4 3.3-4.4 1 0 1.5.5 1.8 1.4.3-.9.8-1.4 1.8-1.4 1.9 0 3.3 1.8 3.3 4.4 0 4-1.9 10.6-5.1 10.6s-5.1-6.6-5.1-10.6Z"/><path d="M24.5 26V4.5"/><path d="M22.4 4.5h4.2V2h-4.2z"/></svg>
+        <span>Bajo</span>
+      </div>
+      <div class="inst">
+        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.4"
+             stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.9 30.6c0-2.3 1.6-3.8 3.6-3.8s3.6 1.5 3.6 3.8c0 1.4-.9 2.2-.9 3.1 0 1.1 1.3 2 1.3 3.7 0 2.5-1.8 4.3-4 4.3s-4-1.8-4-4.3c0-1.7 1.3-2.6 1.3-3.7 0-.9-.9-1.7-.9-3.1Z"/><circle cx="24.5" cy="35.6" r="1.6"/><path d="M24.5 26.8V16"/><path d="M23 16h3v-1.7h-3z"/></svg>
+        <span>Ukelele</span>
+      </div>
+      <div class="inst">
+        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.4"
+             stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21.2 29c0-2.5 1.5-4.1 3.3-4.1s3.3 1.6 3.3 4.1c0 1.5-.8 2.4-.8 3.4 0 1.2 1.2 2.2 1.2 4 0 2.7-1.7 4.7-3.7 4.7s-3.7-2-3.7-4.7c0-1.8 1.2-2.8 1.2-4 0-1-.8-1.9-.8-3.4Z"/><circle cx="24.5" cy="34.3" r="1.5"/><path d="M24.5 24.9V13.5"/><path d="M23 13.5h3v-1.8h-3z"/></svg>
+        <span>Cuatro venezolano</span>
+      </div>
+      <div class="inst">
+        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.4"
+             stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.6 28.4c0-2.7 1.7-4.5 3.9-4.5s3.9 1.8 3.9 4.5c0 1.6-1 2.6-1 3.7 0 1.3 1.4 2.3 1.4 4.3 0 2.9-1.9 5-4.3 5s-4.3-2.1-4.3-5c0-2 1.4-3 1.4-4.3 0-1.1-1-2.1-1-3.7Z"/><path d="M22.2 30.6v3.4M26.8 30.6v3.4"/><path d="M24.5 23.9V13.8"/><path d="M24.5 13.8c-1.5 0-2.3-1-2.3-2.1 0-1 .8-1.9 1.9-1.9 1 0 1.6.7 1.6 1.5 0 .8-.6 1.3-1.3 1.3"/></svg>
+        <span>Violín</span>
+      </div>
+      <div class="inst">
+        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.4"
+             stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19.8 26.9c0-3.1 2-5.2 4.7-5.2s4.7 2.1 4.7 5.2c0 1.8-1.2 3-1.2 4.2 0 1.5 1.7 2.7 1.7 5 0 3.3-2.3 5.8-5.2 5.8s-5.2-2.5-5.2-5.8c0-2.3 1.7-3.5 1.7-5 0-1.2-1.2-2.4-1.2-4.2Z"/><path d="M21.7 29.5v3.9M27.3 29.5v3.9"/><path d="M24.5 21.7V9.8"/><path d="M24.5 9.8c-1.7 0-2.6-1.1-2.6-2.4 0-1.2.9-2.2 2.2-2.2 1.2 0 1.9.8 1.9 1.7 0 .9-.7 1.5-1.5 1.5"/></svg>
+        <span>Viola</span>
+      </div>
+      <div class="inst">
+        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.4"
+             stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18.4 24.3c0-3.9 2.5-6.5 6.1-6.5s6.1 2.6 6.1 6.5c0 2.3-1.6 3.8-1.6 5.3 0 1.9 2.2 3.4 2.2 6.3 0 4.2-3 7.3-6.7 7.3s-6.7-3.1-6.7-7.3c0-2.9 2.2-4.4 2.2-6.3 0-1.5-1.6-3-1.6-5.3Z"/><path d="M20.9 27.6v4.9M28.1 27.6v4.9"/><path d="M24.5 17.8V7"/><path d="M24.5 43.2V46"/></svg>
+        <span>Violonchelo</span>
+      </div>
+      <div class="inst">
+        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.4"
+             stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M24.5 23.4c3.6 0 6.3 3.4 6.3 8.2 0 5.3-2.8 9.2-6.3 9.2s-6.3-3.9-6.3-9.2c0-4.8 2.7-8.2 6.3-8.2Z"/><ellipse cx="24.5" cy="32.4" rx="2.4" ry="1.7"/><path d="M24.5 23.4V13"/><path d="M22.6 13h3.8v-2.2h-3.8z"/></svg>
+        <span>Mandolina</span>
+      </div>
+      <div class="inst">
+        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.4"
+             stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="24.5" cy="33" r="7.4"/><circle cx="24.5" cy="33" r="5"/><path d="M24.5 25.6V11"/><path d="M22.8 11h3.4V9h-3.4z"/></svg>
+        <span>Banjo</span>
+      </div>
+    </div>
+  </div>
+</section>
+
 <section class="pricing" id="pro">
   <div class="wrap">
     <p class="eyebrow">Gratis y Pro</p>
     <h2 class="sub-h2" style="margin-top:14px">Empieza con cinco días completos</h2>
     <p class="lead" style="margin-top:16px">Después, la versión gratuita se queda con un instrumento a tu elección, las escalas mayor y menor, el metrónomo entero y cinco grabaciones de Estudio. Pro es un pago único, no una suscripción, y desbloquea el resto para siempre.</p>
+    <!--
+      Two lists with the same four lines, so the difference between them is the
+      column rather than a sentence the reader has to hold in their head.
+    -->
     <div class="price-grid">
       <div class="price-card">
         <h3>Gratis</h3>
-        <p>Un instrumento, escalas mayor y menor, el metrónomo completo, cinco grabaciones.</p>
+        <dl>
+          <div><dt>1</dt><dd>instrumento</dd></div>
+          <div><dt>2</dt><dd>escalas, mayor y menor</dd></div>
+          <div><dt>1</dt><dd>metrónomo, entero</dd></div>
+          <div><dt>5</dt><dd>grabaciones de Estudio</dd></div>
+        </dl>
       </div>
       <div class="price-card pro">
         <h3>Pro · pago único</h3>
-        <p>Los diez instrumentos, las veinte escalas y veinte acordes, el entrenamiento técnico completo y Estudio sin límites.</p>
+        <dl>
+          <div><dt>10</dt><dd>instrumentos</dd></div>
+          <div><dt>20</dt><dd>escalas</dd></div>
+          <div><dt>20</dt><dd>acordes</dd></div>
+          <div><dt>∞</dt><dd>grabaciones de Estudio</dd></div>
+        </dl>
         <!-- The price appears exactly once on the page, and near the bottom. -->
         <p class="price">9,99 € o 9,99 US$ en la mayoría de los países</p>
       </div>
-      <div class="price-card">
-        <h3>Lo que no vas a encontrar</h3>
-        <p>Suscripciones, anuncios, cuentas, rastreo ni audio subido a un servidor.</p>
-      </div>
     </div>
+
+    <!-- Not a third card: a card shaped like the other two would read as a
+         third plan, and counting four zeros is a joke that wears out by the
+         third one. -->
+    <p class="never">Sin suscripción · sin anuncios · sin cuenta · sin rastreo · sin audio en un servidor</p>
   </div>
 </section>
 

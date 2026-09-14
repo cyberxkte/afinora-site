@@ -33,8 +33,8 @@
   <link rel="preload" href="/assets/fonts/space-grotesk-500-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="/assets/fonts/ibm-plex-sans-400-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="/assets/css/fonts.css?v=eabaf2d7f9">
-  <link rel="stylesheet" href="/assets/css/site.css?v=74d723be86">
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"Afinora","applicationCategory":"MusicApplication","operatingSystem":"Android, iOS","description":"Tuner for guitar, bass, ukulele, Venezuelan cuatro, violin and more. Metronome, scales on your own neck, and training that grades every note. No account, no ads.","url":"https://afinora.app/","inLanguage":["en","es","it","fr","pt","de","ja","zh","ru"],"offers":{"@type":"Offer","price":"0","priceCurrency":"USD","description":"One instrument, major and minor scales, the full metronome, five recordings."},"author":{"@type":"Organization","name":"Afinora","url":"https://afinora.app/"}}</script>
+  <link rel="stylesheet" href="/assets/css/site.css?v=61e629e1bf">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"Afinora","applicationCategory":"MusicApplication","operatingSystem":"Android, iOS","description":"Tuner for guitar, bass, ukulele, Venezuelan cuatro, violin and more. Metronome, scales on your own neck, and training that grades every note. No account, no ads.","url":"https://afinora.app/","inLanguage":["en","es","it","fr","pt","de","ja","zh","ru"],"offers":{"@type":"Offer","price":"0","priceCurrency":"USD","description":"1 instrument, 2 scales, major and minor, 1 metronome, complete, 5 Studio recordings"},"author":{"@type":"Organization","name":"Afinora","url":"https://afinora.app/"}}</script>
   <script>window.AFINORA_I18N={"tabTune":"Tune","tabMetronome":"Metronome","tabScales":"Scales","tabTraining":"Training","tabStudio":"Studio","instGuitar":"Guitar","instViolin":"Violin","tunerStandard":"Standard","tunerInTune":"In tune","tunerFlat":"Flat","tunerSharp":"Sharp","tunerCentered":"Centered","tunerDetected":"Detected","tunerTarget":"Target","tunerCents":"Cents","screenMetronome":"Metronome","metroHint":"Tap a beat to accent or silence it","metroSubdivision":"Subdivision","metroSound":"Sound","screenScales":"Chords & Scales","scalesTab":"Scales","chordsTab":"Chords","scaleDegrees":"7 notes","fretboard":"Fretboard","frets":"frets","notesTab":"Notes","degreesTab":"Degrees","tonic":"Tonic","colourIsString":"Colour = string","screenStudio":"Studio","audioChip":"AUDIO","videoChip":"VIDEO","inputLevel":"Input level","backingTrack":"Backing track","loopChip":"Loop","autosaveChip":"Auto-save","speedUpChip":"+5% speed-up per loop","shoutPerfect":"PERFECT!","shoutGood":"GOOD!","shoutMiss":"MISS!","highwayAlt":"Afinora's note highway: notes travel along the neck and each one is graded as it crosses the cursor","reportHeadline":"That was clean","reportExercise":"Major scale · frets 5-8","reportClean":"Clean notes","reportRhythm":"Rhythm","reportWhere":"Where your notes land","reportEarly":"Early","reportLate":"Late","reportOnPulse":"On the pulse","reportVerdictClean":"Clean","reportVerdictLate":"Off the pulse","reportVerdictMissed":"Never arrived","screenTechnique":"Training"};</script>
   <script>(function(){try{
 var K='afinora.lang',u=new URL(location.href),q=u.searchParams.get('hl');
@@ -147,8 +147,8 @@ if(S.indexOf(c)>-1){location.replace('/'+c+'/');return;}}
     <div class="technique-grid">
       <div>
         <p class="eyebrow">Technique training</p>
-        <h2 style="margin-top:14px">When you finish, you know which of the two failed</h2>
-        <p class="lead" style="margin-top:20px">When the loop ends, the report is waiting: how many notes were clean, how many were off the pulse, and where each one landed against the beat. Pitch and timing are two separate numbers, so a note that was in tune but late is not hidden behind an average — and you know which of the two to practise.</p>
+        <h2 style="margin-top:14px">When you finish, you know whether it was the pitch or the timing</h2>
+        <p class="lead" style="margin-top:20px">The report is waiting when the exercise ends: how many notes were clean, how many drifted off the beat, and where each one landed. Two separate numbers, so a note that was in tune but late does not disappear into an average — and you practise the one that actually went wrong.</p>
       </div>
 
     <!--
@@ -319,27 +319,100 @@ if(S.indexOf(c)>-1){location.replace('/'+c+'/');return;}}
   </div>
 </section>
 
+<section class="instruments" id="instruments">
+  <div class="wrap">
+    <h2 class="sub-h2">Ten instruments, each with its own tunings</h2>
+    <div class="inst-frieze">
+      <div class="inst">
+        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.4"
+             stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 25.5c0-3.4 2-5.6 4.5-5.6s4.5 2.2 4.5 5.6c0 2-1.1 3.2-1.1 4.6 0 1.6 1.6 2.9 1.6 5.4 0 3.6-2.2 6.2-5 6.2s-5-2.6-5-6.2c0-2.5 1.6-3.8 1.6-5.4 0-1.4-1.1-2.6-1.1-4.6Z"/><circle cx="24.5" cy="33.2" r="2.1"/><path d="M24.5 19.9V7.5"/><path d="M22.7 7.5h3.6v-2h-3.6z"/></svg>
+        <span>Guitar</span>
+      </div>
+      <div class="inst">
+        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.4"
+             stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 25.5c0-3.4 2-5.6 4.5-5.6s4.5 2.2 4.5 5.6c0 2-1.1 3.2-1.1 4.6 0 1.6 1.6 2.9 1.6 5.4 0 3.6-2.2 6.2-5 6.2s-5-2.6-5-6.2c0-2.5 1.6-3.8 1.6-5.4 0-1.4-1.1-2.6-1.1-4.6Z"/><circle cx="24.5" cy="33.2" r="2.1"/><path d="M24.5 19.9V6"/><path d="M22.4 6h4.2v-2.4h-4.2z"/></svg>
+        <span>7-string guitar</span>
+      </div>
+      <div class="inst">
+        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.4"
+             stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19.4 30.4c0-2.6 1.4-4.4 3.3-4.4 1 0 1.5.5 1.8 1.4.3-.9.8-1.4 1.8-1.4 1.9 0 3.3 1.8 3.3 4.4 0 4-1.9 10.6-5.1 10.6s-5.1-6.6-5.1-10.6Z"/><path d="M24.5 26V4.5"/><path d="M22.4 4.5h4.2V2h-4.2z"/></svg>
+        <span>Bass</span>
+      </div>
+      <div class="inst">
+        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.4"
+             stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.9 30.6c0-2.3 1.6-3.8 3.6-3.8s3.6 1.5 3.6 3.8c0 1.4-.9 2.2-.9 3.1 0 1.1 1.3 2 1.3 3.7 0 2.5-1.8 4.3-4 4.3s-4-1.8-4-4.3c0-1.7 1.3-2.6 1.3-3.7 0-.9-.9-1.7-.9-3.1Z"/><circle cx="24.5" cy="35.6" r="1.6"/><path d="M24.5 26.8V16"/><path d="M23 16h3v-1.7h-3z"/></svg>
+        <span>Ukulele</span>
+      </div>
+      <div class="inst">
+        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.4"
+             stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21.2 29c0-2.5 1.5-4.1 3.3-4.1s3.3 1.6 3.3 4.1c0 1.5-.8 2.4-.8 3.4 0 1.2 1.2 2.2 1.2 4 0 2.7-1.7 4.7-3.7 4.7s-3.7-2-3.7-4.7c0-1.8 1.2-2.8 1.2-4 0-1-.8-1.9-.8-3.4Z"/><circle cx="24.5" cy="34.3" r="1.5"/><path d="M24.5 24.9V13.5"/><path d="M23 13.5h3v-1.8h-3z"/></svg>
+        <span>Venezuelan cuatro</span>
+      </div>
+      <div class="inst">
+        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.4"
+             stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.6 28.4c0-2.7 1.7-4.5 3.9-4.5s3.9 1.8 3.9 4.5c0 1.6-1 2.6-1 3.7 0 1.3 1.4 2.3 1.4 4.3 0 2.9-1.9 5-4.3 5s-4.3-2.1-4.3-5c0-2 1.4-3 1.4-4.3 0-1.1-1-2.1-1-3.7Z"/><path d="M22.2 30.6v3.4M26.8 30.6v3.4"/><path d="M24.5 23.9V13.8"/><path d="M24.5 13.8c-1.5 0-2.3-1-2.3-2.1 0-1 .8-1.9 1.9-1.9 1 0 1.6.7 1.6 1.5 0 .8-.6 1.3-1.3 1.3"/></svg>
+        <span>Violin</span>
+      </div>
+      <div class="inst">
+        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.4"
+             stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19.8 26.9c0-3.1 2-5.2 4.7-5.2s4.7 2.1 4.7 5.2c0 1.8-1.2 3-1.2 4.2 0 1.5 1.7 2.7 1.7 5 0 3.3-2.3 5.8-5.2 5.8s-5.2-2.5-5.2-5.8c0-2.3 1.7-3.5 1.7-5 0-1.2-1.2-2.4-1.2-4.2Z"/><path d="M21.7 29.5v3.9M27.3 29.5v3.9"/><path d="M24.5 21.7V9.8"/><path d="M24.5 9.8c-1.7 0-2.6-1.1-2.6-2.4 0-1.2.9-2.2 2.2-2.2 1.2 0 1.9.8 1.9 1.7 0 .9-.7 1.5-1.5 1.5"/></svg>
+        <span>Viola</span>
+      </div>
+      <div class="inst">
+        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.4"
+             stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18.4 24.3c0-3.9 2.5-6.5 6.1-6.5s6.1 2.6 6.1 6.5c0 2.3-1.6 3.8-1.6 5.3 0 1.9 2.2 3.4 2.2 6.3 0 4.2-3 7.3-6.7 7.3s-6.7-3.1-6.7-7.3c0-2.9 2.2-4.4 2.2-6.3 0-1.5-1.6-3-1.6-5.3Z"/><path d="M20.9 27.6v4.9M28.1 27.6v4.9"/><path d="M24.5 17.8V7"/><path d="M24.5 43.2V46"/></svg>
+        <span>Cello</span>
+      </div>
+      <div class="inst">
+        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.4"
+             stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M24.5 23.4c3.6 0 6.3 3.4 6.3 8.2 0 5.3-2.8 9.2-6.3 9.2s-6.3-3.9-6.3-9.2c0-4.8 2.7-8.2 6.3-8.2Z"/><ellipse cx="24.5" cy="32.4" rx="2.4" ry="1.7"/><path d="M24.5 23.4V13"/><path d="M22.6 13h3.8v-2.2h-3.8z"/></svg>
+        <span>Mandolin</span>
+      </div>
+      <div class="inst">
+        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.4"
+             stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="24.5" cy="33" r="7.4"/><circle cx="24.5" cy="33" r="5"/><path d="M24.5 25.6V11"/><path d="M22.8 11h3.4V9h-3.4z"/></svg>
+        <span>Banjo</span>
+      </div>
+    </div>
+  </div>
+</section>
+
 <section class="pricing" id="pro">
   <div class="wrap">
     <p class="eyebrow">Free and Pro</p>
     <h2 class="sub-h2" style="margin-top:14px">It opens with five full days</h2>
     <p class="lead" style="margin-top:16px">After that, the free version keeps one instrument of your choice, the major and minor scales, the whole metronome and five Studio recordings. Pro is a one-time purchase, not a subscription, and unlocks the rest permanently.</p>
+    <!--
+      Two lists with the same four lines, so the difference between them is the
+      column rather than a sentence the reader has to hold in their head.
+    -->
     <div class="price-grid">
       <div class="price-card">
         <h3>Free</h3>
-        <p>One instrument, major and minor scales, the full metronome, five recordings.</p>
+        <dl>
+          <div><dt>1</dt><dd>instrument</dd></div>
+          <div><dt>2</dt><dd>scales, major and minor</dd></div>
+          <div><dt>1</dt><dd>metronome, complete</dd></div>
+          <div><dt>5</dt><dd>Studio recordings</dd></div>
+        </dl>
       </div>
       <div class="price-card pro">
         <h3>Pro · one-time purchase</h3>
-        <p>All ten instruments, the twenty scales and twenty chords, the full technique training and Studio without limits.</p>
+        <dl>
+          <div><dt>10</dt><dd>instruments</dd></div>
+          <div><dt>20</dt><dd>scales</dd></div>
+          <div><dt>20</dt><dd>chords</dd></div>
+          <div><dt>∞</dt><dd>Studio recordings</dd></div>
+        </dl>
         <!-- The price appears exactly once on the page, and near the bottom. -->
         <p class="price">US$9.99 or €9.99 in most countries</p>
       </div>
-      <div class="price-card">
-        <h3>What there never is</h3>
-        <p>A subscription, ads, an account, tracking, or audio uploaded to a server.</p>
-      </div>
     </div>
+
+    <!-- Not a third card: a card shaped like the other two would read as a
+         third plan, and counting four zeros is a joke that wears out by the
+         third one. -->
+    <p class="never">No subscription · no ads · no account · no tracking · no audio on a server</p>
   </div>
 </section>
 

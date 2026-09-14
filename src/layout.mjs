@@ -183,7 +183,9 @@ function head({ lang, page, t, langs, strings, assets }) {
       '@type': 'Offer',
       price: '0',
       priceCurrency: 'USD',
-      description: t('index.pricing.freeBody'),
+      /* Built from the same list the page prints, so the structured data and
+         the visible card cannot drift apart. */
+      description: t('pricing.freeItems').map((i) => `${i.n} ${i.label}`).join(', '),
     },
     author: { '@type': 'Organization', name: 'Afinora', url: SITE + '/' },
   })}</script>` : '';

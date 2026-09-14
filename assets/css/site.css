@@ -900,3 +900,89 @@ a.pill:hover { border-color: var(--in-tune); color: var(--in-tune); }
 .technique-figure { display: flex; justify-content: center; }
 .technique .trio { margin-top: clamp(30px, 4vw, 48px); }
 
+
+
+/* ------------------------------------------------------------ instruments */
+
+/* A frieze rather than a wall of cards, and near the foot of the page: by here
+   the reader knows what the app does, and this is the closing statement about
+   how far it reaches. */
+.instruments {
+  padding-top: var(--section-y);
+  padding-bottom: var(--section-y);
+  border-top: 1px solid var(--border);
+}
+
+.inst-frieze {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(96px, 1fr));
+  gap: 22px 12px;
+  margin-top: 34px;
+}
+
+.inst {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  text-align: center;
+  color: var(--ink-dim);
+  transition: color .18s;
+}
+.inst:hover { color: var(--accent); }
+.inst svg { width: 100%; max-width: 62px; height: auto; }
+.inst span {
+  font: 400 12.5px/1.35 var(--body);
+  color: inherit;
+}
+
+@media (max-width: 560px) {
+  .inst-frieze { grid-template-columns: repeat(auto-fit, minmax(78px, 1fr)); gap: 18px 8px; }
+  .inst svg { max-width: 50px; }
+  .inst span { font-size: 11.5px; }
+}
+
+
+/* Two plans, four lines each, one number per line. */
+.price-grid { grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); }
+
+.price-card dl {
+  margin: 16px 0 0;
+  display: grid;
+  gap: 11px;
+}
+.price-card dl > div {
+  display: grid;
+  grid-template-columns: 42px 1fr;
+  align-items: baseline;
+  gap: 12px;
+}
+.price-card dt {
+  font: 700 22px/1 var(--display);
+  color: var(--ink);
+  text-align: right;
+}
+.price-card dd {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.4;
+  color: var(--ink-dim);
+}
+.price-card.pro dt { color: var(--close); }
+
+/* The promises: a line under both plans, not a plan of their own. */
+.never {
+  margin-top: 26px;
+  padding-top: 22px;
+  border-top: 1px solid var(--border);
+  font: 400 14.5px/1.7 var(--mono);
+  color: var(--ink-dim);
+  text-align: center;
+}
+
+@media (max-width: 560px) {
+  .price-card dl > div { grid-template-columns: 34px 1fr; gap: 10px; }
+  .price-card dt { font-size: 19px; }
+  .price-card dd { font-size: 15px; }
+  .never { font-size: 13px; text-align: left; }
+}

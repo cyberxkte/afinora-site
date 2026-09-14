@@ -1,10 +1,7 @@
 {
   "index": {
     "title": "Afinora — Accordatore per chitarra, metronomo e allenamento tecnico per strumenti a corda",
-    "description": "Accordatore per chitarra, basso, ukulele, cuatro venezuelano, violino e altri. Metronomo, scale sul tuo manico e allenamento che valuta ogni nota. Senza account.",
-    "pricing": {
-      "freeBody": "Uno strumento, scale maggiore e minore, il metronomo completo, cinque registrazioni."
-    }
+    "description": "Accordatore per chitarra, basso, ukulele, cuatro venezuelano, violino e altri. Metronomo, scale sul tuo manico e allenamento che valuta ogni nota. Senza account."
   },
   "support": {
     "title": "Assistenza — Afinora",
@@ -192,8 +189,8 @@
   ],
   "technique": {
     "eyebrow": "Allenamento tecnico",
-    "heading": "Alla fine sai quale delle due è mancata",
-    "body": "Quando il loop finisce ti aspetta il resoconto: quante note sono uscite pulite, quante sono andate fuori pulsazione e dove è caduta ciascuna rispetto al tempo. Intonazione e ritmo sono due numeri separati, così una nota intonata ma in ritardo non si nasconde dietro una media, e sai quale delle due cose riprendere.",
+    "heading": "Alla fine sai se è mancata l'intonazione o il tempo",
+    "body": "Quando l'esercizio finisce ti aspetta il resoconto: quante note sono uscite pulite, quante sono scivolate fuori tempo e dove è caduta ciascuna. Sono due numeri distinti, così una nota intonata ma in ritardo non sparisce dentro una media, e riprendi quello che è andato storto davvero.",
     "legendPerfect": "Perfettamente a tempo",
     "legendHit": "Suonata, ma in ritardo",
     "legendMiss": "Non suonata",
@@ -263,12 +260,45 @@
     "heading": "Si parte con cinque giorni interi",
     "body": "Dopo, la versione gratuita tiene uno strumento a tua scelta, le scale maggiore e minore, tutto il metronomo e cinque registrazioni di Studio. Pro è un pagamento unico, non un abbonamento, e sblocca il resto per sempre.",
     "freeHeading": "Gratis",
-    "freeBody": "Uno strumento, scale maggiore e minore, il metronomo completo, cinque registrazioni.",
     "proHeading": "Pro · pagamento unico",
-    "proBody": "Tutti e dieci gli strumenti, le venti scale e i venti accordi, l'allenamento tecnico completo e Studio senza limiti.",
     "price": "9,99 € o 9,99 US$ nella maggior parte dei paesi",
-    "neverHeading": "Quello che non troverai",
-    "neverBody": "Abbonamenti, pubblicità, account, tracciamento o audio caricato su un server."
+    "neverBody": "Nessun abbonamento · niente pubblicità · nessun account · nessun tracciamento · nessun audio su un server",
+    "freeItems": [
+      {
+        "n": "1",
+        "label": "strumento"
+      },
+      {
+        "n": "2",
+        "label": "scale, maggiore e minore"
+      },
+      {
+        "n": "1",
+        "label": "metronomo, completo"
+      },
+      {
+        "n": "5",
+        "label": "registrazioni di Studio"
+      }
+    ],
+    "proItems": [
+      {
+        "n": "10",
+        "label": "strumenti"
+      },
+      {
+        "n": "20",
+        "label": "scale"
+      },
+      {
+        "n": "20",
+        "label": "accordi"
+      },
+      {
+        "n": "∞",
+        "label": "registrazioni di Studio"
+      }
+    ]
   },
   "download": {
     "heading": "Scarica Afinora",
@@ -342,5 +372,20 @@
     "reportVerdictLate": "Fuori pulsazione",
     "reportVerdictMissed": "Non suonata",
     "screenTechnique": "Allenati"
+  },
+  "instruments": {
+    "heading": "Dieci strumenti, ognuno con le sue accordature",
+    "list": [
+      "Chitarra",
+      "Chitarra a 7 corde",
+      "Basso",
+      "Ukulele",
+      "Cuatro venezuelano",
+      "Violino",
+      "Viola",
+      "Violoncello",
+      "Mandolino",
+      "Banjo"
+    ]
   }
 }

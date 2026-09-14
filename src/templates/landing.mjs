@@ -53,6 +53,30 @@ const APPLE_GLYPH = `<svg class="store-glyph" viewBox="0 0 384 512" aria-hidden=
  * `noopener` stays: it costs nothing and still applies if a browser opens one
  * of these in a tab of its own (a middle click, or Cmd held down).
  */
+/*
+ * The ten instruments, drawn.
+ *
+ * Strokes rather than fills so they inherit the hover colour, and all in one
+ * 48-unit box at their real size relative to each other — a ukulele small, a
+ * cello filling the frame. That proportion says more than a caption can, and
+ * it is the honest difference between shapes that would otherwise be three
+ * near-identical waisted outlines.
+ *
+ * Same order as instruments.list in every locale.
+ */
+const INSTRUMENT_SHAPES = [
+  `<path d="M20 25.5c0-3.4 2-5.6 4.5-5.6s4.5 2.2 4.5 5.6c0 2-1.1 3.2-1.1 4.6 0 1.6 1.6 2.9 1.6 5.4 0 3.6-2.2 6.2-5 6.2s-5-2.6-5-6.2c0-2.5 1.6-3.8 1.6-5.4 0-1.4-1.1-2.6-1.1-4.6Z"/><circle cx="24.5" cy="33.2" r="2.1"/><path d="M24.5 19.9V7.5"/><path d="M22.7 7.5h3.6v-2h-3.6z"/>`,
+  `<path d="M20 25.5c0-3.4 2-5.6 4.5-5.6s4.5 2.2 4.5 5.6c0 2-1.1 3.2-1.1 4.6 0 1.6 1.6 2.9 1.6 5.4 0 3.6-2.2 6.2-5 6.2s-5-2.6-5-6.2c0-2.5 1.6-3.8 1.6-5.4 0-1.4-1.1-2.6-1.1-4.6Z"/><circle cx="24.5" cy="33.2" r="2.1"/><path d="M24.5 19.9V6"/><path d="M22.4 6h4.2v-2.4h-4.2z"/>`,
+  `<path d="M19.4 30.4c0-2.6 1.4-4.4 3.3-4.4 1 0 1.5.5 1.8 1.4.3-.9.8-1.4 1.8-1.4 1.9 0 3.3 1.8 3.3 4.4 0 4-1.9 10.6-5.1 10.6s-5.1-6.6-5.1-10.6Z"/><path d="M24.5 26V4.5"/><path d="M22.4 4.5h4.2V2h-4.2z"/>`,
+  `<path d="M20.9 30.6c0-2.3 1.6-3.8 3.6-3.8s3.6 1.5 3.6 3.8c0 1.4-.9 2.2-.9 3.1 0 1.1 1.3 2 1.3 3.7 0 2.5-1.8 4.3-4 4.3s-4-1.8-4-4.3c0-1.7 1.3-2.6 1.3-3.7 0-.9-.9-1.7-.9-3.1Z"/><circle cx="24.5" cy="35.6" r="1.6"/><path d="M24.5 26.8V16"/><path d="M23 16h3v-1.7h-3z"/>`,
+  `<path d="M21.2 29c0-2.5 1.5-4.1 3.3-4.1s3.3 1.6 3.3 4.1c0 1.5-.8 2.4-.8 3.4 0 1.2 1.2 2.2 1.2 4 0 2.7-1.7 4.7-3.7 4.7s-3.7-2-3.7-4.7c0-1.8 1.2-2.8 1.2-4 0-1-.8-1.9-.8-3.4Z"/><circle cx="24.5" cy="34.3" r="1.5"/><path d="M24.5 24.9V13.5"/><path d="M23 13.5h3v-1.8h-3z"/>`,
+  `<path d="M20.6 28.4c0-2.7 1.7-4.5 3.9-4.5s3.9 1.8 3.9 4.5c0 1.6-1 2.6-1 3.7 0 1.3 1.4 2.3 1.4 4.3 0 2.9-1.9 5-4.3 5s-4.3-2.1-4.3-5c0-2 1.4-3 1.4-4.3 0-1.1-1-2.1-1-3.7Z"/><path d="M22.2 30.6v3.4M26.8 30.6v3.4"/><path d="M24.5 23.9V13.8"/><path d="M24.5 13.8c-1.5 0-2.3-1-2.3-2.1 0-1 .8-1.9 1.9-1.9 1 0 1.6.7 1.6 1.5 0 .8-.6 1.3-1.3 1.3"/>`,
+  `<path d="M19.8 26.9c0-3.1 2-5.2 4.7-5.2s4.7 2.1 4.7 5.2c0 1.8-1.2 3-1.2 4.2 0 1.5 1.7 2.7 1.7 5 0 3.3-2.3 5.8-5.2 5.8s-5.2-2.5-5.2-5.8c0-2.3 1.7-3.5 1.7-5 0-1.2-1.2-2.4-1.2-4.2Z"/><path d="M21.7 29.5v3.9M27.3 29.5v3.9"/><path d="M24.5 21.7V9.8"/><path d="M24.5 9.8c-1.7 0-2.6-1.1-2.6-2.4 0-1.2.9-2.2 2.2-2.2 1.2 0 1.9.8 1.9 1.7 0 .9-.7 1.5-1.5 1.5"/>`,
+  `<path d="M18.4 24.3c0-3.9 2.5-6.5 6.1-6.5s6.1 2.6 6.1 6.5c0 2.3-1.6 3.8-1.6 5.3 0 1.9 2.2 3.4 2.2 6.3 0 4.2-3 7.3-6.7 7.3s-6.7-3.1-6.7-7.3c0-2.9 2.2-4.4 2.2-6.3 0-1.5-1.6-3-1.6-5.3Z"/><path d="M20.9 27.6v4.9M28.1 27.6v4.9"/><path d="M24.5 17.8V7"/><path d="M24.5 43.2V46"/>`,
+  `<path d="M24.5 23.4c3.6 0 6.3 3.4 6.3 8.2 0 5.3-2.8 9.2-6.3 9.2s-6.3-3.9-6.3-9.2c0-4.8 2.7-8.2 6.3-8.2Z"/><ellipse cx="24.5" cy="32.4" rx="2.4" ry="1.7"/><path d="M24.5 23.4V13"/><path d="M22.6 13h3.8v-2.2h-3.8z"/>`,
+  `<circle cx="24.5" cy="33" r="7.4"/><circle cx="24.5" cy="33" r="5"/><path d="M24.5 25.6V11"/><path d="M22.8 11h3.4V9h-3.4z"/>`,
+];
+
 function storeButtons(t, className = '') {
   return `<div class="store-row${className ? ' ' + className : ''}">
       <a class="store-btn play" href="${PLAY_URL}" rel="noopener noreferrer">
@@ -269,27 +293,49 @@ export default function landing(ctx) {
   </div>
 </section>
 
+<section class="instruments" id="instruments">
+  <div class="wrap">
+    <h2 class="sub-h2">${esc(t('instruments.heading'))}</h2>
+    <div class="inst-frieze">
+      ${t('instruments.list').map((name, i) => `<div class="inst">
+        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.4"
+             stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${INSTRUMENT_SHAPES[i]}</svg>
+        <span>${esc(name)}</span>
+      </div>`).join('\n      ')}
+    </div>
+  </div>
+</section>
+
 <section class="pricing" id="pro">
   <div class="wrap">
     <p class="eyebrow">${esc(t('pricing.eyebrow'))}</p>
     <h2 class="sub-h2" style="margin-top:14px">${esc(t('pricing.heading'))}</h2>
     <p class="lead" style="margin-top:16px">${esc(t('pricing.body'))}</p>
+    <!--
+      Two lists with the same four lines, so the difference between them is the
+      column rather than a sentence the reader has to hold in their head.
+    -->
     <div class="price-grid">
       <div class="price-card">
         <h3>${esc(t('pricing.freeHeading'))}</h3>
-        <p>${esc(t('pricing.freeBody'))}</p>
+        <dl>
+          ${t('pricing.freeItems').map((i) => `<div><dt>${esc(i.n)}</dt><dd>${esc(i.label)}</dd></div>`).join('\n          ')}
+        </dl>
       </div>
       <div class="price-card pro">
         <h3>${esc(t('pricing.proHeading'))}</h3>
-        <p>${esc(t('pricing.proBody'))}</p>
+        <dl>
+          ${t('pricing.proItems').map((i) => `<div><dt>${esc(i.n)}</dt><dd>${esc(i.label)}</dd></div>`).join('\n          ')}
+        </dl>
         <!-- The price appears exactly once on the page, and near the bottom. -->
         <p class="price">${esc(t('pricing.price'))}</p>
       </div>
-      <div class="price-card">
-        <h3>${esc(t('pricing.neverHeading'))}</h3>
-        <p>${esc(t('pricing.neverBody'))}</p>
-      </div>
     </div>
+
+    <!-- Not a third card: a card shaped like the other two would read as a
+         third plan, and counting four zeros is a joke that wears out by the
+         third one. -->
+    <p class="never">${esc(t('pricing.neverBody'))}</p>
   </div>
 </section>
 

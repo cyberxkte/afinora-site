@@ -1,10 +1,7 @@
 {
   "index": {
     "title": "Afinora — Stimmgerät für Gitarre, Metronom und Techniktraining für Saiteninstrumente",
-    "description": "Stimmgerät für Gitarre, Bass, Ukulele, venezolanischen Cuatro, Geige und mehr. Metronom, Skalen auf deinem Griffbrett und Training, das jeden Ton bewertet. Ohne Konto.",
-    "pricing": {
-      "freeBody": "Ein Instrument, Dur- und Moll-Tonleiter, das vollständige Metronom, fünf Aufnahmen."
-    }
+    "description": "Stimmgerät für Gitarre, Bass, Ukulele, venezolanischen Cuatro, Geige und mehr. Metronom, Skalen auf deinem Griffbrett und Training, das jeden Ton bewertet. Ohne Konto."
   },
   "support": {
     "title": "Hilfe — Afinora",
@@ -192,8 +189,8 @@
   ],
   "technique": {
     "eyebrow": "Techniktraining",
-    "heading": "Am Ende weißt du, welches von beiden gepatzt hat",
-    "body": "Wenn die Schleife endet, wartet der Bericht: wie viele Töne sauber waren, wie viele neben dem Puls lagen und wo jeder einzelne zum Schlag gelandet ist. Tonhöhe und Timing sind zwei getrennte Zahlen, also verschwindet ein sauberer, aber zu später Ton nicht hinter einem Mittelwert — und du weißt, welches von beiden du üben musst.",
+    "heading": "Am Ende weißt du, ob es die Tonhöhe war oder das Timing",
+    "body": "Am Ende der Übung wartet der Bericht: wie viele Töne sauber waren, wie viele aus dem Takt gerutscht sind und wo jeder gelandet ist. Zwei getrennte Zahlen, also verschwindet ein sauberer, aber zu später Ton nicht in einem Mittelwert — und du übst das, was wirklich schiefging.",
     "legendPerfect": "Genau im Takt",
     "legendHit": "Gespielt, aber zu spät",
     "legendMiss": "Gar nicht erkannt",
@@ -263,12 +260,45 @@
     "heading": "Es geht mit fünf ganzen Tagen los",
     "body": "Danach behält die kostenlose Version ein Instrument deiner Wahl, die Dur- und Moll-Tonleiter, das gesamte Metronom und fünf Studio-Aufnahmen. Pro ist ein einmaliger Kauf, kein Abonnement, und schaltet den Rest dauerhaft frei.",
     "freeHeading": "Kostenlos",
-    "freeBody": "Ein Instrument, Dur- und Moll-Tonleiter, das vollständige Metronom, fünf Aufnahmen.",
     "proHeading": "Pro · einmalige Zahlung",
-    "proBody": "Alle zehn Instrumente, die zwanzig Skalen und zwanzig Akkorde, das vollständige Techniktraining und Studio ohne Grenzen.",
     "price": "9,99 € oder 9,99 US$ in den meisten Ländern",
-    "neverHeading": "Was es hier nie gibt",
-    "neverBody": "Abos, Werbung, Konten, Tracking oder Audio, das auf einen Server hochgeladen wird."
+    "neverBody": "Kein Abo · keine Werbung · kein Konto · kein Tracking · kein Audio auf einem Server",
+    "freeItems": [
+      {
+        "n": "1",
+        "label": "Instrument"
+      },
+      {
+        "n": "2",
+        "label": "Tonleitern, Dur und Moll"
+      },
+      {
+        "n": "1",
+        "label": "Metronom, vollständig"
+      },
+      {
+        "n": "5",
+        "label": "Studio-Aufnahmen"
+      }
+    ],
+    "proItems": [
+      {
+        "n": "10",
+        "label": "Instrumente"
+      },
+      {
+        "n": "20",
+        "label": "Tonleitern"
+      },
+      {
+        "n": "20",
+        "label": "Akkorde"
+      },
+      {
+        "n": "∞",
+        "label": "Studio-Aufnahmen"
+      }
+    ]
   },
   "download": {
     "heading": "Afinora herunterladen",
@@ -342,5 +372,20 @@
     "reportVerdictLate": "Neben dem Puls",
     "reportVerdictMissed": "Nicht erkannt",
     "screenTechnique": "Üben"
+  },
+  "instruments": {
+    "heading": "Zehn Instrumente, jedes mit seinen eigenen Stimmungen",
+    "list": [
+      "Gitarre",
+      "7-saitige Gitarre",
+      "Bass",
+      "Ukulele",
+      "Venezolanischer Cuatro",
+      "Geige",
+      "Bratsche",
+      "Cello",
+      "Mandoline",
+      "Banjo"
+    ]
   }
 }

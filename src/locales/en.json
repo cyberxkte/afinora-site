@@ -1,10 +1,7 @@
 {
   "index": {
     "title": "Afinora — Guitar tuner, metronome and technique training for string instruments",
-    "description": "Tuner for guitar, bass, ukulele, Venezuelan cuatro, violin and more. Metronome, scales on your own neck, and training that grades every note. No account, no ads.",
-    "pricing": {
-      "freeBody": "One instrument, major and minor scales, the full metronome, five recordings."
-    }
+    "description": "Tuner for guitar, bass, ukulele, Venezuelan cuatro, violin and more. Metronome, scales on your own neck, and training that grades every note. No account, no ads."
   },
   "support": {
     "title": "Support — Afinora",
@@ -192,8 +189,8 @@
   ],
   "technique": {
     "eyebrow": "Technique training",
-    "heading": "When you finish, you know which of the two failed",
-    "body": "When the loop ends, the report is waiting: how many notes were clean, how many were off the pulse, and where each one landed against the beat. Pitch and timing are two separate numbers, so a note that was in tune but late is not hidden behind an average — and you know which of the two to practise.",
+    "heading": "When you finish, you know whether it was the pitch or the timing",
+    "body": "The report is waiting when the exercise ends: how many notes were clean, how many drifted off the beat, and where each one landed. Two separate numbers, so a note that was in tune but late does not disappear into an average — and you practise the one that actually went wrong.",
     "legendPerfect": "Dead on the beat",
     "legendHit": "Played, but late",
     "legendMiss": "Never sounded",
@@ -263,12 +260,45 @@
     "heading": "It opens with five full days",
     "body": "After that, the free version keeps one instrument of your choice, the major and minor scales, the whole metronome and five Studio recordings. Pro is a one-time purchase, not a subscription, and unlocks the rest permanently.",
     "freeHeading": "Free",
-    "freeBody": "One instrument, major and minor scales, the full metronome, five recordings.",
     "proHeading": "Pro · one-time purchase",
-    "proBody": "All ten instruments, the twenty scales and twenty chords, the full technique training and Studio without limits.",
     "price": "US$9.99 or €9.99 in most countries",
-    "neverHeading": "What there never is",
-    "neverBody": "A subscription, ads, an account, tracking, or audio uploaded to a server."
+    "neverBody": "No subscription · no ads · no account · no tracking · no audio on a server",
+    "freeItems": [
+      {
+        "n": "1",
+        "label": "instrument"
+      },
+      {
+        "n": "2",
+        "label": "scales, major and minor"
+      },
+      {
+        "n": "1",
+        "label": "metronome, complete"
+      },
+      {
+        "n": "5",
+        "label": "Studio recordings"
+      }
+    ],
+    "proItems": [
+      {
+        "n": "10",
+        "label": "instruments"
+      },
+      {
+        "n": "20",
+        "label": "scales"
+      },
+      {
+        "n": "20",
+        "label": "chords"
+      },
+      {
+        "n": "∞",
+        "label": "Studio recordings"
+      }
+    ]
   },
   "download": {
     "heading": "Download Afinora",
@@ -342,5 +372,20 @@
     "reportVerdictLate": "Off the pulse",
     "reportVerdictMissed": "Never arrived",
     "screenTechnique": "Training"
+  },
+  "instruments": {
+    "heading": "Ten instruments, each with its own tunings",
+    "list": [
+      "Guitar",
+      "7-string guitar",
+      "Bass",
+      "Ukulele",
+      "Venezuelan cuatro",
+      "Violin",
+      "Viola",
+      "Cello",
+      "Mandolin",
+      "Banjo"
+    ]
   }
 }

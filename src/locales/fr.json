@@ -1,10 +1,7 @@
 {
   "index": {
     "title": "Afinora — Accordeur de guitare, métronome et entraînement technique pour instruments à cordes",
-    "description": "Accordeur pour guitare, basse, ukulélé, cuatro vénézuélien, violon et plus. Métronome, gammes sur votre manche et entraînement qui note chaque note. Sans compte.",
-    "pricing": {
-      "freeBody": "Un instrument, gammes majeure et mineure, le métronome complet, cinq enregistrements."
-    }
+    "description": "Accordeur pour guitare, basse, ukulélé, cuatro vénézuélien, violon et plus. Métronome, gammes sur votre manche et entraînement qui note chaque note. Sans compte."
   },
   "support": {
     "title": "Assistance — Afinora",
@@ -192,8 +189,8 @@
   ],
   "technique": {
     "eyebrow": "Entraînement technique",
-    "heading": "À la fin, vous savez laquelle des deux a lâché",
-    "body": "Quand la boucle se termine, le rapport vous attend : combien de notes étaient propres, combien sont sorties de la pulsation, et où chacune est tombée par rapport au temps. La justesse et le placement sont deux chiffres distincts, donc une note juste mais en retard ne disparaît pas derrière une moyenne, et vous savez laquelle des deux travailler.",
+    "heading": "À la fin, vous savez si c'est la justesse ou le placement",
+    "body": "Le rapport vous attend à la fin de l'exercice : combien de notes étaient propres, combien ont glissé hors du temps, et où chacune est tombée. Deux chiffres distincts, donc une note juste mais en retard ne se perd pas dans une moyenne, et vous travaillez ce qui a réellement lâché.",
     "legendPerfect": "Pile dans le temps",
     "legendHit": "Jouée, mais en retard",
     "legendMiss": "Pas jouée",
@@ -263,12 +260,45 @@
     "heading": "On commence par cinq jours entiers",
     "body": "Ensuite, la version gratuite garde un instrument de votre choix, les gammes majeure et mineure, tout le métronome et cinq enregistrements de Studio. Pro est un achat unique, pas un abonnement, et débloque le reste définitivement.",
     "freeHeading": "Gratuit",
-    "freeBody": "Un instrument, gammes majeure et mineure, le métronome complet, cinq enregistrements.",
     "proHeading": "Pro · paiement unique",
-    "proBody": "Les dix instruments, les vingt gammes et vingt accords, tout l'entraînement technique et Studio sans limites.",
     "price": "9,99 € ou 9,99 US$ dans la plupart des pays",
-    "neverHeading": "Ce que vous ne trouverez jamais",
-    "neverBody": "Abonnement, publicité, compte, suivi, ou audio envoyé sur un serveur."
+    "neverBody": "Pas d'abonnement · pas de publicité · pas de compte · pas de suivi · pas d'audio sur un serveur",
+    "freeItems": [
+      {
+        "n": "1",
+        "label": "instrument"
+      },
+      {
+        "n": "2",
+        "label": "gammes, majeure et mineure"
+      },
+      {
+        "n": "1",
+        "label": "métronome, complet"
+      },
+      {
+        "n": "5",
+        "label": "enregistrements Studio"
+      }
+    ],
+    "proItems": [
+      {
+        "n": "10",
+        "label": "instruments"
+      },
+      {
+        "n": "20",
+        "label": "gammes"
+      },
+      {
+        "n": "20",
+        "label": "accords"
+      },
+      {
+        "n": "∞",
+        "label": "enregistrements Studio"
+      }
+    ]
   },
   "download": {
     "heading": "Téléchargez Afinora",
@@ -342,5 +372,20 @@
     "reportVerdictLate": "Hors pulsation",
     "reportVerdictMissed": "Pas jouée",
     "screenTechnique": "Travail"
+  },
+  "instruments": {
+    "heading": "Dix instruments, chacun avec ses accordages",
+    "list": [
+      "Guitare",
+      "Guitare 7 cordes",
+      "Basse",
+      "Ukulélé",
+      "Cuatro vénézuélien",
+      "Violon",
+      "Alto",
+      "Violoncelle",
+      "Mandoline",
+      "Banjo"
+    ]
   }
 }
