@@ -949,102 +949,137 @@
 
   // ------------------------------------------------------------ mounting
 
+  // ------------------------------------------------ the three small cards
+
+  /** A shared frame for the three little demonstrations under the claims. */
+  function miniFrame() {
+    return el('div', 'position:relative;width:100%;height:118px;border-radius:11px;'
+      + 'border:1px solid #1c1d22;background:#0b1613;overflow:hidden');
+  }
+
   /**
-   * The session report: what the screen says once the exercise has finished.
+   * Notes crossing the cursor: the exercise itself, in miniature.
    *
-   * The hero shows the exercise running; this shows what it leaves behind, so
-   * the two are not the same picture twice. Labels and metrics come from the
-   * app's own report (TechniqueSessionReport.tsx): clean notes and rhythm are
-   * two separate percentages on purpose, because a note can be in tune and
-   * late, and knowing which of the two failed is the whole point.
+   * The same clock and the same finger colours as the full highway, so the two
+   * read as the same feature rather than two different drawings.
    */
-  function buildReport() {
-    var root = el('div', 'position:relative;background:#0a0a0a;padding:18px 16px 12px;'
-      + 'display:flex;flex-direction:column;gap:12px;height:100%;box-sizing:border-box;'
-      + 'overflow:hidden');
-    add(root, screenHead(t('screenTechnique', 'Training')));
-
-    // The verdict line, which is the first thing a player reads.
-    var verdict = add(root, el('div', 'flex:0 0 auto;display:flex;flex-direction:column;gap:3px'));
-    add(verdict, el('div', 'font:700 19px/1.15 ' + DISPLAY + ';letter-spacing:-.01em;color:#5ee7f0',
-      t('reportHeadline', 'That was clean')));
-    add(verdict, el('div', 'font:400 9px/1.3 ' + MONO + ';letter-spacing:.12em;'
-      + 'text-transform:uppercase;color:#a8a29e', t('reportExercise', 'Major scale · frets 5-8')));
-
-    // Two meters, side by side, because they measure different failures.
-    var meters = add(root, el('div', 'flex:0 0 auto;display:flex;gap:8px'));
-    function meter(label, target, tone) {
-      var cell = add(meters, el('div', 'flex:1 1 0;min-width:0;background:#0e0f12;'
-        + 'border:1px solid #1c1d22;border-radius:11px;padding:10px 11px;display:flex;'
-        + 'flex-direction:column;gap:7px'));
-      add(cell, el('div', 'font:400 8.5px/1.2 ' + MONO + ';letter-spacing:.1em;'
-        + 'text-transform:uppercase;color:#a8a29e;white-space:nowrap;overflow:hidden;'
-        + 'text-overflow:ellipsis', label));
-      var value = add(cell, el('div', 'font:700 22px/1 ' + DISPLAY + ';color:' + tone, '0%'));
-      var track = add(cell, el('div', 'height:4px;border-radius:2px;background:#1c1d22;overflow:hidden'));
-      var fill = add(track, el('div', 'height:100%;width:0%;border-radius:2px;background:' + tone));
-      return { value: value, fill: fill, target: target };
+  function buildMiniExercise() {
+    var root = miniFrame();
+    var LANES_MINI = 5;
+    for (var l = 0; l < LANES_MINI; l++) {
+      add(root, el('div', 'position:absolute;left:0;right:0;height:1px;'
+        + 'top:' + (20 + l * 19) + '%;background:#3a2a18'));
     }
-    var clean = meter(t('reportClean', 'Clean notes'), 94, '#5ee7f0');
-    var rhythm = meter(t('reportRhythm', 'Rhythm'), 88, '#8fbf5a');
+    add(root, el('div', 'position:absolute;left:22%;top:6%;bottom:6%;width:1px;background:#e8eae9'));
 
-    // Where the notes landed against the beat: the scatter the app draws.
-    var plot = add(root, el('div', 'flex:1 1 0;min-height:0;background:#0e0f12;'
-      + 'border:1px solid #1c1d22;border-radius:11px;padding:10px 11px;display:flex;'
-      + 'flex-direction:column;gap:7px;overflow:hidden'));
-    add(plot, el('div', 'font:400 8.5px/1.2 ' + MONO + ';letter-spacing:.1em;'
-      + 'text-transform:uppercase;color:#a8a29e', t('reportWhere', 'Where your notes land')));
-    var field = add(plot, el('div', 'position:relative;flex:1 1 0;min-height:44px'));
-    add(field, el('div', 'position:absolute;left:50%;top:0;bottom:0;width:1px;background:#2dd4bf66'));
-
-    // Fixed offsets, in milliseconds, so the picture is the same every visit.
-    var LANDINGS = [-34, -12, 4, -6, 18, -2, 9, -21, 2, 11, -9, 26, -4, 6, -15, 1];
-    var dots = LANDINGS.map(function (ms, i) {
-      var x = 50 + (ms / 60) * 48;
-      var y = 12 + ((i * 37) % 70);
-      var late = ms > 14;
-      var dot = add(field, el('div', 'position:absolute;width:6px;height:6px;border-radius:50%;'
-        + 'left:' + x + '%;top:' + y + '%;opacity:0;transition:opacity .25s;'
-        + 'background:' + (late ? '#8fbf5a' : '#5ee7f0')));
-      return dot;
+    var SEQ = [[0, 5], [1, 6], [2, 4], [3, 3], [1, 4], [4, 5], [2, 6], [0, 4]];
+    var notes = SEQ.map(function (pair) {
+      var node = add(root, el('div', 'position:absolute;transform:translate(-50%,-50%);'
+        + 'padding:1px 5px;border-radius:5px;font:600 9px/1.5 ' + MONO
+        + ';color:#141110;background:' + FINGER[pair[0] % FINGER.length]
+        + ';top:' + (20 + pair[0] * 19) + '%', String(pair[1])));
+      return node;
     });
-    var axis = add(plot, el('div', 'display:flex;justify-content:space-between;'
-      + 'font:400 8px/1 ' + MONO + ';letter-spacing:.08em;text-transform:uppercase;color:#6b6560'));
-    add(axis, el('span', '', t('reportEarly', 'Early')));
-    add(axis, el('span', 'color:#2dd4bf', t('reportOnPulse', 'On the pulse')));
-    add(axis, el('span', '', t('reportLate', 'Late')));
 
-    var tally = add(root, el('div', 'flex:0 0 auto;display:flex;gap:9px;overflow:hidden'));
-    function count(tone, label, n) {
-      var cell = add(tally, el('div', 'flex:0 1 auto;min-width:0;display:flex;align-items:center;'
-        + 'gap:5px;font:400 9px/1.2 ' + MONO + ';color:#a8a29e;white-space:nowrap;'
-        + 'overflow:hidden;text-overflow:ellipsis'));
-      add(cell, el('span', 'width:6px;height:6px;border-radius:50%;flex:0 0 auto;background:' + tone));
-      add(cell, el('span', '', label + ' ' + n));
-    }
-    count('#5ee7f0', t('reportVerdictClean', 'Clean'), 41);
-    count('#8fbf5a', t('reportVerdictLate', 'Off the pulse'), 5);
-    count('#e0554a', t('reportVerdictMissed', 'Never arrived'), 2);
-
-    add(root, tabBar('Training'));
-
-    // One slow sweep: the meters count up, the dots arrive behind them, and
-    // the whole thing resets so a visitor who scrolls back sees it again.
-    var CYCLE = 7.5;
-    function frame(secs) {
-      var p = (secs % CYCLE) / CYCLE;
-      var ease = p < 0.34 ? 1 - Math.pow(1 - p / 0.34, 3) : 1;
-      [clean, rhythm].forEach(function (m) {
-        var v = Math.round(m.target * ease);
-        m.value.textContent = v + '%';
-        m.fill.style.width = v + '%';
-      });
-      for (var i = 0; i < dots.length; i++) {
-        var due = 0.12 + (i / dots.length) * 0.55;
-        dots[i].style.opacity = p > due ? '1' : '0';
+    function frame(secs, beat) {
+      var span = SEQ.length + 3;
+      var phase = beat % span;
+      for (var i = 0; i < notes.length; i++) {
+        var x = 22 + (i - phase) * 13;
+        var seen = x > -12 && x < 112;
+        notes[i].style.display = seen ? 'block' : 'none';
+        if (seen) notes[i].style.left = x + '%';
       }
     }
+    return { node: root, frame: frame };
+  }
 
+  /**
+   * The tempo climbing: a number that rises and bars that fill behind it.
+   *
+   * It only moves upward, because that is what the feature does — the loop
+   * speeds up while you keep up, and the page should not promise a drop it is
+   * not showing.
+   */
+  function buildMiniTempo() {
+    var root = miniFrame();
+    var pad = add(root, el('div', 'position:absolute;inset:0;padding:13px 14px;'
+      + 'display:flex;flex-direction:column;justify-content:space-between'));
+
+    var head = add(pad, el('div', ''));
+    add(head, el('div', 'font:400 8.5px/1.2 ' + MONO + ';letter-spacing:.12em;'
+      + 'text-transform:uppercase;color:#a8a29e', t('miniTempoLabel', 'Clean tempo')));
+    var row = add(head, el('div', 'display:flex;align-items:baseline;gap:6px;margin-top:5px'));
+    var bpm = add(row, el('span', 'font:700 25px/1 ' + DISPLAY + ';color:#fafaf9', '80'));
+    add(row, el('span', 'font:400 9px/1 ' + MONO + ';color:#a8a29e', 'BPM'));
+    var delta = add(row, el('span', 'font:400 9px/1 ' + MONO + ';color:#2dd4bf', '↑ +8'));
+
+    var bars = add(pad, el('div', 'display:flex;gap:6px;align-items:flex-end;height:22px'));
+    var cells = [];
+    for (var i = 0; i < 6; i++) {
+      cells.push(add(bars, el('div', 'flex:1 1 0;height:100%;border-radius:4px;'
+        + 'border:1px solid #1c3a32;background:#0d211c;transition:background .2s')));
+    }
+
+    var STEPS = [80, 88, 96, 104, 112, 120];
+    function frame(secs) {
+      var p = (secs % 9) / 9;
+      var at = Math.min(Math.floor(p * 7), 5);
+      bpm.textContent = String(STEPS[at]);
+      delta.style.opacity = at === 0 ? '0' : '1';
+      for (var i = 0; i < cells.length; i++) {
+        var on = i <= at;
+        cells[i].style.background = on ? (i === at ? '#2dd4bf' : '#12332c') : '#0d211c';
+      }
+    }
+    return { node: root, frame: frame };
+  }
+
+  /**
+   * A history per scale: past sessions, and the newest one taller than the rest.
+   *
+   * Two tabs because the two numbers are kept apart everywhere else on this
+   * page, and a history that merged them would undo the point.
+   */
+  function buildMiniHistory() {
+    var root = miniFrame();
+    var pad = add(root, el('div', 'position:absolute;inset:0;padding:12px 13px;'
+      + 'display:flex;flex-direction:column;justify-content:space-between'));
+
+    var top = add(pad, el('div', 'display:flex;align-items:center;justify-content:space-between;gap:8px'));
+    var tabs = add(top, el('div', 'display:flex;gap:5px'));
+    function tab(label) {
+      return add(tabs, el('span', 'padding:3px 8px;border-radius:99px;font:400 8.5px/1.3 ' + MONO
+        + ';border:1px solid #1c3a32;color:#a8a29e;white-space:nowrap', label));
+    }
+    var tabNotes = tab(t('miniHistoryNotes', 'Notes'));
+    var tabTiming = tab(t('miniHistoryTiming', 'Timing'));
+    add(top, el('span', 'padding:3px 7px;border-radius:99px;font:400 8px/1.3 ' + MONO
+      + ';background:#0c2018;color:#2dd4bf;white-space:nowrap', t('miniHistoryBest', 'New best')));
+
+    var mid = add(pad, el('div', ''));
+    add(mid, el('div', 'font:400 8px/1.2 ' + MONO + ';letter-spacing:.1em;'
+      + 'text-transform:uppercase;color:#6b6560', t('miniHistoryCaption', 'Latest session')));
+    var figure = add(mid, el('div', 'display:flex;align-items:baseline;gap:6px;margin-top:3px'));
+    var pct = add(figure, el('span', 'font:700 20px/1 ' + DISPLAY + ';color:#fafaf9', '91%'));
+    add(figure, el('span', 'font:400 9px/1 ' + MONO + ';color:#2dd4bf', '+19'));
+
+    var bars = add(pad, el('div', 'display:flex;gap:3px;align-items:flex-end;height:20px'));
+    var HEIGHTS = [34, 40, 38, 48, 52, 60, 58, 68, 74, 82, 100];
+    var cells = HEIGHTS.map(function (h, i) {
+      return add(bars, el('div', 'flex:1 1 0;border-radius:2px;height:' + h + '%;'
+        + 'background:' + (i === HEIGHTS.length - 1 ? '#2dd4bf' : '#12332c')));
+    });
+
+    function frame(secs) {
+      // The two tabs take turns, which is how a player actually reads it.
+      var timing = (secs % 8) > 4;
+      tabNotes.style.borderColor = timing ? '#1c3a32' : '#2dd4bf';
+      tabNotes.style.color = timing ? '#a8a29e' : '#2dd4bf';
+      tabTiming.style.borderColor = timing ? '#2dd4bf' : '#1c3a32';
+      tabTiming.style.color = timing ? '#2dd4bf' : '#a8a29e';
+      pct.textContent = timing ? '78%' : '91%';
+    }
     return { node: root, frame: frame };
   }
 
@@ -1055,7 +1090,9 @@
     fretboard: buildFretboard,
     studio: buildStudio,
     highway: buildHighway,
-    report: buildReport,
+    'mini-exercise': buildMiniExercise,
+    'mini-tempo': buildMiniTempo,
+    'mini-history': buildMiniHistory,
     field: buildStringField,
     'listen-mic': function () { return buildListen('mic'); },
     'listen-usb': function () { return buildListen('usb'); },

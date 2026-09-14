@@ -152,27 +152,17 @@ export default function landing(ctx) {
 
 <section class="technique" id="features">
   <div class="wrap">
-    <div class="technique-grid">
-      <div>
-        <p class="eyebrow">${esc(t('technique.eyebrow'))}</p>
-        <h2 style="margin-top:14px">${esc(t('technique.heading'))}</h2>
-        <p class="lead" style="margin-top:20px">${esc(t('technique.body'))}</p>
-      </div>
+    <p class="eyebrow">${esc(t('technique.eyebrow'))}</p>
+    <h2 style="margin-top:14px">${esc(t('technique.heading'))}</h2>
+    <p class="lead" style="margin-top:20px">${esc(t('technique.body'))}</p>
 
     <!--
-      The report screen, not the highway again. The hero shows the exercise
-      running; this shows what it leaves behind, which is the half a visitor
-      cannot guess from the picture above.
+      One small demonstration per claim. Three claims and three pictures beats
+      three claims and a single screenshot of something else.
     -->
-      <div class="technique-figure">
-        <div class="phone phone-sm">
-          <div class="screen" data-mock="report"></div>
-        </div>
-      </div>
-    </div>
-
-    <div class="trio">
-      ${t('technique.points').map((p) => `<div>
+    <div class="tri-cards">
+      ${t('technique.points').map((p, i) => `<div class="tri-card">
+        <div data-mock="${['mini-exercise', 'mini-tempo', 'mini-history'][i]}"></div>
         <h3>${esc(p.heading)}</h3>
         <p class="small">${esc(p.body)}</p>
       </div>`).join('\n      ')}

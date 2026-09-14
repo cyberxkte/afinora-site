@@ -33,9 +33,9 @@
   <link rel="preload" href="/assets/fonts/space-grotesk-500-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="/assets/fonts/ibm-plex-sans-400-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="/assets/css/fonts.css?v=eabaf2d7f9">
-  <link rel="stylesheet" href="/assets/css/site.css?v=61e629e1bf">
+  <link rel="stylesheet" href="/assets/css/site.css?v=221c9f0d16">
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"Afinora","applicationCategory":"MusicApplication","operatingSystem":"Android, iOS","description":"Afinador de guitarra, baixo, ukulele, cuatro venezuelano, violino e mais. Metrónomo, escalas no teu braço e treino que avalia cada nota. Sem conta nem anúncios.","url":"https://afinora.app/","inLanguage":["en","es","it","fr","pt","de","ja","zh","ru"],"offers":{"@type":"Offer","price":"0","priceCurrency":"USD","description":"1 instrumento, 2 escalas, maior e menor, 1 metrónomo, completo, 5 gravações de Estúdio"},"author":{"@type":"Organization","name":"Afinora","url":"https://afinora.app/"}}</script>
-  <script>window.AFINORA_I18N={"tabTune":"Afinar","tabMetronome":"Metrónomo","tabScales":"Escalas","tabTraining":"Treinar","tabStudio":"Estúdio","instGuitar":"Guitarra","instViolin":"Violino","tunerStandard":"Padrão","tunerInTune":"Afinada","tunerFlat":"Baixa","tunerSharp":"Alta","tunerCentered":"Centrada","tunerDetected":"Detetada","tunerTarget":"Alvo","tunerCents":"Cents","screenMetronome":"Metrónomo","metroHint":"Toca num tempo para o acentuar ou silenciar","metroSubdivision":"Subdivisão","metroSound":"Som","screenScales":"Acordes e escalas","scalesTab":"Escalas","chordsTab":"Acordes","scaleDegrees":"7 notas","fretboard":"Braço","frets":"trastes","notesTab":"Notas","degreesTab":"Graus","tonic":"Tónica","colourIsString":"Cor = corda","screenStudio":"Estúdio","audioChip":"ÁUDIO","videoChip":"VÍDEO","inputLevel":"Nível de entrada","backingTrack":"Playback","loopChip":"Loop","autosaveChip":"Autossalvamento","speedUpChip":"+5% de velocidade por ciclo","shoutPerfect":"PERFEITO!","shoutGood":"BOA!","shoutMiss":"FALHOU!","highwayAlt":"A autoestrada de notas do Afinora: as notas viajam pelo braço e cada uma é avaliada ao cruzar o cursor","reportHeadline":"Saiu limpo","reportExercise":"Escala maior · trastes 5-8","reportClean":"Notas limpas","reportRhythm":"Ritmo","reportWhere":"Quando caem as tuas notas","reportEarly":"Cedo","reportLate":"Tarde","reportOnPulse":"No pulso","reportVerdictClean":"Limpa","reportVerdictLate":"Fora do pulso","reportVerdictMissed":"Não soou","screenTechnique":"Treino"};</script>
+  <script>window.AFINORA_I18N={"tabTune":"Afinar","tabMetronome":"Metrónomo","tabScales":"Escalas","tabTraining":"Treinar","tabStudio":"Estúdio","instGuitar":"Guitarra","instViolin":"Violino","tunerStandard":"Padrão","tunerInTune":"Afinada","tunerFlat":"Baixa","tunerSharp":"Alta","tunerCentered":"Centrada","tunerDetected":"Detetada","tunerTarget":"Alvo","tunerCents":"Cents","screenMetronome":"Metrónomo","metroHint":"Toca num tempo para o acentuar ou silenciar","metroSubdivision":"Subdivisão","metroSound":"Som","screenScales":"Acordes e escalas","scalesTab":"Escalas","chordsTab":"Acordes","scaleDegrees":"7 notas","fretboard":"Braço","frets":"trastes","notesTab":"Notas","degreesTab":"Graus","tonic":"Tónica","colourIsString":"Cor = corda","screenStudio":"Estúdio","audioChip":"ÁUDIO","videoChip":"VÍDEO","inputLevel":"Nível de entrada","backingTrack":"Playback","loopChip":"Loop","autosaveChip":"Autossalvamento","speedUpChip":"+5% de velocidade por ciclo","shoutPerfect":"PERFEITO!","shoutGood":"BOA!","shoutMiss":"FALHOU!","highwayAlt":"A autoestrada de notas do Afinora: as notas viajam pelo braço e cada uma é avaliada ao cruzar o cursor","miniTempoLabel":"Andamento limpo","miniHistoryNotes":"Notas","miniHistoryTiming":"Ritmo","miniHistoryBest":"Novo recorde","miniHistoryCaption":"Última sessão"};</script>
   <script>(function(){try{
 var K='afinora.lang',u=new URL(location.href),q=u.searchParams.get('hl');
 if(q){try{localStorage.setItem(K,q);}catch(e){}
@@ -144,35 +144,27 @@ if(S.indexOf(c)>-1){location.replace('/'+c+'/');return;}}
 
 <section class="technique" id="features">
   <div class="wrap">
-    <div class="technique-grid">
-      <div>
-        <p class="eyebrow">Treino técnico</p>
-        <h2 style="margin-top:14px">No fim sabes se falhou a afinação ou o ritmo</h2>
-        <p class="lead" style="margin-top:20px">Quando o exercício acaba, o relatório está à espera: quantas notas saíram limpas, quantas escorregaram para fora do tempo e onde caiu cada uma. São dois números à parte, por isso uma nota afinada mas atrasada não desaparece dentro de uma média, e trabalhas o que falhou mesmo.</p>
-      </div>
+    <p class="eyebrow">Treino técnico</p>
+    <h2 style="margin-top:14px">Uma nota errada e uma nota atrasada não são o mesmo erro</h2>
+    <p class="lead" style="margin-top:20px">Por isso o Afinora mede-os em separado: cada nota recebe o seu veredicto ao cruzar o cursor, e a afinação e o ritmo acabam como dois números distintos. Acabas a saber qual dos dois trabalhar.</p>
 
     <!--
-      The report screen, not the highway again. The hero shows the exercise
-      running; this shows what it leaves behind, which is the half a visitor
-      cannot guess from the picture above.
+      One small demonstration per claim. Three claims and three pictures beats
+      three claims and a single screenshot of something else.
     -->
-      <div class="technique-figure">
-        <div class="phone phone-sm">
-          <div class="screen" data-mock="report"></div>
-        </div>
-      </div>
-    </div>
-
-    <div class="trio">
-      <div>
+    <div class="tri-cards">
+      <div class="tri-card">
+        <div data-mock="mini-exercise"></div>
         <h3>Usa os teus exercícios</h3>
         <p class="small">Tens padrões de escala já feitos, ou colas os teus em texto e o Afinora transforma-os num percurso.</p>
       </div>
-      <div>
+      <div class="tri-card">
+        <div data-mock="mini-tempo"></div>
         <h3>O andamento ajusta-se sozinho</h3>
         <p class="small">O ciclo vai acelerando enquanto lhe acompanhas o ritmo, e baixa o andamento mal comeces a falhar.</p>
       </div>
-      <div>
+      <div class="tri-card">
+        <div data-mock="mini-history"></div>
         <h3>Um histórico por escala</h3>
         <p class="small">Cada exercício guarda o seu próprio histórico, por isso a evolução mede-se em vez de se adivinhar.</p>
       </div>
@@ -514,6 +506,6 @@ if(S.indexOf(c)>-1){location.replace('/'+c+'/');return;}}
     </div>
   </div>
 </footer>
-<script src="/assets/js/afinora.js?v=361e7ca387" defer></script>
+<script src="/assets/js/afinora.js?v=24b7b01542" defer></script>
 </body>
 </html>

@@ -986,3 +986,14 @@ a.pill:hover { border-color: var(--in-tune); color: var(--in-tune); }
   .price-card dd { font-size: 15px; }
   .never { font-size: 13px; text-align: left; }
 }
+
+
+/* Three claims, three demonstrations. */
+.tri-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(258px, 1fr));
+  gap: clamp(22px, 3vw, 34px);
+  margin-top: clamp(32px, 4vw, 46px);
+}
+.tri-card { display: flex; flex-direction: column; gap: 14px; }
+.tri-card h3 { margin-bottom: -6px; }

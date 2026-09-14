@@ -33,9 +33,9 @@
   <link rel="preload" href="/assets/fonts/space-grotesk-500-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="/assets/fonts/ibm-plex-sans-400-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="/assets/css/fonts.css?v=eabaf2d7f9">
-  <link rel="stylesheet" href="/assets/css/site.css?v=61e629e1bf">
+  <link rel="stylesheet" href="/assets/css/site.css?v=221c9f0d16">
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"Afinora","applicationCategory":"MusicApplication","operatingSystem":"Android, iOS","description":"Accordatore per chitarra, basso, ukulele, cuatro venezuelano, violino e altri. Metronomo, scale sul tuo manico e allenamento che valuta ogni nota. Senza account.","url":"https://afinora.app/","inLanguage":["en","es","it","fr","pt","de","ja","zh","ru"],"offers":{"@type":"Offer","price":"0","priceCurrency":"USD","description":"1 strumento, 2 scale, maggiore e minore, 1 metronomo, completo, 5 registrazioni di Studio"},"author":{"@type":"Organization","name":"Afinora","url":"https://afinora.app/"}}</script>
-  <script>window.AFINORA_I18N={"tabTune":"Accorda","tabMetronome":"Metronomo","tabScales":"Scale","tabTraining":"Allena","tabStudio":"Studio","instGuitar":"Chitarra","instViolin":"Violino","tunerStandard":"Standard","tunerInTune":"Intonata","tunerFlat":"Bassa","tunerSharp":"Alta","tunerCentered":"Centrata","tunerDetected":"Rilevata","tunerTarget":"Obiettivo","tunerCents":"Cent","screenMetronome":"Metronomo","metroHint":"Tocca un battito per accentarlo o silenziarlo","metroSubdivision":"Suddivisione","metroSound":"Suono","screenScales":"Accordi e scale","scalesTab":"Scale","chordsTab":"Accordi","scaleDegrees":"7 note","fretboard":"Manico","frets":"tasti","notesTab":"Note","degreesTab":"Gradi","tonic":"Tonica","colourIsString":"Colore = corda","screenStudio":"Studio","audioChip":"AUDIO","videoChip":"VIDEO","inputLevel":"Livello d'ingresso","backingTrack":"Base musicale","loopChip":"Loop","autosaveChip":"Autosalvataggio","speedUpChip":"+5% di velocità a ogni giro","shoutPerfect":"PERFETTO!","shoutGood":"BENE!","shoutMiss":"MANCATA!","highwayAlt":"L'autostrada di note di Afinora: le note viaggiano lungo il manico e ognuna viene valutata quando attraversa il cursore","reportHeadline":"Pulito","reportExercise":"Scala maggiore · tasti 5-8","reportClean":"Note pulite","reportRhythm":"Ritmo","reportWhere":"Quando cadono le tue note","reportEarly":"Presto","reportLate":"Tardi","reportOnPulse":"Sul tempo","reportVerdictClean":"Pulita","reportVerdictLate":"Fuori pulsazione","reportVerdictMissed":"Non suonata","screenTechnique":"Allenati"};</script>
+  <script>window.AFINORA_I18N={"tabTune":"Accorda","tabMetronome":"Metronomo","tabScales":"Scale","tabTraining":"Allena","tabStudio":"Studio","instGuitar":"Chitarra","instViolin":"Violino","tunerStandard":"Standard","tunerInTune":"Intonata","tunerFlat":"Bassa","tunerSharp":"Alta","tunerCentered":"Centrata","tunerDetected":"Rilevata","tunerTarget":"Obiettivo","tunerCents":"Cent","screenMetronome":"Metronomo","metroHint":"Tocca un battito per accentarlo o silenziarlo","metroSubdivision":"Suddivisione","metroSound":"Suono","screenScales":"Accordi e scale","scalesTab":"Scale","chordsTab":"Accordi","scaleDegrees":"7 note","fretboard":"Manico","frets":"tasti","notesTab":"Note","degreesTab":"Gradi","tonic":"Tonica","colourIsString":"Colore = corda","screenStudio":"Studio","audioChip":"AUDIO","videoChip":"VIDEO","inputLevel":"Livello d'ingresso","backingTrack":"Base musicale","loopChip":"Loop","autosaveChip":"Autosalvataggio","speedUpChip":"+5% di velocità a ogni giro","shoutPerfect":"PERFETTO!","shoutGood":"BENE!","shoutMiss":"MANCATA!","highwayAlt":"L'autostrada di note di Afinora: le note viaggiano lungo il manico e ognuna viene valutata quando attraversa il cursore","miniTempoLabel":"Tempo pulito","miniHistoryNotes":"Note","miniHistoryTiming":"Ritmo","miniHistoryBest":"Nuovo record","miniHistoryCaption":"Ultima sessione"};</script>
   <script>(function(){try{
 var K='afinora.lang',u=new URL(location.href),q=u.searchParams.get('hl');
 if(q){try{localStorage.setItem(K,q);}catch(e){}
@@ -144,35 +144,27 @@ if(S.indexOf(c)>-1){location.replace('/'+c+'/');return;}}
 
 <section class="technique" id="features">
   <div class="wrap">
-    <div class="technique-grid">
-      <div>
-        <p class="eyebrow">Allenamento tecnico</p>
-        <h2 style="margin-top:14px">Alla fine sai se è mancata l'intonazione o il tempo</h2>
-        <p class="lead" style="margin-top:20px">Quando l'esercizio finisce ti aspetta il resoconto: quante note sono uscite pulite, quante sono scivolate fuori tempo e dove è caduta ciascuna. Sono due numeri distinti, così una nota intonata ma in ritardo non sparisce dentro una media, e riprendi quello che è andato storto davvero.</p>
-      </div>
+    <p class="eyebrow">Allenamento tecnico</p>
+    <h2 style="margin-top:14px">Una nota sbagliata e una nota in ritardo non sono lo stesso errore</h2>
+    <p class="lead" style="margin-top:20px">Per questo Afinora li misura separatamente: ogni nota riceve il suo verdetto mentre passa il cursore, e intonazione e tempo finiscono come due numeri distinti. Alla fine sai quale dei due riprendere.</p>
 
     <!--
-      The report screen, not the highway again. The hero shows the exercise
-      running; this shows what it leaves behind, which is the half a visitor
-      cannot guess from the picture above.
+      One small demonstration per claim. Three claims and three pictures beats
+      three claims and a single screenshot of something else.
     -->
-      <div class="technique-figure">
-        <div class="phone phone-sm">
-          <div class="screen" data-mock="report"></div>
-        </div>
-      </div>
-    </div>
-
-    <div class="trio">
-      <div>
+    <div class="tri-cards">
+      <div class="tri-card">
+        <div data-mock="mini-exercise"></div>
         <h3>Usa i tuoi esercizi</h3>
         <p class="small">Trovi pattern di scala già pronti, oppure incolli i tuoi come testo e Afinora li trasforma in un percorso.</p>
       </div>
-      <div>
+      <div class="tri-card">
+        <div data-mock="mini-tempo"></div>
         <h3>Il tempo si regola da solo</h3>
         <p class="small">Il loop accelera finché gli stai dietro e abbassa il tempo non appena fai fatica.</p>
       </div>
-      <div>
+      <div class="tri-card">
+        <div data-mock="mini-history"></div>
         <h3>Uno storico per scala</h3>
         <p class="small">Ogni esercizio tiene la sua cronologia, così i progressi si misurano invece di intuirli.</p>
       </div>
@@ -514,6 +506,6 @@ if(S.indexOf(c)>-1){location.replace('/'+c+'/');return;}}
     </div>
   </div>
 </footer>
-<script src="/assets/js/afinora.js?v=361e7ca387" defer></script>
+<script src="/assets/js/afinora.js?v=24b7b01542" defer></script>
 </body>
 </html>

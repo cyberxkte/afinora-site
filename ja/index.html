@@ -33,9 +33,9 @@
   <link rel="preload" href="/assets/fonts/space-grotesk-500-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="/assets/fonts/ibm-plex-sans-400-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="/assets/css/fonts.css?v=eabaf2d7f9">
-  <link rel="stylesheet" href="/assets/css/site.css?v=61e629e1bf">
+  <link rel="stylesheet" href="/assets/css/site.css?v=221c9f0d16">
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"Afinora","applicationCategory":"MusicApplication","operatingSystem":"Android, iOS","description":"ギター、ベース、ウクレレ、クアトロ、ヴァイオリンなどに対応したチューナー。メトロノーム、自分の指板に描かれるスケール、一音ずつ採点する練習。アカウント不要、広告なし。","url":"https://afinora.app/","inLanguage":["en","es","it","fr","pt","de","ja","zh","ru"],"offers":{"@type":"Offer","price":"0","priceCurrency":"USD","description":"1 楽器, 2 スケール（長調と短調）, 1 メトロノーム（全機能）, 5 スタジオ録音"},"author":{"@type":"Organization","name":"Afinora","url":"https://afinora.app/"}}</script>
-  <script>window.AFINORA_I18N={"tabTune":"チューン","tabMetronome":"メトロノーム","tabScales":"スケール","tabTraining":"練習","tabStudio":"スタジオ","instGuitar":"ギター","instViolin":"ヴァイオリン","tunerStandard":"標準","tunerInTune":"合っています","tunerFlat":"低い","tunerSharp":"高い","tunerCentered":"中央","tunerDetected":"検出","tunerTarget":"目標","tunerCents":"セント","screenMetronome":"メトロノーム","metroHint":"拍をタップしてアクセントまたはミュート","metroSubdivision":"分割","metroSound":"音色","screenScales":"コードとスケール","scalesTab":"スケール","chordsTab":"コード","scaleDegrees":"7音","fretboard":"指板","frets":"フレット","notesTab":"音名","degreesTab":"度数","tonic":"主音","colourIsString":"色 = 弦","screenStudio":"スタジオ","audioChip":"音声","videoChip":"ビデオ","inputLevel":"入力レベル","backingTrack":"バッキングトラック","loopChip":"ループ","autosaveChip":"自動保存","speedUpChip":"ループごとに+5%","shoutPerfect":"パーフェクト!","shoutGood":"グッド!","shoutMiss":"ミス!","highwayAlt":"Afinoraのノートハイウェイ：音符が指板を流れ、カーソルを横切るたびに採点されます","reportHeadline":"きれいに決まりました","reportExercise":"メジャースケール · 5-8フレット","reportClean":"クリーンな音","reportRhythm":"リズム","reportWhere":"音が落ちるタイミング","reportEarly":"早い","reportLate":"遅い","reportOnPulse":"拍の上","reportVerdictClean":"クリーン","reportVerdictLate":"拍から外れた","reportVerdictMissed":"鳴らなかった","screenTechnique":"練習"};</script>
+  <script>window.AFINORA_I18N={"tabTune":"チューン","tabMetronome":"メトロノーム","tabScales":"スケール","tabTraining":"練習","tabStudio":"スタジオ","instGuitar":"ギター","instViolin":"ヴァイオリン","tunerStandard":"標準","tunerInTune":"合っています","tunerFlat":"低い","tunerSharp":"高い","tunerCentered":"中央","tunerDetected":"検出","tunerTarget":"目標","tunerCents":"セント","screenMetronome":"メトロノーム","metroHint":"拍をタップしてアクセントまたはミュート","metroSubdivision":"分割","metroSound":"音色","screenScales":"コードとスケール","scalesTab":"スケール","chordsTab":"コード","scaleDegrees":"7音","fretboard":"指板","frets":"フレット","notesTab":"音名","degreesTab":"度数","tonic":"主音","colourIsString":"色 = 弦","screenStudio":"スタジオ","audioChip":"音声","videoChip":"ビデオ","inputLevel":"入力レベル","backingTrack":"バッキングトラック","loopChip":"ループ","autosaveChip":"自動保存","speedUpChip":"ループごとに+5%","shoutPerfect":"パーフェクト!","shoutGood":"グッド!","shoutMiss":"ミス!","highwayAlt":"Afinoraのノートハイウェイ：音符が指板を流れ、カーソルを横切るたびに採点されます","miniTempoLabel":"クリーンなテンポ","miniHistoryNotes":"音程","miniHistoryTiming":"タイミング","miniHistoryBest":"自己ベスト","miniHistoryCaption":"直近のセッション"};</script>
   <script>(function(){try{
 var K='afinora.lang',u=new URL(location.href),q=u.searchParams.get('hl');
 if(q){try{localStorage.setItem(K,q);}catch(e){}
@@ -144,35 +144,27 @@ if(S.indexOf(c)>-1){location.replace('/'+c+'/');return;}}
 
 <section class="technique" id="features">
   <div class="wrap">
-    <div class="technique-grid">
-      <div>
-        <p class="eyebrow">テクニック練習</p>
-        <h2 style="margin-top:14px">終わったとき、崩れたのが音程かタイミングかがわかります</h2>
-        <p class="lead" style="margin-top:20px">練習が終わると結果が出ます。きれいに鳴った音が何音、拍からずれた音が何音、そして一音ずつがどこに落ちたか。数字は二つに分かれているので、音程は合っていたのに遅れた音が平均に埋もれることはなく、本当に崩れたほうを練習できます。</p>
-      </div>
+    <p class="eyebrow">テクニック練習</p>
+    <h2 style="margin-top:14px">音を間違えることと、遅れることは、同じミスではありません</h2>
+    <p class="lead" style="margin-top:20px">だからAfinoraは二つを分けて測ります。一音ずつがカーソルを越えるときに判定を受け、音程とタイミングは別々の数字になります。終わったとき、どちらを練習すべきかがわかります。</p>
 
     <!--
-      The report screen, not the highway again. The hero shows the exercise
-      running; this shows what it leaves behind, which is the half a visitor
-      cannot guess from the picture above.
+      One small demonstration per claim. Three claims and three pictures beats
+      three claims and a single screenshot of something else.
     -->
-      <div class="technique-figure">
-        <div class="phone phone-sm">
-          <div class="screen" data-mock="report"></div>
-        </div>
-      </div>
-    </div>
-
-    <div class="trio">
-      <div>
+    <div class="tri-cards">
+      <div class="tri-card">
+        <div data-mock="mini-exercise"></div>
         <h3>自分の練習課題を持ち込める</h3>
         <p class="small">内蔵のスケールパターンに加え、自分のものをテキストで貼り付ければAfinoraがコースに変換します。</p>
       </div>
-      <div>
+      <div class="tri-card">
+        <div data-mock="mini-tempo"></div>
         <h3>テンポは自動で調整される</h3>
         <p class="small">ついていけている間はループが速くなり、ついていけなくなるとテンポが下がります。</p>
       </div>
-      <div>
+      <div class="tri-card">
+        <div data-mock="mini-history"></div>
         <h3>スケールごとの履歴</h3>
         <p class="small">練習ごとに履歴が残るので、上達が測定された数字になります。</p>
       </div>
@@ -514,6 +506,6 @@ if(S.indexOf(c)>-1){location.replace('/'+c+'/');return;}}
     </div>
   </div>
 </footer>
-<script src="/assets/js/afinora.js?v=361e7ca387" defer></script>
+<script src="/assets/js/afinora.js?v=24b7b01542" defer></script>
 </body>
 </html>
