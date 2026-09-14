@@ -208,7 +208,7 @@
   },
   "technique": {
     "eyebrow": "Treino técnico",
-    "heading": "Ouve-te tocar e avalia a afinação e o tempo de cada nota",
+    "heading": "Avalia a afinação e o tempo de cada nota que tocas",
     "body": "Escolhes uma escala, defines um andamento e tocas com o metrónomo. O detetor ouve e avalia cada nota em separado assim que ela soa: em cima do tempo, atrasada, ou não chegou a soar. A afinação e o tempo medem-se em separado, por isso no fim sabes exatamente que notas trabalhar em vez de adivinhar. As notas percorrem o braço com uma cor por dedo e uma faixa por corda, e és tu que as tocas no instrumento.",
     "legendPerfect": "Em cima do tempo",
     "legendHit": "Soou, mas atrasada",

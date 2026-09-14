@@ -208,7 +208,7 @@
   },
   "technique": {
     "eyebrow": "Technique training",
-    "heading": "It listens as you play and grades every note for pitch and timing",
+    "heading": "It grades the pitch and the timing of every note you play",
     "body": "You pick a scale, set a tempo and play it to the metronome. The detector listens and grades every note separately as it sounds: dead on the beat, played but late, or never sounded. Pitch and timing are measured apart, so when you finish you know which notes to work on instead of guessing. The notes travel along the neck with one colour per finger and one lane per string, and you play them on the instrument.",
     "legendPerfect": "Dead on the beat",
     "legendHit": "Played, but late",

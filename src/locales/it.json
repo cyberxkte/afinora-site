@@ -208,7 +208,7 @@
   },
   "technique": {
     "eyebrow": "Allenamento tecnico",
-    "heading": "Ti ascolta suonare e valuta intonazione e tempo di ogni nota",
+    "heading": "Valuta intonazione e tempo di ogni nota che suoni",
     "body": "Scegli una scala, imposta il tempo e suonala seguendo il metronomo. Il rilevatore ascolta e valuta ogni nota singolarmente mentre la suoni: perfettamente a tempo, in ritardo oppure non suonata. Intonazione e tempo vengono misurati separatamente, così alla fine sai esattamente su quali note lavorare, senza andare a intuito. Le note scorrono lungo il manico, con un colore per ogni dito e una corsia per ogni corda, e tu le esegui sullo strumento.",
     "legendPerfect": "Perfettamente a tempo",
     "legendHit": "Suonata, ma in ritardo",

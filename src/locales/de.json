@@ -208,7 +208,7 @@
   },
   "technique": {
     "eyebrow": "Techniktraining",
-    "heading": "Hört dir beim Spielen zu und bewertet Tonhöhe und Timing jedes Tons",
+    "heading": "Es bewertet Tonhöhe und Timing jedes Tons, den du spielst",
     "body": "Du wählst eine Tonleiter, stellst ein Tempo ein und spielst sie zum Metronom. Der Detektor hört zu und bewertet jeden Ton einzeln, sobald er klingt: genau im Takt, zu spät, oder gar nicht erkannt. Tonhöhe und Timing werden getrennt gemessen, also weißt du am Ende genau, welche Töne du üben musst, statt es zu erraten. Die Töne wandern über das Griffbrett, eine Farbe pro Finger und eine Spur pro Saite, und du spielst sie auf dem Instrument.",
     "legendPerfect": "Genau im Takt",
     "legendHit": "Gespielt, aber zu spät",

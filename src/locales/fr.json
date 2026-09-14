@@ -208,7 +208,7 @@
   },
   "technique": {
     "eyebrow": "Entraînement technique",
-    "heading": "Il vous écoute jouer et note la justesse et le placement de chaque note",
+    "heading": "Il note la justesse et le placement de chaque note que vous jouez",
     "body": "Vous choisissez une gamme, réglez un tempo et la jouez au métronome. Le détecteur écoute et note chaque note séparément dès qu'elle sonne : pile dans le temps, en retard, ou pas jouée. La justesse et le placement se mesurent à part, donc à la fin vous savez exactement quelles notes retravailler au lieu de le deviner. Les notes défilent le long du manche avec une couleur par doigt et une voie par corde, et vous les jouez sur l'instrument.",
     "legendPerfect": "Pile dans le temps",
     "legendHit": "Jouée, mais en retard",
