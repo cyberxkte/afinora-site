@@ -166,8 +166,8 @@
   },
   "hero": {
     "eyebrow": "Per chitarra, basso, ukulele, cuatro venezuelano, violino e violoncello",
-    "heading": "Un accordatore, un metronomo e un allenatore che ascolta come suoni.",
-    "body": "Rileva l'intonazione in tempo reale su dieci strumenti. Porta un metronomo, scale e accordi disegnati sul tuo manico, e un allenamento che ti ascolta suonare e valuta ogni nota una per una. Gira tutto sul telefono, senza account.",
+    "heading": "Un accordatore, un metronomo e un trainer che ascolta come suoni.",
+    "body": "Rileva l'intonazione in tempo reale su dieci strumenti, include metronomo, scale e accordi visualizzati direttamente sul tuo manico e una modalità allenamento che ti ascolta mentre suoni e valuta ogni nota singolarmente. Tutto funziona sul dispositivo, senza account.",
     "getItOn": "Disponibile su",
     "downloadOn": "Scaricala su",
     "fine": "Senza account · senza pubblicità · l'audio non lascia mai il telefono"
@@ -209,10 +209,10 @@
   "technique": {
     "eyebrow": "Allenamento tecnico",
     "heading": "Ti ascolta suonare e valuta intonazione e tempo di ogni nota",
-    "body": "Scegli una scala, imposti un tempo e la suoni sul metronomo. Il rilevatore ascolta e valuta ogni nota appena la suoni: in centro al tempo, in ritardo, oppure non suonata. Intonazione e tempo si misurano separatamente, così alla fine sai esattamente quali note riprendere invece di andare a intuito. Le note scorrono lungo il manico con un colore per dito e una corsia per corda, e tu le suoni sullo strumento.",
-    "legendPerfect": "In centro al tempo",
+    "body": "Scegli una scala, imposta il tempo e suonala seguendo il metronomo. Il rilevatore ascolta e valuta ogni nota singolarmente mentre la suoni: perfettamente a tempo, in ritardo oppure non suonata. Intonazione e tempo vengono misurati separatamente, così alla fine sai esattamente su quali note lavorare, senza andare a intuito. Le note scorrono lungo il manico, con un colore per ogni dito e una corsia per ogni corda, e tu le esegui sullo strumento.",
+    "legendPerfect": "Perfettamente a tempo",
     "legendHit": "Suonata, ma in ritardo",
-    "legendMiss": "Non è suonata",
+    "legendMiss": "Non suonata",
     "points": [
       {
         "heading": "Usa i tuoi esercizi",
@@ -242,7 +242,7 @@
     "metronome": {
       "eyebrow": "03 · Metronomo",
       "heading": "Imposta il tempo, scegli la battuta e suona",
-      "body": "Non sai a quanti BPM va? Battilo col dito e Afinora lo calcola. Da 30 a 300 BPM, battute da 2/4 a 12/8 e suddivisioni fino ai sedicesimi, quelle che salvano ai tempi lenti, dove a farti sbandare è proprio lo spazio fra un battito e l'altro. Tocca qualsiasi battito per accentarlo o silenziarlo. È lo stesso click su cui l'allenamento misura il tuo tempo, e nella versione gratuita è completo."
+      "body": "Non sai a quanti BPM suona? Batti il tempo con un dito e Afinora lo calcola. Da 30 a 300 BPM, battute da 2/4 a 12/8 e suddivisioni fino ai sedicesimi, quelle che ti salvano ai tempi lenti, quando è più facile perdere il riferimento fra un battito e l’altro. Tocca qualsiasi battito per accentarlo o silenziarlo. È lo stesso click usato in allenamento per valutare il tuo tempo. Il metronomo è disponibile con tutte le sue funzioni nella versione gratuita."
     },
     "studio": {
       "eyebrow": "04 · Studio",
@@ -262,7 +262,7 @@
   "listens": {
     "eyebrow": "Ingresso audio",
     "heading": "Come ti ascolta Afinora",
-    "body": "Valutare nota per nota funziona solo se il segnale che entra è pulito. Questi sono i tre casi: guarda qual è il tuo.",
+    "body": "Valutare nota per nota funziona solo se il segnale che entra è pulito. Ci sono due modi per farlo entrare, e una cosa sola che succede all'audio una volta arrivato.",
     "acoustic": {
       "heading": "Acustico: dal microfono",
       "body": "Chitarra acustica, violino, violoncello, ukulele, mandolino, cuatro venezuelano. Il microfono del telefono basta per accordare e per allenarsi."
