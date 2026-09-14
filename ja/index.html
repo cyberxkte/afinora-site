@@ -33,7 +33,7 @@
   <link rel="preload" href="/assets/fonts/space-grotesk-500-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="/assets/fonts/ibm-plex-sans-400-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="/assets/css/fonts.css?v=eabaf2d7f9">
-  <link rel="stylesheet" href="/assets/css/site.css?v=53c977f8d5">
+  <link rel="stylesheet" href="/assets/css/site.css?v=97854b820f">
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"Afinora","applicationCategory":"MusicApplication","operatingSystem":"Android, iOS","description":"ギター、ベース、ウクレレ、クアトロ、ヴァイオリンなどに対応したチューナー。メトロノーム、自分の指板に描かれるスケール、一音ずつ採点する練習。アカウント不要、広告なし。","url":"https://afinora.app/","inLanguage":["en","es","it","fr","pt","de","ja","zh","ru"],"offers":{"@type":"Offer","price":"0","priceCurrency":"USD","description":"楽器1つ、メジャーとマイナーのスケール、メトロノーム全機能、録音5件。"},"author":{"@type":"Organization","name":"Afinora","url":"https://afinora.app/"}}</script>
   <script>window.AFINORA_I18N={"tabTune":"チューン","tabMetronome":"メトロノーム","tabScales":"スケール","tabTraining":"練習","tabStudio":"スタジオ","instGuitar":"ギター","instViolin":"ヴァイオリン","tunerStandard":"標準","tunerInTune":"合っています","tunerFlat":"低い","tunerSharp":"高い","tunerCentered":"中央","tunerDetected":"検出","tunerTarget":"目標","tunerCents":"セント","screenMetronome":"メトロノーム","metroHint":"拍をタップしてアクセントまたはミュート","metroSubdivision":"分割","metroSound":"音色","screenScales":"コードとスケール","scalesTab":"スケール","chordsTab":"コード","scaleDegrees":"7音","fretboard":"指板","frets":"フレット","notesTab":"音名","degreesTab":"度数","tonic":"主音","colourIsString":"色 = 弦","screenStudio":"スタジオ","audioChip":"音声","videoChip":"ビデオ","inputLevel":"入力レベル","backingTrack":"バッキングトラック","loopChip":"ループ","autosaveChip":"自動保存","speedUpChip":"ループごとに+5%","shoutPerfect":"パーフェクト!","shoutGood":"グッド!","shoutMiss":"ミス!","highwayAlt":"Afinoraのノートハイウェイ：音符が指板を流れ、カーソルを横切るたびに採点されます","reportHeadline":"きれいに決まりました","reportExercise":"メジャースケール · 5-8フレット","reportClean":"クリーンな音","reportRhythm":"リズム","reportWhere":"音が落ちるタイミング","reportEarly":"早い","reportLate":"遅い","reportOnPulse":"拍の上","reportVerdictClean":"クリーン","reportVerdictLate":"拍から外れた","reportVerdictMissed":"鳴らなかった","screenTechnique":"練習"};</script>
   <script>(function(){try{
@@ -207,17 +207,63 @@ if(S.indexOf(c)>-1){location.replace('/'+c+'/');return;}}
   <div class="wrap">
     <h2 class="sub-h2">10種類の楽器と、そのチューニング</h2>
     <p class="lead" style="margin-top:14px">楽器ごとの弦、楽器ごとの変則チューニング、そして実際のフレットどおりに描かれる指板。フレットのない楽器はそのままに。</p>
-    <div class="pill-row">
-      <span class="pill">ギター</span>
-      <span class="pill">7弦ギター</span>
-      <span class="pill">ベース</span>
-      <span class="pill">ウクレレ</span>
-      <span class="pill">ベネズエラ・クアトロ</span>
-      <span class="pill">ヴァイオリン</span>
-      <span class="pill">ヴィオラ</span>
-      <span class="pill">チェロ</span>
-      <span class="pill">マンドリン</span>
-      <span class="pill">バンジョー</span>
+    <!--
+      Each card draws the strings the instrument actually has and prints its
+      standard tuning. Ten names in a row said nothing a player did not know;
+      six lines against four is the difference itself. Tunings come from the
+      app's own presets, so the page cannot drift away from what it ships.
+    -->
+    <div class="inst-grid">
+      <div class="inst-card">
+        <div class="inst-strings" aria-hidden="true"><span style="height:2.40px"></span><span style="height:2.08px"></span><span style="height:1.76px"></span><span style="height:1.44px"></span><span style="height:1.12px"></span><span style="height:0.80px"></span></div>
+        <h3>ギター</h3>
+        <p class="inst-tuning">E A D G B E</p>
+      </div>
+      <div class="inst-card">
+        <div class="inst-strings" aria-hidden="true"><span style="height:2.40px"></span><span style="height:2.13px"></span><span style="height:1.87px"></span><span style="height:1.60px"></span><span style="height:1.33px"></span><span style="height:1.07px"></span><span style="height:0.80px"></span></div>
+        <h3>7弦ギター</h3>
+        <p class="inst-tuning">B E A D G B E</p>
+      </div>
+      <div class="inst-card">
+        <div class="inst-strings" aria-hidden="true"><span style="height:2.40px"></span><span style="height:1.87px"></span><span style="height:1.33px"></span><span style="height:0.80px"></span></div>
+        <h3>ベース</h3>
+        <p class="inst-tuning">E A D G</p>
+      </div>
+      <div class="inst-card">
+        <div class="inst-strings" aria-hidden="true"><span style="height:2.40px"></span><span style="height:1.87px"></span><span style="height:1.33px"></span><span style="height:0.80px"></span></div>
+        <h3>ウクレレ</h3>
+        <p class="inst-tuning">G C E A</p>
+      </div>
+      <div class="inst-card">
+        <div class="inst-strings" aria-hidden="true"><span style="height:2.40px"></span><span style="height:1.87px"></span><span style="height:1.33px"></span><span style="height:0.80px"></span></div>
+        <h3>ベネズエラ・クアトロ</h3>
+        <p class="inst-tuning">A D F# B</p>
+      </div>
+      <div class="inst-card">
+        <div class="inst-strings" aria-hidden="true"><span style="height:2.40px"></span><span style="height:1.87px"></span><span style="height:1.33px"></span><span style="height:0.80px"></span></div>
+        <h3>ヴァイオリン</h3>
+        <p class="inst-tuning">G D A E</p>
+      </div>
+      <div class="inst-card">
+        <div class="inst-strings" aria-hidden="true"><span style="height:2.40px"></span><span style="height:1.87px"></span><span style="height:1.33px"></span><span style="height:0.80px"></span></div>
+        <h3>ヴィオラ</h3>
+        <p class="inst-tuning">C G D A</p>
+      </div>
+      <div class="inst-card">
+        <div class="inst-strings" aria-hidden="true"><span style="height:2.40px"></span><span style="height:1.87px"></span><span style="height:1.33px"></span><span style="height:0.80px"></span></div>
+        <h3>チェロ</h3>
+        <p class="inst-tuning">C G D A</p>
+      </div>
+      <div class="inst-card">
+        <div class="inst-strings" aria-hidden="true"><span style="height:2.40px"></span><span style="height:1.87px"></span><span style="height:1.33px"></span><span style="height:0.80px"></span></div>
+        <h3>マンドリン</h3>
+        <p class="inst-tuning">G D A E</p>
+      </div>
+      <div class="inst-card">
+        <div class="inst-strings" aria-hidden="true"><span style="height:2.40px"></span><span style="height:2.00px"></span><span style="height:1.60px"></span><span style="height:1.20px"></span><span style="height:0.80px"></span></div>
+        <h3>バンジョー</h3>
+        <p class="inst-tuning">G D G B D</p>
+      </div>
     </div>
   </div>
 </section>
