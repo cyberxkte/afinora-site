@@ -33,7 +33,7 @@
   <link rel="preload" href="/assets/fonts/space-grotesk-500-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="/assets/fonts/ibm-plex-sans-400-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="/assets/css/fonts.css?v=eabaf2d7f9">
-  <link rel="stylesheet" href="/assets/css/site.css?v=1a4719505a">
+  <link rel="stylesheet" href="/assets/css/site.css?v=07aa550a34">
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"Afinora","applicationCategory":"MusicApplication","operatingSystem":"Android, iOS","description":"Accordatore per chitarra, basso, ukulele, cuatro venezuelano, violino e altri. Metronomo, scale sul tuo manico e allenamento che valuta ogni nota. Senza account.","url":"https://afinora.app/","inLanguage":["en","es","it","fr","pt","de","ja","zh","ru"],"offers":{"@type":"Offer","price":"0","priceCurrency":"USD","description":"Uno strumento, scale maggiore e minore, il metronomo completo, cinque registrazioni."},"author":{"@type":"Organization","name":"Afinora","url":"https://afinora.app/"}}</script>
   <script>window.AFINORA_I18N={"tabTune":"Accorda","tabMetronome":"Metronomo","tabScales":"Scale","tabTraining":"Allena","tabStudio":"Studio","instGuitar":"Chitarra","instViolin":"Violino","tunerStandard":"Standard","tunerInTune":"Intonata","tunerFlat":"Bassa","tunerSharp":"Alta","tunerCentered":"Centrata","tunerDetected":"Rilevata","tunerTarget":"Obiettivo","tunerCents":"Cent","screenMetronome":"Metronomo","metroHint":"Tocca un battito per accentarlo o silenziarlo","metroSubdivision":"Suddivisione","metroSound":"Suono","screenScales":"Accordi e scale","scalesTab":"Scale","chordsTab":"Accordi","scaleDegrees":"7 note","fretboard":"Manico","frets":"tasti","notesTab":"Note","degreesTab":"Gradi","tonic":"Tonica","colourIsString":"Colore = corda","screenStudio":"Studio","audioChip":"AUDIO","videoChip":"VIDEO","inputLevel":"Livello d'ingresso","backingTrack":"Base musicale","loopChip":"Loop","autosaveChip":"Autosalvataggio","speedUpChip":"+5% di velocità a ogni giro","shoutPerfect":"PERFETTO!","shoutGood":"BENE!","shoutMiss":"MANCATA!","highwayAlt":"L'autostrada di note di Afinora: le note viaggiano lungo il manico e ognuna viene valutata quando attraversa il cursore"};</script>
   <script>(function(){try{
@@ -281,8 +281,13 @@ if(S.indexOf(c)>-1){location.replace('/'+c+'/');return;}}
   <div class="wrap">
     <p class="eyebrow">Ingresso audio</p>
     <h2 class="sub-h2" style="margin-top:14px">Come ti ascolta Afinora</h2>
-    <p class="lead" style="margin-top:16px">Valutare nota per nota funziona solo se il segnale che entra è pulito. Ci sono due modi per farlo entrare, e una cosa sola che succede all'audio una volta arrivato.</p>
+    <p class="lead" style="margin-top:16px">Valutare nota per nota funziona solo se il segnale che entra è pulito. Ci sono due modi per farlo entrare: guarda qual è il tuo.</p>
 
+    <!--
+      Two cards, because there are two ways the sound gets in. What happens to
+      it afterwards follows as a note: it is not a third route to choose
+      between, and a third identical card said it was.
+    -->
     <div class="listen-grid">
       <div class="listen-card">
         <div class="listen-figure" data-mock="listen-mic"></div>
@@ -298,12 +303,13 @@ if(S.indexOf(c)>-1){location.replace('/'+c+'/');return;}}
           <p>Una elettrica non amplificata non dà un segnale che un rilevatore possa leggere in modo affidabile, e un microfono ambientale perde note appena c'è rumore. Con un'interfaccia, Afinora la riconosce, ne compensa la latenza e ti avvisa che è collegata.</p>
         </div>
       </div>
-      <div class="listen-card">
-        <div class="listen-figure" data-mock="listen-device"></div>
-        <div class="listen-body">
-          <h3>Si elabora tutto qui</h3>
-          <p>L'audio usato per accordare e allenarsi viene analizzato sul telefono mentre entra. Non viene né registrato né caricato.</p>
-        </div>
+    </div>
+
+    <div class="listen-note">
+      <div class="listen-note-figure" data-mock="listen-device"></div>
+      <div class="listen-note-body">
+        <h3>Si elabora tutto qui</h3>
+        <p>L'audio usato per accordare e allenarsi viene analizzato sul telefono mentre entra. Non viene né registrato né caricato.</p>
       </div>
     </div>
 

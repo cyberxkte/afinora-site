@@ -262,7 +262,7 @@
   "listens": {
     "eyebrow": "Audio input",
     "heading": "How Afinora listens to your instrument",
-    "body": "Grading note by note only works if the signal coming in is clean. There are two ways in, and one thing that happens to the sound once it is here.",
+    "body": "Grading note by note only works if the signal coming in is clean. There are two ways in — see which one is yours.",
     "acoustic": {
       "heading": "Acoustic: through the microphone",
       "body": "Acoustic guitar, violin, cello, ukulele, mandolin, Venezuelan cuatro. The phone’s microphone is enough to tune and to train."

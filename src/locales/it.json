@@ -262,7 +262,7 @@
   "listens": {
     "eyebrow": "Ingresso audio",
     "heading": "Come ti ascolta Afinora",
-    "body": "Valutare nota per nota funziona solo se il segnale che entra è pulito. Ci sono due modi per farlo entrare, e una cosa sola che succede all'audio una volta arrivato.",
+    "body": "Valutare nota per nota funziona solo se il segnale che entra è pulito. Ci sono due modi per farlo entrare: guarda qual è il tuo.",
     "acoustic": {
       "heading": "Acustico: dal microfono",
       "body": "Chitarra acustica, violino, violoncello, ukulele, mandolino, cuatro venezuelano. Il microfono del telefono basta per accordare e per allenarsi."

@@ -527,11 +527,54 @@ a.pill:hover { border-color: var(--in-tune); color: var(--in-tune); }
    not a feature. */
 .listens .eyebrow { color: var(--close); }
 
+/* Two routes in, so two columns — not auto-fit, which would let a third card
+   slot in beside them and read as another option. */
 .listen-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 24px;
   margin-top: 34px;
+}
+@media (min-width: 700px) {
+  .listen-grid { grid-template-columns: 1fr 1fr; }
+}
+
+/*
+ * What happens to the sound once it is in.
+ *
+ * Deliberately not a card: it is an answer to a question the two cards raise,
+ * not a third thing to pick. Lying on its side, with a smaller figure and no
+ * shared border colour, it reads as a footnote to the row above.
+ */
+.listen-note {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  align-items: center;
+  gap: 22px;
+  margin-top: 20px;
+  padding: 4px 22px 4px 4px;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: linear-gradient(90deg, rgba(16, 35, 29, .5) 0%, transparent 60%);
+}
+.listen-note-figure {
+  position: relative;
+  height: 124px;
+  border-radius: 10px;
+  overflow: hidden;
+  background: radial-gradient(120% 100% at 30% 50%, var(--forest-surface) 0%, #0a0c0b 72%);
+}
+.listen-note-body h3 { margin-bottom: 7px; }
+.listen-note-body p { color: var(--ink-dim); font-size: 16px; line-height: 1.55; }
+
+@media (max-width: 640px) {
+  .listen-note {
+    grid-template-columns: 1fr;
+    gap: 0;
+    padding: 4px 4px 18px;
+    background: none;
+  }
+  .listen-note-body { padding: 16px 18px 0; }
 }
 .listen-card {
   border: 1px solid var(--border);

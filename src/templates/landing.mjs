@@ -224,6 +224,11 @@ export default function landing(ctx) {
     <h2 class="sub-h2" style="margin-top:14px">${esc(t('listens.heading'))}</h2>
     <p class="lead" style="margin-top:16px">${esc(t('listens.body'))}</p>
 
+    <!--
+      Two cards, because there are two ways the sound gets in. What happens to
+      it afterwards follows as a note: it is not a third route to choose
+      between, and a third identical card said it was.
+    -->
     <div class="listen-grid">
       <div class="listen-card">
         <div class="listen-figure" data-mock="listen-mic"></div>
@@ -239,12 +244,13 @@ export default function landing(ctx) {
           <p>${esc(t('listens.electric.body'))}</p>
         </div>
       </div>
-      <div class="listen-card">
-        <div class="listen-figure" data-mock="listen-device"></div>
-        <div class="listen-body">
-          <h3>${esc(t('listens.device.heading'))}</h3>
-          <p>${esc(t('listens.device.body'))}</p>
-        </div>
+    </div>
+
+    <div class="listen-note">
+      <div class="listen-note-figure" data-mock="listen-device"></div>
+      <div class="listen-note-body">
+        <h3>${esc(t('listens.device.heading'))}</h3>
+        <p>${esc(t('listens.device.body'))}</p>
       </div>
     </div>
 

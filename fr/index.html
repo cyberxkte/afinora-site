@@ -33,7 +33,7 @@
   <link rel="preload" href="/assets/fonts/space-grotesk-500-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="/assets/fonts/ibm-plex-sans-400-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="/assets/css/fonts.css?v=eabaf2d7f9">
-  <link rel="stylesheet" href="/assets/css/site.css?v=1a4719505a">
+  <link rel="stylesheet" href="/assets/css/site.css?v=07aa550a34">
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"Afinora","applicationCategory":"MusicApplication","operatingSystem":"Android, iOS","description":"Accordeur pour guitare, basse, ukulélé, cuatro vénézuélien, violon et plus. Métronome, gammes sur votre manche et entraînement qui note chaque note. Sans compte.","url":"https://afinora.app/","inLanguage":["en","es","it","fr","pt","de","ja","zh","ru"],"offers":{"@type":"Offer","price":"0","priceCurrency":"USD","description":"Un instrument, gammes majeure et mineure, le métronome complet, cinq enregistrements."},"author":{"@type":"Organization","name":"Afinora","url":"https://afinora.app/"}}</script>
   <script>window.AFINORA_I18N={"tabTune":"Accorder","tabMetronome":"Métronome","tabScales":"Gammes","tabTraining":"Entraîner","tabStudio":"Studio","instGuitar":"Guitare","instViolin":"Violon","tunerStandard":"Standard","tunerInTune":"Juste","tunerFlat":"Bas","tunerSharp":"Haut","tunerCentered":"Centré","tunerDetected":"Détecté","tunerTarget":"Cible","tunerCents":"Cents","screenMetronome":"Métronome","metroHint":"Touchez un temps pour l'accentuer ou le muter","metroSubdivision":"Subdivision","metroSound":"Son","screenScales":"Accords et gammes","scalesTab":"Gammes","chordsTab":"Accords","scaleDegrees":"7 notes","fretboard":"Manche","frets":"frettes","notesTab":"Notes","degreesTab":"Degrés","tonic":"Tonique","colourIsString":"Couleur = corde","screenStudio":"Studio","audioChip":"AUDIO","videoChip":"VIDÉO","inputLevel":"Niveau d'entrée","backingTrack":"Piste d'accompagnement","loopChip":"Boucle","autosaveChip":"Sauvegarde auto","speedUpChip":"+5% de vitesse à chaque tour","shoutPerfect":"PARFAIT !","shoutGood":"BIEN !","shoutMiss":"RATÉ !","highwayAlt":"L'autoroute de notes d'Afinora : les notes défilent le long du manche et chacune est notée quand elle franchit le curseur"};</script>
   <script>(function(){try{
@@ -281,8 +281,13 @@ if(S.indexOf(c)>-1){location.replace('/'+c+'/');return;}}
   <div class="wrap">
     <p class="eyebrow">Entrée audio</p>
     <h2 class="sub-h2" style="margin-top:14px">Comment Afinora vous écoute</h2>
-    <p class="lead" style="margin-top:16px">Noter note par note ne marche que si le signal qui entre est propre. Il y a deux façons de le faire entrer, et une seule chose qui arrive au son une fois qu'il est là.</p>
+    <p class="lead" style="margin-top:16px">Noter note par note ne marche que si le signal qui entre est propre. Il y a deux façons de le faire entrer : regardez laquelle est la vôtre.</p>
 
+    <!--
+      Two cards, because there are two ways the sound gets in. What happens to
+      it afterwards follows as a note: it is not a third route to choose
+      between, and a third identical card said it was.
+    -->
     <div class="listen-grid">
       <div class="listen-card">
         <div class="listen-figure" data-mock="listen-mic"></div>
@@ -298,12 +303,13 @@ if(S.indexOf(c)>-1){location.replace('/'+c+'/');return;}}
           <p>Une électrique non amplifiée n'est pas un signal qu'un détecteur peut lire de façon fiable, et un microphone d'ambiance perd des notes dès qu'il y a du bruit. Avec une interface, Afinora la détecte, compense sa latence et vous indique qu'elle est branchée.</p>
         </div>
       </div>
-      <div class="listen-card">
-        <div class="listen-figure" data-mock="listen-device"></div>
-        <div class="listen-body">
-          <h3>Tout est traité ici</h3>
-          <p>L'audio utilisé pour accorder et s'entraîner est analysé sur l'appareil au fil de son arrivée. Il n'est jamais enregistré ni envoyé.</p>
-        </div>
+    </div>
+
+    <div class="listen-note">
+      <div class="listen-note-figure" data-mock="listen-device"></div>
+      <div class="listen-note-body">
+        <h3>Tout est traité ici</h3>
+        <p>L'audio utilisé pour accorder et s'entraîner est analysé sur l'appareil au fil de son arrivée. Il n'est jamais enregistré ni envoyé.</p>
       </div>
     </div>
 

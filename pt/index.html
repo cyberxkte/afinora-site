@@ -33,7 +33,7 @@
   <link rel="preload" href="/assets/fonts/space-grotesk-500-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="/assets/fonts/ibm-plex-sans-400-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="/assets/css/fonts.css?v=eabaf2d7f9">
-  <link rel="stylesheet" href="/assets/css/site.css?v=1a4719505a">
+  <link rel="stylesheet" href="/assets/css/site.css?v=07aa550a34">
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"Afinora","applicationCategory":"MusicApplication","operatingSystem":"Android, iOS","description":"Afinador de guitarra, baixo, ukulele, cuatro venezuelano, violino e mais. Metrónomo, escalas no teu braço e treino que avalia cada nota. Sem conta nem anúncios.","url":"https://afinora.app/","inLanguage":["en","es","it","fr","pt","de","ja","zh","ru"],"offers":{"@type":"Offer","price":"0","priceCurrency":"USD","description":"Um instrumento, escalas maior e menor, o metrónomo completo, cinco gravações."},"author":{"@type":"Organization","name":"Afinora","url":"https://afinora.app/"}}</script>
   <script>window.AFINORA_I18N={"tabTune":"Afinar","tabMetronome":"Metrónomo","tabScales":"Escalas","tabTraining":"Treinar","tabStudio":"Estúdio","instGuitar":"Guitarra","instViolin":"Violino","tunerStandard":"Padrão","tunerInTune":"Afinada","tunerFlat":"Baixa","tunerSharp":"Alta","tunerCentered":"Centrada","tunerDetected":"Detetada","tunerTarget":"Alvo","tunerCents":"Cents","screenMetronome":"Metrónomo","metroHint":"Toca num tempo para o acentuar ou silenciar","metroSubdivision":"Subdivisão","metroSound":"Som","screenScales":"Acordes e escalas","scalesTab":"Escalas","chordsTab":"Acordes","scaleDegrees":"7 notas","fretboard":"Braço","frets":"trastes","notesTab":"Notas","degreesTab":"Graus","tonic":"Tónica","colourIsString":"Cor = corda","screenStudio":"Estúdio","audioChip":"ÁUDIO","videoChip":"VÍDEO","inputLevel":"Nível de entrada","backingTrack":"Playback","loopChip":"Loop","autosaveChip":"Autossalvamento","speedUpChip":"+5% de velocidade por ciclo","shoutPerfect":"PERFEITO!","shoutGood":"BOA!","shoutMiss":"FALHOU!","highwayAlt":"A autoestrada de notas do Afinora: as notas viajam pelo braço e cada uma é avaliada ao cruzar o cursor"};</script>
   <script>(function(){try{
@@ -281,8 +281,13 @@ if(S.indexOf(c)>-1){location.replace('/'+c+'/');return;}}
   <div class="wrap">
     <p class="eyebrow">Entrada de áudio</p>
     <h2 class="sub-h2" style="margin-top:14px">Como o Afinora te ouve</h2>
-    <p class="lead" style="margin-top:16px">Avaliar nota a nota só resulta se o sinal que entra for limpo. Há duas maneiras de entrar, e uma só coisa que acontece ao som depois de chegar.</p>
+    <p class="lead" style="margin-top:16px">Avaliar nota a nota só resulta se o sinal que entra for limpo. Há duas maneiras de entrar: vê qual é a tua.</p>
 
+    <!--
+      Two cards, because there are two ways the sound gets in. What happens to
+      it afterwards follows as a note: it is not a third route to choose
+      between, and a third identical card said it was.
+    -->
     <div class="listen-grid">
       <div class="listen-card">
         <div class="listen-figure" data-mock="listen-mic"></div>
@@ -298,12 +303,13 @@ if(S.indexOf(c)>-1){location.replace('/'+c+'/');return;}}
           <p>Uma elétrica sem amplificação não é um sinal que um detetor consiga ler de forma fiável, e um microfone de sala perde notas assim que há ruído. Com uma interface, o Afinora deteta-a, compensa a latência e avisa-te de que está ligada.</p>
         </div>
       </div>
-      <div class="listen-card">
-        <div class="listen-figure" data-mock="listen-device"></div>
-        <div class="listen-body">
-          <h3>É tudo processado aqui</h3>
-          <p>O áudio usado para afinar e treinar é analisado no dispositivo à medida que chega. Nunca é gravado nem enviado.</p>
-        </div>
+    </div>
+
+    <div class="listen-note">
+      <div class="listen-note-figure" data-mock="listen-device"></div>
+      <div class="listen-note-body">
+        <h3>É tudo processado aqui</h3>
+        <p>O áudio usado para afinar e treinar é analisado no dispositivo à medida que chega. Nunca é gravado nem enviado.</p>
       </div>
     </div>
 

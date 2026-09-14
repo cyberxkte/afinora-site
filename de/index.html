@@ -33,7 +33,7 @@
   <link rel="preload" href="/assets/fonts/space-grotesk-500-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="/assets/fonts/ibm-plex-sans-400-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="/assets/css/fonts.css?v=eabaf2d7f9">
-  <link rel="stylesheet" href="/assets/css/site.css?v=1a4719505a">
+  <link rel="stylesheet" href="/assets/css/site.css?v=07aa550a34">
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"Afinora","applicationCategory":"MusicApplication","operatingSystem":"Android, iOS","description":"Stimmgerät für Gitarre, Bass, Ukulele, venezolanischen Cuatro, Geige und mehr. Metronom, Skalen auf deinem Griffbrett und Training, das jeden Ton bewertet. Ohne Konto.","url":"https://afinora.app/","inLanguage":["en","es","it","fr","pt","de","ja","zh","ru"],"offers":{"@type":"Offer","price":"0","priceCurrency":"USD","description":"Ein Instrument, Dur- und Moll-Tonleiter, das vollständige Metronom, fünf Aufnahmen."},"author":{"@type":"Organization","name":"Afinora","url":"https://afinora.app/"}}</script>
   <script>window.AFINORA_I18N={"tabTune":"Stimmen","tabMetronome":"Metronom","tabScales":"Skalen","tabTraining":"Training","tabStudio":"Studio","instGuitar":"Gitarre","instViolin":"Violine","tunerStandard":"Standard","tunerInTune":"Sauber","tunerFlat":"Zu tief","tunerSharp":"Zu hoch","tunerCentered":"Mittig","tunerDetected":"Erkannt","tunerTarget":"Ziel","tunerCents":"Cent","screenMetronome":"Metronom","metroHint":"Tippe auf einen Schlag, um ihn zu betonen oder stummzuschalten","metroSubdivision":"Unterteilung","metroSound":"Klang","screenScales":"Akkorde und Skalen","scalesTab":"Skalen","chordsTab":"Akkorde","scaleDegrees":"7 Töne","fretboard":"Griffbrett","frets":"Bünde","notesTab":"Töne","degreesTab":"Stufen","tonic":"Grundton","colourIsString":"Farbe = Saite","screenStudio":"Studio","audioChip":"AUDIO","videoChip":"VIDEO","inputLevel":"Eingangspegel","backingTrack":"Backing-Track","loopChip":"Loop","autosaveChip":"Auto-Speichern","speedUpChip":"+5% Tempo pro Durchlauf","shoutPerfect":"PERFEKT!","shoutGood":"GUT!","shoutMiss":"DANEBEN!","highwayAlt":"Afinoras Notenautobahn: die Töne wandern über das Griffbrett und jeder wird bewertet, wenn er den Cursor kreuzt"};</script>
   <script>(function(){try{
@@ -281,8 +281,13 @@ if(S.indexOf(c)>-1){location.replace('/'+c+'/');return;}}
   <div class="wrap">
     <p class="eyebrow">Audio-Eingang</p>
     <h2 class="sub-h2" style="margin-top:14px">Wie Afinora dir zuhört</h2>
-    <p class="lead" style="margin-top:16px">Ton für Ton zu bewerten klappt nur, wenn das ankommende Signal sauber ist. Es gibt zwei Wege hinein, und eine Sache, die danach mit dem Klang passiert.</p>
+    <p class="lead" style="margin-top:16px">Ton für Ton zu bewerten klappt nur, wenn das ankommende Signal sauber ist. Es gibt zwei Wege hinein — schau, welcher deiner ist.</p>
 
+    <!--
+      Two cards, because there are two ways the sound gets in. What happens to
+      it afterwards follows as a note: it is not a third route to choose
+      between, and a third identical card said it was.
+    -->
     <div class="listen-grid">
       <div class="listen-card">
         <div class="listen-figure" data-mock="listen-mic"></div>
@@ -298,12 +303,13 @@ if(S.indexOf(c)>-1){location.replace('/'+c+'/');return;}}
           <p>Eine unverstärkte E-Gitarre ist kein Signal, das ein Detektor zuverlässig lesen kann, und ein Raummikrofon verliert Töne, sobald es Geräusche gibt. Mit einem Interface erkennt Afinora es, gleicht die Latenz aus und meldet dir, dass es angeschlossen ist.</p>
         </div>
       </div>
-      <div class="listen-card">
-        <div class="listen-figure" data-mock="listen-device"></div>
-        <div class="listen-body">
-          <h3>Alles wird hier verarbeitet</h3>
-          <p>Audio zum Stimmen und Trainieren wird auf dem Gerät ausgewertet, während es eintrifft. Es wird nie aufgezeichnet oder hochgeladen.</p>
-        </div>
+    </div>
+
+    <div class="listen-note">
+      <div class="listen-note-figure" data-mock="listen-device"></div>
+      <div class="listen-note-body">
+        <h3>Alles wird hier verarbeitet</h3>
+        <p>Audio zum Stimmen und Trainieren wird auf dem Gerät ausgewertet, während es eintrifft. Es wird nie aufgezeichnet oder hochgeladen.</p>
       </div>
     </div>
 

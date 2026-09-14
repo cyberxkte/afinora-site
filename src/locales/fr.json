@@ -262,7 +262,7 @@
   "listens": {
     "eyebrow": "Entrée audio",
     "heading": "Comment Afinora vous écoute",
-    "body": "Noter note par note ne marche que si le signal qui entre est propre. Il y a deux façons de le faire entrer, et une seule chose qui arrive au son une fois qu'il est là.",
+    "body": "Noter note par note ne marche que si le signal qui entre est propre. Il y a deux façons de le faire entrer : regardez laquelle est la vôtre.",
     "acoustic": {
       "heading": "Acoustique : par le microphone",
       "body": "Guitare acoustique, violon, violoncelle, ukulélé, mandoline, cuatro vénézuélien. Le microphone du téléphone suffit pour accorder et pour travailler."

@@ -262,7 +262,7 @@
   "listens": {
     "eyebrow": "Entrada de audio",
     "heading": "Cómo te escucha Afinora",
-    "body": "Puntuar nota a nota solo sale bien si la señal que entra es limpia. Hay dos maneras de que entre, y una sola cosa que ocurre con ella después.",
+    "body": "Puntuar nota a nota solo sale bien si la señal que entra es limpia. Hay dos maneras de que entre; mira cuál es la tuya.",
     "acoustic": {
       "heading": "Acústico: por el micrófono",
       "body": "Guitarra acústica, violín, violonchelo, ukelele, mandolina, cuatro venezolano. Con el micrófono del teléfono basta para afinar y para entrenar."

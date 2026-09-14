@@ -33,7 +33,7 @@
   <link rel="preload" href="/assets/fonts/space-grotesk-500-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="/assets/fonts/ibm-plex-sans-400-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="/assets/css/fonts.css?v=eabaf2d7f9">
-  <link rel="stylesheet" href="/assets/css/site.css?v=1a4719505a">
+  <link rel="stylesheet" href="/assets/css/site.css?v=07aa550a34">
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"Afinora","applicationCategory":"MusicApplication","operatingSystem":"Android, iOS","description":"ギター、ベース、ウクレレ、クアトロ、ヴァイオリンなどに対応したチューナー。メトロノーム、自分の指板に描かれるスケール、一音ずつ採点する練習。アカウント不要、広告なし。","url":"https://afinora.app/","inLanguage":["en","es","it","fr","pt","de","ja","zh","ru"],"offers":{"@type":"Offer","price":"0","priceCurrency":"USD","description":"楽器1つ、メジャーとマイナーのスケール、メトロノーム全機能、録音5件。"},"author":{"@type":"Organization","name":"Afinora","url":"https://afinora.app/"}}</script>
   <script>window.AFINORA_I18N={"tabTune":"チューン","tabMetronome":"メトロノーム","tabScales":"スケール","tabTraining":"練習","tabStudio":"スタジオ","instGuitar":"ギター","instViolin":"ヴァイオリン","tunerStandard":"標準","tunerInTune":"合っています","tunerFlat":"低い","tunerSharp":"高い","tunerCentered":"中央","tunerDetected":"検出","tunerTarget":"目標","tunerCents":"セント","screenMetronome":"メトロノーム","metroHint":"拍をタップしてアクセントまたはミュート","metroSubdivision":"分割","metroSound":"音色","screenScales":"コードとスケール","scalesTab":"スケール","chordsTab":"コード","scaleDegrees":"7音","fretboard":"指板","frets":"フレット","notesTab":"音名","degreesTab":"度数","tonic":"主音","colourIsString":"色 = 弦","screenStudio":"スタジオ","audioChip":"音声","videoChip":"ビデオ","inputLevel":"入力レベル","backingTrack":"バッキングトラック","loopChip":"ループ","autosaveChip":"自動保存","speedUpChip":"ループごとに+5%","shoutPerfect":"パーフェクト!","shoutGood":"グッド!","shoutMiss":"ミス!","highwayAlt":"Afinoraのノートハイウェイ：音符が指板を流れ、カーソルを横切るたびに採点されます"};</script>
   <script>(function(){try{
@@ -281,8 +281,13 @@ if(S.indexOf(c)>-1){location.replace('/'+c+'/');return;}}
   <div class="wrap">
     <p class="eyebrow">音声入力</p>
     <h2 class="sub-h2" style="margin-top:14px">Afinoraがあなたの楽器を聴き取る方法</h2>
-    <p class="lead" style="margin-top:16px">一音ずつ採点するには、入ってくる信号がきれいである必要があります。入り口は二つ、そして入ってきた音に起きることは一つだけです。</p>
+    <p class="lead" style="margin-top:16px">一音ずつ採点するには、入ってくる信号がきれいである必要があります。入り口は二つ。どちらが自分に当てはまるか見てください。</p>
 
+    <!--
+      Two cards, because there are two ways the sound gets in. What happens to
+      it afterwards follows as a note: it is not a third route to choose
+      between, and a third identical card said it was.
+    -->
     <div class="listen-grid">
       <div class="listen-card">
         <div class="listen-figure" data-mock="listen-mic"></div>
@@ -298,12 +303,13 @@ if(S.indexOf(c)>-1){location.replace('/'+c+'/');return;}}
           <p>アンプを通さないエレキは、検出器が確実に読み取れる信号ではありません。室内マイクは雑音があるとすぐに音を取りこぼします。インターフェースを使えばAfinoraがそれを検出し、レイテンシーを補正して、接続されていることを知らせます。</p>
         </div>
       </div>
-      <div class="listen-card">
-        <div class="listen-figure" data-mock="listen-device"></div>
-        <div class="listen-body">
-          <h3>処理はすべてここで</h3>
-          <p>チューニングと練習に使う音声は、届いたそばから端末上で解析されます。録音もアップロードもされません。</p>
-        </div>
+    </div>
+
+    <div class="listen-note">
+      <div class="listen-note-figure" data-mock="listen-device"></div>
+      <div class="listen-note-body">
+        <h3>処理はすべてここで</h3>
+        <p>チューニングと練習に使う音声は、届いたそばから端末上で解析されます。録音もアップロードもされません。</p>
       </div>
     </div>
 
