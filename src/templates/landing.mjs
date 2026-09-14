@@ -38,33 +38,36 @@ const APPLE_GLYPH = `<svg class="store-glyph" viewBox="0 0 384 512" aria-hidden=
     </svg>`;
 
 /*
- * Store links open in a new tab.
+ * Store links navigate in place. They must not open a new tab.
  *
- * A reader who taps one has not finished with this page — they are checking a
- * price or a screenshot — and sending them away means losing whatever they were
- * reading. `noopener` is what stops the opened page from reaching back into
- * this one through window.opener.
+ * Asked for a phone, Apple does not answer with a web page: it answers with a
+ * redirect to itms-appss://, the scheme that opens the App Store app. In a tab
+ * the browser has just opened for it, that hands the visitor a blank tab while
+ * the store opens behind it, and the button reads as broken. Google Play does
+ * the same with market://.
  *
- * The new tab is announced to screen readers: arriving somewhere else with no
- * warning and no way back is disorienting when you cannot see the tab strip.
+ * Navigating in place lets the phone hand the link to the store cleanly, and
+ * the back gesture returns to this page — which is what a new tab was meant to
+ * protect in the first place.
+ *
+ * `noopener` stays: it costs nothing and still applies if a browser opens one
+ * of these in a tab of its own (a middle click, or Cmd held down).
  */
 function storeButtons(t, className = '') {
   return `<div class="store-row${className ? ' ' + className : ''}">
-      <a class="store-btn play" href="${PLAY_URL}" target="_blank" rel="noopener noreferrer">
+      <a class="store-btn play" href="${PLAY_URL}" rel="noopener noreferrer">
         ${PLAY_GLYPH}
         <span class="store-lines">
           <span class="top">${esc(t('hero.getItOn'))}</span>
           <span class="name">Google Play</span>
         </span>
-        <span class="sr-only">${esc(t('hero.newTab'))}</span>
       </a>
-      <a class="store-btn apple" href="${APPLE_URL}" target="_blank" rel="noopener noreferrer">
+      <a class="store-btn apple" href="${APPLE_URL}" rel="noopener noreferrer">
         ${APPLE_GLYPH}
         <span class="store-lines">
           <span class="top">${esc(t('hero.downloadOn'))}</span>
           <span class="name">App Store</span>
         </span>
-        <span class="sr-only">${esc(t('hero.newTab'))}</span>
       </a>
     </div>`;
 }
