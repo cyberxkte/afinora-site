@@ -166,8 +166,8 @@
   },
   "hero": {
     "eyebrow": "For guitar, bass, ukulele, Venezuelan cuatro, violin and cello",
-    "heading": "A tuner, a metronome, and a trainer that listens to how you play.",
-    "body": "Real-time pitch detection for ten instruments, a metronome, scales and chords drawn on your own neck, and training that listens as you play and grades every note separately. It all runs on the device, with no account.",
+    "heading": "Play a scale. It tells you which notes were late.",
+    "body": "Afinora listens as you play and grades every note on its own — pitch measured apart from timing — so you finish knowing exactly what to work on. It also tunes ten instruments and carries a full metronome. All on the device, with no account.",
     "getItOn": "Get it on",
     "downloadOn": "Download on",
     "fine": "No account · no ads · audio never leaves the phone"

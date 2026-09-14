@@ -121,27 +121,6 @@ export default function landing(ctx) {
   </div>
 </section>
 
-<section class="stats">
-  <div class="wrap">
-    <div class="grid">
-      ${t('stats').map((s) => `<div class="cell">
-        <div class="figure">${esc(s.figure)}</div>
-        <div class="label">${esc(s.label)}</div>
-      </div>`).join('\n      ')}
-    </div>
-  </div>
-</section>
-
-<section id="instruments">
-  <div class="wrap">
-    <h2 class="sub-h2">${esc(t('instruments.heading'))}</h2>
-    <p class="lead" style="margin-top:14px">${esc(t('instruments.body'))}</p>
-    <div class="pill-row">
-      ${t('instruments.list').map((i) => `<span class="pill">${esc(i)}</span>`).join('\n      ')}
-    </div>
-  </div>
-</section>
-
 <section class="technique" id="features">
   <div class="wrap">
     <p class="eyebrow">${esc(t('technique.eyebrow'))}</p>
@@ -162,6 +141,27 @@ export default function landing(ctx) {
         <h3>${esc(p.heading)}</h3>
         <p class="small">${esc(p.body)}</p>
       </div>`).join('\n      ')}
+    </div>
+  </div>
+</section>
+
+<section class="stats">
+  <div class="wrap">
+    <div class="grid">
+      ${t('stats').map((s) => `<div class="cell">
+        <div class="figure">${esc(s.figure)}</div>
+        <div class="label">${esc(s.label)}</div>
+      </div>`).join('\n      ')}
+    </div>
+  </div>
+</section>
+
+<section id="instruments">
+  <div class="wrap">
+    <h2 class="sub-h2">${esc(t('instruments.heading'))}</h2>
+    <p class="lead" style="margin-top:14px">${esc(t('instruments.body'))}</p>
+    <div class="pill-row">
+      ${t('instruments.list').map((i) => `<span class="pill">${esc(i)}</span>`).join('\n      ')}
     </div>
   </div>
 </section>
