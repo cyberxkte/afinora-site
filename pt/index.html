@@ -33,7 +33,7 @@
   <link rel="preload" href="/assets/fonts/space-grotesk-500-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="/assets/fonts/ibm-plex-sans-400-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="/assets/css/fonts.css?v=eabaf2d7f9">
-  <link rel="stylesheet" href="/assets/css/site.css?v=14c018c72c">
+  <link rel="stylesheet" href="/assets/css/site.css?v=53c977f8d5">
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"Afinora","applicationCategory":"MusicApplication","operatingSystem":"Android, iOS","description":"Afinador de guitarra, baixo, ukulele, cuatro venezuelano, violino e mais. Metrónomo, escalas no teu braço e treino que avalia cada nota. Sem conta nem anúncios.","url":"https://afinora.app/","inLanguage":["en","es","it","fr","pt","de","ja","zh","ru"],"offers":{"@type":"Offer","price":"0","priceCurrency":"USD","description":"Um instrumento, escalas maior e menor, o metrónomo completo, cinco gravações."},"author":{"@type":"Organization","name":"Afinora","url":"https://afinora.app/"}}</script>
   <script>window.AFINORA_I18N={"tabTune":"Afinar","tabMetronome":"Metrónomo","tabScales":"Escalas","tabTraining":"Treinar","tabStudio":"Estúdio","instGuitar":"Guitarra","instViolin":"Violino","tunerStandard":"Padrão","tunerInTune":"Afinada","tunerFlat":"Baixa","tunerSharp":"Alta","tunerCentered":"Centrada","tunerDetected":"Detetada","tunerTarget":"Alvo","tunerCents":"Cents","screenMetronome":"Metrónomo","metroHint":"Toca num tempo para o acentuar ou silenciar","metroSubdivision":"Subdivisão","metroSound":"Som","screenScales":"Acordes e escalas","scalesTab":"Escalas","chordsTab":"Acordes","scaleDegrees":"7 notas","fretboard":"Braço","frets":"trastes","notesTab":"Notas","degreesTab":"Graus","tonic":"Tónica","colourIsString":"Cor = corda","screenStudio":"Estúdio","audioChip":"ÁUDIO","videoChip":"VÍDEO","inputLevel":"Nível de entrada","backingTrack":"Playback","loopChip":"Loop","autosaveChip":"Autossalvamento","speedUpChip":"+5% de velocidade por ciclo","shoutPerfect":"PERFEITO!","shoutGood":"BOA!","shoutMiss":"FALHOU!","highwayAlt":"A autoestrada de notas do Afinora: as notas viajam pelo braço e cada uma é avaliada ao cruzar o cursor","reportHeadline":"Saiu limpo","reportExercise":"Escala maior · trastes 5-8","reportClean":"Notas limpas","reportRhythm":"Ritmo","reportWhere":"Quando caem as tuas notas","reportEarly":"Cedo","reportLate":"Tarde","reportOnPulse":"No pulso","reportVerdictClean":"Limpa","reportVerdictLate":"Fora do pulso","reportVerdictMissed":"Não soou","screenTechnique":"Treino"};</script>
   <script>(function(){try{
@@ -95,7 +95,6 @@ if(S.indexOf(c)>-1){location.replace('/'+c+'/');return;}}
 <main id="main">
 
 <section class="hero">
-  <div data-mock="field"></div>
   <div class="hero-scrim"></div>
   <div class="wrap">
     <div class="hero-split">
@@ -145,34 +144,37 @@ if(S.indexOf(c)>-1){location.replace('/'+c+'/');return;}}
 
 <section class="technique" id="features">
   <div class="wrap">
-    <p class="eyebrow">Treino técnico</p>
-    <h2 style="margin-top:14px">No fim sabes qual das duas falhou</h2>
-    <p class="lead" style="margin-top:20px">Quando o ciclo acaba, o relatório está à espera: quantas notas saíram limpas, quantas ficaram fora do pulso e onde caiu cada uma em relação ao tempo. A afinação e o ritmo são dois números separados, por isso uma nota afinada mas atrasada não fica escondida atrás de uma média, e sabes qual das duas coisas trabalhar.</p>
+    <div class="technique-grid">
+      <div>
+        <p class="eyebrow">Treino técnico</p>
+        <h2 style="margin-top:14px">No fim sabes qual das duas falhou</h2>
+        <p class="lead" style="margin-top:20px">Quando o ciclo acaba, o relatório está à espera: quantas notas saíram limpas, quantas ficaram fora do pulso e onde caiu cada uma em relação ao tempo. A afinação e o ritmo são dois números separados, por isso uma nota afinada mas atrasada não fica escondida atrás de uma média, e sabes qual das duas coisas trabalhar.</p>
+      </div>
 
     <!--
       The report screen, not the highway again. The hero shows the exercise
       running; this shows what it leaves behind, which is the half a visitor
       cannot guess from the picture above.
     -->
-    <div class="technique-grid">
-      <div class="trio trio-stacked">
-        <div>
-          <h3>Usa os teus exercícios</h3>
-          <p class="small">Tens padrões de escala já feitos, ou colas os teus em texto e o Afinora transforma-os num percurso.</p>
-        </div>
-        <div>
-          <h3>O andamento ajusta-se sozinho</h3>
-          <p class="small">O ciclo vai acelerando enquanto lhe acompanhas o ritmo, e baixa o andamento mal comeces a falhar.</p>
-        </div>
-        <div>
-          <h3>Um histórico por escala</h3>
-          <p class="small">Cada exercício guarda o seu próprio histórico, por isso a evolução mede-se em vez de se adivinhar.</p>
-        </div>
-      </div>
       <div class="technique-figure">
         <div class="phone phone-sm">
           <div class="screen" data-mock="report"></div>
         </div>
+      </div>
+    </div>
+
+    <div class="trio">
+      <div>
+        <h3>Usa os teus exercícios</h3>
+        <p class="small">Tens padrões de escala já feitos, ou colas os teus em texto e o Afinora transforma-os num percurso.</p>
+      </div>
+      <div>
+        <h3>O andamento ajusta-se sozinho</h3>
+        <p class="small">O ciclo vai acelerando enquanto lhe acompanhas o ritmo, e baixa o andamento mal comeces a falhar.</p>
+      </div>
+      <div>
+        <h3>Um histórico por escala</h3>
+        <p class="small">Cada exercício guarda o seu próprio histórico, por isso a evolução mede-se em vez de se adivinhar.</p>
       </div>
     </div>
   </div>
@@ -271,17 +273,6 @@ if(S.indexOf(c)>-1){location.replace('/'+c+'/');return;}}
         </div>
       </div>
     </div>
-      <div class="block" id="ear-training">
-        <div class="block-copy">
-          <p class="eyebrow">05 · Treino auditivo</p>
-          <h2 class="block-h2">Ouves a nota e procura-la no teu instrumento</h2>
-          <p class="lead">O Afinora toca uma nota ou um intervalo, tu encontra-lo no braço e toca-lo, e o detetor verifica se acertaste. Respondes com o instrumento, não escolhendo uma opção no ecrã.</p>
-        </div>
-        <div class="price-card">
-          <h3>Nove idiomas</h3>
-          <p style="margin-top:10px">Espanhol, inglês, italiano, francês, português, alemão, japonês, chinês e russo. A aplicação inteira, não só os menus.</p>
-        </div>
-      </div>
     </div>
   </div>
 </section>

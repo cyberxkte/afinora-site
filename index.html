@@ -33,7 +33,7 @@
   <link rel="preload" href="/assets/fonts/space-grotesk-500-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="/assets/fonts/ibm-plex-sans-400-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="/assets/css/fonts.css?v=eabaf2d7f9">
-  <link rel="stylesheet" href="/assets/css/site.css?v=14c018c72c">
+  <link rel="stylesheet" href="/assets/css/site.css?v=53c977f8d5">
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"Afinora","applicationCategory":"MusicApplication","operatingSystem":"Android, iOS","description":"Tuner for guitar, bass, ukulele, Venezuelan cuatro, violin and more. Metronome, scales on your own neck, and training that grades every note. No account, no ads.","url":"https://afinora.app/","inLanguage":["en","es","it","fr","pt","de","ja","zh","ru"],"offers":{"@type":"Offer","price":"0","priceCurrency":"USD","description":"One instrument, major and minor scales, the full metronome, five recordings."},"author":{"@type":"Organization","name":"Afinora","url":"https://afinora.app/"}}</script>
   <script>window.AFINORA_I18N={"tabTune":"Tune","tabMetronome":"Metronome","tabScales":"Scales","tabTraining":"Training","tabStudio":"Studio","instGuitar":"Guitar","instViolin":"Violin","tunerStandard":"Standard","tunerInTune":"In tune","tunerFlat":"Flat","tunerSharp":"Sharp","tunerCentered":"Centered","tunerDetected":"Detected","tunerTarget":"Target","tunerCents":"Cents","screenMetronome":"Metronome","metroHint":"Tap a beat to accent or silence it","metroSubdivision":"Subdivision","metroSound":"Sound","screenScales":"Chords & Scales","scalesTab":"Scales","chordsTab":"Chords","scaleDegrees":"7 notes","fretboard":"Fretboard","frets":"frets","notesTab":"Notes","degreesTab":"Degrees","tonic":"Tonic","colourIsString":"Colour = string","screenStudio":"Studio","audioChip":"AUDIO","videoChip":"VIDEO","inputLevel":"Input level","backingTrack":"Backing track","loopChip":"Loop","autosaveChip":"Auto-save","speedUpChip":"+5% speed-up per loop","shoutPerfect":"PERFECT!","shoutGood":"GOOD!","shoutMiss":"MISS!","highwayAlt":"Afinora's note highway: notes travel along the neck and each one is graded as it crosses the cursor","reportHeadline":"That was clean","reportExercise":"Major scale · frets 5-8","reportClean":"Clean notes","reportRhythm":"Rhythm","reportWhere":"Where your notes land","reportEarly":"Early","reportLate":"Late","reportOnPulse":"On the pulse","reportVerdictClean":"Clean","reportVerdictLate":"Off the pulse","reportVerdictMissed":"Never arrived","screenTechnique":"Training"};</script>
   <script>(function(){try{
@@ -95,7 +95,6 @@ if(S.indexOf(c)>-1){location.replace('/'+c+'/');return;}}
 <main id="main">
 
 <section class="hero">
-  <div data-mock="field"></div>
   <div class="hero-scrim"></div>
   <div class="wrap">
     <div class="hero-split">
@@ -145,34 +144,37 @@ if(S.indexOf(c)>-1){location.replace('/'+c+'/');return;}}
 
 <section class="technique" id="features">
   <div class="wrap">
-    <p class="eyebrow">Technique training</p>
-    <h2 style="margin-top:14px">When you finish, you know which of the two failed</h2>
-    <p class="lead" style="margin-top:20px">When the loop ends, the report is waiting: how many notes were clean, how many were off the pulse, and where each one landed against the beat. Pitch and timing are two separate numbers, so a note that was in tune but late is not hidden behind an average — and you know which of the two to practise.</p>
+    <div class="technique-grid">
+      <div>
+        <p class="eyebrow">Technique training</p>
+        <h2 style="margin-top:14px">When you finish, you know which of the two failed</h2>
+        <p class="lead" style="margin-top:20px">When the loop ends, the report is waiting: how many notes were clean, how many were off the pulse, and where each one landed against the beat. Pitch and timing are two separate numbers, so a note that was in tune but late is not hidden behind an average — and you know which of the two to practise.</p>
+      </div>
 
     <!--
       The report screen, not the highway again. The hero shows the exercise
       running; this shows what it leaves behind, which is the half a visitor
       cannot guess from the picture above.
     -->
-    <div class="technique-grid">
-      <div class="trio trio-stacked">
-        <div>
-          <h3>Bring your own exercises</h3>
-          <p class="small">Built-in scale patterns, or paste your own as plain text and Afinora turns it into a route.</p>
-        </div>
-        <div>
-          <h3>The tempo moves on its own</h3>
-          <p class="small">The loop speeds up while you keep up and drops the tempo when you don't.</p>
-        </div>
-        <div>
-          <h3>A history per scale</h3>
-          <p class="small">Every exercise keeps its own history, so progress is a measured figure.</p>
-        </div>
-      </div>
       <div class="technique-figure">
         <div class="phone phone-sm">
           <div class="screen" data-mock="report"></div>
         </div>
+      </div>
+    </div>
+
+    <div class="trio">
+      <div>
+        <h3>Bring your own exercises</h3>
+        <p class="small">Built-in scale patterns, or paste your own as plain text and Afinora turns it into a route.</p>
+      </div>
+      <div>
+        <h3>The tempo moves on its own</h3>
+        <p class="small">The loop speeds up while you keep up and drops the tempo when you don't.</p>
+      </div>
+      <div>
+        <h3>A history per scale</h3>
+        <p class="small">Every exercise keeps its own history, so progress is a measured figure.</p>
       </div>
     </div>
   </div>
@@ -271,17 +273,6 @@ if(S.indexOf(c)>-1){location.replace('/'+c+'/');return;}}
         </div>
       </div>
     </div>
-      <div class="block" id="ear-training">
-        <div class="block-copy">
-          <p class="eyebrow">05 · Ear training</p>
-          <h2 class="block-h2">You hear the note and play it on your instrument</h2>
-          <p class="lead">Afinora plays a note or an interval, you find it on the neck and play it, and the detector checks whether you got it right. You answer on the instrument, not by picking an option on screen.</p>
-        </div>
-        <div class="price-card">
-          <h3>Nine languages</h3>
-          <p style="margin-top:10px">Spanish, English, Italian, French, Portuguese, German, Japanese, Chinese and Russian. The whole app, not just the menus.</p>
-        </div>
-      </div>
     </div>
   </div>
 </section>

@@ -101,7 +101,6 @@ export default function landing(ctx) {
 
   const main = `
 <section class="hero">
-  <div data-mock="field"></div>
   <div class="hero-scrim"></div>
   <div class="wrap">
     <div class="hero-split">
@@ -129,27 +128,30 @@ export default function landing(ctx) {
 
 <section class="technique" id="features">
   <div class="wrap">
-    <p class="eyebrow">${esc(t('technique.eyebrow'))}</p>
-    <h2 style="margin-top:14px">${esc(t('technique.heading'))}</h2>
-    <p class="lead" style="margin-top:20px">${esc(t('technique.body'))}</p>
+    <div class="technique-grid">
+      <div>
+        <p class="eyebrow">${esc(t('technique.eyebrow'))}</p>
+        <h2 style="margin-top:14px">${esc(t('technique.heading'))}</h2>
+        <p class="lead" style="margin-top:20px">${esc(t('technique.body'))}</p>
+      </div>
 
     <!--
       The report screen, not the highway again. The hero shows the exercise
       running; this shows what it leaves behind, which is the half a visitor
       cannot guess from the picture above.
     -->
-    <div class="technique-grid">
-      <div class="trio trio-stacked">
-        ${t('technique.points').map((p) => `<div>
-          <h3>${esc(p.heading)}</h3>
-          <p class="small">${esc(p.body)}</p>
-        </div>`).join('\n        ')}
-      </div>
       <div class="technique-figure">
         <div class="phone phone-sm">
           <div class="screen" data-mock="report"></div>
         </div>
       </div>
+    </div>
+
+    <div class="trio">
+      ${t('technique.points').map((p) => `<div>
+        <h3>${esc(p.heading)}</h3>
+        <p class="small">${esc(p.body)}</p>
+      </div>`).join('\n      ')}
     </div>
   </div>
 </section>
@@ -212,17 +214,6 @@ export default function landing(ctx) {
         mock: 'studio',
         mirrored: true,
       })}
-      <div class="block" id="ear-training">
-        <div class="block-copy">
-          <p class="eyebrow">${esc(t('blocks.ear.eyebrow'))}</p>
-          <h2 class="block-h2">${esc(t('blocks.ear.heading'))}</h2>
-          <p class="lead">${esc(t('blocks.ear.body'))}</p>
-        </div>
-        <div class="price-card">
-          <h3>${esc(t('blocks.languages.heading'))}</h3>
-          <p style="margin-top:10px">${esc(t('blocks.languages.body'))}</p>
-        </div>
-      </div>
     </div>
   </div>
 </section>

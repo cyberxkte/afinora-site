@@ -33,7 +33,7 @@
   <link rel="preload" href="/assets/fonts/space-grotesk-500-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="/assets/fonts/ibm-plex-sans-400-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="/assets/css/fonts.css?v=eabaf2d7f9">
-  <link rel="stylesheet" href="/assets/css/site.css?v=14c018c72c">
+  <link rel="stylesheet" href="/assets/css/site.css?v=53c977f8d5">
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"Afinora","applicationCategory":"MusicApplication","operatingSystem":"Android, iOS","description":"Accordeur pour guitare, basse, ukulélé, cuatro vénézuélien, violon et plus. Métronome, gammes sur votre manche et entraînement qui note chaque note. Sans compte.","url":"https://afinora.app/","inLanguage":["en","es","it","fr","pt","de","ja","zh","ru"],"offers":{"@type":"Offer","price":"0","priceCurrency":"USD","description":"Un instrument, gammes majeure et mineure, le métronome complet, cinq enregistrements."},"author":{"@type":"Organization","name":"Afinora","url":"https://afinora.app/"}}</script>
   <script>window.AFINORA_I18N={"tabTune":"Accorder","tabMetronome":"Métronome","tabScales":"Gammes","tabTraining":"Entraîner","tabStudio":"Studio","instGuitar":"Guitare","instViolin":"Violon","tunerStandard":"Standard","tunerInTune":"Juste","tunerFlat":"Bas","tunerSharp":"Haut","tunerCentered":"Centré","tunerDetected":"Détecté","tunerTarget":"Cible","tunerCents":"Cents","screenMetronome":"Métronome","metroHint":"Touchez un temps pour l'accentuer ou le muter","metroSubdivision":"Subdivision","metroSound":"Son","screenScales":"Accords et gammes","scalesTab":"Gammes","chordsTab":"Accords","scaleDegrees":"7 notes","fretboard":"Manche","frets":"frettes","notesTab":"Notes","degreesTab":"Degrés","tonic":"Tonique","colourIsString":"Couleur = corde","screenStudio":"Studio","audioChip":"AUDIO","videoChip":"VIDÉO","inputLevel":"Niveau d'entrée","backingTrack":"Piste d'accompagnement","loopChip":"Boucle","autosaveChip":"Sauvegarde auto","speedUpChip":"+5% de vitesse à chaque tour","shoutPerfect":"PARFAIT !","shoutGood":"BIEN !","shoutMiss":"RATÉ !","highwayAlt":"L'autoroute de notes d'Afinora : les notes défilent le long du manche et chacune est notée quand elle franchit le curseur","reportHeadline":"Net et propre","reportExercise":"Gamme majeure · frettes 5-8","reportClean":"Notes propres","reportRhythm":"Rythme","reportWhere":"Quand tombent vos notes","reportEarly":"Tôt","reportLate":"Tard","reportOnPulse":"Sur le temps","reportVerdictClean":"Propre","reportVerdictLate":"Hors pulsation","reportVerdictMissed":"Pas jouée","screenTechnique":"Travail"};</script>
   <script>(function(){try{
@@ -95,7 +95,6 @@ if(S.indexOf(c)>-1){location.replace('/'+c+'/');return;}}
 <main id="main">
 
 <section class="hero">
-  <div data-mock="field"></div>
   <div class="hero-scrim"></div>
   <div class="wrap">
     <div class="hero-split">
@@ -145,34 +144,37 @@ if(S.indexOf(c)>-1){location.replace('/'+c+'/');return;}}
 
 <section class="technique" id="features">
   <div class="wrap">
-    <p class="eyebrow">Entraînement technique</p>
-    <h2 style="margin-top:14px">À la fin, vous savez laquelle des deux a lâché</h2>
-    <p class="lead" style="margin-top:20px">Quand la boucle se termine, le rapport vous attend : combien de notes étaient propres, combien sont sorties de la pulsation, et où chacune est tombée par rapport au temps. La justesse et le placement sont deux chiffres distincts, donc une note juste mais en retard ne disparaît pas derrière une moyenne, et vous savez laquelle des deux travailler.</p>
+    <div class="technique-grid">
+      <div>
+        <p class="eyebrow">Entraînement technique</p>
+        <h2 style="margin-top:14px">À la fin, vous savez laquelle des deux a lâché</h2>
+        <p class="lead" style="margin-top:20px">Quand la boucle se termine, le rapport vous attend : combien de notes étaient propres, combien sont sorties de la pulsation, et où chacune est tombée par rapport au temps. La justesse et le placement sont deux chiffres distincts, donc une note juste mais en retard ne disparaît pas derrière une moyenne, et vous savez laquelle des deux travailler.</p>
+      </div>
 
     <!--
       The report screen, not the highway again. The hero shows the exercise
       running; this shows what it leaves behind, which is the half a visitor
       cannot guess from the picture above.
     -->
-    <div class="technique-grid">
-      <div class="trio trio-stacked">
-        <div>
-          <h3>Utilisez vos propres exercices</h3>
-          <p class="small">Des motifs de gammes tout prêts, ou collez les vôtres en texte et Afinora en fait un parcours.</p>
-        </div>
-        <div>
-          <h3>Le tempo se règle tout seul</h3>
-          <p class="small">La boucle accélère tant que vous suivez, et redescend dès que ça coince.</p>
-        </div>
-        <div>
-          <h3>Un historique par gamme</h3>
-          <p class="small">Chaque exercice garde son propre historique, si bien que les progrès se mesurent au lieu de se deviner.</p>
-        </div>
-      </div>
       <div class="technique-figure">
         <div class="phone phone-sm">
           <div class="screen" data-mock="report"></div>
         </div>
+      </div>
+    </div>
+
+    <div class="trio">
+      <div>
+        <h3>Utilisez vos propres exercices</h3>
+        <p class="small">Des motifs de gammes tout prêts, ou collez les vôtres en texte et Afinora en fait un parcours.</p>
+      </div>
+      <div>
+        <h3>Le tempo se règle tout seul</h3>
+        <p class="small">La boucle accélère tant que vous suivez, et redescend dès que ça coince.</p>
+      </div>
+      <div>
+        <h3>Un historique par gamme</h3>
+        <p class="small">Chaque exercice garde son propre historique, si bien que les progrès se mesurent au lieu de se deviner.</p>
       </div>
     </div>
   </div>
@@ -271,17 +273,6 @@ if(S.indexOf(c)>-1){location.replace('/'+c+'/');return;}}
         </div>
       </div>
     </div>
-      <div class="block" id="ear-training">
-        <div class="block-copy">
-          <p class="eyebrow">05 · Entraînement de l'oreille</p>
-          <h2 class="block-h2">Vous entendez la note et vous la cherchez sur votre instrument</h2>
-          <p class="lead">Afinora joue une note ou un intervalle, vous le trouvez sur le manche et vous le jouez, et le détecteur vérifie si c'est juste. Vous répondez avec l'instrument, pas en choisissant une option à l'écran.</p>
-        </div>
-        <div class="price-card">
-          <h3>Neuf langues</h3>
-          <p style="margin-top:10px">Espagnol, anglais, italien, français, portugais, allemand, japonais, chinois et russe. Toute l'application, pas seulement les menus.</p>
-        </div>
-      </div>
     </div>
   </div>
 </section>

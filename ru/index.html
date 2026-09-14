@@ -33,7 +33,7 @@
   <link rel="preload" href="/assets/fonts/space-grotesk-500-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="/assets/fonts/ibm-plex-sans-400-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="/assets/css/fonts.css?v=eabaf2d7f9">
-  <link rel="stylesheet" href="/assets/css/site.css?v=14c018c72c">
+  <link rel="stylesheet" href="/assets/css/site.css?v=53c977f8d5">
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"Afinora","applicationCategory":"MusicApplication","operatingSystem":"Android, iOS","description":"Тюнер для гитары, баса, укулеле, венесуэльского куатро, скрипки и других. Метроном, гаммы на вашем грифе и тренировка с оценкой каждой ноты. Без аккаунта и рекламы.","url":"https://afinora.app/","inLanguage":["en","es","it","fr","pt","de","ja","zh","ru"],"offers":{"@type":"Offer","price":"0","priceCurrency":"USD","description":"Один инструмент, мажорная и минорная гаммы, полный метроном, пять записей."},"author":{"@type":"Organization","name":"Afinora","url":"https://afinora.app/"}}</script>
   <script>window.AFINORA_I18N={"tabTune":"Строй","tabMetronome":"Метроном","tabScales":"Гаммы","tabTraining":"Тренировка","tabStudio":"Студия","instGuitar":"Гитара","instViolin":"Скрипка","tunerStandard":"Стандарт","tunerInTune":"Чисто","tunerFlat":"Низко","tunerSharp":"Высоко","tunerCentered":"По центру","tunerDetected":"Определено","tunerTarget":"Цель","tunerCents":"Центы","screenMetronome":"Метроном","metroHint":"Коснитесь доли, чтобы акцентировать или заглушить","metroSubdivision":"Дробление","metroSound":"Звук","screenScales":"Аккорды и гаммы","scalesTab":"Гаммы","chordsTab":"Аккорды","scaleDegrees":"7 нот","fretboard":"Гриф","frets":"ладов","notesTab":"Ноты","degreesTab":"Ступени","tonic":"Тоника","colourIsString":"Цвет = струна","screenStudio":"Студия","audioChip":"АУДИО","videoChip":"ВИДЕО","inputLevel":"Уровень входа","backingTrack":"Минусовка","loopChip":"Луп","autosaveChip":"Автосохранение","speedUpChip":"+5% темпа за цикл","shoutPerfect":"ИДЕАЛЬНО!","shoutGood":"ХОРОШО!","shoutMiss":"МИМО!","highwayAlt":"Нотная дорожка Afinora: ноты движутся вдоль грифа, и каждая оценивается при пересечении курсора","reportHeadline":"Вышло чисто","reportExercise":"Мажорная гамма · лады 5-8","reportClean":"Чистые ноты","reportRhythm":"Ритм","reportWhere":"Когда попадают ваши ноты","reportEarly":"Рано","reportLate":"Поздно","reportOnPulse":"В долю","reportVerdictClean":"Чисто","reportVerdictLate":"Мимо доли","reportVerdictMissed":"Не прозвучала","screenTechnique":"Тренировка"};</script>
   <script>(function(){try{
@@ -95,7 +95,6 @@ if(S.indexOf(c)>-1){location.replace('/'+c+'/');return;}}
 <main id="main">
 
 <section class="hero">
-  <div data-mock="field"></div>
   <div class="hero-scrim"></div>
   <div class="wrap">
     <div class="hero-split">
@@ -145,34 +144,37 @@ if(S.indexOf(c)>-1){location.replace('/'+c+'/');return;}}
 
 <section class="technique" id="features">
   <div class="wrap">
-    <p class="eyebrow">Тренировка техники</p>
-    <h2 style="margin-top:14px">В конце вы знаете, что именно подвело</h2>
-    <p class="lead" style="margin-top:20px">Когда цикл заканчивается, вас ждёт отчёт: сколько нот прозвучало чисто, сколько ушло мимо доли и где каждая легла относительно счёта. Высота и ритм — два отдельных числа, поэтому чистая, но опоздавшая нота не прячется за средним, и вы знаете, что именно отрабатывать.</p>
+    <div class="technique-grid">
+      <div>
+        <p class="eyebrow">Тренировка техники</p>
+        <h2 style="margin-top:14px">В конце вы знаете, что именно подвело</h2>
+        <p class="lead" style="margin-top:20px">Когда цикл заканчивается, вас ждёт отчёт: сколько нот прозвучало чисто, сколько ушло мимо доли и где каждая легла относительно счёта. Высота и ритм — два отдельных числа, поэтому чистая, но опоздавшая нота не прячется за средним, и вы знаете, что именно отрабатывать.</p>
+      </div>
 
     <!--
       The report screen, not the highway again. The hero shows the exercise
       running; this shows what it leaves behind, which is the half a visitor
       cannot guess from the picture above.
     -->
-    <div class="technique-grid">
-      <div class="trio trio-stacked">
-        <div>
-          <h3>Приносите свои упражнения</h3>
-          <p class="small">Встроенные гаммовые шаблоны или свои собственные: вставьте их обычным текстом, и Afinora превратит их в маршрут.</p>
-        </div>
-        <div>
-          <h3>Темп подстраивается сам</h3>
-          <p class="small">Цикл ускоряется, пока вы успеваете, и снижает темп, когда нет.</p>
-        </div>
-        <div>
-          <h3>История по каждой гамме</h3>
-          <p class="small">У каждого упражнения своя история, так что прогресс становится измеренной величиной.</p>
-        </div>
-      </div>
       <div class="technique-figure">
         <div class="phone phone-sm">
           <div class="screen" data-mock="report"></div>
         </div>
+      </div>
+    </div>
+
+    <div class="trio">
+      <div>
+        <h3>Приносите свои упражнения</h3>
+        <p class="small">Встроенные гаммовые шаблоны или свои собственные: вставьте их обычным текстом, и Afinora превратит их в маршрут.</p>
+      </div>
+      <div>
+        <h3>Темп подстраивается сам</h3>
+        <p class="small">Цикл ускоряется, пока вы успеваете, и снижает темп, когда нет.</p>
+      </div>
+      <div>
+        <h3>История по каждой гамме</h3>
+        <p class="small">У каждого упражнения своя история, так что прогресс становится измеренной величиной.</p>
       </div>
     </div>
   </div>
@@ -271,17 +273,6 @@ if(S.indexOf(c)>-1){location.replace('/'+c+'/');return;}}
         </div>
       </div>
     </div>
-      <div class="block" id="ear-training">
-        <div class="block-copy">
-          <p class="eyebrow">05 · Тренировка слуха</p>
-          <h2 class="block-h2">Вы слышите ноту и играете её на своём инструменте</h2>
-          <p class="lead">Afinora играет ноту или интервал, вы находите его на грифе и играете, а детектор проверяет, попали ли вы. Вы отвечаете инструментом, а не выбором варианта на экране.</p>
-        </div>
-        <div class="price-card">
-          <h3>Девять языков</h3>
-          <p style="margin-top:10px">Испанский, английский, итальянский, французский, португальский, немецкий, японский, китайский и русский. Всё приложение, а не только меню.</p>
-        </div>
-      </div>
     </div>
   </div>
 </section>

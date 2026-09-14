@@ -886,20 +886,16 @@ a.pill:hover { border-color: var(--in-tune); color: var(--in-tune); }
 /* The training section: the three points on one side, the report on the other.
    Stacked, the points read as a list to get through; beside the screen they
    read as captions to it. */
+/* Words beside the screen, the three points in a row underneath — the shape
+   the feature blocks below already use. Centring three short paragraphs against
+   a tall phone left a hole above them the height of the phone. */
 .technique-grid {
   display: grid;
   gap: clamp(28px, 4vw, 52px);
   align-items: center;
-  margin-top: 34px;
 }
 @media (min-width: 900px) {
-  .technique-grid { grid-template-columns: 1fr minmax(260px, 340px); }
-}
-.trio-stacked {
-  display: grid;
-  gap: 26px;
-}
-@media (min-width: 900px) {
-  .trio-stacked { grid-template-columns: 1fr; }
+  .technique-grid { grid-template-columns: 1fr minmax(240px, 300px); }
 }
 .technique-figure { display: flex; justify-content: center; }
+.technique .trio { margin-top: clamp(30px, 4vw, 48px); }

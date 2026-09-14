@@ -33,7 +33,7 @@
   <link rel="preload" href="/assets/fonts/space-grotesk-500-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="/assets/fonts/ibm-plex-sans-400-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="/assets/css/fonts.css?v=eabaf2d7f9">
-  <link rel="stylesheet" href="/assets/css/site.css?v=14c018c72c">
+  <link rel="stylesheet" href="/assets/css/site.css?v=53c977f8d5">
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"Afinora","applicationCategory":"MusicApplication","operatingSystem":"Android, iOS","description":"ギター、ベース、ウクレレ、クアトロ、ヴァイオリンなどに対応したチューナー。メトロノーム、自分の指板に描かれるスケール、一音ずつ採点する練習。アカウント不要、広告なし。","url":"https://afinora.app/","inLanguage":["en","es","it","fr","pt","de","ja","zh","ru"],"offers":{"@type":"Offer","price":"0","priceCurrency":"USD","description":"楽器1つ、メジャーとマイナーのスケール、メトロノーム全機能、録音5件。"},"author":{"@type":"Organization","name":"Afinora","url":"https://afinora.app/"}}</script>
   <script>window.AFINORA_I18N={"tabTune":"チューン","tabMetronome":"メトロノーム","tabScales":"スケール","tabTraining":"練習","tabStudio":"スタジオ","instGuitar":"ギター","instViolin":"ヴァイオリン","tunerStandard":"標準","tunerInTune":"合っています","tunerFlat":"低い","tunerSharp":"高い","tunerCentered":"中央","tunerDetected":"検出","tunerTarget":"目標","tunerCents":"セント","screenMetronome":"メトロノーム","metroHint":"拍をタップしてアクセントまたはミュート","metroSubdivision":"分割","metroSound":"音色","screenScales":"コードとスケール","scalesTab":"スケール","chordsTab":"コード","scaleDegrees":"7音","fretboard":"指板","frets":"フレット","notesTab":"音名","degreesTab":"度数","tonic":"主音","colourIsString":"色 = 弦","screenStudio":"スタジオ","audioChip":"音声","videoChip":"ビデオ","inputLevel":"入力レベル","backingTrack":"バッキングトラック","loopChip":"ループ","autosaveChip":"自動保存","speedUpChip":"ループごとに+5%","shoutPerfect":"パーフェクト!","shoutGood":"グッド!","shoutMiss":"ミス!","highwayAlt":"Afinoraのノートハイウェイ：音符が指板を流れ、カーソルを横切るたびに採点されます","reportHeadline":"きれいに決まりました","reportExercise":"メジャースケール · 5-8フレット","reportClean":"クリーンな音","reportRhythm":"リズム","reportWhere":"音が落ちるタイミング","reportEarly":"早い","reportLate":"遅い","reportOnPulse":"拍の上","reportVerdictClean":"クリーン","reportVerdictLate":"拍から外れた","reportVerdictMissed":"鳴らなかった","screenTechnique":"練習"};</script>
   <script>(function(){try{
@@ -95,7 +95,6 @@ if(S.indexOf(c)>-1){location.replace('/'+c+'/');return;}}
 <main id="main">
 
 <section class="hero">
-  <div data-mock="field"></div>
   <div class="hero-scrim"></div>
   <div class="wrap">
     <div class="hero-split">
@@ -145,34 +144,37 @@ if(S.indexOf(c)>-1){location.replace('/'+c+'/');return;}}
 
 <section class="technique" id="features">
   <div class="wrap">
-    <p class="eyebrow">テクニック練習</p>
-    <h2 style="margin-top:14px">終わったとき、どちらが崩れたかがわかります</h2>
-    <p class="lead" style="margin-top:20px">ループが終わると、結果が待っています。きれいに鳴った音が何音、拍から外れた音が何音、そして一音ずつが拍に対してどこに落ちたか。音程とタイミングは別々の数字なので、音程は合っていたが遅れた音が平均の陰に隠れることはなく、どちらを練習すべきかがわかります。</p>
+    <div class="technique-grid">
+      <div>
+        <p class="eyebrow">テクニック練習</p>
+        <h2 style="margin-top:14px">終わったとき、どちらが崩れたかがわかります</h2>
+        <p class="lead" style="margin-top:20px">ループが終わると、結果が待っています。きれいに鳴った音が何音、拍から外れた音が何音、そして一音ずつが拍に対してどこに落ちたか。音程とタイミングは別々の数字なので、音程は合っていたが遅れた音が平均の陰に隠れることはなく、どちらを練習すべきかがわかります。</p>
+      </div>
 
     <!--
       The report screen, not the highway again. The hero shows the exercise
       running; this shows what it leaves behind, which is the half a visitor
       cannot guess from the picture above.
     -->
-    <div class="technique-grid">
-      <div class="trio trio-stacked">
-        <div>
-          <h3>自分の練習課題を持ち込める</h3>
-          <p class="small">内蔵のスケールパターンに加え、自分のものをテキストで貼り付ければAfinoraがコースに変換します。</p>
-        </div>
-        <div>
-          <h3>テンポは自動で調整される</h3>
-          <p class="small">ついていけている間はループが速くなり、ついていけなくなるとテンポが下がります。</p>
-        </div>
-        <div>
-          <h3>スケールごとの履歴</h3>
-          <p class="small">練習ごとに履歴が残るので、上達が測定された数字になります。</p>
-        </div>
-      </div>
       <div class="technique-figure">
         <div class="phone phone-sm">
           <div class="screen" data-mock="report"></div>
         </div>
+      </div>
+    </div>
+
+    <div class="trio">
+      <div>
+        <h3>自分の練習課題を持ち込める</h3>
+        <p class="small">内蔵のスケールパターンに加え、自分のものをテキストで貼り付ければAfinoraがコースに変換します。</p>
+      </div>
+      <div>
+        <h3>テンポは自動で調整される</h3>
+        <p class="small">ついていけている間はループが速くなり、ついていけなくなるとテンポが下がります。</p>
+      </div>
+      <div>
+        <h3>スケールごとの履歴</h3>
+        <p class="small">練習ごとに履歴が残るので、上達が測定された数字になります。</p>
       </div>
     </div>
   </div>
@@ -271,17 +273,6 @@ if(S.indexOf(c)>-1){location.replace('/'+c+'/');return;}}
         </div>
       </div>
     </div>
-      <div class="block" id="ear-training">
-        <div class="block-copy">
-          <p class="eyebrow">05 · 聴音練習</p>
-          <h2 class="block-h2">聴こえた音を、自分の楽器で弾く</h2>
-          <p class="lead">Afinoraが音または音程を鳴らし、あなたが指板の上で見つけて弾くと、検出器が正解かどうかを判定します。画面の選択肢を選ぶのではなく、楽器で答えます。</p>
-        </div>
-        <div class="price-card">
-          <h3>9言語対応</h3>
-          <p style="margin-top:10px">スペイン語、英語、イタリア語、フランス語、ポルトガル語、ドイツ語、日本語、中国語、ロシア語。メニューだけでなくアプリ全体が対応しています。</p>
-        </div>
-      </div>
     </div>
   </div>
 </section>

@@ -33,7 +33,7 @@
   <link rel="preload" href="/assets/fonts/space-grotesk-500-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="/assets/fonts/ibm-plex-sans-400-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="/assets/css/fonts.css?v=eabaf2d7f9">
-  <link rel="stylesheet" href="/assets/css/site.css?v=14c018c72c">
+  <link rel="stylesheet" href="/assets/css/site.css?v=53c977f8d5">
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"Afinora","applicationCategory":"MusicApplication","operatingSystem":"Android, iOS","description":"Stimmgerät für Gitarre, Bass, Ukulele, venezolanischen Cuatro, Geige und mehr. Metronom, Skalen auf deinem Griffbrett und Training, das jeden Ton bewertet. Ohne Konto.","url":"https://afinora.app/","inLanguage":["en","es","it","fr","pt","de","ja","zh","ru"],"offers":{"@type":"Offer","price":"0","priceCurrency":"USD","description":"Ein Instrument, Dur- und Moll-Tonleiter, das vollständige Metronom, fünf Aufnahmen."},"author":{"@type":"Organization","name":"Afinora","url":"https://afinora.app/"}}</script>
   <script>window.AFINORA_I18N={"tabTune":"Stimmen","tabMetronome":"Metronom","tabScales":"Skalen","tabTraining":"Training","tabStudio":"Studio","instGuitar":"Gitarre","instViolin":"Violine","tunerStandard":"Standard","tunerInTune":"Sauber","tunerFlat":"Zu tief","tunerSharp":"Zu hoch","tunerCentered":"Mittig","tunerDetected":"Erkannt","tunerTarget":"Ziel","tunerCents":"Cent","screenMetronome":"Metronom","metroHint":"Tippe auf einen Schlag, um ihn zu betonen oder stummzuschalten","metroSubdivision":"Unterteilung","metroSound":"Klang","screenScales":"Akkorde und Skalen","scalesTab":"Skalen","chordsTab":"Akkorde","scaleDegrees":"7 Töne","fretboard":"Griffbrett","frets":"Bünde","notesTab":"Töne","degreesTab":"Stufen","tonic":"Grundton","colourIsString":"Farbe = Saite","screenStudio":"Studio","audioChip":"AUDIO","videoChip":"VIDEO","inputLevel":"Eingangspegel","backingTrack":"Backing-Track","loopChip":"Loop","autosaveChip":"Auto-Speichern","speedUpChip":"+5% Tempo pro Durchlauf","shoutPerfect":"PERFEKT!","shoutGood":"GUT!","shoutMiss":"DANEBEN!","highwayAlt":"Afinoras Notenautobahn: die Töne wandern über das Griffbrett und jeder wird bewertet, wenn er den Cursor kreuzt","reportHeadline":"Das war sauber","reportExercise":"Dur-Tonleiter · Bünde 5-8","reportClean":"Saubere Töne","reportRhythm":"Rhythmus","reportWhere":"Wann deine Töne landen","reportEarly":"Früh","reportLate":"Spät","reportOnPulse":"Im Puls","reportVerdictClean":"Sauber","reportVerdictLate":"Neben dem Puls","reportVerdictMissed":"Nicht erkannt","screenTechnique":"Üben"};</script>
   <script>(function(){try{
@@ -95,7 +95,6 @@ if(S.indexOf(c)>-1){location.replace('/'+c+'/');return;}}
 <main id="main">
 
 <section class="hero">
-  <div data-mock="field"></div>
   <div class="hero-scrim"></div>
   <div class="wrap">
     <div class="hero-split">
@@ -145,34 +144,37 @@ if(S.indexOf(c)>-1){location.replace('/'+c+'/');return;}}
 
 <section class="technique" id="features">
   <div class="wrap">
-    <p class="eyebrow">Techniktraining</p>
-    <h2 style="margin-top:14px">Am Ende weißt du, welches von beiden gepatzt hat</h2>
-    <p class="lead" style="margin-top:20px">Wenn die Schleife endet, wartet der Bericht: wie viele Töne sauber waren, wie viele neben dem Puls lagen und wo jeder einzelne zum Schlag gelandet ist. Tonhöhe und Timing sind zwei getrennte Zahlen, also verschwindet ein sauberer, aber zu später Ton nicht hinter einem Mittelwert — und du weißt, welches von beiden du üben musst.</p>
+    <div class="technique-grid">
+      <div>
+        <p class="eyebrow">Techniktraining</p>
+        <h2 style="margin-top:14px">Am Ende weißt du, welches von beiden gepatzt hat</h2>
+        <p class="lead" style="margin-top:20px">Wenn die Schleife endet, wartet der Bericht: wie viele Töne sauber waren, wie viele neben dem Puls lagen und wo jeder einzelne zum Schlag gelandet ist. Tonhöhe und Timing sind zwei getrennte Zahlen, also verschwindet ein sauberer, aber zu später Ton nicht hinter einem Mittelwert — und du weißt, welches von beiden du üben musst.</p>
+      </div>
 
     <!--
       The report screen, not the highway again. The hero shows the exercise
       running; this shows what it leaves behind, which is the half a visitor
       cannot guess from the picture above.
     -->
-    <div class="technique-grid">
-      <div class="trio trio-stacked">
-        <div>
-          <h3>Nimm deine eigenen Übungen mit</h3>
-          <p class="small">Fertige Skalenmuster, oder füge deine eigenen als Text ein und Afinora macht eine Strecke daraus.</p>
-        </div>
-        <div>
-          <h3>Das Tempo regelt sich selbst</h3>
-          <p class="small">Die Schleife zieht an, solange du mithältst, und nimmt das Tempo zurück, sobald es klemmt.</p>
-        </div>
-        <div>
-          <h3>Ein Verlauf je Tonleiter</h3>
-          <p class="small">Jede Übung führt ihren eigenen Verlauf, so wird Fortschritt gemessen statt geschätzt.</p>
-        </div>
-      </div>
       <div class="technique-figure">
         <div class="phone phone-sm">
           <div class="screen" data-mock="report"></div>
         </div>
+      </div>
+    </div>
+
+    <div class="trio">
+      <div>
+        <h3>Nimm deine eigenen Übungen mit</h3>
+        <p class="small">Fertige Skalenmuster, oder füge deine eigenen als Text ein und Afinora macht eine Strecke daraus.</p>
+      </div>
+      <div>
+        <h3>Das Tempo regelt sich selbst</h3>
+        <p class="small">Die Schleife zieht an, solange du mithältst, und nimmt das Tempo zurück, sobald es klemmt.</p>
+      </div>
+      <div>
+        <h3>Ein Verlauf je Tonleiter</h3>
+        <p class="small">Jede Übung führt ihren eigenen Verlauf, so wird Fortschritt gemessen statt geschätzt.</p>
       </div>
     </div>
   </div>
@@ -271,17 +273,6 @@ if(S.indexOf(c)>-1){location.replace('/'+c+'/');return;}}
         </div>
       </div>
     </div>
-      <div class="block" id="ear-training">
-        <div class="block-copy">
-          <p class="eyebrow">05 · Gehörtraining</p>
-          <h2 class="block-h2">Du hörst den Ton und suchst ihn auf deinem Instrument</h2>
-          <p class="lead">Afinora spielt einen Ton oder ein Intervall, du findest ihn auf dem Griffbrett und spielst ihn, und der Detektor prüft, ob es stimmt. Du antwortest mit dem Instrument, nicht durch Antippen einer Option auf dem Bildschirm.</p>
-        </div>
-        <div class="price-card">
-          <h3>Neun Sprachen</h3>
-          <p style="margin-top:10px">Spanisch, Englisch, Italienisch, Französisch, Portugiesisch, Deutsch, Japanisch, Chinesisch und Russisch. Die ganze App, nicht nur die Menüs.</p>
-        </div>
-      </div>
     </div>
   </div>
 </section>
