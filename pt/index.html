@@ -33,7 +33,7 @@
   <link rel="preload" href="/assets/fonts/space-grotesk-500-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="/assets/fonts/ibm-plex-sans-400-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="/assets/css/fonts.css?v=eabaf2d7f9">
-  <link rel="stylesheet" href="/assets/css/site.css?v=97854b820f">
+  <link rel="stylesheet" href="/assets/css/site.css?v=74d723be86">
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"Afinora","applicationCategory":"MusicApplication","operatingSystem":"Android, iOS","description":"Afinador de guitarra, baixo, ukulele, cuatro venezuelano, violino e mais. Metrónomo, escalas no teu braço e treino que avalia cada nota. Sem conta nem anúncios.","url":"https://afinora.app/","inLanguage":["en","es","it","fr","pt","de","ja","zh","ru"],"offers":{"@type":"Offer","price":"0","priceCurrency":"USD","description":"Um instrumento, escalas maior e menor, o metrónomo completo, cinco gravações."},"author":{"@type":"Organization","name":"Afinora","url":"https://afinora.app/"}}</script>
   <script>window.AFINORA_I18N={"tabTune":"Afinar","tabMetronome":"Metrónomo","tabScales":"Escalas","tabTraining":"Treinar","tabStudio":"Estúdio","instGuitar":"Guitarra","instViolin":"Violino","tunerStandard":"Padrão","tunerInTune":"Afinada","tunerFlat":"Baixa","tunerSharp":"Alta","tunerCentered":"Centrada","tunerDetected":"Detetada","tunerTarget":"Alvo","tunerCents":"Cents","screenMetronome":"Metrónomo","metroHint":"Toca num tempo para o acentuar ou silenciar","metroSubdivision":"Subdivisão","metroSound":"Som","screenScales":"Acordes e escalas","scalesTab":"Escalas","chordsTab":"Acordes","scaleDegrees":"7 notas","fretboard":"Braço","frets":"trastes","notesTab":"Notas","degreesTab":"Graus","tonic":"Tónica","colourIsString":"Cor = corda","screenStudio":"Estúdio","audioChip":"ÁUDIO","videoChip":"VÍDEO","inputLevel":"Nível de entrada","backingTrack":"Playback","loopChip":"Loop","autosaveChip":"Autossalvamento","speedUpChip":"+5% de velocidade por ciclo","shoutPerfect":"PERFEITO!","shoutGood":"BOA!","shoutMiss":"FALHOU!","highwayAlt":"A autoestrada de notas do Afinora: as notas viajam pelo braço e cada uma é avaliada ao cruzar o cursor","reportHeadline":"Saiu limpo","reportExercise":"Escala maior · trastes 5-8","reportClean":"Notas limpas","reportRhythm":"Ritmo","reportWhere":"Quando caem as tuas notas","reportEarly":"Cedo","reportLate":"Tarde","reportOnPulse":"No pulso","reportVerdictClean":"Limpa","reportVerdictLate":"Fora do pulso","reportVerdictMissed":"Não soou","screenTechnique":"Treino"};</script>
   <script>(function(){try{
@@ -198,71 +198,6 @@ if(S.indexOf(c)>-1){location.replace('/'+c+'/');return;}}
       <div class="cell">
         <div class="figure">9</div>
         <div class="label">Idiomas</div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section id="instruments">
-  <div class="wrap">
-    <h2 class="sub-h2">Dez instrumentos, com as suas afinações</h2>
-    <p class="lead" style="margin-top:14px">Cada um com as suas cordas, as suas afinações alternativas e o braço desenhado com os trastes que tem mesmo, ou sem trastes se não os tiver.</p>
-    <!--
-      Each card draws the strings the instrument actually has and prints its
-      standard tuning. Ten names in a row said nothing a player did not know;
-      six lines against four is the difference itself. Tunings come from the
-      app's own presets, so the page cannot drift away from what it ships.
-    -->
-    <div class="inst-grid">
-      <div class="inst-card">
-        <div class="inst-strings" aria-hidden="true"><span style="height:2.40px"></span><span style="height:2.08px"></span><span style="height:1.76px"></span><span style="height:1.44px"></span><span style="height:1.12px"></span><span style="height:0.80px"></span></div>
-        <h3>Guitarra</h3>
-        <p class="inst-tuning">E A D G B E</p>
-      </div>
-      <div class="inst-card">
-        <div class="inst-strings" aria-hidden="true"><span style="height:2.40px"></span><span style="height:2.13px"></span><span style="height:1.87px"></span><span style="height:1.60px"></span><span style="height:1.33px"></span><span style="height:1.07px"></span><span style="height:0.80px"></span></div>
-        <h3>Guitarra de 7 cordas</h3>
-        <p class="inst-tuning">B E A D G B E</p>
-      </div>
-      <div class="inst-card">
-        <div class="inst-strings" aria-hidden="true"><span style="height:2.40px"></span><span style="height:1.87px"></span><span style="height:1.33px"></span><span style="height:0.80px"></span></div>
-        <h3>Baixo</h3>
-        <p class="inst-tuning">E A D G</p>
-      </div>
-      <div class="inst-card">
-        <div class="inst-strings" aria-hidden="true"><span style="height:2.40px"></span><span style="height:1.87px"></span><span style="height:1.33px"></span><span style="height:0.80px"></span></div>
-        <h3>Ukulele</h3>
-        <p class="inst-tuning">G C E A</p>
-      </div>
-      <div class="inst-card">
-        <div class="inst-strings" aria-hidden="true"><span style="height:2.40px"></span><span style="height:1.87px"></span><span style="height:1.33px"></span><span style="height:0.80px"></span></div>
-        <h3>Cuatro venezuelano</h3>
-        <p class="inst-tuning">A D F# B</p>
-      </div>
-      <div class="inst-card">
-        <div class="inst-strings" aria-hidden="true"><span style="height:2.40px"></span><span style="height:1.87px"></span><span style="height:1.33px"></span><span style="height:0.80px"></span></div>
-        <h3>Violino</h3>
-        <p class="inst-tuning">G D A E</p>
-      </div>
-      <div class="inst-card">
-        <div class="inst-strings" aria-hidden="true"><span style="height:2.40px"></span><span style="height:1.87px"></span><span style="height:1.33px"></span><span style="height:0.80px"></span></div>
-        <h3>Viola d'arco</h3>
-        <p class="inst-tuning">C G D A</p>
-      </div>
-      <div class="inst-card">
-        <div class="inst-strings" aria-hidden="true"><span style="height:2.40px"></span><span style="height:1.87px"></span><span style="height:1.33px"></span><span style="height:0.80px"></span></div>
-        <h3>Violoncelo</h3>
-        <p class="inst-tuning">C G D A</p>
-      </div>
-      <div class="inst-card">
-        <div class="inst-strings" aria-hidden="true"><span style="height:2.40px"></span><span style="height:1.87px"></span><span style="height:1.33px"></span><span style="height:0.80px"></span></div>
-        <h3>Bandolim</h3>
-        <p class="inst-tuning">G D A E</p>
-      </div>
-      <div class="inst-card">
-        <div class="inst-strings" aria-hidden="true"><span style="height:2.40px"></span><span style="height:2.00px"></span><span style="height:1.60px"></span><span style="height:1.20px"></span><span style="height:0.80px"></span></div>
-        <h3>Banjo</h3>
-        <p class="inst-tuning">G D G B D</p>
       </div>
     </div>
   </div>
@@ -477,11 +412,11 @@ if(S.indexOf(c)>-1){location.replace('/'+c+'/');return;}}
       <div>
         <h4>Instrumentos</h4>
         <ul>
-          <li><a href="#instruments">Afinador de guitarra</a></li>
-          <li><a href="#instruments">Afinador de baixo</a></li>
-          <li><a href="#instruments">Afinador de ukulele</a></li>
-          <li><a href="#instruments">Afinador de violino</a></li>
-          <li><a href="#instruments">Afinador de cuatro venezuelano</a></li>
+          <li><a href="#tuner">Afinador de guitarra</a></li>
+          <li><a href="#tuner">Afinador de baixo</a></li>
+          <li><a href="#tuner">Afinador de ukulele</a></li>
+          <li><a href="#tuner">Afinador de violino</a></li>
+          <li><a href="#tuner">Afinador de cuatro venezuelano</a></li>
         </ul>
       </div>
       <div>

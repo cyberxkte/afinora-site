@@ -33,7 +33,7 @@
   <link rel="preload" href="/assets/fonts/space-grotesk-500-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="/assets/fonts/ibm-plex-sans-400-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="/assets/css/fonts.css?v=eabaf2d7f9">
-  <link rel="stylesheet" href="/assets/css/site.css?v=97854b820f">
+  <link rel="stylesheet" href="/assets/css/site.css?v=74d723be86">
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"Afinora","applicationCategory":"MusicApplication","operatingSystem":"Android, iOS","description":"Тюнер для гитары, баса, укулеле, венесуэльского куатро, скрипки и других. Метроном, гаммы на вашем грифе и тренировка с оценкой каждой ноты. Без аккаунта и рекламы.","url":"https://afinora.app/","inLanguage":["en","es","it","fr","pt","de","ja","zh","ru"],"offers":{"@type":"Offer","price":"0","priceCurrency":"USD","description":"Один инструмент, мажорная и минорная гаммы, полный метроном, пять записей."},"author":{"@type":"Organization","name":"Afinora","url":"https://afinora.app/"}}</script>
   <script>window.AFINORA_I18N={"tabTune":"Строй","tabMetronome":"Метроном","tabScales":"Гаммы","tabTraining":"Тренировка","tabStudio":"Студия","instGuitar":"Гитара","instViolin":"Скрипка","tunerStandard":"Стандарт","tunerInTune":"Чисто","tunerFlat":"Низко","tunerSharp":"Высоко","tunerCentered":"По центру","tunerDetected":"Определено","tunerTarget":"Цель","tunerCents":"Центы","screenMetronome":"Метроном","metroHint":"Коснитесь доли, чтобы акцентировать или заглушить","metroSubdivision":"Дробление","metroSound":"Звук","screenScales":"Аккорды и гаммы","scalesTab":"Гаммы","chordsTab":"Аккорды","scaleDegrees":"7 нот","fretboard":"Гриф","frets":"ладов","notesTab":"Ноты","degreesTab":"Ступени","tonic":"Тоника","colourIsString":"Цвет = струна","screenStudio":"Студия","audioChip":"АУДИО","videoChip":"ВИДЕО","inputLevel":"Уровень входа","backingTrack":"Минусовка","loopChip":"Луп","autosaveChip":"Автосохранение","speedUpChip":"+5% темпа за цикл","shoutPerfect":"ИДЕАЛЬНО!","shoutGood":"ХОРОШО!","shoutMiss":"МИМО!","highwayAlt":"Нотная дорожка Afinora: ноты движутся вдоль грифа, и каждая оценивается при пересечении курсора","reportHeadline":"Вышло чисто","reportExercise":"Мажорная гамма · лады 5-8","reportClean":"Чистые ноты","reportRhythm":"Ритм","reportWhere":"Когда попадают ваши ноты","reportEarly":"Рано","reportLate":"Поздно","reportOnPulse":"В долю","reportVerdictClean":"Чисто","reportVerdictLate":"Мимо доли","reportVerdictMissed":"Не прозвучала","screenTechnique":"Тренировка"};</script>
   <script>(function(){try{
@@ -198,71 +198,6 @@ if(S.indexOf(c)>-1){location.replace('/'+c+'/');return;}}
       <div class="cell">
         <div class="figure">9</div>
         <div class="label">Языков</div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section id="instruments">
-  <div class="wrap">
-    <h2 class="sub-h2">Десять инструментов со своими строями</h2>
-    <p class="lead" style="margin-top:14px">Свои струны, свои альтернативные строи и гриф, нарисованный с теми ладами, которые у него есть, — или без них.</p>
-    <!--
-      Each card draws the strings the instrument actually has and prints its
-      standard tuning. Ten names in a row said nothing a player did not know;
-      six lines against four is the difference itself. Tunings come from the
-      app's own presets, so the page cannot drift away from what it ships.
-    -->
-    <div class="inst-grid">
-      <div class="inst-card">
-        <div class="inst-strings" aria-hidden="true"><span style="height:2.40px"></span><span style="height:2.08px"></span><span style="height:1.76px"></span><span style="height:1.44px"></span><span style="height:1.12px"></span><span style="height:0.80px"></span></div>
-        <h3>Гитара</h3>
-        <p class="inst-tuning">E A D G B E</p>
-      </div>
-      <div class="inst-card">
-        <div class="inst-strings" aria-hidden="true"><span style="height:2.40px"></span><span style="height:2.13px"></span><span style="height:1.87px"></span><span style="height:1.60px"></span><span style="height:1.33px"></span><span style="height:1.07px"></span><span style="height:0.80px"></span></div>
-        <h3>Семиструнная гитара</h3>
-        <p class="inst-tuning">B E A D G B E</p>
-      </div>
-      <div class="inst-card">
-        <div class="inst-strings" aria-hidden="true"><span style="height:2.40px"></span><span style="height:1.87px"></span><span style="height:1.33px"></span><span style="height:0.80px"></span></div>
-        <h3>Бас-гитара</h3>
-        <p class="inst-tuning">E A D G</p>
-      </div>
-      <div class="inst-card">
-        <div class="inst-strings" aria-hidden="true"><span style="height:2.40px"></span><span style="height:1.87px"></span><span style="height:1.33px"></span><span style="height:0.80px"></span></div>
-        <h3>Укулеле</h3>
-        <p class="inst-tuning">G C E A</p>
-      </div>
-      <div class="inst-card">
-        <div class="inst-strings" aria-hidden="true"><span style="height:2.40px"></span><span style="height:1.87px"></span><span style="height:1.33px"></span><span style="height:0.80px"></span></div>
-        <h3>Венесуэльский куатро</h3>
-        <p class="inst-tuning">A D F# B</p>
-      </div>
-      <div class="inst-card">
-        <div class="inst-strings" aria-hidden="true"><span style="height:2.40px"></span><span style="height:1.87px"></span><span style="height:1.33px"></span><span style="height:0.80px"></span></div>
-        <h3>Скрипка</h3>
-        <p class="inst-tuning">G D A E</p>
-      </div>
-      <div class="inst-card">
-        <div class="inst-strings" aria-hidden="true"><span style="height:2.40px"></span><span style="height:1.87px"></span><span style="height:1.33px"></span><span style="height:0.80px"></span></div>
-        <h3>Альт</h3>
-        <p class="inst-tuning">C G D A</p>
-      </div>
-      <div class="inst-card">
-        <div class="inst-strings" aria-hidden="true"><span style="height:2.40px"></span><span style="height:1.87px"></span><span style="height:1.33px"></span><span style="height:0.80px"></span></div>
-        <h3>Виолончель</h3>
-        <p class="inst-tuning">C G D A</p>
-      </div>
-      <div class="inst-card">
-        <div class="inst-strings" aria-hidden="true"><span style="height:2.40px"></span><span style="height:1.87px"></span><span style="height:1.33px"></span><span style="height:0.80px"></span></div>
-        <h3>Мандолина</h3>
-        <p class="inst-tuning">G D A E</p>
-      </div>
-      <div class="inst-card">
-        <div class="inst-strings" aria-hidden="true"><span style="height:2.40px"></span><span style="height:2.00px"></span><span style="height:1.60px"></span><span style="height:1.20px"></span><span style="height:0.80px"></span></div>
-        <h3>Банджо</h3>
-        <p class="inst-tuning">G D G B D</p>
       </div>
     </div>
   </div>
@@ -477,11 +412,11 @@ if(S.indexOf(c)>-1){location.replace('/'+c+'/');return;}}
       <div>
         <h4>Инструменты</h4>
         <ul>
-          <li><a href="#instruments">Тюнер для гитары</a></li>
-          <li><a href="#instruments">Тюнер для баса</a></li>
-          <li><a href="#instruments">Тюнер для укулеле</a></li>
-          <li><a href="#instruments">Тюнер для скрипки</a></li>
-          <li><a href="#instruments">Тюнер для венесуэльского куатро</a></li>
+          <li><a href="#tuner">Тюнер для гитары</a></li>
+          <li><a href="#tuner">Тюнер для баса</a></li>
+          <li><a href="#tuner">Тюнер для укулеле</a></li>
+          <li><a href="#tuner">Тюнер для скрипки</a></li>
+          <li><a href="#tuner">Тюнер для венесуэльского куатро</a></li>
         </ul>
       </div>
       <div>

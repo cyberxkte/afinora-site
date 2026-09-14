@@ -53,27 +53,6 @@ const APPLE_GLYPH = `<svg class="store-glyph" viewBox="0 0 384 512" aria-hidden=
  * `noopener` stays: it costs nothing and still applies if a browser opens one
  * of these in a tab of its own (a middle click, or Cmd held down).
  */
-/*
- * How many strings each instrument has, and how it is tuned as it ships.
- *
- * Same order as instruments.list in every locale, so the two stay in step —
- * build.mjs already fails when a locale's array is a different length.
- * Values come from src/features/tunings/presets/guitarTuningPresets.ts in the
- * app repository.
- */
-const INSTRUMENT_STRINGS = [
-  { count: 6, tuning: 'E A D G B E' },
-  { count: 7, tuning: 'B E A D G B E' },
-  { count: 4, tuning: 'E A D G' },
-  { count: 4, tuning: 'G C E A' },
-  { count: 4, tuning: 'A D F# B' },
-  { count: 4, tuning: 'G D A E' },
-  { count: 4, tuning: 'C G D A' },
-  { count: 4, tuning: 'C G D A' },
-  { count: 4, tuning: 'G D A E' },
-  { count: 5, tuning: 'G D G B D' },
-];
-
 function storeButtons(t, className = '') {
   return `<div class="store-row${className ? ' ' + className : ''}">
       <a class="store-btn play" href="${PLAY_URL}" rel="noopener noreferrer">
@@ -184,33 +163,6 @@ export default function landing(ctx) {
         <div class="figure">${esc(s.figure)}</div>
         <div class="label">${esc(s.label)}</div>
       </div>`).join('\n      ')}
-    </div>
-  </div>
-</section>
-
-<section id="instruments">
-  <div class="wrap">
-    <h2 class="sub-h2">${esc(t('instruments.heading'))}</h2>
-    <p class="lead" style="margin-top:14px">${esc(t('instruments.body'))}</p>
-    <!--
-      Each card draws the strings the instrument actually has and prints its
-      standard tuning. Ten names in a row said nothing a player did not know;
-      six lines against four is the difference itself. Tunings come from the
-      app's own presets, so the page cannot drift away from what it ships.
-    -->
-    <div class="inst-grid">
-      ${t('instruments.list').map((name, i) => {
-        const spec = INSTRUMENT_STRINGS[i];
-        const strings = Array.from({ length: spec.count }, (_, s) => {
-          const weight = (2.4 - (s / Math.max(spec.count - 1, 1)) * 1.6).toFixed(2);
-          return `<span style="height:${weight}px"></span>`;
-        }).join('');
-        return `<div class="inst-card">
-        <div class="inst-strings" aria-hidden="true">${strings}</div>
-        <h3>${esc(name)}</h3>
-        <p class="inst-tuning">${esc(spec.tuning)}</p>
-      </div>`;
-      }).join('\n      ')}
     </div>
   </div>
 </section>

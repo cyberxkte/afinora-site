@@ -190,22 +190,6 @@
       "label": "Idiomas"
     }
   ],
-  "instruments": {
-    "heading": "Dez instrumentos, com as suas afinações",
-    "body": "Cada um com as suas cordas, as suas afinações alternativas e o braço desenhado com os trastes que tem mesmo, ou sem trastes se não os tiver.",
-    "list": [
-      "Guitarra",
-      "Guitarra de 7 cordas",
-      "Baixo",
-      "Ukulele",
-      "Cuatro venezuelano",
-      "Violino",
-      "Viola d'arco",
-      "Violoncelo",
-      "Bandolim",
-      "Banjo"
-    ]
-  },
   "technique": {
     "eyebrow": "Treino técnico",
     "heading": "No fim sabes qual das duas falhou",

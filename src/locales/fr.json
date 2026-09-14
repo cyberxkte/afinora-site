@@ -190,22 +190,6 @@
       "label": "Langues"
     }
   ],
-  "instruments": {
-    "heading": "Dix instruments, avec leurs accordages",
-    "body": "Chacun avec ses cordes, ses accordages alternatifs et son manche dessiné avec les frettes qu'il a vraiment, ou sans frettes du tout s'il n'en a pas.",
-    "list": [
-      "Guitare",
-      "Guitare 7 cordes",
-      "Basse",
-      "Ukulélé",
-      "Cuatro vénézuélien",
-      "Violon",
-      "Alto",
-      "Violoncelle",
-      "Mandoline",
-      "Banjo"
-    ]
-  },
   "technique": {
     "eyebrow": "Entraînement technique",
     "heading": "À la fin, vous savez laquelle des deux a lâché",

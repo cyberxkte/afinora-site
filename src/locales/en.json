@@ -190,22 +190,6 @@
       "label": "Languages"
     }
   ],
-  "instruments": {
-    "heading": "Ten instruments, with their tunings",
-    "body": "Its own strings, its own alternate tunings, and its neck drawn with the frets it has — or without them.",
-    "list": [
-      "Guitar",
-      "7-string guitar",
-      "Bass",
-      "Ukulele",
-      "Venezuelan cuatro",
-      "Violin",
-      "Viola",
-      "Cello",
-      "Mandolin",
-      "Banjo"
-    ]
-  },
   "technique": {
     "eyebrow": "Technique training",
     "heading": "When you finish, you know which of the two failed",

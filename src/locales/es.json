@@ -190,22 +190,6 @@
       "label": "Idiomas"
     }
   ],
-  "instruments": {
-    "heading": "Diez instrumentos, con sus afinaciones",
-    "body": "Cada uno con sus cuerdas, sus afinaciones alternativas y su mástil dibujado con los trastes que tiene de verdad, o sin trastes si no los lleva.",
-    "list": [
-      "Guitarra",
-      "Guitarra de 7 cuerdas",
-      "Bajo",
-      "Ukelele",
-      "Cuatro venezolano",
-      "Violín",
-      "Viola",
-      "Violonchelo",
-      "Mandolina",
-      "Banjo"
-    ]
-  },
   "technique": {
     "eyebrow": "Entrenamiento técnico",
     "heading": "Al terminar sabes cuál de las dos falló",

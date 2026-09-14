@@ -190,22 +190,6 @@
       "label": "Lingue"
     }
   ],
-  "instruments": {
-    "heading": "Dieci strumenti, con le loro accordature",
-    "body": "Ognuno con le sue corde, le sue accordature alternative e il manico disegnato con i tasti che ha davvero, o senza tasti se non ne ha.",
-    "list": [
-      "Chitarra",
-      "Chitarra a 7 corde",
-      "Basso",
-      "Ukulele",
-      "Cuatro venezuelano",
-      "Violino",
-      "Viola",
-      "Violoncello",
-      "Mandolino",
-      "Banjo"
-    ]
-  },
   "technique": {
     "eyebrow": "Allenamento tecnico",
     "heading": "Alla fine sai quale delle due è mancata",

@@ -190,22 +190,6 @@
       "label": "Sprachen"
     }
   ],
-  "instruments": {
-    "heading": "Zehn Instrumente, mit ihren Stimmungen",
-    "body": "Jedes mit seinen eigenen Saiten, seinen alternativen Stimmungen und einem Hals, der mit den Bünden gezeichnet ist, die er wirklich hat — oder ganz ohne Bünde, wenn er keine hat.",
-    "list": [
-      "Gitarre",
-      "7-saitige Gitarre",
-      "Bass",
-      "Ukulele",
-      "Venezolanischer Cuatro",
-      "Violine",
-      "Viola",
-      "Cello",
-      "Mandoline",
-      "Banjo"
-    ]
-  },
   "technique": {
     "eyebrow": "Techniktraining",
     "heading": "Am Ende weißt du, welches von beiden gepatzt hat",

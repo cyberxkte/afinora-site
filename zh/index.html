@@ -33,7 +33,7 @@
   <link rel="preload" href="/assets/fonts/space-grotesk-500-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="/assets/fonts/ibm-plex-sans-400-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="/assets/css/fonts.css?v=eabaf2d7f9">
-  <link rel="stylesheet" href="/assets/css/site.css?v=97854b820f">
+  <link rel="stylesheet" href="/assets/css/site.css?v=74d723be86">
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"Afinora","applicationCategory":"MusicApplication","operatingSystem":"Android, iOS","description":"适用于吉他、贝斯、尤克里里、委内瑞拉四弦琴、小提琴等的调音器。节拍器、画在你指板上的音阶，以及为每个音评分的训练。无需账号，没有广告。","url":"https://afinora.app/","inLanguage":["en","es","it","fr","pt","de","ja","zh","ru"],"offers":{"@type":"Offer","price":"0","priceCurrency":"USD","description":"一种乐器、大调与小调音阶、完整的节拍器、五段录音。"},"author":{"@type":"Organization","name":"Afinora","url":"https://afinora.app/"}}</script>
   <script>window.AFINORA_I18N={"tabTune":"调音","tabMetronome":"节拍器","tabScales":"音阶","tabTraining":"训练","tabStudio":"录音室","instGuitar":"吉他","instViolin":"小提琴","tunerStandard":"标准","tunerInTune":"准了","tunerFlat":"偏低","tunerSharp":"偏高","tunerCentered":"居中","tunerDetected":"检测到","tunerTarget":"目标","tunerCents":"音分","screenMetronome":"节拍器","metroHint":"点击某一拍以加重或静音","metroSubdivision":"细分","metroSound":"音色","screenScales":"和弦与音阶","scalesTab":"音阶","chordsTab":"和弦","scaleDegrees":"7 个音","fretboard":"指板","frets":"品","notesTab":"音名","degreesTab":"级数","tonic":"主音","colourIsString":"颜色 = 弦","screenStudio":"录音室","audioChip":"音频","videoChip":"视频","inputLevel":"输入电平","backingTrack":"伴奏","loopChip":"循环","autosaveChip":"自动保存","speedUpChip":"每次循环 +5% 速度","shoutPerfect":"完美!","shoutGood":"不错!","shoutMiss":"没中!","highwayAlt":"Afinora 的音符轨道：音符沿指板移动，每一个在越过光标时被评分","reportHeadline":"干净利落","reportExercise":"大调音阶 · 5-8品","reportClean":"干净的音","reportRhythm":"节奏","reportWhere":"你的音落在哪里","reportEarly":"偏早","reportLate":"偏晚","reportOnPulse":"在拍上","reportVerdictClean":"干净","reportVerdictLate":"偏离拍点","reportVerdictMissed":"没有响","screenTechnique":"训练"};</script>
   <script>(function(){try{
@@ -198,71 +198,6 @@ if(S.indexOf(c)>-1){location.replace('/'+c+'/');return;}}
       <div class="cell">
         <div class="figure">9</div>
         <div class="label">语言</div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section id="instruments">
-  <div class="wrap">
-    <h2 class="sub-h2">十种乐器，各有其调弦方式</h2>
-    <p class="lead" style="margin-top:14px">各自的琴弦、各自的变则调弦，以及按它实际的品格绘制的琴颈——没有品的就照实画。</p>
-    <!--
-      Each card draws the strings the instrument actually has and prints its
-      standard tuning. Ten names in a row said nothing a player did not know;
-      six lines against four is the difference itself. Tunings come from the
-      app's own presets, so the page cannot drift away from what it ships.
-    -->
-    <div class="inst-grid">
-      <div class="inst-card">
-        <div class="inst-strings" aria-hidden="true"><span style="height:2.40px"></span><span style="height:2.08px"></span><span style="height:1.76px"></span><span style="height:1.44px"></span><span style="height:1.12px"></span><span style="height:0.80px"></span></div>
-        <h3>吉他</h3>
-        <p class="inst-tuning">E A D G B E</p>
-      </div>
-      <div class="inst-card">
-        <div class="inst-strings" aria-hidden="true"><span style="height:2.40px"></span><span style="height:2.13px"></span><span style="height:1.87px"></span><span style="height:1.60px"></span><span style="height:1.33px"></span><span style="height:1.07px"></span><span style="height:0.80px"></span></div>
-        <h3>七弦吉他</h3>
-        <p class="inst-tuning">B E A D G B E</p>
-      </div>
-      <div class="inst-card">
-        <div class="inst-strings" aria-hidden="true"><span style="height:2.40px"></span><span style="height:1.87px"></span><span style="height:1.33px"></span><span style="height:0.80px"></span></div>
-        <h3>贝斯</h3>
-        <p class="inst-tuning">E A D G</p>
-      </div>
-      <div class="inst-card">
-        <div class="inst-strings" aria-hidden="true"><span style="height:2.40px"></span><span style="height:1.87px"></span><span style="height:1.33px"></span><span style="height:0.80px"></span></div>
-        <h3>尤克里里</h3>
-        <p class="inst-tuning">G C E A</p>
-      </div>
-      <div class="inst-card">
-        <div class="inst-strings" aria-hidden="true"><span style="height:2.40px"></span><span style="height:1.87px"></span><span style="height:1.33px"></span><span style="height:0.80px"></span></div>
-        <h3>委内瑞拉四弦琴</h3>
-        <p class="inst-tuning">A D F# B</p>
-      </div>
-      <div class="inst-card">
-        <div class="inst-strings" aria-hidden="true"><span style="height:2.40px"></span><span style="height:1.87px"></span><span style="height:1.33px"></span><span style="height:0.80px"></span></div>
-        <h3>小提琴</h3>
-        <p class="inst-tuning">G D A E</p>
-      </div>
-      <div class="inst-card">
-        <div class="inst-strings" aria-hidden="true"><span style="height:2.40px"></span><span style="height:1.87px"></span><span style="height:1.33px"></span><span style="height:0.80px"></span></div>
-        <h3>中提琴</h3>
-        <p class="inst-tuning">C G D A</p>
-      </div>
-      <div class="inst-card">
-        <div class="inst-strings" aria-hidden="true"><span style="height:2.40px"></span><span style="height:1.87px"></span><span style="height:1.33px"></span><span style="height:0.80px"></span></div>
-        <h3>大提琴</h3>
-        <p class="inst-tuning">C G D A</p>
-      </div>
-      <div class="inst-card">
-        <div class="inst-strings" aria-hidden="true"><span style="height:2.40px"></span><span style="height:1.87px"></span><span style="height:1.33px"></span><span style="height:0.80px"></span></div>
-        <h3>曼陀林</h3>
-        <p class="inst-tuning">G D A E</p>
-      </div>
-      <div class="inst-card">
-        <div class="inst-strings" aria-hidden="true"><span style="height:2.40px"></span><span style="height:2.00px"></span><span style="height:1.60px"></span><span style="height:1.20px"></span><span style="height:0.80px"></span></div>
-        <h3>班卓琴</h3>
-        <p class="inst-tuning">G D G B D</p>
       </div>
     </div>
   </div>
@@ -477,11 +412,11 @@ if(S.indexOf(c)>-1){location.replace('/'+c+'/');return;}}
       <div>
         <h4>乐器</h4>
         <ul>
-          <li><a href="#instruments">吉他调音器</a></li>
-          <li><a href="#instruments">贝斯调音器</a></li>
-          <li><a href="#instruments">尤克里里调音器</a></li>
-          <li><a href="#instruments">小提琴调音器</a></li>
-          <li><a href="#instruments">委内瑞拉四弦琴调音器</a></li>
+          <li><a href="#tuner">吉他调音器</a></li>
+          <li><a href="#tuner">贝斯调音器</a></li>
+          <li><a href="#tuner">尤克里里调音器</a></li>
+          <li><a href="#tuner">小提琴调音器</a></li>
+          <li><a href="#tuner">委内瑞拉四弦琴调音器</a></li>
         </ul>
       </div>
       <div>

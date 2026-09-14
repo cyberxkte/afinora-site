@@ -272,7 +272,7 @@ function footer({ lang, page, t, langs, langNames }) {
       <div>
         <h4>${esc(t('footer.instrumentsHeading'))}</h4>
         <ul>
-          ${instruments.map((s) => `<li><a href="${anchor(lang, page, 'instruments')}">${esc(s)}</a></li>`).join('\n          ')}
+          ${instruments.map((s) => `<li><a href="${anchor(lang, page, 'tuner')}">${esc(s)}</a></li>`).join('\n          ')}
         </ul>
       </div>
       <div>
