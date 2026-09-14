@@ -33,7 +33,7 @@
   <link rel="preload" href="/assets/fonts/space-grotesk-500-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="/assets/fonts/ibm-plex-sans-400-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="/assets/css/fonts.css?v=eabaf2d7f9">
-  <link rel="stylesheet" href="/assets/css/site.css?v=07aa550a34">
+  <link rel="stylesheet" href="/assets/css/site.css?v=bf7df0c517">
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"Afinora","applicationCategory":"MusicApplication","operatingSystem":"Android, iOS","description":"Accordatore per chitarra, basso, ukulele, cuatro venezuelano, violino e altri. Metronomo, scale sul tuo manico e allenamento che valuta ogni nota. Senza account.","url":"https://afinora.app/","inLanguage":["en","es","it","fr","pt","de","ja","zh","ru"],"offers":{"@type":"Offer","price":"0","priceCurrency":"USD","description":"Uno strumento, scale maggiore e minore, il metronomo completo, cinque registrazioni."},"author":{"@type":"Organization","name":"Afinora","url":"https://afinora.app/"}}</script>
   <script>window.AFINORA_I18N={"tabTune":"Accorda","tabMetronome":"Metronomo","tabScales":"Scale","tabTraining":"Allena","tabStudio":"Studio","instGuitar":"Chitarra","instViolin":"Violino","tunerStandard":"Standard","tunerInTune":"Intonata","tunerFlat":"Bassa","tunerSharp":"Alta","tunerCentered":"Centrata","tunerDetected":"Rilevata","tunerTarget":"Obiettivo","tunerCents":"Cent","screenMetronome":"Metronomo","metroHint":"Tocca un battito per accentarlo o silenziarlo","metroSubdivision":"Suddivisione","metroSound":"Suono","screenScales":"Accordi e scale","scalesTab":"Scale","chordsTab":"Accordi","scaleDegrees":"7 note","fretboard":"Manico","frets":"tasti","notesTab":"Note","degreesTab":"Gradi","tonic":"Tonica","colourIsString":"Colore = corda","screenStudio":"Studio","audioChip":"AUDIO","videoChip":"VIDEO","inputLevel":"Livello d'ingresso","backingTrack":"Base musicale","loopChip":"Loop","autosaveChip":"Autosalvataggio","speedUpChip":"+5% di velocità a ogni giro","shoutPerfect":"PERFETTO!","shoutGood":"BENE!","shoutMiss":"MANCATA!","highwayAlt":"L'autostrada di note di Afinora: le note viaggiano lungo il manico e ognuna viene valutata quando attraversa il cursore"};</script>
   <script>(function(){try{
@@ -98,12 +98,11 @@ if(S.indexOf(c)>-1){location.replace('/'+c+'/');return;}}
   <div data-mock="field"></div>
   <div class="hero-scrim"></div>
   <div class="wrap">
-    <div class="hero-grid">
-      <div class="hero-copy">
-        <p class="eyebrow">Per chitarra, basso, ukulele, cuatro venezuelano, violino e altro</p>
-        <h1>Suona una scala. Ti dice quali note sono arrivate in ritardo.</h1>
-        <p class="lead">Afinora ascolta mentre suoni e valuta ogni nota singolarmente: intonazione da una parte e tempo dall’altra, così alla fine sai esattamente su cosa lavorare. Accorda anche dieci strumenti e include un metronomo completo. Tutto sul dispositivo, senza account.</p>
-        <div class="store-row">
+    <div class="hero-copy">
+      <p class="eyebrow">Per chitarra, basso, ukulele, cuatro venezuelano, violino e altro</p>
+      <h1>Suona una scala. Ti dice quali note sono arrivate in ritardo.</h1>
+      <p class="lead">Afinora ascolta mentre suoni e valuta ogni nota singolarmente: intonazione da una parte e tempo dall’altra, così alla fine sai esattamente su cosa lavorare. Accorda anche dieci strumenti e include un metronomo completo. Tutto sul dispositivo, senza account.</p>
+      <div class="store-row">
       <a class="store-btn play" href="https://play.google.com/store/apps/details?id=com.afinora.app" rel="noopener noreferrer">
         <svg class="store-glyph" viewBox="0 0 512 512" aria-hidden="true" focusable="false">
       <path fill="#00C3FF" d="M47.6 1.2C41.7 7.4 38.2 17.1 38.2 29.6v452.8c0 12.5 3.5 22.2 9.4 28.4l1.5 1.5 253.7-253.7v-6L49.1-.3z"/>
@@ -126,12 +125,15 @@ if(S.indexOf(c)>-1){location.replace('/'+c+'/');return;}}
         </span>
       </a>
     </div>
-        <p class="fine">Senza account · senza pubblicità · l'audio non lascia mai il telefono</p>
-      </div>
-      <div>
-        <div class="phone">
-          <div class="screen" data-mock="tuner"></div>
-        </div>
+      <p class="fine">Senza account · senza pubblicità · l'audio non lascia mai il telefono</p>
+    </div>
+
+    <div class="highway-card">
+      <div data-mock="highway"></div>
+      <div class="legend">
+        <div><span class="dot" style="background:#5ee7f0"></span>Perfettamente a tempo</div>
+        <div><span class="dot" style="background:#8fbf5a"></span>Suonata, ma in ritardo</div>
+        <div><span class="dot" style="background:#e0554a"></span>Non suonata</div>
       </div>
     </div>
   </div>
@@ -142,15 +144,6 @@ if(S.indexOf(c)>-1){location.replace('/'+c+'/');return;}}
     <p class="eyebrow">Allenamento tecnico</p>
     <h2 style="margin-top:14px">Valuta intonazione e tempo di ogni nota che suoni</h2>
     <p class="lead" style="margin-top:20px">Scegli una scala, imposta il tempo e suonala seguendo il metronomo. Il rilevatore ascolta e valuta ogni nota singolarmente mentre la suoni: perfettamente a tempo, in ritardo oppure non suonata. Intonazione e tempo vengono misurati separatamente, così alla fine sai esattamente su quali note lavorare, senza andare a intuito. Le note scorrono lungo il manico, con un colore per ogni dito e una corsia per ogni corda, e tu le esegui sullo strumento.</p>
-
-    <div class="highway-card">
-      <div data-mock="highway"></div>
-      <div class="legend">
-        <div><span class="dot" style="background:#5ee7f0"></span>Perfettamente a tempo</div>
-        <div><span class="dot" style="background:#8fbf5a"></span>Suonata, ma in ritardo</div>
-        <div><span class="dot" style="background:#e0554a"></span>Non suonata</div>
-      </div>
-    </div>
 
     <div class="trio">
       <div>

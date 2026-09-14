@@ -33,7 +33,7 @@
   <link rel="preload" href="/assets/fonts/space-grotesk-500-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="/assets/fonts/ibm-plex-sans-400-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="/assets/css/fonts.css?v=eabaf2d7f9">
-  <link rel="stylesheet" href="/assets/css/site.css?v=07aa550a34">
+  <link rel="stylesheet" href="/assets/css/site.css?v=bf7df0c517">
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"Afinora","applicationCategory":"MusicApplication","operatingSystem":"Android, iOS","description":"Stimmgerät für Gitarre, Bass, Ukulele, venezolanischen Cuatro, Geige und mehr. Metronom, Skalen auf deinem Griffbrett und Training, das jeden Ton bewertet. Ohne Konto.","url":"https://afinora.app/","inLanguage":["en","es","it","fr","pt","de","ja","zh","ru"],"offers":{"@type":"Offer","price":"0","priceCurrency":"USD","description":"Ein Instrument, Dur- und Moll-Tonleiter, das vollständige Metronom, fünf Aufnahmen."},"author":{"@type":"Organization","name":"Afinora","url":"https://afinora.app/"}}</script>
   <script>window.AFINORA_I18N={"tabTune":"Stimmen","tabMetronome":"Metronom","tabScales":"Skalen","tabTraining":"Training","tabStudio":"Studio","instGuitar":"Gitarre","instViolin":"Violine","tunerStandard":"Standard","tunerInTune":"Sauber","tunerFlat":"Zu tief","tunerSharp":"Zu hoch","tunerCentered":"Mittig","tunerDetected":"Erkannt","tunerTarget":"Ziel","tunerCents":"Cent","screenMetronome":"Metronom","metroHint":"Tippe auf einen Schlag, um ihn zu betonen oder stummzuschalten","metroSubdivision":"Unterteilung","metroSound":"Klang","screenScales":"Akkorde und Skalen","scalesTab":"Skalen","chordsTab":"Akkorde","scaleDegrees":"7 Töne","fretboard":"Griffbrett","frets":"Bünde","notesTab":"Töne","degreesTab":"Stufen","tonic":"Grundton","colourIsString":"Farbe = Saite","screenStudio":"Studio","audioChip":"AUDIO","videoChip":"VIDEO","inputLevel":"Eingangspegel","backingTrack":"Backing-Track","loopChip":"Loop","autosaveChip":"Auto-Speichern","speedUpChip":"+5% Tempo pro Durchlauf","shoutPerfect":"PERFEKT!","shoutGood":"GUT!","shoutMiss":"DANEBEN!","highwayAlt":"Afinoras Notenautobahn: die Töne wandern über das Griffbrett und jeder wird bewertet, wenn er den Cursor kreuzt"};</script>
   <script>(function(){try{
@@ -98,12 +98,11 @@ if(S.indexOf(c)>-1){location.replace('/'+c+'/');return;}}
   <div data-mock="field"></div>
   <div class="hero-scrim"></div>
   <div class="wrap">
-    <div class="hero-grid">
-      <div class="hero-copy">
-        <p class="eyebrow">Für Gitarre, Bass, Ukulele, venezolanischen Cuatro, Geige und mehr</p>
-        <h1>Spiel eine Tonleiter. Es sagt dir, welche Töne zu spät kamen.</h1>
-        <p class="lead">Afinora hört dir beim Spielen zu und bewertet jeden Ton einzeln: Tonhöhe getrennt vom Timing, damit du am Ende genau weißt, was du üben musst. Es stimmt außerdem zehn Instrumente und bringt ein vollständiges Metronom mit. Alles auf dem Gerät, ohne Konto.</p>
-        <div class="store-row">
+    <div class="hero-copy">
+      <p class="eyebrow">Für Gitarre, Bass, Ukulele, venezolanischen Cuatro, Geige und mehr</p>
+      <h1>Spiel eine Tonleiter. Es sagt dir, welche Töne zu spät kamen.</h1>
+      <p class="lead">Afinora hört dir beim Spielen zu und bewertet jeden Ton einzeln: Tonhöhe getrennt vom Timing, damit du am Ende genau weißt, was du üben musst. Es stimmt außerdem zehn Instrumente und bringt ein vollständiges Metronom mit. Alles auf dem Gerät, ohne Konto.</p>
+      <div class="store-row">
       <a class="store-btn play" href="https://play.google.com/store/apps/details?id=com.afinora.app" rel="noopener noreferrer">
         <svg class="store-glyph" viewBox="0 0 512 512" aria-hidden="true" focusable="false">
       <path fill="#00C3FF" d="M47.6 1.2C41.7 7.4 38.2 17.1 38.2 29.6v452.8c0 12.5 3.5 22.2 9.4 28.4l1.5 1.5 253.7-253.7v-6L49.1-.3z"/>
@@ -126,12 +125,15 @@ if(S.indexOf(c)>-1){location.replace('/'+c+'/');return;}}
         </span>
       </a>
     </div>
-        <p class="fine">Kein Konto · keine Werbung · das Audio verlässt das Telefon nie</p>
-      </div>
-      <div>
-        <div class="phone">
-          <div class="screen" data-mock="tuner"></div>
-        </div>
+      <p class="fine">Kein Konto · keine Werbung · das Audio verlässt das Telefon nie</p>
+    </div>
+
+    <div class="highway-card">
+      <div data-mock="highway"></div>
+      <div class="legend">
+        <div><span class="dot" style="background:#5ee7f0"></span>Genau im Takt</div>
+        <div><span class="dot" style="background:#8fbf5a"></span>Gespielt, aber zu spät</div>
+        <div><span class="dot" style="background:#e0554a"></span>Gar nicht erkannt</div>
       </div>
     </div>
   </div>
@@ -142,15 +144,6 @@ if(S.indexOf(c)>-1){location.replace('/'+c+'/');return;}}
     <p class="eyebrow">Techniktraining</p>
     <h2 style="margin-top:14px">Es bewertet Tonhöhe und Timing jedes Tons, den du spielst</h2>
     <p class="lead" style="margin-top:20px">Du wählst eine Tonleiter, stellst ein Tempo ein und spielst sie zum Metronom. Der Detektor hört zu und bewertet jeden Ton einzeln, sobald er klingt: genau im Takt, zu spät, oder gar nicht erkannt. Tonhöhe und Timing werden getrennt gemessen, also weißt du am Ende genau, welche Töne du üben musst, statt es zu erraten. Die Töne wandern über das Griffbrett, eine Farbe pro Finger und eine Spur pro Saite, und du spielst sie auf dem Instrument.</p>
-
-    <div class="highway-card">
-      <div data-mock="highway"></div>
-      <div class="legend">
-        <div><span class="dot" style="background:#5ee7f0"></span>Genau im Takt</div>
-        <div><span class="dot" style="background:#8fbf5a"></span>Gespielt, aber zu spät</div>
-        <div><span class="dot" style="background:#e0554a"></span>Gar nicht erkannt</div>
-      </div>
-    </div>
 
     <div class="trio">
       <div>

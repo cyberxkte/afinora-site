@@ -311,6 +311,12 @@ p { margin: 0; text-wrap: pretty; }
   align-items: center;
 }
 
+/* The hero is one column now: the highway runs the full width beneath the
+   words rather than a phone standing beside them. A note travelling along a
+   neck needs the width to read as movement. */
+.hero-copy { max-width: 760px; }
+.hero .highway-card { margin-top: 34px; }
+
 .hero-copy {
   display: flex;
   flex-direction: column;

@@ -33,7 +33,7 @@
   <link rel="preload" href="/assets/fonts/space-grotesk-500-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="/assets/fonts/ibm-plex-sans-400-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="/assets/css/fonts.css?v=eabaf2d7f9">
-  <link rel="stylesheet" href="/assets/css/site.css?v=07aa550a34">
+  <link rel="stylesheet" href="/assets/css/site.css?v=bf7df0c517">
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"Afinora","applicationCategory":"MusicApplication","operatingSystem":"Android, iOS","description":"ギター、ベース、ウクレレ、クアトロ、ヴァイオリンなどに対応したチューナー。メトロノーム、自分の指板に描かれるスケール、一音ずつ採点する練習。アカウント不要、広告なし。","url":"https://afinora.app/","inLanguage":["en","es","it","fr","pt","de","ja","zh","ru"],"offers":{"@type":"Offer","price":"0","priceCurrency":"USD","description":"楽器1つ、メジャーとマイナーのスケール、メトロノーム全機能、録音5件。"},"author":{"@type":"Organization","name":"Afinora","url":"https://afinora.app/"}}</script>
   <script>window.AFINORA_I18N={"tabTune":"チューン","tabMetronome":"メトロノーム","tabScales":"スケール","tabTraining":"練習","tabStudio":"スタジオ","instGuitar":"ギター","instViolin":"ヴァイオリン","tunerStandard":"標準","tunerInTune":"合っています","tunerFlat":"低い","tunerSharp":"高い","tunerCentered":"中央","tunerDetected":"検出","tunerTarget":"目標","tunerCents":"セント","screenMetronome":"メトロノーム","metroHint":"拍をタップしてアクセントまたはミュート","metroSubdivision":"分割","metroSound":"音色","screenScales":"コードとスケール","scalesTab":"スケール","chordsTab":"コード","scaleDegrees":"7音","fretboard":"指板","frets":"フレット","notesTab":"音名","degreesTab":"度数","tonic":"主音","colourIsString":"色 = 弦","screenStudio":"スタジオ","audioChip":"音声","videoChip":"ビデオ","inputLevel":"入力レベル","backingTrack":"バッキングトラック","loopChip":"ループ","autosaveChip":"自動保存","speedUpChip":"ループごとに+5%","shoutPerfect":"パーフェクト!","shoutGood":"グッド!","shoutMiss":"ミス!","highwayAlt":"Afinoraのノートハイウェイ：音符が指板を流れ、カーソルを横切るたびに採点されます"};</script>
   <script>(function(){try{
@@ -98,12 +98,11 @@ if(S.indexOf(c)>-1){location.replace('/'+c+'/');return;}}
   <div data-mock="field"></div>
   <div class="hero-scrim"></div>
   <div class="wrap">
-    <div class="hero-grid">
-      <div class="hero-copy">
-        <p class="eyebrow">ギター、ベース、ウクレレ、ベネズエラ・クアトロ、ヴァイオリンなどに</p>
-        <h1>スケールを弾く。どの音が遅れたかを教えてくれます。</h1>
-        <p class="lead">Afinoraは弾いている音を聴き、一音ずつ別々に採点します。音程とタイミングを分けて測るので、終わったときに何を練習すべきかがはっきりします。十種類の楽器のチューニングにも対応し、メトロノームも一式そろっています。すべて端末上で動き、アカウントは不要です。</p>
-        <div class="store-row">
+    <div class="hero-copy">
+      <p class="eyebrow">ギター、ベース、ウクレレ、ベネズエラ・クアトロ、ヴァイオリンなどに</p>
+      <h1>スケールを弾く。どの音が遅れたかを教えてくれます。</h1>
+      <p class="lead">Afinoraは弾いている音を聴き、一音ずつ別々に採点します。音程とタイミングを分けて測るので、終わったときに何を練習すべきかがはっきりします。十種類の楽器のチューニングにも対応し、メトロノームも一式そろっています。すべて端末上で動き、アカウントは不要です。</p>
+      <div class="store-row">
       <a class="store-btn play" href="https://play.google.com/store/apps/details?id=com.afinora.app" rel="noopener noreferrer">
         <svg class="store-glyph" viewBox="0 0 512 512" aria-hidden="true" focusable="false">
       <path fill="#00C3FF" d="M47.6 1.2C41.7 7.4 38.2 17.1 38.2 29.6v452.8c0 12.5 3.5 22.2 9.4 28.4l1.5 1.5 253.7-253.7v-6L49.1-.3z"/>
@@ -126,12 +125,15 @@ if(S.indexOf(c)>-1){location.replace('/'+c+'/');return;}}
         </span>
       </a>
     </div>
-        <p class="fine">アカウント不要 · 広告なし · 音声は端末から出ません</p>
-      </div>
-      <div>
-        <div class="phone">
-          <div class="screen" data-mock="tuner"></div>
-        </div>
+      <p class="fine">アカウント不要 · 広告なし · 音声は端末から出ません</p>
+    </div>
+
+    <div class="highway-card">
+      <div data-mock="highway"></div>
+      <div class="legend">
+        <div><span class="dot" style="background:#5ee7f0"></span>ぴったり拍の上</div>
+        <div><span class="dot" style="background:#8fbf5a"></span>鳴ったが、遅れた</div>
+        <div><span class="dot" style="background:#e0554a"></span>鳴らなかった</div>
       </div>
     </div>
   </div>
@@ -142,15 +144,6 @@ if(S.indexOf(c)>-1){location.replace('/'+c+'/');return;}}
     <p class="eyebrow">テクニック練習</p>
     <h2 style="margin-top:14px">演奏を聴きながら、音程とタイミングを一音ずつ採点します</h2>
     <p class="lead" style="margin-top:20px">スケールを選び、テンポを決めて、メトロノームに合わせて弾きます。音程検出器が聴き取り、音が鳴った瞬間に一音ずつ別々に採点します。ぴったり拍の上か、遅れたか、鳴らなかったか。音程とタイミングは別々に測るため、終わったときには当て推量ではなく、どの音を練習すべきかがわかります。音符は指ごとの色と弦ごとのレーンで指板を流れ、あなたはそれを実際の楽器で弾きます。</p>
-
-    <div class="highway-card">
-      <div data-mock="highway"></div>
-      <div class="legend">
-        <div><span class="dot" style="background:#5ee7f0"></span>ぴったり拍の上</div>
-        <div><span class="dot" style="background:#8fbf5a"></span>鳴ったが、遅れた</div>
-        <div><span class="dot" style="background:#e0554a"></span>鳴らなかった</div>
-      </div>
-    </div>
 
     <div class="trio">
       <div>

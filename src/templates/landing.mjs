@@ -104,18 +104,20 @@ export default function landing(ctx) {
   <div data-mock="field"></div>
   <div class="hero-scrim"></div>
   <div class="wrap">
-    <div class="hero-grid">
-      <div class="hero-copy">
-        <p class="eyebrow">${esc(t('hero.eyebrow'))}</p>
-        <h1>${esc(t('hero.heading'))}</h1>
-        <p class="lead">${esc(t('hero.body'))}</p>
-        ${storeButtons(t)}
-        <p class="fine">${esc(t('hero.fine'))}</p>
-      </div>
-      <div>
-        <div class="phone">
-          <div class="screen" data-mock="tuner"></div>
-        </div>
+    <div class="hero-copy">
+      <p class="eyebrow">${esc(t('hero.eyebrow'))}</p>
+      <h1>${esc(t('hero.heading'))}</h1>
+      <p class="lead">${esc(t('hero.body'))}</p>
+      ${storeButtons(t)}
+      <p class="fine">${esc(t('hero.fine'))}</p>
+    </div>
+
+    <div class="highway-card">
+      <div data-mock="highway"></div>
+      <div class="legend">
+        <div><span class="dot" style="background:#5ee7f0"></span>${esc(t('technique.legendPerfect'))}</div>
+        <div><span class="dot" style="background:#8fbf5a"></span>${esc(t('technique.legendHit'))}</div>
+        <div><span class="dot" style="background:#e0554a"></span>${esc(t('technique.legendMiss'))}</div>
       </div>
     </div>
   </div>
@@ -126,15 +128,6 @@ export default function landing(ctx) {
     <p class="eyebrow">${esc(t('technique.eyebrow'))}</p>
     <h2 style="margin-top:14px">${esc(t('technique.heading'))}</h2>
     <p class="lead" style="margin-top:20px">${esc(t('technique.body'))}</p>
-
-    <div class="highway-card">
-      <div data-mock="highway"></div>
-      <div class="legend">
-        <div><span class="dot" style="background:#5ee7f0"></span>${esc(t('technique.legendPerfect'))}</div>
-        <div><span class="dot" style="background:#8fbf5a"></span>${esc(t('technique.legendHit'))}</div>
-        <div><span class="dot" style="background:#e0554a"></span>${esc(t('technique.legendMiss'))}</div>
-      </div>
-    </div>
 
     <div class="trio">
       ${t('technique.points').map((p) => `<div>
