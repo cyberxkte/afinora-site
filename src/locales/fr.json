@@ -260,9 +260,8 @@
     "heading": "On commence par cinq jours entiers",
     "body": "Ensuite, la version gratuite garde un instrument de votre choix, les gammes majeure et mineure, tout le métronome et cinq enregistrements de Studio. Pro est un achat unique, pas un abonnement, et débloque le reste définitivement.",
     "freeHeading": "Gratuit",
-    "proHeading": "Pro · paiement unique",
-    "price": "9,99 € ou 9,99 US$ dans la plupart des pays",
-    "neverBody": "Pas d'abonnement · pas de publicité · pas de compte · pas de suivi · pas d'audio sur un serveur",
+    "price": "9,99 US$",
+    "neverBody": "Pas de publicité · pas de compte · pas de suivi · pas d'audio sur un serveur",
     "freeItems": [
       {
         "n": "1",
@@ -291,14 +290,22 @@
         "label": "gammes"
       },
       {
-        "n": "20",
-        "label": "accords"
+        "n": "∞",
+        "label": "entraînement technique"
       },
       {
         "n": "∞",
         "label": "enregistrements Studio"
+      },
+      {
+        "n": "IA",
+        "label": "vos propres exercices"
       }
-    ]
+    ],
+    "proName": "Afinora Pro",
+    "proKind": "Paiement unique",
+    "priceNote": "ou 9,99 € dans la plupart des pays",
+    "paidOnce": "Payé une fois, à vous pour de bon. Il n'y a pas d'abonnement."
   },
   "download": {
     "heading": "Téléchargez Afinora",

@@ -33,7 +33,7 @@
   <link rel="preload" href="/assets/fonts/space-grotesk-500-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="/assets/fonts/ibm-plex-sans-400-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="/assets/css/fonts.css?v=eabaf2d7f9">
-  <link rel="stylesheet" href="/assets/css/site.css?v=221c9f0d16">
+  <link rel="stylesheet" href="/assets/css/site.css?v=d902cb3ab2">
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"Afinora","applicationCategory":"MusicApplication","operatingSystem":"Android, iOS","description":"Tuner for guitar, bass, ukulele, Venezuelan cuatro, violin and more. Metronome, scales on your own neck, and training that grades every note. No account, no ads.","url":"https://afinora.app/","inLanguage":["en","es","it","fr","pt","de","ja","zh","ru"],"offers":{"@type":"Offer","price":"0","priceCurrency":"USD","description":"1 instrument, 2 scales, major and minor, 1 metronome, complete, 5 Studio recordings"},"author":{"@type":"Organization","name":"Afinora","url":"https://afinora.app/"}}</script>
   <script>window.AFINORA_I18N={"tabTune":"Tune","tabMetronome":"Metronome","tabScales":"Scales","tabTraining":"Training","tabStudio":"Studio","instGuitar":"Guitar","instViolin":"Violin","tunerStandard":"Standard","tunerInTune":"In tune","tunerFlat":"Flat","tunerSharp":"Sharp","tunerCentered":"Centered","tunerDetected":"Detected","tunerTarget":"Target","tunerCents":"Cents","screenMetronome":"Metronome","metroHint":"Tap a beat to accent or silence it","metroSubdivision":"Subdivision","metroSound":"Sound","screenScales":"Chords & Scales","scalesTab":"Scales","chordsTab":"Chords","scaleDegrees":"7 notes","fretboard":"Fretboard","frets":"frets","notesTab":"Notes","degreesTab":"Degrees","tonic":"Tonic","colourIsString":"Colour = string","screenStudio":"Studio","audioChip":"AUDIO","videoChip":"VIDEO","inputLevel":"Input level","backingTrack":"Backing track","loopChip":"Loop","autosaveChip":"Auto-save","speedUpChip":"+5% speed-up per loop","shoutPerfect":"PERFECT!","shoutGood":"GOOD!","shoutMiss":"MISS!","highwayAlt":"Afinora's note highway: notes travel along the neck and each one is graded as it crosses the cursor","miniTempoLabel":"Clean tempo","miniHistoryNotes":"Notes","miniHistoryTiming":"Timing","miniHistoryBest":"New best","miniHistoryCaption":"Latest session"};</script>
   <script>(function(){try{
@@ -374,10 +374,6 @@ if(S.indexOf(c)>-1){location.replace('/'+c+'/');return;}}
     <p class="eyebrow">Free and Pro</p>
     <h2 class="sub-h2" style="margin-top:14px">It opens with five full days</h2>
     <p class="lead" style="margin-top:16px">After that, the free version keeps one instrument of your choice, the major and minor scales, the whole metronome and five Studio recordings. Pro is a one-time purchase, not a subscription, and unlocks the rest permanently.</p>
-    <!--
-      Two lists with the same four lines, so the difference between them is the
-      column rather than a sentence the reader has to hold in their head.
-    -->
     <div class="price-grid">
       <div class="price-card">
         <h3>Free</h3>
@@ -388,23 +384,52 @@ if(S.indexOf(c)>-1){location.replace('/'+c+'/');return;}}
           <div><dt>5</dt><dd>Studio recordings</dd></div>
         </dl>
       </div>
+
+      <!--
+        The paid card carries the mark and the price, because this is the thing
+        the section is selling. The promises sit inside it rather than under
+        both: "no subscription" is worth more next to a price than floating
+        beneath a comparison.
+      -->
       <div class="price-card pro">
-        <h3>Pro · one-time purchase</h3>
-        <dl>
+        <div class="pro-head">
+          <div class="pro-mark"><svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+  <g transform="translate(5 6.567) scale(0.9)">
+    <defs>
+      <mask id="m" maskUnits="userSpaceOnUse" x="0" y="0" width="100" height="100">
+        <rect x="0" y="0" width="100" height="100" fill="#fff"/>
+        <circle cx="50" cy="66" r="7.5" fill="#000"/>
+      </mask>
+    </defs>
+    <path d="M27 66 L73 66" fill="none" stroke="#2f7f60" stroke-width="6" stroke-linecap="round" mask="url(#m)"/>
+    <g fill="none" stroke="#34d399" stroke-width="11">
+      <path d="M20 88 L32.38 56.64"/>
+      <path d="M80 88 L67.62 56.64"/>
+      <path d="M36.42 46.4 L50 12 L63.58 46.4" stroke-linejoin="round"/>
+    </g>
+    <circle cx="50" cy="66" r="5" fill="#6ee7b7"/>
+  </g>
+</svg></div>
+          <div class="pro-name">
+            <h3>Afinora Pro</h3>
+            <p class="pro-kind">One-time purchase</p>
+          </div>
+          <div class="pro-price">
+            <span class="amount">US$9.99</span>
+            <span class="note">or €9.99 in most countries</span>
+          </div>
+        </div>
+        <dl class="pro-items">
           <div><dt>10</dt><dd>instruments</dd></div>
           <div><dt>20</dt><dd>scales</dd></div>
-          <div><dt>20</dt><dd>chords</dd></div>
+          <div><dt>∞</dt><dd>technique training</dd></div>
           <div><dt>∞</dt><dd>Studio recordings</dd></div>
+          <div><dt>AI</dt><dd>your own exercises</dd></div>
         </dl>
-        <!-- The price appears exactly once on the page, and near the bottom. -->
-        <p class="price">US$9.99 or €9.99 in most countries</p>
+        <p class="paid-once">Paid once. Yours for good — there is no subscription.</p>
+        <p class="never">No ads · no account · no tracking · no audio on a server</p>
       </div>
     </div>
-
-    <!-- Not a third card: a card shaped like the other two would read as a
-         third plan, and counting four zeros is a joke that wears out by the
-         third one. -->
-    <p class="never">No subscription · no ads · no account · no tracking · no audio on a server</p>
   </div>
 </section>
 

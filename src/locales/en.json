@@ -260,9 +260,8 @@
     "heading": "It opens with five full days",
     "body": "After that, the free version keeps one instrument of your choice, the major and minor scales, the whole metronome and five Studio recordings. Pro is a one-time purchase, not a subscription, and unlocks the rest permanently.",
     "freeHeading": "Free",
-    "proHeading": "Pro · one-time purchase",
-    "price": "US$9.99 or €9.99 in most countries",
-    "neverBody": "No subscription · no ads · no account · no tracking · no audio on a server",
+    "price": "US$9.99",
+    "neverBody": "No ads · no account · no tracking · no audio on a server",
     "freeItems": [
       {
         "n": "1",
@@ -291,14 +290,22 @@
         "label": "scales"
       },
       {
-        "n": "20",
-        "label": "chords"
+        "n": "∞",
+        "label": "technique training"
       },
       {
         "n": "∞",
         "label": "Studio recordings"
+      },
+      {
+        "n": "AI",
+        "label": "your own exercises"
       }
-    ]
+    ],
+    "proName": "Afinora Pro",
+    "proKind": "One-time purchase",
+    "priceNote": "or €9.99 in most countries",
+    "paidOnce": "Paid once. Yours for good — there is no subscription."
   },
   "download": {
     "heading": "Download Afinora",

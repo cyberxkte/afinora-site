@@ -301,10 +301,6 @@ export default function landing(ctx) {
     <p class="eyebrow">${esc(t('pricing.eyebrow'))}</p>
     <h2 class="sub-h2" style="margin-top:14px">${esc(t('pricing.heading'))}</h2>
     <p class="lead" style="margin-top:16px">${esc(t('pricing.body'))}</p>
-    <!--
-      Two lists with the same four lines, so the difference between them is the
-      column rather than a sentence the reader has to hold in their head.
-    -->
     <div class="price-grid">
       <div class="price-card">
         <h3>${esc(t('pricing.freeHeading'))}</h3>
@@ -312,20 +308,32 @@ export default function landing(ctx) {
           ${t('pricing.freeItems').map((i) => `<div><dt>${esc(i.n)}</dt><dd>${esc(i.label)}</dd></div>`).join('\n          ')}
         </dl>
       </div>
+
+      <!--
+        The paid card carries the mark and the price, because this is the thing
+        the section is selling. The promises sit inside it rather than under
+        both: "no subscription" is worth more next to a price than floating
+        beneath a comparison.
+      -->
       <div class="price-card pro">
-        <h3>${esc(t('pricing.proHeading'))}</h3>
-        <dl>
+        <div class="pro-head">
+          <div class="pro-mark">${MARK}</div>
+          <div class="pro-name">
+            <h3>${esc(t('pricing.proName'))}</h3>
+            <p class="pro-kind">${esc(t('pricing.proKind'))}</p>
+          </div>
+          <div class="pro-price">
+            <span class="amount">${esc(t('pricing.price'))}</span>
+            <span class="note">${esc(t('pricing.priceNote'))}</span>
+          </div>
+        </div>
+        <dl class="pro-items">
           ${t('pricing.proItems').map((i) => `<div><dt>${esc(i.n)}</dt><dd>${esc(i.label)}</dd></div>`).join('\n          ')}
         </dl>
-        <!-- The price appears exactly once on the page, and near the bottom. -->
-        <p class="price">${esc(t('pricing.price'))}</p>
+        <p class="paid-once">${esc(t('pricing.paidOnce'))}</p>
+        <p class="never">${esc(t('pricing.neverBody'))}</p>
       </div>
     </div>
-
-    <!-- Not a third card: a card shaped like the other two would read as a
-         third plan, and counting four zeros is a joke that wears out by the
-         third one. -->
-    <p class="never">${esc(t('pricing.neverBody'))}</p>
   </div>
 </section>
 

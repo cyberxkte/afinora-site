@@ -33,7 +33,7 @@
   <link rel="preload" href="/assets/fonts/space-grotesk-500-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="/assets/fonts/ibm-plex-sans-400-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="/assets/css/fonts.css?v=eabaf2d7f9">
-  <link rel="stylesheet" href="/assets/css/site.css?v=221c9f0d16">
+  <link rel="stylesheet" href="/assets/css/site.css?v=d902cb3ab2">
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"Afinora","applicationCategory":"MusicApplication","operatingSystem":"Android, iOS","description":"Accordeur pour guitare, basse, ukulélé, cuatro vénézuélien, violon et plus. Métronome, gammes sur votre manche et entraînement qui note chaque note. Sans compte.","url":"https://afinora.app/","inLanguage":["en","es","it","fr","pt","de","ja","zh","ru"],"offers":{"@type":"Offer","price":"0","priceCurrency":"USD","description":"1 instrument, 2 gammes, majeure et mineure, 1 métronome, complet, 5 enregistrements Studio"},"author":{"@type":"Organization","name":"Afinora","url":"https://afinora.app/"}}</script>
   <script>window.AFINORA_I18N={"tabTune":"Accorder","tabMetronome":"Métronome","tabScales":"Gammes","tabTraining":"Entraîner","tabStudio":"Studio","instGuitar":"Guitare","instViolin":"Violon","tunerStandard":"Standard","tunerInTune":"Juste","tunerFlat":"Bas","tunerSharp":"Haut","tunerCentered":"Centré","tunerDetected":"Détecté","tunerTarget":"Cible","tunerCents":"Cents","screenMetronome":"Métronome","metroHint":"Touchez un temps pour l'accentuer ou le muter","metroSubdivision":"Subdivision","metroSound":"Son","screenScales":"Accords et gammes","scalesTab":"Gammes","chordsTab":"Accords","scaleDegrees":"7 notes","fretboard":"Manche","frets":"frettes","notesTab":"Notes","degreesTab":"Degrés","tonic":"Tonique","colourIsString":"Couleur = corde","screenStudio":"Studio","audioChip":"AUDIO","videoChip":"VIDÉO","inputLevel":"Niveau d'entrée","backingTrack":"Piste d'accompagnement","loopChip":"Boucle","autosaveChip":"Sauvegarde auto","speedUpChip":"+5% de vitesse à chaque tour","shoutPerfect":"PARFAIT !","shoutGood":"BIEN !","shoutMiss":"RATÉ !","highwayAlt":"L'autoroute de notes d'Afinora : les notes défilent le long du manche et chacune est notée quand elle franchit le curseur","miniTempoLabel":"Tempo propre","miniHistoryNotes":"Notes","miniHistoryTiming":"Placement","miniHistoryBest":"Nouveau record","miniHistoryCaption":"Dernière session"};</script>
   <script>(function(){try{
@@ -374,10 +374,6 @@ if(S.indexOf(c)>-1){location.replace('/'+c+'/');return;}}
     <p class="eyebrow">Gratuit et Pro</p>
     <h2 class="sub-h2" style="margin-top:14px">On commence par cinq jours entiers</h2>
     <p class="lead" style="margin-top:16px">Ensuite, la version gratuite garde un instrument de votre choix, les gammes majeure et mineure, tout le métronome et cinq enregistrements de Studio. Pro est un achat unique, pas un abonnement, et débloque le reste définitivement.</p>
-    <!--
-      Two lists with the same four lines, so the difference between them is the
-      column rather than a sentence the reader has to hold in their head.
-    -->
     <div class="price-grid">
       <div class="price-card">
         <h3>Gratuit</h3>
@@ -388,23 +384,52 @@ if(S.indexOf(c)>-1){location.replace('/'+c+'/');return;}}
           <div><dt>5</dt><dd>enregistrements Studio</dd></div>
         </dl>
       </div>
+
+      <!--
+        The paid card carries the mark and the price, because this is the thing
+        the section is selling. The promises sit inside it rather than under
+        both: "no subscription" is worth more next to a price than floating
+        beneath a comparison.
+      -->
       <div class="price-card pro">
-        <h3>Pro · paiement unique</h3>
-        <dl>
+        <div class="pro-head">
+          <div class="pro-mark"><svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+  <g transform="translate(5 6.567) scale(0.9)">
+    <defs>
+      <mask id="m" maskUnits="userSpaceOnUse" x="0" y="0" width="100" height="100">
+        <rect x="0" y="0" width="100" height="100" fill="#fff"/>
+        <circle cx="50" cy="66" r="7.5" fill="#000"/>
+      </mask>
+    </defs>
+    <path d="M27 66 L73 66" fill="none" stroke="#2f7f60" stroke-width="6" stroke-linecap="round" mask="url(#m)"/>
+    <g fill="none" stroke="#34d399" stroke-width="11">
+      <path d="M20 88 L32.38 56.64"/>
+      <path d="M80 88 L67.62 56.64"/>
+      <path d="M36.42 46.4 L50 12 L63.58 46.4" stroke-linejoin="round"/>
+    </g>
+    <circle cx="50" cy="66" r="5" fill="#6ee7b7"/>
+  </g>
+</svg></div>
+          <div class="pro-name">
+            <h3>Afinora Pro</h3>
+            <p class="pro-kind">Paiement unique</p>
+          </div>
+          <div class="pro-price">
+            <span class="amount">9,99 US$</span>
+            <span class="note">ou 9,99 € dans la plupart des pays</span>
+          </div>
+        </div>
+        <dl class="pro-items">
           <div><dt>10</dt><dd>instruments</dd></div>
           <div><dt>20</dt><dd>gammes</dd></div>
-          <div><dt>20</dt><dd>accords</dd></div>
+          <div><dt>∞</dt><dd>entraînement technique</dd></div>
           <div><dt>∞</dt><dd>enregistrements Studio</dd></div>
+          <div><dt>IA</dt><dd>vos propres exercices</dd></div>
         </dl>
-        <!-- The price appears exactly once on the page, and near the bottom. -->
-        <p class="price">9,99 € ou 9,99 US$ dans la plupart des pays</p>
+        <p class="paid-once">Payé une fois, à vous pour de bon. Il n'y a pas d'abonnement.</p>
+        <p class="never">Pas de publicité · pas de compte · pas de suivi · pas d'audio sur un serveur</p>
       </div>
     </div>
-
-    <!-- Not a third card: a card shaped like the other two would read as a
-         third plan, and counting four zeros is a joke that wears out by the
-         third one. -->
-    <p class="never">Pas d'abonnement · pas de publicité · pas de compte · pas de suivi · pas d'audio sur un serveur</p>
   </div>
 </section>
 
