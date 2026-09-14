@@ -127,7 +127,16 @@ ${urls.join('\n')}
  */
 async function assetVersion(path) {
   const bytes = await readFile(join(ROOT, path));
-  return createHash('sha256').update(bytes).digest('hex').slice(0, 10);
+  /*
+    Hash the content, not the line endings.
+
+    Git hands this file CRLF on a Windows checkout and LF on the Linux runner,
+    so hashing the raw bytes gave two different versions for one unchanged
+    stylesheet. Every build then disagreed with the last one, the workflow
+    committed the difference, and the next push hit a conflict over nothing.
+  */
+  const normalised = bytes.toString('utf8').replace(/\r\n/g, '\n');
+  return createHash('sha256').update(normalised, 'utf8').digest('hex').slice(0, 10);
 }
 
 async function main() {
