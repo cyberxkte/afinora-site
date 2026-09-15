@@ -223,7 +223,7 @@
     "metronome": {
       "eyebrow": "03 · Métronome",
       "heading": "Réglez le tempo, choisissez la mesure et jouez",
-      "body": "Vous ne connaissez pas le BPM ? Tapez-le et Afinora le calcule. De 30 à 300 BPM, des mesures de 2/4 à 12/8, et des subdivisions jusqu'aux doubles croches — celles qui aident dans les tempos lents, où c'est l'espace entre les temps qui vous déstabilise. Touchez n'importe quel temps de la mesure pour l'accentuer ou le muter. C'est le même clic sur lequel l'entraînement technique mesure votre placement, et il est complet dans la version gratuite."
+      "body": "Vous ne connaissez pas le BPM ? Tapez-le et Afinora le calcule. De 30 à 300 BPM et des mesures de 2/4 à 12/8, avec des subdivisions jusqu’aux doubles croches : dans les tempos lents il est facile de se perdre entre un temps et le suivant, et c’est là qu'elles aident. Touchez n'importe quel temps de la mesure pour l'accentuer ou le muter. C'est le même clic sur lequel l'entraînement mesure votre placement, et il est complet dans la version gratuite."
     },
     "studio": {
       "eyebrow": "04 · Studio",
