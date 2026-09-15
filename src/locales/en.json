@@ -197,15 +197,15 @@
     "points": [
       {
         "heading": "Bring your own exercises",
-        "body": "Built-in scale patterns, or paste your own as plain text and Afinora turns it into a route."
+        "body": "Built-in scale patterns, or paste your own as plain text and Afinora turns it into an exercise you can play."
       },
       {
-        "heading": "The tempo moves on its own",
-        "body": "The loop speeds up while you keep up and drops the tempo when you don't."
+        "heading": "The tempo adjusts itself",
+        "body": "Every clean lap raises it. Start missing notes and it comes back down."
       },
       {
         "heading": "A history per scale",
-        "body": "Every exercise keeps its own history, so progress is a measured figure."
+        "body": "Each exercise keeps its own record, so you can see whether you are getting better."
       }
     ]
   },
