@@ -135,6 +135,31 @@ if(S.indexOf(c)>-1){location.replace('/'+c+'/');return;}}
 }catch(e){}})();</script>`;
 }
 
+/**
+ * Show the euro price to the euro area.
+ *
+ * Runs from the time zone the browser already knows, so nothing is sent
+ * anywhere and there is nothing to ask permission for. The euro AREA, not
+ * Europe: London bills in pounds, Zurich in francs, Warsaw in zloty, and a
+ * euro figure would be a worse guess for them than the dollar one.
+ *
+ * Inline and before the card renders, so the figure does not visibly change
+ * under the reader. The shipped HTML keeps the dollar, which is what gets
+ * indexed and what shows with JavaScript off.
+ */
+const PRICE_SWAP = `<script>(function(){try{
+var Z={'Europe/Madrid':1,'Europe/Paris':1,'Europe/Berlin':1,'Europe/Rome':1,'Europe/Amsterdam':1,
+'Europe/Brussels':1,'Europe/Vienna':1,'Europe/Lisbon':1,'Europe/Dublin':1,'Europe/Helsinki':1,
+'Europe/Athens':1,'Europe/Bratislava':1,'Europe/Ljubljana':1,'Europe/Luxembourg':1,'Europe/Malta':1,
+'Europe/Nicosia':1,'Europe/Riga':1,'Europe/Tallinn':1,'Europe/Vilnius':1,'Europe/Zagreb':1,
+'Europe/Monaco':1,'Europe/Andorra':1,'Europe/San_Marino':1,'Europe/Vatican':1,'Europe/Podgorica':1,
+'Europe/Mariehamn':1,'Europe/Busingen':1,'Atlantic/Canary':1,'Atlantic/Azores':1,'Atlantic/Madeira':1};
+if(!Z[Intl.DateTimeFormat().resolvedOptions().timeZone])return;
+document.addEventListener('DOMContentLoaded',function(){
+var n=document.querySelector('.amount[data-eur]');
+if(n&&n.dataset.eur)n.textContent=n.dataset.eur;});
+}catch(e){}})();</script>`;
+
 /** A link from one page to another within the same language. */
 export function rel(lang, from, to) {
   // Every page of a language lives in the same directory, so a bare filename
@@ -217,6 +242,7 @@ function head({ lang, page, t, langs, strings, assets }) {
   <link rel="stylesheet" href="/assets/css/site.css?v=${assets.css}">${jsonLd}
   <script>window.AFINORA_I18N=${JSON.stringify(strings)};</script>
   ${redirectScript(langs)}
+  ${page === 'index' ? PRICE_SWAP : ''}
 </head>`;
 }
 

@@ -305,7 +305,8 @@
     "proKind": "One-time purchase",
     "paidOnce": "Paid once. Yours for good — there is no subscription.",
     "price": "About US$9.99",
-    "priceNote": "your store sets the price for your country"
+    "priceNote": "your store sets the price for your country",
+    "priceEur": "About €9.99"
   },
   "download": {
     "heading": "Download Afinora",

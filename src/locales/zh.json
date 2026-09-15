@@ -305,7 +305,8 @@
     "proKind": "一次性购买",
     "paidOnce": "付一次，永远是你的。没有订阅。",
     "price": "约 US$9.99",
-    "priceNote": "你所在国家的价格由商店决定"
+    "priceNote": "你所在国家的价格由商店决定",
+    "priceEur": "约 €9.99"
   },
   "download": {
     "heading": "下载 Afinora",

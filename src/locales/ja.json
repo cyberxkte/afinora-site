@@ -305,7 +305,8 @@
     "proKind": "買い切り",
     "paidOnce": "一度払えば、ずっとあなたのものです。サブスクはありません。",
     "price": "約 US$9.99",
-    "priceNote": "国ごとの価格はストアが決めます"
+    "priceNote": "国ごとの価格はストアが決めます",
+    "priceEur": "約 €9.99"
   },
   "download": {
     "heading": "Afinoraをダウンロード",

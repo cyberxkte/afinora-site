@@ -326,7 +326,7 @@ export default function landing(ctx) {
                not available to a static page: Apple and Google set it per
                country and neither publishes it. -->
           <div class="pro-price">
-            <span class="amount">${esc(t('pricing.price'))}</span>
+            <span class="amount" data-eur="${esc(t('pricing.priceEur'))}">${esc(t('pricing.price'))}</span>
             <span class="note">${esc(t('pricing.priceNote'))}</span>
           </div>
         </div>

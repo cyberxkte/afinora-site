@@ -305,7 +305,8 @@
     "proKind": "Pago único",
     "paidOnce": "Se paga una vez y es tuyo. No hay suscripción.",
     "price": "Unos 9,99 US$",
-    "priceNote": "cada tienda fija el precio de tu país"
+    "priceNote": "cada tienda fija el precio de tu país",
+    "priceEur": "Unos 9,99 €"
   },
   "download": {
     "heading": "Descarga Afinora",

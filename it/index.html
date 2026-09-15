@@ -48,6 +48,18 @@ for(var i=0;i<L.length;i++){var c=String(L[i]).toLowerCase().split('-')[0];
 if(c==='en')return;
 if(S.indexOf(c)>-1){location.replace('/'+c+'/');return;}}
 }catch(e){}})();</script>
+  <script>(function(){try{
+var Z={'Europe/Madrid':1,'Europe/Paris':1,'Europe/Berlin':1,'Europe/Rome':1,'Europe/Amsterdam':1,
+'Europe/Brussels':1,'Europe/Vienna':1,'Europe/Lisbon':1,'Europe/Dublin':1,'Europe/Helsinki':1,
+'Europe/Athens':1,'Europe/Bratislava':1,'Europe/Ljubljana':1,'Europe/Luxembourg':1,'Europe/Malta':1,
+'Europe/Nicosia':1,'Europe/Riga':1,'Europe/Tallinn':1,'Europe/Vilnius':1,'Europe/Zagreb':1,
+'Europe/Monaco':1,'Europe/Andorra':1,'Europe/San_Marino':1,'Europe/Vatican':1,'Europe/Podgorica':1,
+'Europe/Mariehamn':1,'Europe/Busingen':1,'Atlantic/Canary':1,'Atlantic/Azores':1,'Atlantic/Madeira':1};
+if(!Z[Intl.DateTimeFormat().resolvedOptions().timeZone])return;
+document.addEventListener('DOMContentLoaded',function(){
+var n=document.querySelector('.amount[data-eur]');
+if(n&&n.dataset.eur)n.textContent=n.dataset.eur;});
+}catch(e){}})();</script>
 </head>
 <body id="top">
 <a class="skip" href="#main">Vai al contenuto</a>
@@ -418,7 +430,7 @@ if(S.indexOf(c)>-1){location.replace('/'+c+'/');return;}}
                not available to a static page: Apple and Google set it per
                country and neither publishes it. -->
           <div class="pro-price">
-            <span class="amount">Circa 9,99 US$</span>
+            <span class="amount" data-eur="Circa 9,99 €">Circa 9,99 US$</span>
             <span class="note">il prezzo del tuo paese lo fissa lo store</span>
           </div>
         </div>

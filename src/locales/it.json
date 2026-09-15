@@ -305,7 +305,8 @@
     "proKind": "Pagamento unico",
     "paidOnce": "Si paga una volta ed è tuo. Non c’è nessun abbonamento.",
     "price": "Circa 9,99 US$",
-    "priceNote": "il prezzo del tuo paese lo fissa lo store"
+    "priceNote": "il prezzo del tuo paese lo fissa lo store",
+    "priceEur": "Circa 9,99 €"
   },
   "download": {
     "heading": "Scarica Afinora",
