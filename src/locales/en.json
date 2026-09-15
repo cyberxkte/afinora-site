@@ -213,7 +213,7 @@
     "tuner": {
       "eyebrow": "01 · Tuner",
       "heading": "Reads every note exactly",
-      "body": "Real-time pitch detection, processed on the device itself. Over thirty standard and alternate tunings, plus the ones you build yourself. A reference tone on any string and six A4 references, from 432 to 442 Hz. Reads an unplugged electric guitar."
+      "body": "Real-time pitch detection, processed on the device itself. Over thirty standard and alternate tunings, plus the ones you build yourself. A reference tone on any string and six A4 references, from 432 to 442 Hz."
     },
     "scales": {
       "eyebrow": "02 · Chords and scales",

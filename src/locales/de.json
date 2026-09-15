@@ -213,7 +213,7 @@
     "tuner": {
       "eyebrow": "01 · Stimmgerät",
       "heading": "Liest jeden Ton genau",
-      "body": "Echtzeit-Tonhöhenerkennung, direkt auf dem Gerät verarbeitet. Über dreißig Standard- und alternative Stimmungen, dazu die, die du selbst baust. Ein Referenzton auf jeder Saite und sechs A4-Referenzen, von 432 bis 442 Hz. Liest eine unverstärkte E-Gitarre."
+      "body": "Tonhöhenerkennung in Echtzeit, direkt auf dem Gerät verarbeitet. Über dreißig Standard- und alternative Stimmungen, dazu die, die du dir selbst baust. Ein Referenzton auf jeder Saite und sechs A4-Referenzen, von 432 bis 442 Hz."
     },
     "scales": {
       "eyebrow": "02 · Akkorde und Skalen",
