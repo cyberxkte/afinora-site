@@ -228,7 +228,7 @@
     "studio": {
       "eyebrow": "04 · Studio",
       "heading": "Record yourself over the backing track",
-      "body": "Import a backing track, mark the section that gives you trouble, loop it and slow it down. Record yourself over it as audio or video, save it to your gallery or share it. Recordings are files on your phone: the app never uploads them."
+      "body": "Import a backing track, mark the passage that beats you and loop it. Slow it down, and have the loop climb back up a little each time round — you choose how much. Record yourself over it as audio or video, save it to your gallery or share it. Recordings are files on your phone: the app never uploads them."
     }
   },
   "listens": {
@@ -363,7 +363,7 @@
     "backingTrack": "Backing track",
     "loopChip": "Loop",
     "autosaveChip": "Auto-save",
-    "speedUpChip": "+5% speed-up per loop",
+    "speedUpChip": "+5% / lap",
     "shoutPerfect": "PERFECT!",
     "shoutGood": "GOOD!",
     "shoutMiss": "MISS!",

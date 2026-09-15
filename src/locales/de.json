@@ -228,7 +228,7 @@
     "studio": {
       "eyebrow": "04 · Studio",
       "heading": "Nimm dich auf, während du zum Backing-Track spielst",
-      "body": "Importiere einen Backing-Track, markiere die Stelle, die dir Probleme macht, lege sie in eine Schleife und verlangsame sie. Nimm dich darüber als Audio oder Video auf, speichere es in deiner Galerie oder teile es. Aufnahmen sind Dateien auf deinem Telefon: die App lädt sie nirgendwohin hoch."
+      "body": "Importiere einen Backing-Track, markiere die Stelle, die dich schlägt, und lege sie in eine Schleife. Verlangsame sie und lass die Schleife bei jedem Durchlauf ein Stück zulegen — wie viel, bestimmst du. Nimm dich darüber als Audio oder Video auf, speichere es in deiner Galerie oder teile es. Aufnahmen sind Dateien auf deinem Telefon: die App lädt sie nirgendwohin hoch."
     }
   },
   "listens": {
@@ -363,7 +363,7 @@
     "backingTrack": "Backing-Track",
     "loopChip": "Loop",
     "autosaveChip": "Auto-Speichern",
-    "speedUpChip": "+5% Tempo pro Durchlauf",
+    "speedUpChip": "+5% / Runde",
     "shoutPerfect": "PERFEKT!",
     "shoutGood": "GUT!",
     "shoutMiss": "DANEBEN!",

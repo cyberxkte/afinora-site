@@ -228,7 +228,7 @@
     "studio": {
       "eyebrow": "04 · Studio",
       "heading": "Registrati mentre suoni sulla base musicale",
-      "body": "Carichi una base musicale, segni il punto che ti dà filo da torcere, lo metti in loop e lo rallenti. Ti registri sopra in audio o in video, salvi nella galleria o condividi. Le registrazioni sono file sul tuo telefono: l’app non le carica da nessuna parte."
+      "body": "Carica una base musicale, segna il punto che ti dà filo da torcere e mettilo in loop. Rallentalo e lascia che il loop risalga un po’ a ogni giro: quanto, lo scegli tu. Ti registri sopra in audio o in video, salvi nella galleria o condividi. Le registrazioni sono file sul tuo telefono: l’app non le carica da nessuna parte."
     }
   },
   "listens": {
@@ -363,7 +363,7 @@
     "backingTrack": "Base musicale",
     "loopChip": "Loop",
     "autosaveChip": "Autosalvataggio",
-    "speedUpChip": "+5% di velocità a ogni giro",
+    "speedUpChip": "+5% / giro",
     "shoutPerfect": "PERFETTO!",
     "shoutGood": "BENE!",
     "shoutMiss": "MANCATA!",

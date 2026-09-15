@@ -228,7 +228,7 @@
     "studio": {
       "eyebrow": "04 · Estúdio",
       "heading": "Grava-te a tocar por cima do playback",
-      "body": "Importa um playback, marca a secção que te custa, põe em loop e abranda. Grava-te por cima em áudio ou vídeo, guarda na galeria ou partilha. As gravações são ficheiros do teu telemóvel: a aplicação nunca as envia para lado nenhum."
+      "body": "Importa um playback, marca o trecho que te resiste e põe em loop. Abranda-o e deixa o loop subir um pouco a cada volta: quanto, escolhes tu. Grava-te por cima em áudio ou vídeo, guarda na galeria ou partilha. As gravações são ficheiros do teu telemóvel: a aplicação nunca as envia para lado nenhum."
     }
   },
   "listens": {
@@ -363,7 +363,7 @@
     "backingTrack": "Playback",
     "loopChip": "Loop",
     "autosaveChip": "Autossalvamento",
-    "speedUpChip": "+5% de velocidade por ciclo",
+    "speedUpChip": "+5% / volta",
     "shoutPerfect": "PERFEITO!",
     "shoutGood": "BOA!",
     "shoutMiss": "FALHOU!",

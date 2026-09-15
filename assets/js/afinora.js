@@ -593,7 +593,7 @@
 
     function chip(parent, text, on) {
       return add(parent, el('div', 'flex:0 1 auto;min-width:0;border-radius:99px;'
-        + 'padding:8px 12px;font:500 11px/1 ' + MONO
+        + 'padding:7px 9px;font:500 10px/1 ' + MONO
         + ';background:' + (on ? '#0c2018' : '#0e0f12')
         + ';border:1px solid ' + (on ? '#2dd4bf' : '#1c1d22')
         + ';color:' + (on ? '#2dd4bf' : '#a8a29e')
@@ -661,13 +661,15 @@
     var now = add(times, el('span', 'font:500 13px/1 ' + MONO + ';color:#fafaf9'));
     add(times, el('span', 'font:400 10px/1 ' + MONO + ';color:#fb7185', 'B ' + clock(B)));
 
-    // One row, no wrap, and only the two controls the copy talks about. Four
-    // chips wrapped onto three lines on a 280px frame and took the height the
-    // waveform needed; three fitted but arrived truncated to "Auto-s...",
-    // which reads as a bug rather than as a screenshot.
-    var ctl = add(root, el('div', 'flex:0 0 auto;display:flex;gap:6px;overflow:hidden'));
-    chip(ctl, '− 100% +', false);
+    // One row, no wrap. Four chips wrapped onto three lines on a 280px frame
+    // and took the height the waveform needed, and a long label arrived cut to
+    // "Auto-s...", which reads as a bug rather than as a screenshot. These
+    // three are short enough to sit together, and they are the three the
+    // paragraph beside this screen talks about.
+    var ctl = add(root, el('div', 'flex:0 0 auto;display:flex;gap:5px;overflow:hidden'));
+    chip(ctl, '100%', false);
     chip(ctl, t('loopChip', 'Loop'), true);
+    chip(ctl, t('speedUpChip', '+5% / lap'), true);
 
     var recWrap = add(root, el('div', 'flex:0 0 auto;display:flex;justify-content:center'));
     var recOuter = add(recWrap, el('div', 'width:58px;height:58px;border-radius:50%;'
