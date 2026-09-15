@@ -303,7 +303,9 @@
     ],
     "proName": "Afinora Pro",
     "proKind": "One-time purchase",
-    "paidOnce": "Paid once. Yours for good — there is no subscription."
+    "paidOnce": "Paid once. Yours for good — there is no subscription.",
+    "price": "About US$9.99",
+    "priceNote": "your store sets the price for your country"
   },
   "download": {
     "heading": "Download Afinora",

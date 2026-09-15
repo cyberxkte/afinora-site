@@ -303,7 +303,9 @@
     ],
     "proName": "Afinora Pro",
     "proKind": "Pagamento unico",
-    "paidOnce": "Si paga una volta ed è tuo. Non c’è nessun abbonamento."
+    "paidOnce": "Si paga una volta ed è tuo. Non c’è nessun abbonamento.",
+    "price": "Circa 9,99 US$",
+    "priceNote": "il prezzo del tuo paese lo fissa lo store"
   },
   "download": {
     "heading": "Scarica Afinora",

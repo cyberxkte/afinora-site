@@ -303,7 +303,9 @@
     ],
     "proName": "Afinora Pro",
     "proKind": "Pagamento único",
-    "paidOnce": "Paga-se uma vez e é teu. Não há subscrição."
+    "paidOnce": "Paga-se uma vez e é teu. Não há subscrição.",
+    "price": "Cerca de 9,99 US$",
+    "priceNote": "o preço do teu país é definido pela loja"
   },
   "download": {
     "heading": "Transfere o Afinora",

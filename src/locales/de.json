@@ -303,7 +303,9 @@
     ],
     "proName": "Afinora Pro",
     "proKind": "Einmalige Zahlung",
-    "paidOnce": "Einmal bezahlt und es gehört dir. Es gibt kein Abo."
+    "paidOnce": "Einmal bezahlt und es gehört dir. Es gibt kein Abo.",
+    "price": "Etwa 9,99 US$",
+    "priceNote": "den Preis für dein Land legt der Store fest"
   },
   "download": {
     "heading": "Afinora herunterladen",

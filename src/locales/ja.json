@@ -303,7 +303,9 @@
     ],
     "proName": "Afinora Pro",
     "proKind": "買い切り",
-    "paidOnce": "一度払えば、ずっとあなたのものです。サブスクはありません。"
+    "paidOnce": "一度払えば、ずっとあなたのものです。サブスクはありません。",
+    "price": "約 US$9.99",
+    "priceNote": "国ごとの価格はストアが決めます"
   },
   "download": {
     "heading": "Afinoraをダウンロード",

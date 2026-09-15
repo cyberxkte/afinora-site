@@ -1080,3 +1080,11 @@ a.pill:hover { border-color: var(--in-tune); color: var(--in-tune); }
 .pro-head { grid-template-columns: auto 1fr; }
 .pro-name h3 { font-size: clamp(20px, 2.4vw, 26px); }
 .pro-kind { font-size: 11px; letter-spacing: .18em; }
+
+
+/* The approximate price is a fact to judge by, not the headline of the card:
+   smaller than the product name, and the note under it carries as much weight
+   as the figure. */
+.pro-head { grid-template-columns: auto 1fr auto; }
+.pro-price .amount { font: 700 clamp(19px, 2vw, 24px)/1.1 var(--display); }
+.pro-price .note { max-width: 20ch; }
