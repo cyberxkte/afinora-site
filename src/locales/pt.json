@@ -260,7 +260,6 @@
     "heading": "Começa com cinco dias inteiros",
     "body": "Depois, a versão gratuita mantém um instrumento à tua escolha, as escalas maior e menor, o metrónomo inteiro e cinco gravações do Estúdio. O Pro é uma compra única, não uma subscrição, e desbloqueia o resto para sempre.",
     "freeHeading": "Grátis",
-    "price": "9,99 US$",
     "neverBody": "Sem anúncios · sem conta · sem rastreio · sem áudio num servidor",
     "freeItems": [
       {
@@ -304,7 +303,6 @@
     ],
     "proName": "Afinora Pro",
     "proKind": "Pagamento único",
-    "priceNote": "ou 9,99 € na maioria dos países",
     "paidOnce": "Paga-se uma vez e é teu. Não há subscrição."
   },
   "download": {

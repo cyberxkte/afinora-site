@@ -322,10 +322,6 @@ export default function landing(ctx) {
             <h3>${esc(t('pricing.proName'))}</h3>
             <p class="pro-kind">${esc(t('pricing.proKind'))}</p>
           </div>
-          <div class="pro-price">
-            <span class="amount">${esc(t('pricing.price'))}</span>
-            <span class="note">${esc(t('pricing.priceNote'))}</span>
-          </div>
         </div>
         <dl class="pro-items">
           ${t('pricing.proItems').map((i) => `<div><dt>${esc(i.n)}</dt><dd>${esc(i.label)}</dd></div>`).join('\n          ')}

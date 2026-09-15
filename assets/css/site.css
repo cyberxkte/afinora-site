@@ -1073,3 +1073,10 @@ a.pill:hover { border-color: var(--in-tune); color: var(--in-tune); }
   .pro-mark { width: 44px; height: 44px; border-radius: 11px; }
   .pro-mark svg { width: 28px; height: 28px; }
 }
+
+
+/* No figure here any more, so the kind of purchase carries the corner the
+   price used to hold. */
+.pro-head { grid-template-columns: auto 1fr; }
+.pro-name h3 { font-size: clamp(20px, 2.4vw, 26px); }
+.pro-kind { font-size: 11px; letter-spacing: .18em; }

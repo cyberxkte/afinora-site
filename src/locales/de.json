@@ -260,7 +260,6 @@
     "heading": "Es geht mit fünf ganzen Tagen los",
     "body": "Danach behält die kostenlose Version ein Instrument deiner Wahl, die Dur- und Moll-Tonleiter, das gesamte Metronom und fünf Studio-Aufnahmen. Pro ist ein einmaliger Kauf, kein Abonnement, und schaltet den Rest dauerhaft frei.",
     "freeHeading": "Kostenlos",
-    "price": "9,99 US$",
     "neverBody": "Keine Werbung · kein Konto · kein Tracking · kein Audio auf einem Server",
     "freeItems": [
       {
@@ -304,7 +303,6 @@
     ],
     "proName": "Afinora Pro",
     "proKind": "Einmalige Zahlung",
-    "priceNote": "oder 9,99 € in den meisten Ländern",
     "paidOnce": "Einmal bezahlt und es gehört dir. Es gibt kein Abo."
   },
   "download": {
