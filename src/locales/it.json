@@ -200,8 +200,8 @@
         "body": "Trovi pattern di scala già pronti, oppure incolli i tuoi come testo e Afinora li trasforma in un esercizio da suonare."
       },
       {
-        "heading": "Il tempo si regola da solo",
-        "body": "Ogni giro pulito lo alza. Appena cominci a sbagliare note, torna a scendere."
+        "heading": "Ti dice quando accelerare",
+        "body": "Il tempo lo imposti tu prima di iniziare. Alla fine Afinora guarda com'è andata e ti dice se il prossimo dovrebbe essere più veloce, uguale o più lento."
       },
       {
         "heading": "Una cronologia per scala",
@@ -368,11 +368,12 @@
     "shoutGood": "BENE!",
     "shoutMiss": "MANCATA!",
     "highwayAlt": "L'autostrada di note di Afinora: le note viaggiano lungo il manico e ognuna viene valutata quando attraversa il cursore",
-    "miniTempoLabel": "Tempo pulito",
+    "miniTempoLabel": "Tempo della sessione",
     "miniHistoryNotes": "Note",
     "miniHistoryTiming": "Ritmo",
     "miniHistoryBest": "Nuovo record",
-    "miniHistoryCaption": "Ultima sessione"
+    "miniHistoryCaption": "Ultima sessione",
+    "miniTempoNext": "Prova a 100"
   },
   "instruments": {
     "heading": "Dieci strumenti, ognuno con le sue accordature",

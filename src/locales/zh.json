@@ -200,8 +200,8 @@
         "body": "内置音阶型，或把你自己的以纯文本粘贴进来，Afinora 会变成一条可以弹的练习。"
       },
       {
-        "heading": "速度自动调整",
-        "body": "每弹干净一轮就加快。一旦开始漏音，它又会降下来。"
+        "heading": "它会告诉你何时该提速",
+        "body": "速度由你在开始前设定。弹完之后，Afinora 会看这一遍的情况，告诉你下一遍该更快、保持不变，还是放慢。"
       },
       {
         "heading": "每条音阶都有记录",
@@ -368,11 +368,12 @@
     "shoutGood": "不错!",
     "shoutMiss": "没中!",
     "highwayAlt": "Afinora 的音符轨道：音符沿指板移动，每一个在越过光标时被评分",
-    "miniTempoLabel": "干净的速度",
+    "miniTempoLabel": "本次速度",
     "miniHistoryNotes": "音准",
     "miniHistoryTiming": "节奏",
     "miniHistoryBest": "新纪录",
-    "miniHistoryCaption": "最近一次"
+    "miniHistoryCaption": "最近一次",
+    "miniTempoNext": "下次试试 100"
   },
   "instruments": {
     "heading": "十种乐器，各有各的调弦",

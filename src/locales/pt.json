@@ -200,8 +200,8 @@
         "body": "Tens padrões de escala já feitos, ou colas os teus em texto e o Afinora transforma-os num exercício para tocar."
       },
       {
-        "heading": "O andamento ajusta-se sozinho",
-        "body": "Cada volta limpa sobe-o. Assim que começas a falhar notas, volta a descer."
+        "heading": "Diz-te quando acelerar",
+        "body": "O andamento escolhe-lo tu antes de começar. No fim, o Afinora vê como correu e diz-te se o seguinte deve ser mais rápido, igual ou mais lento."
       },
       {
         "heading": "Um histórico por escala",
@@ -368,11 +368,12 @@
     "shoutGood": "BOA!",
     "shoutMiss": "FALHOU!",
     "highwayAlt": "A autoestrada de notas do Afinora: as notas viajam pelo braço e cada uma é avaliada ao cruzar o cursor",
-    "miniTempoLabel": "Andamento limpo",
+    "miniTempoLabel": "Andamento da sessão",
     "miniHistoryNotes": "Notas",
     "miniHistoryTiming": "Ritmo",
     "miniHistoryBest": "Novo recorde",
-    "miniHistoryCaption": "Última sessão"
+    "miniHistoryCaption": "Última sessão",
+    "miniTempoNext": "Tenta a 100"
   },
   "instruments": {
     "heading": "Dez instrumentos, cada um com as suas afinações",

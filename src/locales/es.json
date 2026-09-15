@@ -200,8 +200,8 @@
         "body": "Trae patrones de escala ya hechos, o pega los tuyos en texto plano y Afinora los convierte en un ejercicio que puedes tocar."
       },
       {
-        "heading": "El tempo se ajusta solo",
-        "body": "Cada vuelta limpia lo sube. En cuanto empiezas a fallar notas, vuelve a bajarlo."
+        "heading": "Te dice cuándo subir la velocidad",
+        "body": "Tú eliges el tempo antes de empezar. Al terminar, Afinora mira cómo ha ido y te dice si el siguiente debería ir más rápido, igual o más lento."
       },
       {
         "heading": "Un historial por escala",
@@ -368,11 +368,12 @@
     "shoutGood": "¡BIEN!",
     "shoutMiss": "¡FALLO!",
     "highwayAlt": "La autopista de notas de Afinora: las notas viajan por el mástil y cada una se califica al cruzar el cursor",
-    "miniTempoLabel": "Tempo limpio",
+    "miniTempoLabel": "Tempo de la sesión",
     "miniHistoryNotes": "Notas",
     "miniHistoryTiming": "Ritmo",
     "miniHistoryBest": "Nueva marca",
-    "miniHistoryCaption": "Última sesión"
+    "miniHistoryCaption": "Última sesión",
+    "miniTempoNext": "Prueba a 100"
   },
   "instruments": {
     "heading": "Diez instrumentos, cada uno con sus afinaciones",

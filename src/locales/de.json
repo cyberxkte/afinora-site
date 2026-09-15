@@ -200,8 +200,8 @@
         "body": "Fertige Skalenmuster, oder füge deine eigenen als Text ein und Afinora macht eine spielbare Übung daraus."
       },
       {
-        "heading": "Das Tempo regelt sich selbst",
-        "body": "Jeder saubere Durchlauf hebt es an. Sobald du Töne verfehlst, geht es wieder herunter."
+        "heading": "Es sagt dir, wann du schneller werden kannst",
+        "body": "Das Tempo stellst du vor dem Start ein. Am Ende schaut Afinora, wie es gelaufen ist, und sagt dir, ob der nächste Durchgang schneller, gleich oder langsamer sein sollte."
       },
       {
         "heading": "Ein Verlauf pro Tonleiter",
@@ -368,11 +368,12 @@
     "shoutGood": "GUT!",
     "shoutMiss": "DANEBEN!",
     "highwayAlt": "Afinoras Notenautobahn: die Töne wandern über das Griffbrett und jeder wird bewertet, wenn er den Cursor kreuzt",
-    "miniTempoLabel": "Sauberes Tempo",
+    "miniTempoLabel": "Tempo der Sitzung",
     "miniHistoryNotes": "Töne",
     "miniHistoryTiming": "Timing",
     "miniHistoryBest": "Neue Bestmarke",
-    "miniHistoryCaption": "Letzte Sitzung"
+    "miniHistoryCaption": "Letzte Sitzung",
+    "miniTempoNext": "Versuch 100"
   },
   "instruments": {
     "heading": "Zehn Instrumente, jedes mit seinen eigenen Stimmungen",

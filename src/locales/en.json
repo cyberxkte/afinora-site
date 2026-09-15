@@ -200,8 +200,8 @@
         "body": "Built-in scale patterns, or paste your own as plain text and Afinora turns it into an exercise you can play."
       },
       {
-        "heading": "The tempo adjusts itself",
-        "body": "Every clean lap raises it. Start missing notes and it comes back down."
+        "heading": "It tells you when to speed up",
+        "body": "You set the tempo before you start. When the run ends, Afinora reads how it went and says whether the next one should be faster, the same, or slower."
       },
       {
         "heading": "A history per scale",
@@ -368,11 +368,12 @@
     "shoutGood": "GOOD!",
     "shoutMiss": "MISS!",
     "highwayAlt": "Afinora's note highway: notes travel along the neck and each one is graded as it crosses the cursor",
-    "miniTempoLabel": "Clean tempo",
+    "miniTempoLabel": "Session tempo",
     "miniHistoryNotes": "Notes",
     "miniHistoryTiming": "Timing",
     "miniHistoryBest": "New best",
-    "miniHistoryCaption": "Latest session"
+    "miniHistoryCaption": "Latest session",
+    "miniTempoNext": "Try 100 next"
   },
   "instruments": {
     "heading": "Ten instruments, each with its own tunings",

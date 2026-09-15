@@ -978,11 +978,12 @@
   }
 
   /**
-   * The tempo climbing: a number that rises and bars that fill behind it.
+   * The tempo you set, and what the app suggests for the next run.
    *
-   * It only moves upward, because that is what the feature does — the loop
-   * speeds up while you keep up, and the page should not promise a drop it is
-   * not showing.
+   * Technique training does not move the tempo while you play — you choose it
+   * before you start and the exercise holds it. What arrives at the end is a
+   * recommendation: faster, the same, or slower. Drawing a self-raising number
+   * here would promise a control that is not in the app.
    */
   function buildMiniTempo() {
     var root = miniFrame();
@@ -991,38 +992,43 @@
 
     var head = add(pad, el('div', ''));
     add(head, el('div', 'font:400 8.5px/1.2 ' + MONO + ';letter-spacing:.12em;'
-      + 'text-transform:uppercase;color:#a8a29e', t('miniTempoLabel', 'Clean tempo')));
-    var row = add(head, el('div', 'display:flex;align-items:baseline;gap:6px;margin-top:5px'));
-    var bpm = add(row, el('span', 'font:700 25px/1 ' + DISPLAY + ';color:#fafaf9', '80'));
-    add(row, el('span', 'font:400 9px/1 ' + MONO + ';color:#a8a29e', 'BPM'));
-    var delta = add(row, el('span', 'font:400 9px/1 ' + MONO + ';color:#2dd4bf', '↑ +8'));
+      + 'text-transform:uppercase;color:#a8a29e', t('miniTempoLabel', 'Session tempo')));
 
-    var bars = add(pad, el('div', 'display:flex;gap:6px;align-items:flex-end;height:22px'));
-    var cells = [];
-    for (var i = 0; i < 6; i++) {
-      cells.push(add(bars, el('div', 'flex:1 1 0;height:100%;border-radius:4px;'
-        + 'border:1px solid #1c3a32;background:#0d211c;transition:background .2s')));
+    // The chosen tempo, between the controls that set it.
+    var row = add(head, el('div', 'display:flex;align-items:center;gap:9px;margin-top:6px'));
+    function step(sign) {
+      return add(row, el('div', 'width:19px;height:19px;border-radius:6px;flex:0 0 auto;'
+        + 'border:1px solid #1c3a32;color:#a8a29e;display:flex;align-items:center;'
+        + 'justify-content:center;font:600 11px/1 ' + MONO, sign));
     }
+    var minus = step('−');
+    var bpm = add(row, el('span', 'font:700 25px/1 ' + DISPLAY + ';color:#fafaf9;'
+      + 'min-width:44px;text-align:center', '92'));
+    var plus = step('+');
+    add(row, el('span', 'font:400 9px/1 ' + MONO + ';color:#a8a29e', 'BPM'));
 
-    var STEPS = [80, 88, 96, 104, 112, 120];
-    function frame(secs, beat) {
-      var p = (secs % 11) / 11;
-      var at = Math.min(Math.floor(p * 6.6), 5);
+    // The verdict, which only appears once the run is over.
+    var verdict = add(pad, el('div', 'display:flex;align-items:center;gap:7px;'
+      + 'padding:7px 9px;border-radius:8px;border:1px solid #1c3a32;background:#0d211c;'
+      + 'opacity:0;transition:opacity .3s'));
+    var arrow = add(verdict, el('span', 'font:600 11px/1 ' + MONO + ';color:#2dd4bf', '↑'));
+    var advice = add(verdict, el('span', 'font:400 10px/1.3 ' + MONO + ';color:#a8a29e;'
+      + 'white-space:nowrap;overflow:hidden;text-overflow:ellipsis',
+      t('miniTempoNext', 'Try 100 next')));
 
-      // The number climbs into each step instead of snapping to it, which is
-      // what a tempo that is being raised actually looks like.
-      var within = Math.min((p * 6.6) - at, 1);
-      var from = at === 0 ? STEPS[0] : STEPS[at - 1];
-      var eased = within < 0.35 ? (within / 0.35) : 1;
-      bpm.textContent = String(Math.round(from + (STEPS[at] - from) * eased));
-
-      delta.style.opacity = at === 0 ? '0' : '1';
-      // The live bar breathes on the beat, so the card is running, not frozen.
-      var pulse = 0.72 + 0.28 * Math.abs(Math.sin(beat * Math.PI));
-      for (var i = 0; i < cells.length; i++) {
-        if (i > at) { cells[i].style.background = '#0d211c'; cells[i].style.opacity = '1'; continue; }
-        cells[i].style.background = i === at ? '#2dd4bf' : '#12332c';
-        cells[i].style.opacity = i === at ? String(pulse) : '1';
+    function frame(secs) {
+      var p = (secs % 10) / 10;
+      // The tempo is picked, then held: the run happens, then the verdict.
+      if (p < 0.18) {
+        bpm.textContent = String(84 + Math.round((p / 0.18) * 8));
+        minus.style.borderColor = '#2dd4bf';
+        plus.style.borderColor = '#2dd4bf';
+        verdict.style.opacity = '0';
+      } else {
+        bpm.textContent = '92';
+        minus.style.borderColor = '#1c3a32';
+        plus.style.borderColor = '#1c3a32';
+        verdict.style.opacity = p > 0.62 ? '1' : '0';
       }
     }
     return { node: root, frame: frame };

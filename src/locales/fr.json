@@ -200,8 +200,8 @@
         "body": "Des motifs de gammes tout prêts, ou collez les vôtres en texte et Afinora en fait un exercice à jouer."
       },
       {
-        "heading": "Le tempo se règle tout seul",
-        "body": "Chaque tour propre le monte. Dès que vous ratez des notes, il redescend."
+        "heading": "Il vous dit quand accélérer",
+        "body": "Vous réglez le tempo avant de commencer. À la fin, Afinora regarde comment ça s'est passé et vous dit si le suivant doit être plus rapide, identique ou plus lent."
       },
       {
         "heading": "Un historique par gamme",
@@ -368,11 +368,12 @@
     "shoutGood": "BIEN !",
     "shoutMiss": "RATÉ !",
     "highwayAlt": "L'autoroute de notes d'Afinora : les notes défilent le long du manche et chacune est notée quand elle franchit le curseur",
-    "miniTempoLabel": "Tempo propre",
+    "miniTempoLabel": "Tempo de la session",
     "miniHistoryNotes": "Notes",
     "miniHistoryTiming": "Placement",
     "miniHistoryBest": "Nouveau record",
-    "miniHistoryCaption": "Dernière session"
+    "miniHistoryCaption": "Dernière session",
+    "miniTempoNext": "Essayez à 100"
   },
   "instruments": {
     "heading": "Dix instruments, chacun avec ses accordages",

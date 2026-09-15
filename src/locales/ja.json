@@ -200,8 +200,8 @@
         "body": "用意されたスケールパターンのほか、自分のものをテキストで貼り付ければ、そのまま弾ける練習になります。"
       },
       {
-        "heading": "テンポは自動で調整される",
-        "body": "きれいに一周するたびに上がります。音を外し始めると、また下がります。"
+        "heading": "速くしていい時期を教えてくれる",
+        "body": "テンポは始める前に自分で決めます。終わるとAfinoraが結果を見て、次はもっと速くするか、同じでいくか、落とすかを教えてくれます。"
       },
       {
         "heading": "スケールごとの記録",
@@ -368,11 +368,12 @@
     "shoutGood": "グッド!",
     "shoutMiss": "ミス!",
     "highwayAlt": "Afinoraのノートハイウェイ：音符が指板を流れ、カーソルを横切るたびに採点されます",
-    "miniTempoLabel": "クリーンなテンポ",
+    "miniTempoLabel": "セッションのテンポ",
     "miniHistoryNotes": "音程",
     "miniHistoryTiming": "タイミング",
     "miniHistoryBest": "自己ベスト",
-    "miniHistoryCaption": "直近のセッション"
+    "miniHistoryCaption": "直近のセッション",
+    "miniTempoNext": "次は100で"
   },
   "instruments": {
     "heading": "十種類の楽器、それぞれの調弦で",
