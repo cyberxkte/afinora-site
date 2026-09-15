@@ -108,7 +108,7 @@
         "heading": "Auf deinem Gerät gespeicherte Daten",
         "paragraphs": [
           "Afinora speichert Folgendes lokal, und nur lokal: deine Einstellungen, eigene Stimmungen, Metronom-Voreinstellungen, Gehörtrainings-Ergebnisse, den Verlauf des Techniktrainings und die Kalibrierung des Audiointerfaces, deine Studio-Sitzung mit der Liste zuletzt genutzter Titel sowie den Status von Testphase und Kauf.",
-          "Der Verlauf des Techniktrainings hält fest, was du eingestellt hast und wie es lief — Tempo, Töne, Genauigkeit und Timing. Er enthält nie Audio.",
+          "Der Verlauf des Techniktrainings hält fest, was du eingestellt hast und wie es lief: Tempo, Töne, Genauigkeit und Timing. Er enthält nie Audio.",
           "Das Löschen der App entfernt diese Daten, mit einer bewussten Ausnahme, die unten beschrieben wird."
         ]
       },
@@ -116,7 +116,7 @@
         "heading": "Kaufkennung",
         "paragraphs": [
           "Afinora erzeugt beim ersten Start eine zufällige Kennung für deine Installation und speichert sie auf deinem Gerät. Sie leitet sich weder von deinem Gerät noch von deinen Konten, deiner Werbekennung oder irgendetwas über dich ab und wird mit niemandem geteilt außer mit dem unten beschriebenen Dienst zur Verwaltung von Kaufberechtigungen.",
-          "Ihr einziger Zweck ist es, einen bereits getätigten Kauf nach einer Neuinstallation wiederzuerkennen. Unter iOS wird sie im System-Schlüsselbund abgelegt — deshalb können sie und damit dein Pro-Kauf und dein Teststatus das Löschen und Neuinstallieren der App überdauern."
+          "Ihr einziger Zweck ist es, einen bereits getätigten Kauf nach einer Neuinstallation wiederzuerkennen. Unter iOS wird sie im System-Schlüsselbund abgelegt. Deshalb können sie und damit dein Pro-Kauf und dein Teststatus das Löschen und Neuinstallieren der App überdauern."
         ]
       },
       {
@@ -228,13 +228,13 @@
     "studio": {
       "eyebrow": "04 · Studio",
       "heading": "Nimm dich auf, während du zum Backing-Track spielst",
-      "body": "Importiere einen Backing-Track, markiere den Abschnitt, an dem du arbeitest, und lege ihn in eine Schleife. Verlangsame sie und lass die Schleife bei jedem Durchlauf ein Stück zulegen — wie viel, bestimmst du. Nimm dich darüber als Audio oder Video auf, speichere es in deiner Galerie oder teile es. Aufnahmen sind Dateien auf deinem Telefon: die App lädt sie nirgendwohin hoch."
+      "body": "Importiere einen Backing-Track, markiere den Abschnitt, an dem du arbeitest, und lege ihn in eine Schleife. Verlangsame sie und lass die Schleife bei jedem Durchlauf ein Stück zulegen, und wie viel bestimmst du. Nimm dich darüber als Audio oder Video auf, speichere es in deiner Galerie oder teile es. Aufnahmen sind Dateien auf deinem Telefon: die App lädt sie nirgendwohin hoch."
     }
   },
   "listens": {
     "eyebrow": "Audio-Eingang",
     "heading": "Wie Afinora dir zuhört",
-    "body": "Ton für Ton zu bewerten klappt nur, wenn das ankommende Signal sauber ist. Es gibt zwei Wege hinein — schau, welcher deiner ist.",
+    "body": "Ton für Ton zu bewerten klappt nur, wenn das ankommende Signal sauber ist. Es gibt zwei Wege hinein. Schau, welcher deiner ist.",
     "acoustic": {
       "heading": "Akustisch: über das Mikrofon",
       "body": "Akustikgitarre, Geige, Cello, Ukulele, Mandoline, venezolanischer Cuatro. Das Telefonmikrofon reicht zum Stimmen und zum Üben."

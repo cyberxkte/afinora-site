@@ -108,7 +108,7 @@
         "heading": "Data Stored On Your Device",
         "paragraphs": [
           "Afinora stores the following locally, and only locally: your settings, custom tunings, metronome preferences, ear-training scores, technique practice history and audio-interface calibration, your Studio session with its list of recent tracks, and your trial and purchase state.",
-          "Technique practice history records what you configured and how you performed — tempo, notes, accuracy and timing. It never contains audio.",
+          "Technique practice history records what you configured and how you performed: tempo, notes, accuracy and timing. It never contains audio.",
           "Deleting the app removes this data, with one deliberate exception described below."
         ]
       },
@@ -116,7 +116,7 @@
         "heading": "Purchase Identifier",
         "paragraphs": [
           "Afinora generates a random identifier for your installation the first time it runs and stores it on your device. It is not derived from your device, your accounts, your advertising identifier or anything about you, and it is not shared with anyone but the purchase entitlement service described below.",
-          "Its only purpose is to let a purchase you already made be recognised again after a reinstall. On iOS it is stored in the system keychain, which is why it — and therefore your Pro purchase and your trial state — can survive deleting and reinstalling the app."
+          "Its only purpose is to let a purchase you already made be recognised again after a reinstall. On iOS it is stored in the system keychain, which is why it, and with it your Pro purchase and your trial state, can survive deleting and reinstalling the app."
         ]
       },
       {
@@ -164,7 +164,7 @@
   "hero": {
     "eyebrow": "For guitar, bass, ukulele, Venezuelan cuatro, violin and more",
     "heading": "Play a scale. It tells you which notes were late.",
-    "body": "Afinora listens as you play and grades every note on its own — pitch measured apart from timing — so you finish knowing exactly what to work on. It also tunes ten instruments and carries a full metronome. All on the device, with no account.",
+    "body": "Afinora listens as you play and grades every note on its own, measuring pitch apart from timing, so you finish knowing exactly what to work on. It also tunes ten instruments and carries a full metronome. All on the device, with no account.",
     "getItOn": "Get it on",
     "downloadOn": "Download on",
     "fine": "No account · no ads · audio never leaves the phone"
@@ -228,13 +228,13 @@
     "studio": {
       "eyebrow": "04 · Studio",
       "heading": "Record yourself over the backing track",
-      "body": "Import a backing track, mark the section you are working on and loop it. Slow it down, and have the loop climb back up a little each time round — you choose how much. Record yourself over it as audio or video, save it to your gallery or share it. Recordings are files on your phone: the app never uploads them."
+      "body": "Import a backing track, mark the section you are working on and loop it. Slow it down, and have the loop climb back up a little each time round, by as much as you choose. Record yourself over it as audio or video, save it to your gallery or share it. Recordings are files on your phone: the app never uploads them."
     }
   },
   "listens": {
     "eyebrow": "Audio input",
     "heading": "How Afinora listens to your instrument",
-    "body": "Grading note by note only works if the signal coming in is clean. There are two ways in — see which one is yours.",
+    "body": "Grading note by note only works if the signal coming in is clean. There are two ways in. See which one is yours.",
     "acoustic": {
       "heading": "Acoustic: through the microphone",
       "body": "Acoustic guitar, violin, cello, ukulele, mandolin, Venezuelan cuatro. The phone’s microphone is enough to tune and to train."
@@ -303,7 +303,7 @@
     ],
     "proName": "Afinora Pro",
     "proKind": "One-time purchase",
-    "paidOnce": "Paid once. Yours for good — there is no subscription.",
+    "paidOnce": "Paid once, yours for good. There is no subscription.",
     "price": "About US$9.99",
     "priceNote": "your store sets the price for your country",
     "priceEur": "About €9.99"

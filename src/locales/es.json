@@ -116,7 +116,7 @@
         "heading": "Identificador de compra",
         "paragraphs": [
           "Afinora genera un identificador aleatorio para tu instalación la primera vez que se ejecuta y lo guarda en tu dispositivo. No se deriva de tu dispositivo, tus cuentas, tu identificador publicitario ni de nada relativo a ti, y no se comparte con nadie salvo con el servicio de derechos de compra descrito más abajo.",
-          "Su único propósito es permitir que una compra que ya hiciste vuelva a reconocerse tras una reinstalación. En iOS se guarda en el llavero del sistema, que es la razón por la que él —y por tanto tu compra Pro y el estado de tu prueba— puede sobrevivir a borrar y reinstalar la aplicación."
+          "Su único propósito es permitir que una compra que ya hiciste vuelva a reconocerse tras una reinstalación. En iOS se guarda en el llavero del sistema, que es la razón por la que él, y con él tu compra Pro y el estado de tu prueba, puede sobrevivir a borrar y reinstalar la aplicación."
         ]
       },
       {

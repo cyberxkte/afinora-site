@@ -116,7 +116,7 @@
         "heading": "Identifiant d'achat",
         "paragraphs": [
           "Afinora génère un identifiant aléatoire pour votre installation au premier lancement et le stocke sur votre appareil. Il n'est dérivé ni de votre appareil, ni de vos comptes, ni de votre identifiant publicitaire, ni de quoi que ce soit vous concernant, et il n'est partagé avec personne d'autre que le service de gestion des droits d'achat décrit ci-dessous.",
-          "Son seul but est de permettre à un achat déjà effectué d'être reconnu à nouveau après une réinstallation. Sur iOS il est stocké dans le trousseau du système, ce qui explique pourquoi lui — et donc votre achat Pro et l'état de votre essai — peut survivre à la suppression puis à la réinstallation de l'application."
+          "Son seul but est de permettre à un achat déjà effectué d'être reconnu à nouveau après une réinstallation. Sur iOS il est stocké dans le trousseau du système, ce qui explique pourquoi lui, et avec lui votre achat Pro et l'état de votre essai, peut survivre à la suppression puis à la réinstallation de l'application."
         ]
       },
       {

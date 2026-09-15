@@ -116,7 +116,7 @@
         "heading": "Identificador de compra",
         "paragraphs": [
           "O Afinora gera um identificador aleatório para a tua instalação na primeira execução e guarda-o no dispositivo. Não deriva do teu dispositivo, das tuas contas, do teu identificador de publicidade nem de nada teu, e não é partilhado com ninguém a não ser com o serviço de gestão de direitos de compra descrito abaixo.",
-          "O seu único objetivo é permitir que uma compra que já fizeste volte a ser reconhecida após uma reinstalação. No iOS é guardado no porta-chaves do sistema, razão pela qual ele — e portanto a tua compra Pro e o estado da tua experiência — pode sobreviver a apagar e reinstalar a aplicação."
+          "O seu único objetivo é permitir que uma compra que já fizeste volte a ser reconhecida após uma reinstalação. No iOS é guardado no porta-chaves do sistema, razão pela qual ele, e com ele a tua compra Pro e o estado da tua experiência, pode sobreviver a apagar e reinstalar a aplicação."
         ]
       },
       {
